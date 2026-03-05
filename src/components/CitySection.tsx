@@ -22,17 +22,17 @@ export default function CitySection({
           ? `${city} Truck Accident Lawyer`
           : `Abogado de Accidentes de Camión en ${city}`}
       </h2>
-      <p className="mt-3 leading-relaxed text-gray-600">{description}</p>
+      <p className="mt-3 leading-relaxed text-brand-steel">{description}</p>
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
         <a
           href={`tel:+1${PHONE_NUMBER}`}
-          className="rounded-lg bg-brand-red px-6 py-3 text-center font-bold text-white transition-colors hover:bg-brand-red-dark"
+          className="rounded-lg bg-brand-rose px-6 py-3 text-center font-bold text-white transition-colors hover:bg-brand-rose-dark"
         >
           {dict.cta.callNow}: {PHONE_DISPLAY}
         </a>
         <Link
           href={routes.contact}
-          className="rounded-lg bg-brand-gold px-6 py-3 text-center font-bold text-brand-navy transition-colors hover:bg-brand-gold-light"
+          className="rounded-lg bg-brand-coral px-6 py-3 text-center font-bold text-white transition-colors hover:bg-brand-coral-light"
         >
           {dict.cta.freeReview}
         </Link>

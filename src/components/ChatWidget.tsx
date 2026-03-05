@@ -151,7 +151,7 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
       {!isOpen && (
         <button
           onClick={openChat}
-          className="fixed bottom-20 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-gold shadow-lg transition-transform hover:scale-110 md:bottom-6"
+          className="fixed bottom-20 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-coral shadow-lg transition-transform hover:scale-110 md:bottom-6"
           aria-label={locale === "es" ? "Abrir chat" : "Open chat"}
         >
           <svg className="h-6 w-6 text-brand-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -238,7 +238,7 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
                     handleRequestReview();
                   }
                 }}
-                className="rounded-full border border-brand-gold px-3 py-1 text-xs font-medium text-brand-navy transition-colors hover:bg-brand-gold/10"
+                className="rounded-full border border-brand-coral px-3 py-1 text-xs font-medium text-brand-navy transition-colors hover:bg-brand-coral/10"
               >
                 {qr.label}
               </button>
@@ -260,13 +260,13 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder={t.inputPlaceholder}
-                className="flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-brand-gold focus:outline-none focus:ring-1 focus:ring-brand-gold"
+                className="flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-brand-coral focus:outline-none focus:ring-1 focus:ring-brand-coral"
                 disabled={sending}
               />
               <button
                 type="submit"
                 disabled={sending || !input.trim()}
-                className="rounded-lg bg-brand-gold px-4 py-2 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-gold-light disabled:opacity-50"
+                className="rounded-lg bg-brand-coral px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-brand-coral-light disabled:opacity-50"
               >
                 {t.sendButton}
               </button>

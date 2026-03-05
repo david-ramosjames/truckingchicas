@@ -1,13 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-red: #B91C1C;
-  --color-brand-red-dark: #991B1B;
-  --color-brand-gold: #D97706;
-  --color-brand-gold-light: #F59E0B;
-  --color-brand-navy: #1E293B;
-  --color-brand-navy-dark: #0F172A;
-  --color-brand-cream: #FFFBEB;
+  /* Deep Indigo — authority, legal credibility */
+  --color-brand-navy: #1E2A44;
+  --color-brand-navy-dark: #161F33;
+  /* Warm Sand — Texas warmth, empathetic */
+  --color-brand-cream: #F3E8D9;
+  /* Dusty Rose — confident feminine energy */
+  --color-brand-rose: #C84B6C;
+  --color-brand-rose-dark: #A83D5A;
+  /* Sunset Coral — high-conversion CTA */
+  --color-brand-coral: #FF6B4A;
+  --color-brand-coral-light: #FF8266;
+  /* Highway Steel — industrial trucking tone */
+  --color-brand-steel: #5C6B73;
+  /* Legacy aliases for components using old names */
+  --color-brand-red: #C84B6C;
+  --color-brand-red-dark: #A83D5A;
+  --color-brand-gold: #FF6B4A;
+  --color-brand-gold-light: #FF8266;
   --font-heading: 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
 }

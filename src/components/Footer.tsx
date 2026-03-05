@@ -13,7 +13,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
           {/* Brand */}
           <div>
             <p className="text-xl font-bold">
-              <span className="text-brand-gold">TRUCKING</span> CHICAS
+              <span className="text-brand-coral">TRUCKING</span> CHICAS
             </p>
             <p className="mt-2 text-sm text-gray-400">
               {locale === "en"
@@ -27,7 +27,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             </address>
             <a
               href={`tel:+1${PHONE_NUMBER}`}
-              className="mt-2 inline-block text-lg font-bold text-brand-gold hover:text-brand-gold-light"
+              className="mt-2 inline-block text-lg font-bold text-brand-coral hover:text-brand-coral-light"
             >
               {PHONE_DISPLAY}
             </a>
@@ -50,7 +50,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="block text-sm text-gray-300 transition-colors hover:text-brand-gold"
+                  className="block text-sm text-gray-300 transition-colors hover:text-brand-coral"
                 >
                   {l.label}
                 </Link>
@@ -67,13 +67,13 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
                 href={`tel:+1${PHONE_NUMBER}`}
-                className="rounded-lg bg-brand-red px-6 py-3 text-center font-bold transition-colors hover:bg-brand-red-dark"
+                className="rounded-lg bg-brand-rose px-6 py-3 text-center font-bold transition-colors hover:bg-brand-rose-dark"
               >
                 {dict.cta.callNow}
               </a>
               <Link
                 href={routes.contact}
-                className="rounded-lg bg-brand-gold px-6 py-3 text-center font-bold text-brand-navy transition-colors hover:bg-brand-gold-light"
+                className="rounded-lg bg-brand-coral px-6 py-3 text-center font-bold text-white transition-colors hover:bg-brand-coral-light"
               >
                 {dict.cta.freeReview}
               </Link>

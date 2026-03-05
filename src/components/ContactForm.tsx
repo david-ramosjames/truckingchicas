@@ -42,7 +42,7 @@ export default function ContactForm({ dict }: { dict: Dictionary }) {
           id="name"
           name="name"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
         />
       </div>
       <div>
@@ -54,7 +54,7 @@ export default function ContactForm({ dict }: { dict: Dictionary }) {
           id="phone"
           name="phone"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
         />
       </div>
       <div>
@@ -65,7 +65,7 @@ export default function ContactForm({ dict }: { dict: Dictionary }) {
           type="email"
           id="email"
           name="email"
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
         />
       </div>
       <div>
@@ -77,14 +77,14 @@ export default function ContactForm({ dict }: { dict: Dictionary }) {
           name="message"
           rows={4}
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-gold focus:outline-none focus:ring-2 focus:ring-brand-gold/20"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
         />
       </div>
       <p className="text-sm text-gray-500">{dict.cta.microcopy}</p>
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full rounded-lg bg-brand-gold px-8 py-4 text-lg font-bold text-brand-navy transition-colors hover:bg-brand-gold-light disabled:opacity-60"
+        className="w-full rounded-lg bg-brand-coral px-8 py-4 text-lg font-bold text-white shadow-lg transition-colors hover:bg-brand-coral-light disabled:opacity-60"
       >
         {status === "sending"
           ? "..."

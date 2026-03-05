@@ -23,7 +23,7 @@ export default function FAQAccordion({ items }: { items: readonly FAQItem[] }) {
               {item.q}
             </h3>
             <svg
-              className={`h-5 w-5 shrink-0 text-brand-gold transition-transform ${
+              className={`h-5 w-5 shrink-0 text-brand-coral transition-transform ${
                 openIndex === i ? "rotate-180" : ""
               }`}
               fill="none"

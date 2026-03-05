@@ -51,7 +51,7 @@ export default function TruckAccidentPage() {
           <ul className="mt-6 space-y-3">
             {d.causes.map((cause) => (
               <li key={cause} className="flex items-start gap-3">
-                <svg className="mt-1 h-5 w-5 shrink-0 text-brand-red" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="mt-1 h-5 w-5 shrink-0 text-brand-rose" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"
                     d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 10-2 0 1 1 0 002 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
@@ -89,7 +89,7 @@ export default function TruckAccidentPage() {
           <ul className="mt-6 space-y-3">
             {d.evidenceItems.map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <svg className="mt-1 h-5 w-5 shrink-0 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="mt-1 h-5 w-5 shrink-0 text-brand-coral" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                   <path
                     fillRule="evenodd"
@@ -111,7 +111,7 @@ export default function TruckAccidentPage() {
           <ol className="mt-6 space-y-4">
             {d.howWeHelpItems.map((item, i) => (
               <li key={i} className="flex items-start gap-4">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-gold text-sm font-bold text-brand-navy">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-coral text-sm font-bold text-white">
                   {i + 1}
                 </span>
                 <span className="text-gray-700">{item}</span>
@@ -126,13 +126,13 @@ export default function TruckAccidentPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-xl font-bold text-brand-navy">Related Pages</h2>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Link href={routes.eighteenWheeler} className="text-brand-red underline hover:text-brand-red-dark">
+            <Link href={routes.eighteenWheeler} className="text-brand-rose underline hover:text-brand-rose-dark">
               18-Wheeler Accident Lawyer
             </Link>
-            <Link href={routes.faq} className="text-brand-red underline hover:text-brand-red-dark">
+            <Link href={routes.faq} className="text-brand-rose underline hover:text-brand-rose-dark">
               FAQ
             </Link>
-            <Link href={routes.areas} className="text-brand-red underline hover:text-brand-red-dark">
+            <Link href={routes.areas} className="text-brand-rose underline hover:text-brand-rose-dark">
               Areas We Serve
             </Link>
           </div>

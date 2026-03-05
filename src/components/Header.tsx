@@ -29,7 +29,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         {/* Logo / Brand */}
         <Link href={routes.home} className="text-xl font-bold tracking-tight">
-          <span className="text-brand-gold">TRUCKING</span>{" "}
+          <span className="text-brand-coral">TRUCKING</span>{" "}
           <span>CHICAS</span>
         </Link>
 
@@ -39,8 +39,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             <Link
               key={l.href}
               href={l.href}
-              className={`text-sm font-medium transition-colors hover:text-brand-gold ${
-                pathname === l.href ? "text-brand-gold" : ""
+              className={`text-sm font-medium transition-colors hover:text-brand-coral ${
+                pathname === l.href ? "text-brand-coral" : ""
               }`}
             >
               {l.label}
@@ -62,7 +62,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
           {/* Desktop CTA */}
           <a
             href={`tel:+1${PHONE_NUMBER}`}
-            className="hidden rounded-lg bg-brand-gold px-4 py-2 text-sm font-bold text-brand-navy transition-colors hover:bg-brand-gold-light md:inline-block"
+            className="hidden rounded-lg bg-brand-coral px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-brand-coral-light md:inline-block"
           >
             {dict.nav.callNow}: {PHONE_DISPLAY}
           </a>
@@ -94,7 +94,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
                 key={l.href}
                 href={l.href}
                 className={`block rounded px-3 py-2 text-base font-medium transition-colors hover:bg-white/10 ${
-                  pathname === l.href ? "text-brand-gold" : ""
+                  pathname === l.href ? "text-brand-coral" : ""
                 }`}
                 onClick={() => setOpen(false)}
               >
@@ -103,7 +103,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             ))}
             <a
               href={`tel:+1${PHONE_NUMBER}`}
-              className="mt-3 block rounded-lg bg-brand-red px-4 py-3 text-center font-bold transition-colors hover:bg-brand-red-dark"
+              className="mt-3 block rounded-lg bg-brand-rose px-4 py-3 text-center font-bold transition-colors hover:bg-brand-rose-dark"
             >
               {dict.nav.callNow}: {PHONE_DISPLAY}
             </a>

@@ -50,7 +50,7 @@ export default function ContactPageES() {
               <p className="mt-2 text-gray-600">{d.callDesc}</p>
               <a
                 href={`tel:+1${PHONE_NUMBER}`}
-                className="mt-4 inline-block rounded-lg bg-brand-red px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-red-dark"
+                className="mt-4 inline-block rounded-lg bg-brand-rose px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-rose-dark"
               >
                 {dict.cta.callNow}: {PHONE_DISPLAY}
               </a>
@@ -68,7 +68,7 @@ export default function ContactPageES() {
               <ul className="space-y-3">
                 {[dict.hero.trust1, dict.hero.trust2, dict.hero.trust3].map((t) => (
                   <li key={t} className="flex items-center gap-3">
-                    <svg className="h-5 w-5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="h-5 w-5 text-brand-coral" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     <span className="font-medium text-brand-navy">{t}</span>

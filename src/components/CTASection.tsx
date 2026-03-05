@@ -28,13 +28,13 @@ export default function CTASection({
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
             href={`tel:+1${PHONE_NUMBER}`}
-            className="w-full rounded-lg bg-brand-red px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-red-dark sm:w-auto"
+            className="w-full rounded-lg bg-brand-rose px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-rose-dark sm:w-auto"
           >
             {dict.cta.callNow}: {PHONE_DISPLAY}
           </a>
           <Link
             href={routes.contact}
-            className="w-full rounded-lg bg-brand-gold px-8 py-4 text-lg font-bold text-brand-navy transition-colors hover:bg-brand-gold-light sm:w-auto"
+            className="w-full rounded-lg bg-brand-coral px-8 py-4 text-lg font-bold text-white shadow-lg transition-colors hover:bg-brand-coral-light sm:w-auto"
           >
             {dict.cta.freeReview}
           </Link>
