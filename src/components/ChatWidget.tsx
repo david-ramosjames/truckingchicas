@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import { chatStrings, detectLanguage, type ChatLocale } from "@/lib/i18nChat";
 import { triageCase, type LeadFields, type ChatSession } from "@/lib/triage";
 import { PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
@@ -11,19 +12,30 @@ interface Message {
   ts: number;
 }
 
-export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: ChatLocale }) {
+export default function ChatWidget() {
+  const pathname = usePathname();
+  const localeFromUrl: ChatLocale = pathname.startsWith("/es") ? "es" : "en";
+
   const [isOpen, setIsOpen] = useState(false);
-  const [locale, setLocale] = useState<ChatLocale>(initialLocale);
+  const [locale, setLocale] = useState<ChatLocale>(localeFromUrl);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
   const [consentShown, setConsentShown] = useState(false);
   const [leadFields, setLeadFields] = useState<LeadFields>({});
   const [sessionId] = useState(() => crypto.randomUUID());
+  const [turnCount, setTurnCount] = useState(0);
+  const [chatLogSent, setChatLogSent] = useState(false);
+  const idleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const t = chatStrings[locale];
+
+  // Auto-sync locale when URL changes
+  useEffect(() => {
+    setLocale(localeFromUrl);
+  }, [localeFromUrl]);
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -39,6 +51,68 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
     }
   }, [isOpen]);
 
+  function buildSession(): ChatSession {
+    return {
+      sessionId,
+      locale,
+      leadFields,
+      triageStatus: triageCase(leadFields),
+      transcript: messages.map((m) => ({ role: m.role, content: m.content, ts: m.ts })),
+    };
+  }
+
+  async function sendChatLog() {
+    if (chatLogSent || messages.length === 0) return;
+    setChatLogSent(true);
+    try {
+      await fetch("/api/slack", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...buildSession(), channel: "log" }),
+      });
+    } catch {
+      // Silent
+    }
+  }
+
+  async function sendLeadAlert() {
+    try {
+      await fetch("/api/slack", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...buildSession(), channel: "leads" }),
+      });
+    } catch {
+      // Silent
+    }
+  }
+
+  // Idle timer: send chat log after 7 minutes of inactivity
+  const resetIdleTimer = useCallback(() => {
+    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = setTimeout(() => {
+      if (messages.length > 0 && !chatLogSent) {
+        sendChatLog();
+      }
+    }, 7 * 60 * 1000);
+  }, [messages.length, chatLogSent]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (messages.length > 0) {
+      resetIdleTimer();
+    }
+    return () => {
+      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    };
+  }, [messages, resetIdleTimer]);
+
+  // Send chat log after 10 user turns
+  useEffect(() => {
+    if (turnCount >= 10 && !chatLogSent) {
+      sendChatLog();
+    }
+  }, [turnCount, chatLogSent]); // eslint-disable-line react-hooks/exhaustive-deps
+
   function openChat() {
     setIsOpen(true);
     if (!consentShown) {
@@ -53,17 +127,15 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
   async function sendMessage(text: string) {
     if (!text.trim() || sending) return;
 
-    // Detect language from user input
     const detected = detectLanguage(text);
-    if (detected !== locale) {
-      setLocale(detected);
-    }
+    if (detected !== locale) setLocale(detected);
 
     const userMsg: Message = { role: "user", content: text, ts: Date.now() };
     const newMessages = [...messages, userMsg];
     setMessages(newMessages);
     setInput("");
     setSending(true);
+    setTurnCount((c) => c + 1);
 
     try {
       const res = await fetch("/api/chat", {
@@ -75,15 +147,19 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
       });
 
       const data = await res.json();
-      const assistantMsg: Message = {
-        role: "assistant",
-        content: data.reply || "...",
-        ts: Date.now(),
-      };
-      setMessages((prev) => [...prev, assistantMsg]);
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: data.reply || "...", ts: Date.now() },
+      ]);
 
-      // Try to extract lead fields from conversation context
-      extractLeadInfo(text);
+      // Extract lead fields
+      const updatedFields = extractLeadInfo(text, leadFields);
+      setLeadFields(updatedFields);
+
+      // If phone captured, immediately alert leads channel
+      if (updatedFields.phone && !leadFields.phone) {
+        setTimeout(() => sendLeadAlert(), 500);
+      }
     } catch {
       const errorMsg = locale === "es"
         ? "Lo siento, hubo un error. Por favor intenta de nuevo o llámanos directamente."
@@ -97,70 +173,27 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
     setSending(false);
   }
 
-  function extractLeadInfo(text: string) {
-    // Simple extraction heuristics
-    const phoneMatch = text.match(/\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/);
-    if (phoneMatch) {
-      setLeadFields((prev) => ({ ...prev, phone: phoneMatch[0] }));
-    }
-
-    const emailMatch = text.match(/[\w.-]+@[\w.-]+\.\w+/);
-    if (emailMatch) {
-      setLeadFields((prev) => ({ ...prev, email: emailMatch[0] }));
-    }
-  }
-
-  async function triggerSlackNotify() {
-    const session: ChatSession = {
-      sessionId,
-      locale,
-      leadFields,
-      triageStatus: triageCase(leadFields),
-      transcript: messages.map((m) => ({ role: m.role, content: m.content, ts: m.ts })),
-    };
-
-    try {
-      await fetch("/api/slack", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(session),
-      });
-    } catch {
-      // Silent fail for Slack — don't block user experience
-    }
-  }
-
-  function handleQuickReply(text: string) {
-    sendMessage(text);
-  }
-
   function handleRequestReview() {
-    triggerSlackNotify();
-    const msg = locale === "es" ? t.collectContact : t.collectContact;
-    setMessages((prev) => [...prev, { role: "assistant", content: msg, ts: Date.now() }]);
+    sendLeadAlert();
+    setMessages((prev) => [...prev, { role: "assistant", content: t.collectContact, ts: Date.now() }]);
   }
 
   const quickReplies = [
-    { label: t.quickReplies.callNow, action: "call" },
-    { label: t.quickReplies.freeReview, action: "review" },
+    { label: t.quickReplies.callNow, action: "call" as const },
+    { label: t.quickReplies.freeReview, action: "review" as const },
   ];
 
   return (
     <>
-      {/* Chat launcher button - positioned above sticky CTA bar */}
+      {/* Chat launcher — above sticky CTA bar */}
       {!isOpen && (
         <button
           onClick={openChat}
           className="fixed bottom-20 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-coral shadow-lg transition-transform hover:scale-110 md:bottom-6"
           aria-label={locale === "es" ? "Abrir chat" : "Open chat"}
         >
-          <svg className="h-6 w-6 text-brand-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-            />
+          <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>
         </button>
       )}
@@ -175,18 +208,13 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
               <span className="font-bold">{t.chatTitle}</span>
             </div>
             <div className="flex items-center gap-2">
-              {/* Language toggle inside chat */}
               <button
                 onClick={() => setLocale(locale === "en" ? "es" : "en")}
                 className="rounded border border-white/30 px-2 py-0.5 text-xs font-bold hover:bg-white/10"
               >
                 {locale === "en" ? "ES" : "EN"}
               </button>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="hover:text-gray-300"
-                aria-label="Close chat"
-              >
+              <button onClick={() => setIsOpen(false)} className="hover:text-gray-300" aria-label="Close chat">
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -197,17 +225,8 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
           {/* Messages */}
           <div className="flex-1 overflow-y-auto px-4 py-3">
             {messages.map((msg, i) => (
-              <div
-                key={i}
-                className={`mb-3 flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-              >
-                <div
-                  className={`max-w-[80%] rounded-lg px-3 py-2 text-sm ${
-                    msg.role === "user"
-                      ? "bg-brand-navy text-white"
-                      : "bg-gray-100 text-gray-800"
-                  }`}
-                >
+              <div key={i} className={`mb-3 flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
+                <div className={`max-w-[80%] rounded-lg px-3 py-2 text-sm ${msg.role === "user" ? "bg-brand-navy text-white" : "bg-gray-100 text-gray-800"}`}>
                   {msg.content}
                 </div>
               </div>
@@ -247,13 +266,7 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
 
           {/* Input */}
           <div className="border-t border-gray-200 px-4 py-3">
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                sendMessage(input);
-              }}
-              className="flex gap-2"
-            >
+            <form onSubmit={(e) => { e.preventDefault(); sendMessage(input); }} className="flex gap-2">
               <input
                 ref={inputRef}
                 type="text"
@@ -273,13 +286,20 @@ export default function ChatWidget({ initialLocale = "en" }: { initialLocale?: C
             </form>
             <p className="mt-1 text-center text-[10px] text-gray-400">
               {t.poweredBy} &middot;{" "}
-              <a href={`tel:+1${PHONE_NUMBER}`} className="underline">
-                {PHONE_DISPLAY}
-              </a>
+              <a href={`tel:+1${PHONE_NUMBER}`} className="underline">{PHONE_DISPLAY}</a>
             </p>
           </div>
         </div>
       )}
     </>
   );
+}
+
+function extractLeadInfo(text: string, existing: LeadFields): LeadFields {
+  const updated = { ...existing };
+  const phoneMatch = text.match(/\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/);
+  if (phoneMatch) updated.phone = phoneMatch[0];
+  const emailMatch = text.match(/[\w.-]+@[\w.-]+\.\w+/);
+  if (emailMatch) updated.email = emailMatch[0];
+  return updated;
 }

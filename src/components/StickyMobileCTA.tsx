@@ -18,7 +18,7 @@ export default function StickyMobileCTA({
       <div className="flex gap-2">
         <a
           href={`tel:+1${PHONE_NUMBER}`}
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-brand-rose px-4 py-3 font-bold text-white transition-colors hover:bg-brand-rose-dark"
+          className="pulse-halo flex flex-1 items-center justify-center gap-2 rounded-lg bg-brand-rose px-4 py-3 font-bold text-white transition-colors hover:bg-brand-rose-dark"
         >
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
@@ -32,7 +32,7 @@ export default function StickyMobileCTA({
         </a>
         <Link
           href={routes.contact}
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-brand-coral px-4 py-3 font-bold text-white transition-colors hover:bg-brand-coral-light"
+          className="pulse-halo-coral flex flex-1 items-center justify-center gap-2 rounded-lg bg-brand-coral px-4 py-3 font-bold text-white transition-colors hover:bg-brand-coral-light"
         >
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path

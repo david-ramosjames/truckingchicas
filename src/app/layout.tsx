@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import AnalyticsPlaceholder from "@/components/AnalyticsPlaceholder";
+import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex min-h-screen flex-col bg-white text-gray-900 antialiased">
         {children}
+        <ChatWidget />
         <AnalyticsPlaceholder />
       </body>
     </html>

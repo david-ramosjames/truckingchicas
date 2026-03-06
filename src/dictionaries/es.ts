@@ -177,28 +177,203 @@ const es: Dictionary = {
     heading: "Sirviendo a Víctimas de Accidentes de Camión en Todo Texas",
     subhead:
       "Nuestros abogados representan a clientes en todas las principales ciudades de Texas. Si fuiste herido en un accidente de camión en cualquier parte de Texas, podemos ayudarte.",
+    statsTitle: "Estadísticas de Accidentes de Camión en Texas",
+    stats: [
+      "Texas lidera la nación en accidentes fatales con camiones año tras año.",
+      "Miles de choques con camiones comerciales ocurren en las carreteras de Texas anualmente.",
+      "Una porción significativa de estos accidentes ocurre en los principales corredores interestatales como la I-35, I-10 e I-45.",
+      "Las muertes por accidentes de camión en Texas han aumentado en la última década a medida que crece el volumen de carga.",
+      "Muchos choques de camión involucran fatiga del conductor, exceso de velocidad o violaciones de seguridad federal.",
+    ],
+    routesTitle: "Principales Rutas de Transporte de Carga en Texas",
+    routesSubhead: "Texas es la columna vertebral del transporte de carga en Estados Unidos. Entender dónde se concentra el tráfico de camiones ayuda a explicar por qué ciertas áreas ven más accidentes.",
+    routes: [
+      {
+        name: "Corredor I-35",
+        desc: "El corredor I-35 corre desde Laredo en la frontera mexicana a través de San Antonio, Austin, Waco y Dallas–Fort Worth. Es una de las rutas comerciales del TLCAN más transitadas, transportando volúmenes masivos de carga diariamente.",
+      },
+      {
+        name: "Corredor de Carga I-10",
+        desc: "La I-10 cruza todo el sur de Texas, desde El Paso a través de San Antonio y Houston hasta la frontera con Louisiana. Es una arteria principal de carga de este a oeste y una fuente importante de accidentes de camión.",
+      },
+      {
+        name: "Ruta I-45 Houston–Dallas",
+        desc: "La I-45 conecta Houston y Dallas, dos de las áreas metropolitanas más grandes del país. El tráfico pesado de camiones, combinado con el alto volumen de vehículos de pasajeros, hace que esta ruta sea especialmente peligrosa.",
+      },
+      {
+        name: "Rutas de Petróleo y Energía",
+        desc: "El oeste de Texas y la Cuenca Pérmica generan un enorme tráfico de camiones para la industria petrolera en las US-285, US-87 y carreteras estatales rurales. Estas vías ven camiones cisterna sobrecargados, transportadores de equipo y conductores fatigados.",
+      },
+    ],
     cities: {
-      Houston:
-        "Como la ciudad más grande de Texas y un importante centro de carga, Houston ve un alto volumen de accidentes de camión en la I-10, I-45 e I-69. Nuestros abogados ayudan a las víctimas del área de Houston a obtener la compensación que merecen.",
-      Dallas:
-        "El área metropolitana de Dallas–Fort Worth es uno de los corredores de transporte de carga más transitados del país. Representamos a víctimas de accidentes de camión en todo el condado de Dallas y áreas circundantes.",
-      Austin:
-        "El rápido crecimiento de Austin ha traído más tráfico de camiones comerciales a lo largo de la I-35 y la Autopista 130. Nuestro equipo ayuda a las víctimas de accidentes de camión en el centro de Texas a luchar por justicia.",
-      "San Antonio":
-        "San Antonio se encuentra en la intersección de la I-35 y la I-10, dos de las rutas de carga más transitadas del país. Servimos a víctimas de accidentes de camión en toda el área metropolitana de San Antonio.",
-      "Fort Worth":
-        "Fort Worth y el oeste del área de DFW ven mucho tráfico de tráileres de 18 ruedas en la I-30 e I-20. Si fuiste atropellado por un camión en Fort Worth, estamos listos para ayudarte.",
-      "El Paso":
-        "La proximidad de El Paso a la frontera con México significa un alto volumen de transporte de carga transfronterizo. Ayudamos a las víctimas de accidentes de camión en El Paso a navegar reclamaciones complejas interestatales e internacionales.",
-      Arlington:
-        "Ubicada entre Dallas y Fort Worth, Arlington ve un tráfico significativo de camiones en la I-30 e I-20. Nuestros abogados sirven a víctimas de accidentes de camión en Arlington y el condado de Tarrant.",
-      "Corpus Christi":
-        "Corpus Christi es una importante ciudad portuaria con mucho tráfico de camiones industriales. Representamos a víctimas de accidentes de camión y tráiler en toda la región de Coastal Bend.",
-      Plano:
-        "Plano y los suburbios del norte de DFW tienen un creciente tráfico comercial en la US-75 y Dallas North Tollway. Ayudamos a las víctimas de accidentes de camión del condado de Collin a buscar una compensación justa.",
-      Lubbock:
-        "Las carreteras del oeste de Texas ven mucho transporte de carga agrícola y petrolera. Nuestro equipo representa a las víctimas de accidentes graves de camión en el área de Lubbock.",
+      Houston: {
+        desc: "Houston es uno de los centros de transporte de carga más activos de Texas, con rutas principales a lo largo de la Interestatal 10 y la Interestatal 45. El Puerto de Houston — el puerto más grande de EE.UU. por tonelaje extranjero — genera un constante tráfico pesado de camiones comerciales en toda el área metropolitana, aumentando el riesgo de colisiones graves con tráileres.",
+        why: [
+          "El Puerto de Houston genera un volumen masivo de camiones comerciales",
+          "La intersección de la I-10 e I-45 crea una congestión severa",
+          "La I-69/US-59 conecta con el corredor petroquímico",
+          "El rápido crecimiento poblacional empeora la congestión",
+        ],
+        accidents: [
+          "Choques tipo navaja en la I-10 e I-45",
+          "Colisiones traseras en congestión de autopista",
+          "Derrames de materiales peligrosos de camiones cisterna",
+          "Accidentes de incrustación con vehículos más pequeños",
+        ],
+      },
+      Dallas: {
+        desc: "El área metropolitana de Dallas–Fort Worth es uno de los corredores de transporte de carga más transitados de la nación. Con la I-35, I-30, I-20 e I-45 convergiendo en la región, Dallas ve un enorme volumen de tráfico de camiones comerciales de rutas de carga de costa a costa y rutas comerciales del TLCAN.",
+        why: [
+          "Convergencia de la I-35, I-30, I-20 e I-45",
+          "Principal centro de distribución y logística",
+          "Tráfico de camiones a alta velocidad en la I-635 e I-35E",
+          "Zonas de construcción crean condiciones impredecibles",
+        ],
+        accidents: [
+          "Choques múltiples en la I-35",
+          "Colisiones por cambio de carril en la I-635",
+          "Accidentes por fatiga en rutas nocturnas",
+          "Volcaduras en zonas de construcción",
+        ],
+      },
+      Austin: {
+        desc: "El rápido crecimiento poblacional y económico de Austin ha traído un aumento dramático del tráfico de camiones comerciales a lo largo de la I-35 y la Autopista 130. El corredor I-35 a través de Austin es notoriamente congestionado, y los camiones grandes navegando carriles estrechos crean condiciones peligrosas para los vehículos de pasajeros.",
+        why: [
+          "La I-35 es uno de los corredores más congestionados de Texas",
+          "La Autopista 130 desvía tráfico de camiones",
+          "La construcción rápida aumenta los peligros viales",
+          "La creciente población significa más vehículos compartiendo caminos con camiones",
+        ],
+        accidents: [
+          "Choques traseros en la congestión de la I-35",
+          "Accidentes por giros amplios en calles urbanas estrechas",
+          "Choques por reventón de llantas a velocidad de autopista",
+          "Colisiones frontales en carreteras rurales sin división",
+        ],
+      },
+      "San Antonio": {
+        desc: "San Antonio se encuentra en la intersección de la I-35 y la I-10, dos de las rutas de carga más transitadas del país. Como una parada importante en el corredor comercial del TLCAN desde Laredo, San Antonio ve tráfico continuo de tráileres de 18 ruedas transportando mercancías entre México y el interior de EE.UU.",
+        why: [
+          "Intersección de los corredores de carga I-35 e I-10",
+          "Parada clave en la ruta comercial Laredo–Dallas del TLCAN",
+          "La logística de bases militares genera tráfico adicional",
+          "El circuito I-410 crea zonas de incorporación a alta velocidad",
+        ],
+        accidents: [
+          "Colisiones en zonas de incorporación en la I-410 e I-35",
+          "Choques de camiones sobrecargados en la I-10",
+          "Accidentes por punto ciego en cambios de carril",
+          "Choques por fatiga en rutas nocturnas de carga",
+        ],
+      },
+      "Fort Worth": {
+        desc: "Fort Worth y el oeste del área de DFW ven tráfico pesado de tráileres en la I-30, I-20 e I-35W. Fort Worth sirve como un importante punto de intercambio entre ferrocarril y camiones, con carga moviéndose entre la costa oeste y el este de Estados Unidos a través del área metropolitana.",
+        why: [
+          "La I-30 e I-20 transportan carga pesada de este a oeste",
+          "Principal centro de intercambio ferrocarril-camión",
+          "La I-35W conecta con la ruta comercial del TLCAN",
+          "Las vías del área de Stockyards mezclan camiones con tráfico local",
+        ],
+        accidents: [
+          "Choques a alta velocidad en la I-20",
+          "Incidentes tipo navaja en las curvas de la I-30",
+          "Colisiones en intersecciones de la US-287",
+          "Accidentes múltiples por hielo y clima",
+        ],
+      },
+      "El Paso": {
+        desc: "La ubicación de El Paso en la frontera mexicana lo convierte en uno de los cruces de transporte internacional más activos de Norteamérica. Camiones comerciales que transportan mercancías a través de los puertos de entrada Zaragoza y BOTA inundan la I-10 y las autopistas locales, creando riesgos graves de accidentes.",
+        why: [
+          "Principal cruce fronterizo EE.UU.–México para camiones",
+          "La I-10 transporta carga transcontinental por la ciudad",
+          "La US-54 y US-85 agregan tráfico de camiones norte-sur",
+          "Los camiones transfronterizos pueden no cumplir normas de seguridad de EE.UU.",
+        ],
+        accidents: [
+          "Choques por congestión en zona fronteriza",
+          "Colisiones a alta velocidad en la I-10",
+          "Accidentes con camiones sobrecargados",
+          "Volcaduras de camiones por tormentas de polvo y viento",
+        ],
+      },
+      Arlington: {
+        desc: "Ubicada entre Dallas y Fort Worth, Arlington se encuentra directamente en el camino del tráfico pesado de camiones comerciales en la I-30 e I-20. El distrito de entretenimiento y el crecimiento suburbano crean una mezcla de tráfico local y carga de tránsito que genera condiciones peligrosas.",
+        why: [
+          "La I-30 conecta Dallas con Fort Worth a través de Arlington",
+          "La I-20 transporta carga de este a oeste",
+          "El distrito de entretenimiento crea zonas de alto tráfico",
+          "El intercambio de la Highway 360 es un área problemática conocida",
+        ],
+        accidents: [
+          "Choques traseros en congestión cerca de estadios",
+          "Accidentes camión vs. peatón cerca del distrito de entretenimiento",
+          "Colisiones a alta velocidad en la I-20",
+          "Accidentes por escombros de llantas de camiones",
+        ],
+      },
+      "Corpus Christi": {
+        desc: "Corpus Christi es una importante ciudad portuaria y centro petroquímico con tráfico pesado de camiones industriales. Camiones cisterna, plataformas transportando equipo y camiones de contenedores se mueven constantemente entre el puerto, las refinerías y las autopistas regionales incluyendo la I-37, US-77 y el JFK Causeway.",
+        why: [
+          "El Puerto de Corpus Christi genera tráfico de camiones industriales",
+          "Las refinerías petroquímicas requieren movimiento constante de cisterna",
+          "La I-37 conecta con el corredor de carga de San Antonio",
+          "Las condiciones de viento costero afectan la estabilidad de los camiones",
+        ],
+        accidents: [
+          "Incidentes con camiones cisterna de materiales peligrosos cerca de refinerías",
+          "Volcaduras de camiones por viento en puentes y calzadas",
+          "Choques traseros en la US-77",
+          "Derrames de carga de plataformas sobrecargadas",
+        ],
+      },
+      Plano: {
+        desc: "Plano y los suburbios del norte de DFW han experimentado un rápido crecimiento comercial, trayendo más tráfico de camiones en la US-75, el Dallas North Tollway y el Sam Rayburn Tollway. Camiones de reparto, vehículos de construcción y carga de tránsito comparten cada vez más las carreteras con los conductores suburbanos.",
+        why: [
+          "La US-75 es una ruta comercial principal norte-sur",
+          "Las sedes corporativas generan tráfico de camiones de reparto",
+          "La rápida construcción suburbana trae vehículos pesados",
+          "El Sam Rayburn Tollway transporta un volumen creciente de carga",
+        ],
+        accidents: [
+          "Accidentes de camiones de reparto en zonas comerciales",
+          "Colisiones traseras en la congestionada US-75",
+          "Accidentes de vehículos de construcción en nuevos desarrollos",
+          "Choques por giros amplios en intersecciones suburbanas",
+        ],
+      },
+      Lubbock: {
+        desc: "Las carreteras del oeste de Texas ven tráfico pesado de camiones agrícolas y petroleros. Lubbock se encuentra en la intersección de rutas clave de energía y agricultura, con transportadores de algodón, camiones cisterna de campos petroleros y camiones de equipo viajando por la US-84, US-87 y carreteras regionales que a menudo son de dos carriles sin división.",
+        why: [
+          "El algodón y la agricultura requieren transporte pesado en camión",
+          "La actividad petrolera de la Cuenca Pérmica genera tráfico de cisterna",
+          "La US-84 y US-87 son frecuentemente carreteras de dos carriles sin división",
+          "Las largas distancias conducen a la fatiga del conductor",
+        ],
+        accidents: [
+          "Colisiones frontales en carreteras sin división",
+          "Choques por fatiga en rutas rurales largas",
+          "Volcaduras de camiones cisterna de campos petroleros",
+          "Choques por visibilidad reducida por polvo y viento",
+        ],
+      },
     },
+    bottomCtaHeading: "¿Herido en un Accidente de Camión en Texas?",
+    bottomCtaSubhead: "Obtén una evaluación de caso gratuita de nuestros abogados experimentados en accidentes de camión. Sin compromiso. No cobramos si no ganamos.",
+    faqTitle: "Abogado de Accidentes de Camión en Texas — Preguntas Comunes",
+    faqItems: [
+      {
+        q: "¿Qué debo hacer después de un accidente de camión en Texas?",
+        a: "Ponte a salvo, llama al 911, busca atención médica, documenta la escena y contacta a un abogado de accidentes de camión antes de hablar con cualquier compañía de seguros. La evidencia en casos de camión puede desaparecer rápidamente.",
+      },
+      {
+        q: "¿Cuánto tiempo tengo para presentar una reclamación por accidente de camión en Texas?",
+        a: "El plazo de prescripción para reclamaciones por lesiones personales en Texas es generalmente de dos años a partir de la fecha del accidente. Sin embargo, algunas circunstancias pueden afectar este plazo. Consulta a un abogado de inmediato para proteger tus derechos. Esta es información general, no asesoría legal.",
+      },
+      {
+        q: "¿Quién puede ser responsable en un accidente de camión?",
+        a: "Múltiples partes pueden ser responsables: el conductor del camión, la compañía de camiones, el intermediario de carga, el embarcador, los proveedores de mantenimiento e incluso los fabricantes de vehículos o piezas. Un abogado experimentado investigará a todas las partes potencialmente responsables.",
+      },
+    ],
   },
   faq: {
     title: "Preguntas Frecuentes",

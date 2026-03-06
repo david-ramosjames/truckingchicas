@@ -19,25 +19,18 @@ export interface ChatSession {
   leadFields: LeadFields;
   triageStatus: TriageStatus;
   transcript: { role: "user" | "assistant"; content: string; ts: number }[];
+  channel?: "leads" | "log";
 }
 
 /**
  * Simple, transparent "case fit" heuristic.
- * Factors considered:
- * - Texas incident
- * - Commercial truck involvement
- * - Injuries / medical care
- * - Within general statute window (does NOT assert exact statute as absolute)
  */
 export function triageCase(fields: LeadFields): TriageStatus {
-  const hasTexas = true; // Assume Texas since they're on our site
-  const hasTruck = true; // Assume truck since they're chatting about it
   const hasInjury =
     fields.injuries?.toLowerCase() !== "no" && fields.injuries !== undefined;
   const hasTreatment =
     fields.treatment?.toLowerCase() !== "no" && fields.treatment !== undefined;
 
-  // Check if incident date is within a reasonable window
   let withinWindow = true;
   if (fields.incidentDate) {
     try {
@@ -45,60 +38,62 @@ export function triageCase(fields: LeadFields): TriageStatus {
       const now = new Date();
       const diffYears =
         (now.getTime() - incidentDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
-      // If more than ~2 years, flag for review (but do NOT definitively say it's too late)
-      if (diffYears > 2) {
-        withinWindow = false;
-      }
+      if (diffYears > 2) withinWindow = false;
     } catch {
       // Can't parse date — don't penalize
     }
   }
 
-  if (hasTexas && hasTruck && (hasInjury || hasTreatment) && withinWindow) {
-    return "likely_case";
-  }
-
-  if (hasTexas && hasTruck) {
-    return "needs_review";
-  }
-
+  if ((hasInjury || hasTreatment) && withinWindow) return "likely_case";
+  if (fields.phone || fields.name) return "needs_review";
   return "general_info";
 }
 
-export function generateSlackPayload(session: ChatSession) {
-  const statusEmoji = {
-    likely_case: "🟢",
-    needs_review: "🟡",
-    general_info: "🔵",
-  };
+const STATUS_EMOJI: Record<TriageStatus, string> = {
+  likely_case: "🟢",
+  needs_review: "🟡",
+  general_info: "🔵",
+};
 
-  const statusLabel = {
-    likely_case: "Likely Case",
-    needs_review: "Needs Review",
-    general_info: "General Question",
-  };
+const STATUS_LABEL: Record<TriageStatus, string> = {
+  likely_case: "Likely Case",
+  needs_review: "Needs Review",
+  general_info: "General Question",
+};
 
-  const fields = session.leadFields;
-  const contactLines = [
+function formatContactLines(fields: LeadFields): string {
+  return [
     fields.name && `*Name:* ${fields.name}`,
     fields.phone && `*Phone:* ${fields.phone}`,
     fields.email && `*Email:* ${fields.email}`,
     fields.city && `*City:* ${fields.city}`,
     fields.incidentDate && `*Incident Date:* ${fields.incidentDate}`,
     fields.injuries && `*Injuries:* ${fields.injuries}`,
-    fields.treatment && `*Medical Treatment:* ${fields.treatment}`,
+    fields.treatment && `*Treatment:* ${fields.treatment}`,
     fields.role && `*Role:* ${fields.role}`,
     fields.policeReport && `*Police Report:* ${fields.policeReport}`,
-    fields.truckingCompany && `*Trucking Company:* ${fields.truckingCompany}`,
+    fields.truckingCompany && `*Trucking Co:* ${fields.truckingCompany}`,
   ]
     .filter(Boolean)
     .join("\n");
+}
 
-  // Summarize transcript (last 10 messages, truncated)
-  const recentTranscript = session.transcript
-    .slice(-10)
+function formatTranscript(transcript: ChatSession["transcript"], limit = 10): string {
+  return transcript
+    .slice(-limit)
     .map((m) => `${m.role === "user" ? "👤" : "🤖"} ${m.content.slice(0, 200)}`)
     .join("\n");
+}
+
+/**
+ * #tc-leads — posted immediately when:
+ * - Phone captured
+ * - User requests a call
+ * - "likely_case" triage triggers
+ */
+export function generateLeadPayload(session: ChatSession) {
+  const contactLines = formatContactLines(session.leadFields);
+  const transcript = formatTranscript(session.transcript, 8);
 
   return {
     blocks: [
@@ -106,28 +101,89 @@ export function generateSlackPayload(session: ChatSession) {
         type: "header",
         text: {
           type: "plain_text",
-          text: `${statusEmoji[session.triageStatus]} New Lead — ${statusLabel[session.triageStatus]}`,
+          text: `${STATUS_EMOJI[session.triageStatus]} NEW LEAD — ${STATUS_LABEL[session.triageStatus]}`,
         },
       },
       {
         type: "section",
         fields: [
-          { type: "mrkdwn", text: `*Status:* ${statusLabel[session.triageStatus]}` },
+          { type: "mrkdwn", text: `*Status:* ${STATUS_LABEL[session.triageStatus]}` },
           { type: "mrkdwn", text: `*Language:* ${session.locale.toUpperCase()}` },
-          { type: "mrkdwn", text: `*Session:* ${session.sessionId.slice(0, 8)}` },
+          { type: "mrkdwn", text: `*Session:* \`${session.sessionId.slice(0, 8)}\`` },
         ],
       },
       {
         type: "section",
-        text: { type: "mrkdwn", text: `*Contact Info:*\n${contactLines || "_No contact info captured_"}` },
+        text: {
+          type: "mrkdwn",
+          text: contactLines
+            ? `*📋 Contact Info:*\n${contactLines}`
+            : "_No contact info captured yet_",
+        },
       },
       {
         type: "section",
-        text: { type: "mrkdwn", text: `*Conversation Summary:*\n${recentTranscript || "_No messages_"}` },
+        text: {
+          type: "mrkdwn",
+          text: `*💬 Recent Messages:*\n${transcript || "_No messages_"}`,
+        },
       },
-      {
-        type: "divider",
-      },
+      { type: "divider" },
     ],
   };
 }
+
+/**
+ * #tc-chat-log — 1 session summary posted when:
+ * - Chat is idle for 7 minutes
+ * - 10+ user turns
+ * - Chat session ends
+ */
+export function generateChatLogPayload(session: ChatSession) {
+  const contactLines = formatContactLines(session.leadFields);
+  const userMsgCount = session.transcript.filter((m) => m.role === "user").length;
+  const fullTranscript = formatTranscript(session.transcript, 20);
+
+  return {
+    blocks: [
+      {
+        type: "header",
+        text: {
+          type: "plain_text",
+          text: `💬 Chat Session — ${STATUS_LABEL[session.triageStatus]}`,
+        },
+      },
+      {
+        type: "section",
+        fields: [
+          { type: "mrkdwn", text: `*Status:* ${STATUS_EMOJI[session.triageStatus]} ${STATUS_LABEL[session.triageStatus]}` },
+          { type: "mrkdwn", text: `*Language:* ${session.locale.toUpperCase()}` },
+          { type: "mrkdwn", text: `*Messages:* ${userMsgCount} user turns` },
+          { type: "mrkdwn", text: `*Session:* \`${session.sessionId.slice(0, 8)}\`` },
+        ],
+      },
+      ...(contactLines
+        ? [
+            {
+              type: "section" as const,
+              text: {
+                type: "mrkdwn" as const,
+                text: `*📋 Contact Info:*\n${contactLines}`,
+              },
+            },
+          ]
+        : []),
+      {
+        type: "section",
+        text: {
+          type: "mrkdwn",
+          text: `*📝 Transcript:*\n${fullTranscript || "_Empty session_"}`,
+        },
+      },
+      { type: "divider" },
+    ],
+  };
+}
+
+// Keep legacy export for backward compat
+export const generateSlackPayload = generateLeadPayload;

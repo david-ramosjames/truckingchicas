@@ -175,28 +175,203 @@ const en = {
     heading: "Serving Truck Accident Victims Across Texas",
     subhead:
       "Our attorneys represent clients in every major Texas metro. If you were hurt in a trucking accident anywhere in Texas, we can help.",
+    statsTitle: "Texas Truck Accident Statistics",
+    stats: [
+      "Texas leads the nation in fatal truck accidents year after year.",
+      "Thousands of crashes involving commercial trucks occur on Texas roads annually.",
+      "A significant portion of these crashes happen on major interstate corridors like I-35, I-10, and I-45.",
+      "Truck accident fatalities in Texas have increased over the past decade as freight volume grows.",
+      "Many truck crashes involve driver fatigue, speeding, or federal safety violations.",
+    ],
+    routesTitle: "Major Trucking Routes in Texas",
+    routesSubhead: "Texas is the backbone of American freight. Understanding where truck traffic concentrates helps explain why certain areas see more accidents.",
+    routes: [
+      {
+        name: "I-35 Corridor",
+        desc: "The I-35 corridor runs from Laredo on the Mexican border through San Antonio, Austin, Waco, and Dallas–Fort Worth. It is one of the busiest NAFTA trade routes, carrying massive freight volumes daily.",
+      },
+      {
+        name: "I-10 Freight Corridor",
+        desc: "I-10 spans the entire southern width of Texas, from El Paso through San Antonio and Houston to the Louisiana border. It is a primary east-west freight artery and a major source of truck accidents.",
+      },
+      {
+        name: "I-45 Houston–Dallas Route",
+        desc: "I-45 connects Houston and Dallas, two of the nation's largest metro areas. Heavy truck traffic, combined with high passenger vehicle volume, makes this route especially dangerous.",
+      },
+      {
+        name: "Oil & Energy Routes",
+        desc: "West Texas and the Permian Basin generate enormous oilfield trucking traffic on US-285, US-87, and rural state highways. These roads see overloaded tanker trucks, equipment haulers, and fatigued drivers.",
+      },
+    ],
     cities: {
-      Houston:
-        "As the largest city in Texas and a major freight hub, Houston sees a high volume of truck accidents on I-10, I-45, and I-69. Our attorneys help Houston-area victims recover the compensation they deserve.",
-      Dallas:
-        "The Dallas–Fort Worth metroplex is one of the busiest trucking corridors in the nation. We represent truck accident victims throughout Dallas County and surrounding areas.",
-      Austin:
-        "Austin's rapid growth has brought increased commercial truck traffic along I-35 and Highway 130. Our team helps Central Texas truck accident victims fight for justice.",
-      "San Antonio":
-        "San Antonio sits at the crossroads of I-35 and I-10, two of the most heavily traveled freight routes in the country. We serve truck crash victims across the San Antonio metro.",
-      "Fort Worth":
-        "Fort Worth and the western DFW area see heavy 18-wheeler traffic on I-30 and I-20. If you were hit by a truck in Fort Worth, we are ready to help.",
-      "El Paso":
-        "El Paso's proximity to the Mexican border means high cross-border trucking volume. We help El Paso truck accident victims navigate complex interstate and international claims.",
-      Arlington:
-        "Located between Dallas and Fort Worth, Arlington sees significant truck traffic on I-30 and I-20. Our attorneys serve truck accident victims in Arlington and surrounding Tarrant County.",
-      "Corpus Christi":
-        "Corpus Christi is a major port city with heavy industrial truck traffic. We represent victims of truck and 18-wheeler accidents throughout the Coastal Bend region.",
-      Plano:
-        "Plano and the northern DFW suburbs have growing commercial traffic on US-75 and the Dallas North Tollway. We help Collin County truck accident victims seek fair compensation.",
-      Lubbock:
-        "West Texas roads see heavy agricultural and oil-industry trucking. Our team represents Lubbock-area victims of serious truck crashes.",
+      Houston: {
+        desc: "Houston is one of the busiest trucking hubs in Texas, with major freight routes running along Interstate 10 and Interstate 45. The Port of Houston — the largest port in the U.S. by foreign tonnage — generates constant heavy commercial truck traffic across the metro, increasing the risk of serious 18-wheeler collisions.",
+        why: [
+          "Port of Houston generates massive commercial truck volume",
+          "I-10 and I-45 intersection creates heavy congestion",
+          "I-69/US-59 connects to petrochemical corridor",
+          "Rapid population growth worsens road congestion",
+        ],
+        accidents: [
+          "Jackknife crashes on I-10 and I-45",
+          "Rear-end collisions in freeway congestion",
+          "Hazmat spills from petrochemical tankers",
+          "Underride accidents with smaller vehicles",
+        ],
+      },
+      Dallas: {
+        desc: "The Dallas–Fort Worth metroplex is one of the busiest trucking corridors in the nation. With I-35, I-30, I-20, and I-45 all converging in the region, Dallas sees an enormous volume of commercial truck traffic from coast-to-coast freight and NAFTA trade routes.",
+        why: [
+          "Convergence of I-35, I-30, I-20, and I-45",
+          "Major distribution and logistics hub",
+          "High-speed truck traffic on I-635 and I-35E",
+          "Construction zones create unpredictable conditions",
+        ],
+        accidents: [
+          "Multi-vehicle pileups on I-35",
+          "Lane-change collisions on I-635",
+          "Fatigue-related crashes on overnight routes",
+          "Rollover accidents in construction zones",
+        ],
+      },
+      Austin: {
+        desc: "Austin's rapid population and economic growth has brought dramatically increased commercial truck traffic along I-35 and Highway 130. The I-35 corridor through Austin is notoriously congested, and large trucks navigating narrow lanes and heavy traffic create dangerous conditions for passenger vehicles.",
+        why: [
+          "I-35 is one of the most congested corridors in Texas",
+          "Highway 130 toll road carries diverted truck traffic",
+          "Rapid construction increases road hazards",
+          "Growing population means more vehicles sharing roads with trucks",
+        ],
+        accidents: [
+          "Rear-end crashes in I-35 congestion",
+          "Wide-turn accidents on narrow urban streets",
+          "Tire blowout crashes at highway speeds",
+          "Head-on collisions on undivided rural roads",
+        ],
+      },
+      "San Antonio": {
+        desc: "San Antonio sits at the crossroads of I-35 and I-10, two of the most heavily traveled freight routes in the country. As a major stop on the NAFTA trade corridor from Laredo, San Antonio sees continuous 18-wheeler traffic carrying goods between Mexico and the U.S. interior.",
+        why: [
+          "Intersection of I-35 and I-10 freight corridors",
+          "Key stop on Laredo–Dallas NAFTA trade route",
+          "Military base logistics generate additional truck traffic",
+          "I-410 loop creates high-speed merge zones",
+        ],
+        accidents: [
+          "Merge-zone collisions on I-410 and I-35",
+          "Overloaded truck crashes on I-10",
+          "Blind-spot lane-change accidents",
+          "Fatigue crashes on late-night freight runs",
+        ],
+      },
+      "Fort Worth": {
+        desc: "Fort Worth and the western DFW area see heavy 18-wheeler traffic on I-30, I-20, and I-35W. Fort Worth serves as a major rail and trucking interchange point, with freight moving between the West Coast and the eastern United States through the metro.",
+        why: [
+          "I-30 and I-20 carry heavy east-west freight",
+          "Major rail-to-truck interchange hub",
+          "I-35W connects to NAFTA trade route",
+          "Stockyards-area roads mix trucks with local traffic",
+        ],
+        accidents: [
+          "High-speed crashes on I-20",
+          "Jackknife incidents on I-30 curves",
+          "Intersection collisions on US-287",
+          "Ice and weather-related pileups",
+        ],
+      },
+      "El Paso": {
+        desc: "El Paso's location on the Mexican border makes it one of the busiest international trucking crossings in North America. Commercial trucks carrying goods through the Zaragoza and BOTA ports of entry flood I-10 and local highways, creating serious accident risks for El Paso drivers.",
+        why: [
+          "Major U.S.–Mexico border trucking crossing",
+          "I-10 carries cross-country freight through the city",
+          "US-54 and US-85 add north-south truck traffic",
+          "Cross-border trucks may not meet U.S. safety standards",
+        ],
+        accidents: [
+          "Border-zone congestion crashes",
+          "I-10 high-speed collisions",
+          "Overloaded truck accidents",
+          "Dust storm and wind-related truck rollovers",
+        ],
+      },
+      Arlington: {
+        desc: "Located between Dallas and Fort Worth, Arlington sits directly in the path of heavy commercial truck traffic on I-30 and I-20. The city's entertainment district and suburban growth create a mix of local traffic and through-freight that leads to dangerous truck accident conditions.",
+        why: [
+          "I-30 connects Dallas to Fort Worth through Arlington",
+          "I-20 carries east-west freight traffic",
+          "Entertainment district creates high-traffic zones",
+          "Highway 360 interchange is a known problem area",
+        ],
+        accidents: [
+          "Rear-end crashes in stadium-area congestion",
+          "Truck vs. pedestrian accidents near entertainment district",
+          "High-speed collisions on I-20",
+          "Tire debris accidents from truck blowouts",
+        ],
+      },
+      "Corpus Christi": {
+        desc: "Corpus Christi is a major port city and petrochemical hub with heavy industrial truck traffic. Tanker trucks, flatbeds hauling equipment, and container trucks move constantly between the port, refineries, and regional highways including I-37, US-77, and the JFK Causeway.",
+        why: [
+          "Port of Corpus Christi generates industrial truck traffic",
+          "Petrochemical refineries require constant tanker movement",
+          "I-37 connects to San Antonio freight corridor",
+          "Coastal wind conditions affect truck stability",
+        ],
+        accidents: [
+          "Hazmat tanker incidents near refineries",
+          "Wind-related truck rollovers on bridges and causeways",
+          "Rear-end crashes on US-77",
+          "Overloaded flatbed cargo spills",
+        ],
+      },
+      Plano: {
+        desc: "Plano and the northern DFW suburbs have experienced rapid commercial growth, bringing increased truck traffic on US-75, the Dallas North Tollway, and the Sam Rayburn Tollway. Delivery trucks, construction vehicles, and through-freight increasingly share roads with suburban commuters.",
+        why: [
+          "US-75 is a major north-south commercial route",
+          "Corporate headquarters generate delivery truck traffic",
+          "Rapid suburban construction brings heavy vehicles",
+          "Sam Rayburn Tollway carries growing freight volume",
+        ],
+        accidents: [
+          "Delivery truck accidents in commercial zones",
+          "Rear-end collisions on congested US-75",
+          "Construction vehicle accidents in new developments",
+          "Wide-turn crashes at suburban intersections",
+        ],
+      },
+      Lubbock: {
+        desc: "West Texas roads see heavy agricultural and oil-industry trucking. Lubbock sits at the intersection of key energy and farming routes, with cotton haulers, oilfield tankers, and equipment trucks traveling US-84, US-87, and regional highways that are often two-lane and undivided.",
+        why: [
+          "Cotton and agriculture require heavy truck transport",
+          "Permian Basin oil activity generates tanker traffic",
+          "US-84 and US-87 are often undivided two-lane roads",
+          "Long distances lead to driver fatigue",
+        ],
+        accidents: [
+          "Head-on collisions on undivided highways",
+          "Fatigue-related crashes on long rural routes",
+          "Oilfield tanker rollovers",
+          "Dust and wind-related visibility crashes",
+        ],
+      },
     },
+    bottomCtaHeading: "Injured in a Truck Accident in Texas?",
+    bottomCtaSubhead: "Get a free case review from our experienced truck accident attorneys. No obligation. No fees unless we win.",
+    faqTitle: "Truck Accident Lawyer Texas — Common Questions",
+    faqItems: [
+      {
+        q: "What should I do after a truck accident in Texas?",
+        a: "Get to safety, call 911, seek medical attention, document the scene, and contact a truck accident lawyer before speaking with any insurance company. Evidence in truck cases can disappear quickly.",
+      },
+      {
+        q: "How long do I have to file a truck accident claim in Texas?",
+        a: "The statute of limitations for personal injury claims in Texas is generally two years from the date of the accident. However, some circumstances may affect this deadline. Consult an attorney promptly to protect your rights. This is general information, not legal advice.",
+      },
+      {
+        q: "Who can be held responsible in a trucking accident?",
+        a: "Multiple parties may be liable: the truck driver, the trucking company, the freight broker, the shipper, maintenance providers, and even vehicle or parts manufacturers. An experienced attorney will investigate all potentially responsible parties.",
+      },
+    ],
   },
   faq: {
     title: "Frequently Asked Questions",
