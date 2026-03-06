@@ -68,13 +68,13 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
   const altPath = getAlternateUrl(pathname, altLocale);
 
   const links = [
-    { href: routes.home, label: dict.nav.home },
-    { href: routes.truckAccident, label: dict.nav.truckAccident },
-    { href: routes.eighteenWheeler, label: dict.nav.eighteenWheeler },
-    { href: routes.areas, label: dict.nav.areas },
-    { href: routes.faq, label: dict.nav.faq },
-    { href: routes.about, label: dict.nav.about },
-    { href: routes.contact, label: dict.nav.contact },
+    { href: routes.home, label: dict.nav.home, short: dict.nav.homeShort },
+    { href: routes.truckAccident, label: dict.nav.truckAccident, short: dict.nav.truckAccidentShort },
+    { href: routes.eighteenWheeler, label: dict.nav.eighteenWheeler, short: dict.nav.eighteenWheelerShort },
+    { href: routes.areas, label: dict.nav.areas, short: dict.nav.areasShort },
+    { href: routes.faq, label: dict.nav.faq, short: dict.nav.faqShort },
+    { href: routes.about, label: dict.nav.about, short: dict.nav.aboutShort },
+    { href: routes.contact, label: dict.nav.contact, short: dict.nav.contactShort },
   ];
 
   return (
@@ -99,7 +99,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
                 pathname === l.href ? "text-brand-coral" : ""
               }`}
             >
-              {l.label}
+              {l.short}
             </Link>
           ))}
         </nav>
@@ -128,7 +128,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
           {/* Desktop CTA with pulse halo */}
           <a
             href={`tel:+1${PHONE_NUMBER}`}
-            className="pulse-halo hidden items-center gap-2 rounded-lg bg-brand-coral px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-brand-coral-light md:inline-flex"
+            className="pulse-halo btn-lift hidden items-center gap-2 rounded-xl bg-brand-coral px-4 py-2 text-sm font-bold text-white btn-glow-coral transition-colors hover:bg-brand-coral-light md:inline-flex"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path

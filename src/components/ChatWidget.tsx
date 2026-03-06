@@ -189,7 +189,7 @@ export default function ChatWidget() {
       {!isOpen && (
         <button
           onClick={openChat}
-          className="fixed bottom-20 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-coral shadow-lg transition-transform hover:scale-110 md:bottom-6"
+          className="chat-launcher-shadow fixed bottom-20 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-coral transition-transform hover:scale-110 md:bottom-6"
           aria-label={locale === "es" ? "Abrir chat" : "Open chat"}
         >
           <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">

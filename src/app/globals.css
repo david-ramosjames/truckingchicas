@@ -65,3 +65,35 @@ body {
 .pulse-halo-coral {
   animation: pulse-halo-coral 3s ease-in-out infinite;
 }
+
+/* Button hover lift */
+.btn-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Coral glow for primary CTA */
+.btn-glow-coral {
+  box-shadow: 0 4px 14px rgba(255, 107, 74, 0.4);
+}
+.btn-glow-coral:hover {
+  box-shadow: 0 6px 20px rgba(255, 107, 74, 0.55);
+}
+
+/* Rose glow for call CTA */
+.btn-glow-rose {
+  box-shadow: 0 4px 14px rgba(200, 75, 108, 0.35);
+}
+.btn-glow-rose:hover {
+  box-shadow: 0 6px 20px rgba(200, 75, 108, 0.5);
+}
+
+/* Chat launcher halo */
+.chat-launcher-shadow {
+  box-shadow: 0 10px 30px rgba(255, 107, 74, 0.35);
+}
+.chat-launcher-shadow:hover {
+  box-shadow: 0 12px 36px rgba(255, 107, 74, 0.5);
+}

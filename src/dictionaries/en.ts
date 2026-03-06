@@ -10,6 +10,15 @@ const en = {
     contact: "Contact",
     callNow: "Call 24/7",
     freeReview: "Free Case Review",
+    /* Short labels for desktop nav (keeps header from overflowing) */
+    homeShort: "Home",
+    truckAccidentShort: "Truck Accident",
+    eighteenWheelerShort: "18-Wheeler",
+    areasShort: "Areas",
+    faqShort: "FAQ",
+    aboutShort: "About",
+    contactShort: "Contact",
+    callMicrocopy: "Speak with a lawyer now",
   },
   hero: {
     headline: "Hit by an 18-Wheeler in Texas?",
