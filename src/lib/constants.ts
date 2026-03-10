@@ -22,6 +22,7 @@ export const ROUTES = {
     faq: "/faq",
     about: "/about",
     contact: "/contact",
+    caseEstimate: "/case-estimate",
   },
   es: {
     home: "/es",
@@ -31,6 +32,7 @@ export const ROUTES = {
     faq: "/es/preguntas-frecuentes",
     about: "/es/sobre-nosotros",
     contact: "/es/contacto",
+    caseEstimate: "/es/estimacion-de-caso",
   },
 } as const;
 

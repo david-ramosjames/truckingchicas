@@ -15,6 +15,7 @@ export function getAlternateUrl(currentPath: string, targetLocale: Locale): stri
       "/faq": "/es/preguntas-frecuentes",
       "/about": "/es/sobre-nosotros",
       "/contact": "/es/contacto",
+      "/case-estimate": "/es/estimacion-de-caso",
     };
     return pathMap[currentPath] || `/es${currentPath}`;
   } else {
@@ -27,6 +28,7 @@ export function getAlternateUrl(currentPath: string, targetLocale: Locale): stri
       "/es/preguntas-frecuentes": "/faq",
       "/es/sobre-nosotros": "/about",
       "/es/contacto": "/contact",
+      "/es/estimacion-de-caso": "/case-estimate",
     };
     return pathMap[currentPath] || currentPath.replace(/^\/es/, "");
   }

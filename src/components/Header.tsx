@@ -73,6 +73,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
     { href: routes.eighteenWheeler, label: dict.nav.eighteenWheeler, short: dict.nav.eighteenWheelerShort },
     { href: routes.areas, label: dict.nav.areas, short: dict.nav.areasShort },
     { href: routes.faq, label: dict.nav.faq, short: dict.nav.faqShort },
+    { href: routes.caseEstimate, label: dict.nav.caseEstimate, short: dict.nav.caseEstimateShort },
     { href: routes.about, label: dict.nav.about, short: dict.nav.aboutShort },
     { href: routes.contact, label: dict.nav.contact, short: dict.nav.contactShort },
   ];

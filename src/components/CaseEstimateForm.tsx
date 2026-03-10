@@ -1,0 +1,419 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import type { Dictionary } from "@/dictionaries";
+import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
+
+type Status = "idle" | "estimating" | "done" | "error";
+
+export default function CaseEstimateForm({
+  dict,
+  locale,
+}: {
+  dict: Dictionary;
+  locale: Locale;
+}) {
+  const f = dict.caseEstimate.form;
+  const routes = ROUTES[locale];
+
+  const [status, setStatus] = useState<Status>("idle");
+  const [estimate, setEstimate] = useState("");
+
+  /* Form state */
+  const [accidentDate, setAccidentDate] = useState("");
+  const [location, setLocation] = useState("");
+  const [truckType, setTruckType] = useState("");
+  const [role, setRole] = useState("");
+  const [injuries, setInjuries] = useState("");
+  const [treatment, setTreatment] = useState<string[]>([]);
+  const [workImpact, setWorkImpact] = useState("");
+  const [policeReport, setPoliceReport] = useState("");
+  const [additional, setAdditional] = useState("");
+
+  function toggleTreatment(val: string) {
+    setTreatment((prev) =>
+      prev.includes(val) ? prev.filter((v) => v !== val) : [...prev, val]
+    );
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setStatus("estimating");
+
+    try {
+      const res = await fetch("/api/estimate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          accidentDate,
+          location,
+          truckType,
+          role,
+          injuries,
+          treatment: treatment.join(", "),
+          workImpact,
+          policeReport,
+          additional,
+          locale,
+        }),
+      });
+
+      if (!res.ok) throw new Error("API error");
+
+      const data = await res.json();
+      setEstimate(data.estimate);
+      setStatus("done");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  function reset() {
+    setStatus("idle");
+    setEstimate("");
+    setAccidentDate("");
+    setLocation("");
+    setTruckType("");
+    setRole("");
+    setInjuries("");
+    setTreatment([]);
+    setWorkImpact("");
+    setPoliceReport("");
+    setAdditional("");
+  }
+
+  /* Estimating spinner */
+  if (status === "estimating") {
+    return (
+      <div className="flex flex-col items-center justify-center py-16">
+        <div className="h-12 w-12 animate-spin rounded-full border-4 border-brand-coral border-t-transparent" />
+        <p className="mt-4 text-lg font-medium text-brand-navy">{dict.caseEstimate.estimating}</p>
+      </div>
+    );
+  }
+
+  /* Result view */
+  if (status === "done") {
+    return (
+      <div>
+        <div className="rounded-xl border border-brand-coral/20 bg-brand-coral/5 p-6 md:p-8">
+          <h3 className="mb-4 text-2xl font-bold text-brand-navy">{dict.caseEstimate.result}</h3>
+          <div
+            className="prose prose-gray max-w-none [&_strong]:text-brand-navy [&_li]:text-gray-700"
+            dangerouslySetInnerHTML={{ __html: formatMarkdown(estimate) }}
+          />
+        </div>
+
+        <div className="mt-4 rounded-lg bg-amber-50 border border-amber-200 p-4">
+          <p className="text-sm text-amber-800">{dict.caseEstimate.disclaimer}</p>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-8 rounded-xl bg-brand-navy p-6 text-center text-white md:p-8">
+          <h3 className="text-2xl font-bold">{dict.caseEstimate.ctaHeading}</h3>
+          <p className="mt-2 text-gray-300">{dict.caseEstimate.ctaSubhead}</p>
+          <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href={routes.contact}
+              className="btn-lift btn-glow-coral flex items-center gap-2 rounded-xl bg-brand-coral px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-coral-light"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              {dict.caseEstimate.ctaButton}
+            </Link>
+            <a
+              href={`tel:+1${PHONE_NUMBER}`}
+              className="btn-lift btn-glow-rose flex items-center gap-2 rounded-xl bg-brand-rose px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-rose-dark"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              {dict.nav.callNow}: {PHONE_DISPLAY}
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-6 text-center">
+          <button
+            onClick={reset}
+            className="text-sm font-medium text-brand-coral underline-offset-2 hover:underline"
+          >
+            {dict.caseEstimate.tryAgain}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  /* Form */
+  return (
+    <form onSubmit={handleSubmit} className="space-y-8">
+      {/* Accident Date */}
+      <fieldset>
+        <legend className="mb-3 text-lg font-bold text-brand-navy">{f.accidentDateLabel}</legend>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {[
+            { value: "within_week", label: f.accidentDateRecent },
+            { value: "within_month", label: f.accidentDateMonth },
+            { value: "within_6mo", label: f.accidentDate6mo },
+            { value: "within_year", label: f.accidentDateYear },
+            { value: "older", label: f.accidentDateOlder },
+          ].map((o) => (
+            <label
+              key={o.value}
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 transition-colors ${
+                accidentDate === o.value
+                  ? "border-brand-coral bg-brand-coral/5 text-brand-navy"
+                  : "border-gray-200 hover:border-gray-300"
+              }`}
+            >
+              <input
+                type="radio"
+                name="accidentDate"
+                value={o.value}
+                checked={accidentDate === o.value}
+                onChange={(e) => setAccidentDate(e.target.value)}
+                className="accent-brand-coral"
+                required
+              />
+              <span className="text-sm">{o.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {/* Location */}
+      <div>
+        <label className="mb-2 block text-lg font-bold text-brand-navy">{f.locationLabel}</label>
+        <input
+          type="text"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+          placeholder={f.locationPlaceholder}
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
+        />
+      </div>
+
+      {/* Truck Type */}
+      <fieldset>
+        <legend className="mb-3 text-lg font-bold text-brand-navy">{f.truckTypeLabel}</legend>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {[
+            { value: "18_wheeler", label: f.truckType18 },
+            { value: "tanker", label: f.truckTypeTanker },
+            { value: "delivery", label: f.truckTypeDelivery },
+            { value: "dump_construction", label: f.truckTypeDump },
+            { value: "other", label: f.truckTypeOther },
+          ].map((o) => (
+            <label
+              key={o.value}
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 transition-colors ${
+                truckType === o.value
+                  ? "border-brand-coral bg-brand-coral/5 text-brand-navy"
+                  : "border-gray-200 hover:border-gray-300"
+              }`}
+            >
+              <input
+                type="radio"
+                name="truckType"
+                value={o.value}
+                checked={truckType === o.value}
+                onChange={(e) => setTruckType(e.target.value)}
+                className="accent-brand-coral"
+                required
+              />
+              <span className="text-sm">{o.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {/* Role */}
+      <fieldset>
+        <legend className="mb-3 text-lg font-bold text-brand-navy">{f.roleLabel}</legend>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {[
+            { value: "driver", label: f.roleDriver },
+            { value: "passenger", label: f.rolePassenger },
+            { value: "pedestrian", label: f.rolePedestrian },
+            { value: "family", label: f.roleFamily },
+          ].map((o) => (
+            <label
+              key={o.value}
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 transition-colors ${
+                role === o.value
+                  ? "border-brand-coral bg-brand-coral/5 text-brand-navy"
+                  : "border-gray-200 hover:border-gray-300"
+              }`}
+            >
+              <input
+                type="radio"
+                name="role"
+                value={o.value}
+                checked={role === o.value}
+                onChange={(e) => setRole(e.target.value)}
+                className="accent-brand-coral"
+                required
+              />
+              <span className="text-sm">{o.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {/* Injuries */}
+      <div>
+        <label className="mb-2 block text-lg font-bold text-brand-navy">{f.injuriesLabel}</label>
+        <textarea
+          value={injuries}
+          onChange={(e) => setInjuries(e.target.value)}
+          placeholder={f.injuriesPlaceholder}
+          rows={3}
+          required
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
+        />
+      </div>
+
+      {/* Treatment — checkboxes */}
+      <fieldset>
+        <legend className="mb-3 text-lg font-bold text-brand-navy">{f.treatmentLabel}</legend>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {[
+            { value: "er", label: f.treatmentER },
+            { value: "hospital", label: f.treatmentHospital },
+            { value: "surgery", label: f.treatmentSurgery },
+            { value: "ongoing", label: f.treatmentOngoing },
+            { value: "none", label: f.treatmentNone },
+          ].map((o) => (
+            <label
+              key={o.value}
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 transition-colors ${
+                treatment.includes(o.value)
+                  ? "border-brand-coral bg-brand-coral/5 text-brand-navy"
+                  : "border-gray-200 hover:border-gray-300"
+              }`}
+            >
+              <input
+                type="checkbox"
+                checked={treatment.includes(o.value)}
+                onChange={() => toggleTreatment(o.value)}
+                className="accent-brand-coral"
+              />
+              <span className="text-sm">{o.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {/* Work Impact */}
+      <fieldset>
+        <legend className="mb-3 text-lg font-bold text-brand-navy">{f.workImpactLabel}</legend>
+        <div className="grid gap-2 sm:grid-cols-3">
+          {[
+            { value: "missed_work", label: f.workImpactYes },
+            { value: "cannot_work", label: f.workImpactCannot },
+            { value: "can_work", label: f.workImpactNo },
+          ].map((o) => (
+            <label
+              key={o.value}
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 transition-colors ${
+                workImpact === o.value
+                  ? "border-brand-coral bg-brand-coral/5 text-brand-navy"
+                  : "border-gray-200 hover:border-gray-300"
+              }`}
+            >
+              <input
+                type="radio"
+                name="workImpact"
+                value={o.value}
+                checked={workImpact === o.value}
+                onChange={(e) => setWorkImpact(e.target.value)}
+                className="accent-brand-coral"
+                required
+              />
+              <span className="text-sm">{o.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {/* Police Report */}
+      <fieldset>
+        <legend className="mb-3 text-lg font-bold text-brand-navy">{f.policeReportLabel}</legend>
+        <div className="flex gap-3">
+          {[
+            { value: "yes", label: f.policeReportYes },
+            { value: "no", label: f.policeReportNo },
+            { value: "unsure", label: f.policeReportUnsure },
+          ].map((o) => (
+            <label
+              key={o.value}
+              className={`flex cursor-pointer items-center gap-2 rounded-lg border px-5 py-3 transition-colors ${
+                policeReport === o.value
+                  ? "border-brand-coral bg-brand-coral/5 text-brand-navy"
+                  : "border-gray-200 hover:border-gray-300"
+              }`}
+            >
+              <input
+                type="radio"
+                name="policeReport"
+                value={o.value}
+                checked={policeReport === o.value}
+                onChange={(e) => setPoliceReport(e.target.value)}
+                className="accent-brand-coral"
+                required
+              />
+              <span className="text-sm">{o.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {/* Additional */}
+      <div>
+        <label className="mb-2 block text-lg font-bold text-brand-navy">{f.additionalLabel}</label>
+        <textarea
+          value={additional}
+          onChange={(e) => setAdditional(e.target.value)}
+          placeholder={f.additionalPlaceholder}
+          rows={3}
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
+        />
+      </div>
+
+      {/* Disclaimer + Submit */}
+      <div className="rounded-lg bg-gray-50 p-4">
+        <p className="text-xs text-gray-500">{dict.caseEstimate.disclaimerShort}</p>
+      </div>
+
+      {status === "error" && (
+        <p className="text-sm text-red-600">
+          {locale === "en"
+            ? "Something went wrong. Please try again or call us directly."
+            : "Algo salió mal. Inténtalo de nuevo o llámanos directamente."}
+        </p>
+      )}
+
+      <button
+        type="submit"
+        className="btn-lift btn-glow-coral w-full rounded-xl bg-brand-coral px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-coral-light"
+      >
+        {f.submit}
+      </button>
+    </form>
+  );
+}
+
+/** Minimal markdown → HTML for the estimate result */
+function formatMarkdown(md: string): string {
+  return md
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/^- (.+)$/gm, "<li>$1</li>")
+    .replace(/(<li>.*<\/li>\n?)+/g, (m) => `<ul class="ml-4 list-disc space-y-1 my-2">${m}</ul>`)
+    .replace(/\n{2,}/g, "</p><p class='mt-3'>")
+    .replace(/\n/g, "<br>")
+    .replace(/^/, "<p>")
+    .replace(/$/, "</p>");
+}
