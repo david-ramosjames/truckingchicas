@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const SYSTEM_PROMPT = `You are a helpful, empathetic assistant for Trucking Chicas, a Texas truck accident law firm (a division of Ramos James Law).
+const SYSTEM_PROMPT = `You are a helpful, empathetic assistant for Trucking Chicas, a Texas truck accident law firm.
 
 RULES:
 - Provide ONLY general educational information about truck accident claims in Texas.

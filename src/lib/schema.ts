@@ -7,8 +7,8 @@ export function localBusinessSchema(locale: Locale) {
     name: "Trucking Chicas",
     description:
       locale === "en"
-        ? "Texas truck accident lawyers specializing in 18-wheeler accident cases. A division of Ramos James Law."
-        : "Abogados de accidentes de camión en Texas especializados en casos de accidentes de 18 ruedas. Una división de Ramos James Law.",
+        ? "Texas truck accident lawyers specializing in 18-wheeler accident cases."
+        : "Abogados de accidentes de camión en Texas especializados en casos de accidentes de 18 ruedas.",
     url: locale === "en" ? SITE_URL : `${SITE_URL}/es`,
     telephone: `+1${PHONE_NUMBER}`,
     address: {
@@ -47,11 +47,7 @@ export function localBusinessSchema(locale: Locale) {
         jobTitle: locale === "en" ? "Truck Accident Attorney" : "Abogado de Accidentes de Camión",
       },
     ],
-    parentOrganization: {
-      "@type": "LegalService",
-      name: "Ramos James Law",
-    },
-    inLanguage: locale === "en" ? "en-US" : "es",
+inLanguage: locale === "en" ? "en-US" : "es",
   };
 }
 

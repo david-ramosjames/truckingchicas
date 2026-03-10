@@ -85,8 +85,8 @@ const es: Dictionary = {
         desc: "Manejamos exclusivamente casos de camiones y tráileres. Esta especialización significa conocimiento más profundo y mejores resultados.",
       },
       {
-        title: "Respaldados por Ramos James Law",
-        desc: "Trucking Chicas es una división de Ramos James Law, un respetado bufete de lesiones personales en Texas con un historial comprobado.",
+        title: "Historial Comprobado",
+        desc: "Nuestros abogados han recuperado millones para víctimas de accidentes de camión en todo Texas. Sabemos cómo construir casos ganadores.",
       },
       {
         title: "Representación Agresiva",
@@ -97,6 +97,70 @@ const es: Dictionary = {
         desc: "Servimos a nuestra comunidad en inglés y español — porque el idioma nunca debe ser una barrera para la justicia.",
       },
     ],
+    coreValuesTitle: "Nuestros Valores",
+    coreValues: [
+      {
+        title: "Integridad",
+        desc: "Respaldamos cada palabra. Asesoría honesta, comunicación transparente y un compromiso con hacer lo correcto — incluso cuando nadie está mirando.",
+        icon: "shield",
+      },
+      {
+        title: "Compasión",
+        desc: "Las personas son lo primero. Escuchamos porque genuinamente nos importa tu historia, tu dolor y tu camino hacia la recuperación.",
+        icon: "heart",
+      },
+      {
+        title: "Confianza",
+        desc: "La confianza no se da — se gana. Ganamos la tuya con respeto, comunicación clara y seguimiento incansable.",
+        icon: "handshake",
+      },
+      {
+        title: "Abogacía",
+        desc: "Somos la voz de quienes más lo necesitan. Respaldados por experiencia profunda y preparación incansable, luchamos para que tú no tengas que hacerlo.",
+        icon: "megaphone",
+      },
+      {
+        title: "Resultados",
+        desc: "Medimos el éxito con un solo estándar: hacer justicia para nuestros clientes. Cada caso recibe todo nuestro esfuerzo, recursos y determinación.",
+        icon: "trophy",
+      },
+    ],
+    resultsTitle: "Resultados Que Hablan por Sí Mismos",
+    resultsSubtitle: "Cada caso es único. Estos resultados reflejan nuestro compromiso de luchar por la máxima compensación.",
+    resultsDisclaimer: "Los resultados anteriores no garantizan un resultado similar. Cada caso es único.",
+    results: [
+      { amount: "$5.1M", desc: "Accidente de Camión Cisterna en Autopista" },
+      { amount: "$4.2M", desc: "Colisión Trasera con Tráiler de 18 Ruedas" },
+      { amount: "$3.5M", desc: "Choque Múltiple con Camión" },
+      { amount: "$2.8M", desc: "Volcadura de Camión Comercial" },
+      { amount: "$1.9M", desc: "Negligencia de Compañía de Camiones" },
+      { amount: "$1.2M", desc: "Choque de Camión de Reparto en Intersección" },
+    ],
+    testimonialsTitle: "Lo Que Dicen Nuestros Clientes",
+    testimonials: [
+      {
+        quote: "Lucharon por mí cuando me sentía completamente sola. Después de mi accidente, no sabía a quién acudir — Trucking Chicas tomó el control y manejó todo.",
+        name: "Maria G.",
+        location: "Houston, TX",
+      },
+      {
+        quote: "Profesionales, compasivos e incansables. Lograron un acuerdo que cubrió todos mis gastos médicos y más. No puedo agradecerles lo suficiente.",
+        name: "James R.",
+        location: "Dallas, TX",
+      },
+      {
+        quote: "Poder hablar con alguien en español hizo toda la diferencia. Me trataron como familia, no solo como un número de caso.",
+        name: "Carlos M.",
+        location: "San Antonio, TX",
+      },
+    ],
+    areasHomeTitle: "Sirviendo a Todo Texas",
+    areasHomeSubtitle: "De Houston a El Paso, nuestros abogados de accidentes de camión representan a víctimas en todas las ciudades principales de Texas.",
+    areasHomeCta: "Ver Todas las Áreas",
+    consultFormTitle: "Obtén Tu Evaluación de Caso Gratis",
+    consultFormSubtitle: "Habla con un abogado de accidentes de camión hoy — sin costo, sin compromiso, sin presión.",
+    consultFormNoFee: "No Cobramos Si No Ganamos",
+    consultFormNoFeeDesc: "No pagas nada a menos que obtengamos compensación para ti. Esa es nuestra promesa.",
     stepsTitle: "Qué Hacer Después de un Accidente de Camión",
     steps: [
       { title: "Ponte a Salvo", desc: "Aléjate del tráfico si puedes. Llama al 911 inmediatamente." },
@@ -437,18 +501,15 @@ const es: Dictionary = {
   },
   about: {
     title: "Sobre Trucking Chicas",
-    metaTitle: "Sobre Trucking Chicas | Una División de Ramos James Law",
+    metaTitle: "Sobre Trucking Chicas | Abogados de Accidentes de Camión en Texas",
     metaDesc:
-      "Conoce a Trucking Chicas, una división de Ramos James Law enfocada exclusivamente en casos de accidentes de camión y tráiler en Texas.",
+      "Conoce a Trucking Chicas, un bufete de abogados en Texas enfocado exclusivamente en casos de accidentes de camión y tráiler.",
     heading: "Sobre Trucking Chicas",
     intro:
-      "Trucking Chicas es una división especializada de Ramos James Law dedicada exclusivamente a representar a víctimas de accidentes de camión y tráiler en todo Texas.",
+      "Trucking Chicas es un bufete de abogados en Texas dedicado exclusivamente a representar a víctimas de accidentes de camión y tráiler en todo el estado.",
     missionTitle: "Nuestra Misión",
     missionDesc:
       "Creemos que cada víctima de accidente de camión merece una representación legal feroz y conocedora — sin importar el idioma que hable o dónde viva en Texas. Trucking Chicas fue creada para llevar experiencia especializada en accidentes de camión directamente a las comunidades que más la necesitan.",
-    ramosJamesTitle: "Respaldados por Ramos James Law",
-    ramosJamesDesc:
-      "Ramos James Law es un respetado bufete de lesiones personales en Texas con raíces profundas en la comunidad. Al crear Trucking Chicas, el bufete aporta todos sus recursos, experiencia en litigación y compromiso con la justicia a una de las áreas más complejas y de alto riesgo del derecho de lesiones personales: los accidentes de camión.",
     valuesTitle: "Lo Que Nos Distingue",
     values: [
       {
@@ -488,7 +549,7 @@ const es: Dictionary = {
   footer: {
     disclaimer:
       "La información en este sitio web es solo para fines informativos generales y no constituye asesoría legal. No se forma una relación abogado-cliente al usar este sitio o enviar un formulario de contacto. Los resultados anteriores no garantizan un resultado similar. Cada caso es diferente.",
-    copyright: "Trucking Chicas, una división de Ramos James Law. Todos los derechos reservados.",
+    copyright: "Trucking Chicas. Todos los derechos reservados.",
     privacy: "Política de Privacidad",
     terms: "Términos de Uso",
   },

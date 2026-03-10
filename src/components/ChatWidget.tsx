@@ -6,6 +6,25 @@ import { chatStrings, detectLanguage, type ChatLocale } from "@/lib/i18nChat";
 import { triageCase, type LeadFields, type ChatSession } from "@/lib/triage";
 import { PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 
+function playMessageSound() {
+  try {
+    const ctx = new (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    osc.frequency.setValueAtTime(1047, ctx.currentTime + 0.08);
+    gain.gain.setValueAtTime(0.08, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.25);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.25);
+  } catch {
+    // Silent fallback
+  }
+}
+
 interface Message {
   role: "user" | "assistant";
   content: string;
@@ -151,6 +170,7 @@ export default function ChatWidget() {
         ...prev,
         { role: "assistant", content: data.reply || "...", ts: Date.now() },
       ]);
+      playMessageSound();
 
       // Extract lead fields
       const updatedFields = extractLeadInfo(text, leadFields);

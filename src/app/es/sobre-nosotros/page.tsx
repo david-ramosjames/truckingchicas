@@ -7,9 +7,9 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Sobre Trucking Chicas | Una División de Ramos James Law",
+  title: "Sobre Trucking Chicas | Abogados de Accidentes de Camión en Texas",
   description:
-    "Conoce a Trucking Chicas, una división de Ramos James Law enfocada exclusivamente en casos de accidentes de camión y tráiler en Texas.",
+    "Conoce a Trucking Chicas, un bufete de abogados en Texas enfocado exclusivamente en casos de accidentes de camión y tráiler.",
   alternates: {
     canonical: `${SITE_URL}/es/sobre-nosotros`,
     languages: {
@@ -39,13 +39,6 @@ export default function AboutPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.missionTitle}</h2>
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.missionDesc}</p>
-        </div>
-      </section>
-
-      <section className="bg-gray-50 py-16">
-        <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-3xl font-bold text-brand-navy">{d.ramosJamesTitle}</h2>
-          <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.ramosJamesDesc}</p>
         </div>
       </section>
 

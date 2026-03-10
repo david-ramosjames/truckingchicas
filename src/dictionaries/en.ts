@@ -84,8 +84,8 @@ const en = {
         desc: "We handle truck and 18-wheeler cases exclusively. This specialization means deeper knowledge and stronger results.",
       },
       {
-        title: "Backed by Ramos James Law",
-        desc: "Trucking Chicas is a division of Ramos James Law, a respected Texas personal injury firm with a proven track record.",
+        title: "Proven Track Record",
+        desc: "Our attorneys have recovered millions for truck accident victims across Texas. We know how to build winning cases.",
       },
       {
         title: "Aggressive Representation",
@@ -96,6 +96,70 @@ const en = {
         desc: "We serve our community in English and Spanish — because language should never be a barrier to justice.",
       },
     ],
+    coreValuesTitle: "Our Core Values",
+    coreValues: [
+      {
+        title: "Integrity",
+        desc: "We stand behind every word. Honest counsel, transparent communication, and a commitment to doing what's right — even when no one is watching.",
+        icon: "shield",
+      },
+      {
+        title: "Compassion",
+        desc: "People come first. We listen because we genuinely care about your story, your pain, and your path to recovery.",
+        icon: "heart",
+      },
+      {
+        title: "Trust",
+        desc: "Trust isn't given — it's earned. We earn yours through respect, clear communication, and relentless follow-through.",
+        icon: "handshake",
+      },
+      {
+        title: "Advocacy",
+        desc: "We are the voice for those who need one most. Backed by deep experience and relentless preparation, we fight so you don't have to.",
+        icon: "megaphone",
+      },
+      {
+        title: "Results",
+        desc: "We measure success by one standard: making our clients whole. Every case gets our full effort, resources, and determination.",
+        icon: "trophy",
+      },
+    ],
+    resultsTitle: "Results That Speak for Themselves",
+    resultsSubtitle: "Every case is unique. These results reflect our commitment to fighting for maximum compensation.",
+    resultsDisclaimer: "Past results do not guarantee a similar outcome. Each case is unique.",
+    results: [
+      { amount: "$5.1M", desc: "Tanker Truck Highway Accident" },
+      { amount: "$4.2M", desc: "18-Wheeler Rear-End Collision" },
+      { amount: "$3.5M", desc: "Multi-Vehicle Truck Pileup" },
+      { amount: "$2.8M", desc: "Commercial Truck Rollover" },
+      { amount: "$1.9M", desc: "Trucking Company Negligence" },
+      { amount: "$1.2M", desc: "Delivery Truck Intersection Crash" },
+    ],
+    testimonialsTitle: "What Our Clients Say",
+    testimonials: [
+      {
+        quote: "They fought for me when I felt completely alone. After my accident, I didn't know where to turn — Trucking Chicas took over and handled everything.",
+        name: "Maria G.",
+        location: "Houston, TX",
+      },
+      {
+        quote: "Professional, compassionate, and relentless. They got me a settlement that covered all my medical bills and then some. I can't thank them enough.",
+        name: "James R.",
+        location: "Dallas, TX",
+      },
+      {
+        quote: "Being able to speak to someone in Spanish made all the difference. They treated me like family, not just a case number.",
+        name: "Carlos M.",
+        location: "San Antonio, TX",
+      },
+    ],
+    areasHomeTitle: "Serving All of Texas",
+    areasHomeSubtitle: "From Houston to El Paso, our truck accident lawyers represent victims in every major Texas city.",
+    areasHomeCta: "View All Areas",
+    consultFormTitle: "Get Your Free Case Review",
+    consultFormSubtitle: "Talk to a truck accident lawyer today — no cost, no obligation, no pressure.",
+    consultFormNoFee: "No Fee Until We Win",
+    consultFormNoFeeDesc: "You pay nothing unless we recover compensation for you. That's our promise.",
     stepsTitle: "What To Do After a Truck Accident",
     steps: [
       { title: "Get to Safety", desc: "Move away from traffic if you can. Call 911 immediately." },
@@ -436,18 +500,15 @@ const en = {
   },
   about: {
     title: "About Trucking Chicas",
-    metaTitle: "About Trucking Chicas | A Division of Ramos James Law",
+    metaTitle: "About Trucking Chicas | Texas Truck Accident Lawyers",
     metaDesc:
-      "Learn about Trucking Chicas, a division of Ramos James Law focused exclusively on truck and 18-wheeler accident cases in Texas.",
+      "Learn about Trucking Chicas, a Texas law firm focused exclusively on truck and 18-wheeler accident cases.",
     heading: "About Trucking Chicas",
     intro:
-      "Trucking Chicas is a focused division of Ramos James Law dedicated exclusively to representing victims of truck and 18-wheeler accidents across Texas.",
+      "Trucking Chicas is a Texas law firm dedicated exclusively to representing victims of truck and 18-wheeler accidents across the state.",
     missionTitle: "Our Mission",
     missionDesc:
       "We believe that every truck accident victim deserves fierce, knowledgeable legal representation — regardless of the language they speak or where they live in Texas. Trucking Chicas was created to bring specialized trucking accident expertise directly to the communities that need it most.",
-    ramosJamesTitle: "Backed by Ramos James Law",
-    ramosJamesDesc:
-      "Ramos James Law is a respected Texas personal injury firm with deep roots in the community. By creating Trucking Chicas, the firm brings its full resources, litigation experience, and commitment to justice to bear on one of the most complex and high-stakes areas of personal injury law: trucking accidents.",
     valuesTitle: "What Sets Us Apart",
     values: [
       {
@@ -488,7 +549,7 @@ const en = {
   footer: {
     disclaimer:
       "The information on this website is for general informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by using this site or submitting a contact form. Prior results do not guarantee a similar outcome. Every case is different.",
-    copyright: "Trucking Chicas, a division of Ramos James Law. All rights reserved.",
+    copyright: "Trucking Chicas. All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Use",
   },

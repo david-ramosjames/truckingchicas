@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | Trucking Chicas",
   },
   description:
-    "Texas truck and 18-wheeler accident lawyers. Free case review. No fees unless we win. A division of Ramos James Law.",
+    "Texas truck and 18-wheeler accident lawyers. Free case review. No fees unless we win.",
   openGraph: {
     type: "website",
     locale: "en_US",
