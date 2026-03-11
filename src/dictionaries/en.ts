@@ -30,7 +30,7 @@ const en = {
     cta2: "Call 24/7",
     trust1: "No fees unless we win",
     trust2: "Free consultation",
-    trust3: "We can come to you",
+    trust3: "Available 24/7",
   },
   cta: {
     freeReview: "Free Case Review",
@@ -527,7 +527,7 @@ const en = {
       },
       {
         title: "Client-First Approach",
-        desc: "We can come to you — whether you are in the hospital, at home, or anywhere in Texas. Your recovery comes first.",
+        desc: "Your recovery comes first. We handle every detail of your case so you can focus on healing — wherever you are in Texas.",
       },
     ],
     // TODO: Add attorney bios here when available

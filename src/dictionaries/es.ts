@@ -31,7 +31,7 @@ const es: Dictionary = {
     cta2: "Llamar 24/7",
     trust1: "No cobramos si no ganamos",
     trust2: "Consulta gratis",
-    trust3: "Podemos ir contigo",
+    trust3: "Disponible 24/7",
   },
   cta: {
     freeReview: "Evaluación Gratis",
@@ -528,7 +528,7 @@ const es: Dictionary = {
       },
       {
         title: "El Cliente Primero",
-        desc: "Podemos ir contigo — ya sea que estés en el hospital, en casa o en cualquier parte de Texas. Tu recuperación es lo primero.",
+        desc: "Tu recuperación es lo primero. Nos encargamos de cada detalle de tu caso para que puedas enfocarte en sanar — donde sea que estés en Texas.",
       },
     ],
     teamTitle: "Nuestro Equipo",
