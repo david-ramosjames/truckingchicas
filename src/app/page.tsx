@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY, TEXAS_CITIES } from "@/lib/constants";
@@ -76,7 +77,7 @@ export default function HomePage() {
           </h2>
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             {dict.home.whyDifferentItems.map((item) => (
-              <div key={item.title} className="rounded-lg border border-gray-100 bg-white p-6 shadow-sm">
+              <div key={item.title} className="card-lift card-border-left rounded-lg bg-white p-6 shadow-md">
                 <h3 className="text-xl font-bold text-brand-navy">{item.title}</h3>
                 <p className="mt-2 text-gray-600">{item.desc}</p>
               </div>
@@ -93,8 +94,8 @@ export default function HomePage() {
           </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {dict.home.coreValues.map((v) => (
-              <div key={v.title} className="rounded-xl bg-white p-6 shadow-sm">
-                <div className="mb-4 text-brand-coral">
+              <div key={v.title} className="card-lift rounded-xl bg-white p-6 shadow-md">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-coral/10 text-brand-coral">
                   {valueIcons[v.icon] || valueIcons.shield}
                 </div>
                 <h3 className="text-lg font-bold text-brand-navy">{v.title}</h3>
@@ -119,7 +120,7 @@ export default function HomePage() {
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {dict.home.results.map((r) => (
-              <div key={r.desc} className="rounded-xl border border-gray-100 bg-white p-6 text-center shadow-sm">
+              <div key={r.desc} className="card-lift card-border-top rounded-xl bg-white p-6 text-center shadow-md">
                 <p className="text-4xl font-extrabold text-brand-coral">{r.amount}</p>
                 <p className="mt-2 font-medium text-brand-navy">{r.desc}</p>
               </div>
@@ -137,7 +138,7 @@ export default function HomePage() {
           </h2>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {dict.home.testimonials.map((t) => (
-              <div key={t.name} className="rounded-xl bg-white p-6 shadow-sm">
+              <div key={t.name} className="card-lift rounded-xl border-l-4 border-brand-coral bg-white p-6 shadow-md">
                 <svg className="mb-3 h-8 w-8 text-brand-coral/30" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z" />
                 </svg>
@@ -209,15 +210,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Texas highway image banner */}
+      <section className="relative h-64 md:h-80">
+        <Image
+          src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1600&q=80"
+          alt="Texas highway"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-brand-navy/50" />
+        <div className="relative flex h-full items-center justify-center text-center">
+          <p className="text-3xl font-extrabold text-white md:text-4xl">
+            {dict.home.whyUsTitle}
+          </p>
+        </div>
+      </section>
+
       {/* Why Choose Trucking Chicas */}
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
-            {dict.home.whyUsTitle}
-          </h2>
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             {dict.home.whyUsItems.map((item) => (
-              <div key={item.title} className="rounded-lg bg-gray-50 p-6 shadow-sm">
+              <div key={item.title} className="card-lift card-border-top rounded-lg bg-white p-6 shadow-md">
                 <h3 className="text-xl font-bold text-brand-navy">{item.title}</h3>
                 <p className="mt-2 text-gray-600">{item.desc}</p>
               </div>

@@ -54,7 +54,7 @@ export default function TruckAccidentPageES() {
           <h2 className="text-3xl font-bold text-brand-navy">{d.liabilityTitle}</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {d.liabilityItems.map((item) => (
-              <div key={item.title} className="rounded-lg bg-white p-6 shadow-sm">
+              <div key={item.title} className="card-lift card-border-top rounded-lg bg-white p-6 shadow-md">
                 <h3 className="text-lg font-bold text-brand-navy">{item.title}</h3>
                 <p className="mt-2 text-gray-600">{item.desc}</p>
               </div>

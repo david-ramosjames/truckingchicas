@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
 import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
@@ -72,22 +73,26 @@ export default function HeroSection({
             </div>
           </div>
 
-          {/* Right: Image placeholder for lawyer photos */}
+          {/* Right: Hero image */}
           <div className="hidden md:block">
-            <div className="relative mx-auto aspect-[4/3] max-w-lg overflow-hidden rounded-2xl bg-brand-navy-dark shadow-2xl ring-1 ring-white/10">
-              <div className="flex h-full flex-col items-center justify-center p-8 text-center">
-                <div className="flex -space-x-4">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-rose text-2xl font-bold text-white ring-4 ring-brand-navy-dark">TC</div>
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-coral text-2xl font-bold text-white ring-4 ring-brand-navy-dark">TC</div>
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-brand-steel text-2xl font-bold text-white ring-4 ring-brand-navy-dark">TC</div>
-                </div>
-                <p className="mt-6 text-lg font-semibold text-white">
-                  {locale === "en" ? "Our Legal Team" : "Nuestro Equipo Legal"}
+            <div className="relative mx-auto aspect-[4/3] max-w-lg overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
+              <Image
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80"
+                alt={locale === "en" ? "Justice and legal representation" : "Justicia y representación legal"}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="text-lg font-semibold text-white">
+                  {locale === "en" ? "Fighting for Justice" : "Luchando por la Justicia"}
                 </p>
-                <p className="mt-2 text-sm text-gray-400">
+                <p className="mt-1 text-sm text-gray-200">
                   {locale === "en"
-                    ? "Experienced truck accident attorneys fighting for you"
-                    : "Abogados experimentados en accidentes de camión luchando por ti"}
+                    ? "Experienced truck accident attorneys on your side"
+                    : "Abogados experimentados en accidentes de camión a tu lado"}
                 </p>
               </div>
               <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-brand-coral/20 blur-2xl" />

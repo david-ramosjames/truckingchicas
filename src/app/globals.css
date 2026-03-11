@@ -97,3 +97,32 @@ body {
 .chat-launcher-shadow:hover {
   box-shadow: 0 12px 36px rgba(255, 107, 74, 0.5);
 }
+
+/* Card hover lift effect */
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -4px rgba(30, 42, 68, 0.12), 0 4px 8px -2px rgba(30, 42, 68, 0.08);
+}
+
+/* Gradient top border for cards */
+.card-border-top {
+  position: relative;
+  overflow: hidden;
+}
+.card-border-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FF6B4A, #C84B6C);
+}
+
+/* Left accent border */
+.card-border-left {
+  border-left: 4px solid #FF6B4A;
+}

@@ -100,6 +100,9 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const {
+      name,
+      phone,
+      email,
       accidentDate,
       location,
       truckType,
@@ -111,6 +114,9 @@ export async function POST(request: NextRequest) {
       additional,
       locale,
     } = body as Record<string, string>;
+
+    // Log lead contact info (in production, send to CRM / Slack)
+    console.log("[Case Estimate Lead]", { name, phone, email, locale });
 
     if (!accidentDate || !truckType || !injuries) {
       return NextResponse.json(

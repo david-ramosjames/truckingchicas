@@ -21,6 +21,9 @@ export default function CaseEstimateForm({
   const [estimate, setEstimate] = useState("");
 
   /* Form state */
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [accidentDate, setAccidentDate] = useState("");
   const [location, setLocation] = useState("");
   const [truckType, setTruckType] = useState("");
@@ -46,6 +49,9 @@ export default function CaseEstimateForm({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          name,
+          phone,
+          email,
           accidentDate,
           location,
           truckType,
@@ -72,6 +78,9 @@ export default function CaseEstimateForm({
   function reset() {
     setStatus("idle");
     setEstimate("");
+    setName("");
+    setPhone("");
+    setEmail("");
     setAccidentDate("");
     setLocation("");
     setTruckType("");
@@ -81,6 +90,35 @@ export default function CaseEstimateForm({
     setWorkImpact("");
     setPoliceReport("");
     setAdditional("");
+  }
+
+  /* Non-commercial truck interstitial */
+  if (truckType === "non_commercial") {
+    return (
+      <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 md:p-8">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-amber-100">
+          <svg className="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-bold text-brand-navy">{dict.caseEstimate.nonCommercialHeading}</h3>
+        <p className="mt-3 leading-relaxed text-gray-700">{dict.caseEstimate.nonCommercialMessage}</p>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <Link
+            href={routes.contact}
+            className="btn-lift btn-glow-coral flex items-center justify-center gap-2 rounded-xl bg-brand-coral px-6 py-3 font-bold text-white transition-colors hover:bg-brand-coral-light"
+          >
+            {dict.caseEstimate.nonCommercialCta}
+          </Link>
+          <button
+            onClick={() => setTruckType("")}
+            className="rounded-xl border border-gray-300 px-6 py-3 font-medium text-gray-700 transition-colors hover:bg-gray-100"
+          >
+            {dict.caseEstimate.tryAgain}
+          </button>
+        </div>
+      </div>
+    );
   }
 
   /* Estimating spinner */
@@ -206,6 +244,7 @@ export default function CaseEstimateForm({
             { value: "delivery", label: f.truckTypeDelivery },
             { value: "dump_construction", label: f.truckTypeDump },
             { value: "other", label: f.truckTypeOther },
+            { value: "non_commercial", label: f.truckTypeNonCommercial },
           ].map((o) => (
             <label
               key={o.value}
@@ -381,6 +420,45 @@ export default function CaseEstimateForm({
           rows={3}
           className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
         />
+      </div>
+
+      {/* Contact Info */}
+      <div className="rounded-xl border border-brand-coral/20 bg-brand-coral/5 p-6">
+        <p className="mb-4 text-sm text-gray-600">{f.contactNote}</p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label className="mb-1 block text-sm font-medium text-gray-700">{f.nameLabel} *</label>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder={f.namePlaceholder}
+              required
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
+            />
+          </div>
+          <div>
+            <label className="mb-1 block text-sm font-medium text-gray-700">{f.phoneLabel} *</label>
+            <input
+              type="tel"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder={f.phonePlaceholder}
+              required
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
+            />
+          </div>
+        </div>
+        <div className="mt-4">
+          <label className="mb-1 block text-sm font-medium text-gray-700">{f.emailLabel}</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder={f.emailPlaceholder}
+            className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
+          />
+        </div>
       </div>
 
       {/* Disclaimer + Submit */}
