@@ -56,7 +56,8 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/80 via-brand-navy/70 to-brand-navy/90" />
+          {/* Lighter top so image is visible, darker bottom for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/50 via-brand-navy/65 to-brand-navy/90" />
         </div>
 
         {/* Content on top of image */}
