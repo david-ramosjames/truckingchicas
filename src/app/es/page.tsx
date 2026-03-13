@@ -205,17 +205,17 @@ export default function HomePageES() {
 
       {/* Why Choose Trucking Chicas — full image with overlaid cards */}
       <section className="relative">
-        <div className="relative min-h-[600px] md:min-h-[700px]">
+        <div className="relative min-h-[700px] md:min-h-[850px]">
           <Image
             src="/choose-us.png"
             alt="Por qué elegir Trucking Chicas"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/70 via-brand-navy/50 to-brand-navy/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/30 via-brand-navy/50 to-brand-navy/85" />
 
-          <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div className="absolute inset-x-0 bottom-0 mx-auto max-w-6xl px-4 pb-12 md:pb-16">
             <h2 className="text-center text-3xl font-extrabold text-white md:text-4xl">
               {dict.home.whyUsTitle}
             </h2>
