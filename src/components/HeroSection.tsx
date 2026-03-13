@@ -29,15 +29,17 @@ export default function HeroSection({
     {
       icon: (
         <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M5 2a2 2 0 00-2 2v1a1 1 0 000 2v1a1 1 0 000 2v1a2 2 0 002 2h3l3 3V2H5zm7.707 4.707a1 1 0 010 1.414L11.414 9.5l1.293 1.293a1 1 0 01-1.414 1.414L10 10.914l-1.293 1.293a1 1 0 01-1.414-1.414L8.586 9.5 7.293 8.207a1 1 0 011.414-1.414L10 8.086l1.293-1.293a1 1 0 011.414 0z" clipRule="evenodd" />
+          <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+          <path fillRule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clipRule="evenodd" />
         </svg>
       ),
       text: isEn ? "$50M+ recovered" : "$50M+ recuperados",
     },
     {
       icon: (
-        <svg className="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+        <svg className="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M10 2L3 7h2v7h4V10h2v4h4V7h2L10 2zm0 2.236L14.764 8H5.236L10 4.236z" clipRule="evenodd" />
+          <path d="M3 16h14v2H3v-2z" />
         </svg>
       ),
       text: isEn ? "Texas truck accident specialists" : "Especialistas en accidentes de camión en Texas",

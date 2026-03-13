@@ -203,32 +203,30 @@ export default function HomePageES() {
         </div>
       </section>
 
-      {/* Why Choose Us — image banner */}
-      <section className="relative h-64 md:h-80">
-        <Image
-          src="/choose-us.png"
-          alt="Por qué elegir Trucking Chicas"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-brand-navy/60" />
-        <div className="relative flex h-full items-center justify-center text-center">
-          <p className="text-3xl font-extrabold text-white md:text-4xl">
-            {dict.home.whyUsTitle}
-          </p>
-        </div>
-      </section>
+      {/* Why Choose Trucking Chicas — full image with overlaid cards */}
+      <section className="relative">
+        <div className="relative min-h-[600px] md:min-h-[700px]">
+          <Image
+            src="/choose-us.png"
+            alt="Por qué elegir Trucking Chicas"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/70 via-brand-navy/50 to-brand-navy/80" />
 
-      <section className="py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="mt-10 grid gap-8 md:grid-cols-2">
-            {dict.home.whyUsItems.map((item) => (
-              <div key={item.title} className="card-lift card-border-top rounded-lg bg-white p-6 shadow-md">
-                <h3 className="text-xl font-bold text-brand-navy">{item.title}</h3>
-                <p className="mt-2 text-gray-600">{item.desc}</p>
-              </div>
-            ))}
+          <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+            <h2 className="text-center text-3xl font-extrabold text-white md:text-4xl">
+              {dict.home.whyUsTitle}
+            </h2>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {dict.home.whyUsItems.map((item) => (
+                <div key={item.title} className="card-lift card-border-top rounded-lg bg-white/95 p-6 shadow-lg backdrop-blur-sm">
+                  <h3 className="text-xl font-bold text-brand-navy">{item.title}</h3>
+                  <p className="mt-2 text-gray-600">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
