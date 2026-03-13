@@ -205,7 +205,7 @@ export default function HomePageES() {
 
       {/* Why Choose Trucking Chicas — full image with overlaid cards */}
       <section className="relative">
-        <div className="relative min-h-[700px] md:min-h-[850px]">
+        <div className="relative min-h-[500px] md:min-h-[850px]">
           <Image
             src="/choose-us.png"
             alt="Por qué elegir Trucking Chicas"
@@ -215,15 +215,15 @@ export default function HomePageES() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/30 via-brand-navy/50 to-brand-navy/85" />
 
-          <div className="absolute inset-x-0 bottom-0 mx-auto max-w-6xl px-4 pb-12 md:pb-16">
-            <h2 className="text-center text-3xl font-extrabold text-white md:text-4xl">
+          <div className="absolute inset-x-0 bottom-0 mx-auto max-w-6xl px-4 pb-8 md:pb-16">
+            <h2 className="text-center text-2xl font-extrabold text-white sm:text-3xl md:text-4xl">
               {dict.home.whyUsTitle}
             </h2>
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 md:mt-10 md:gap-6">
               {dict.home.whyUsItems.map((item) => (
-                <div key={item.title} className="card-lift card-border-top rounded-lg bg-white/95 p-6 shadow-lg backdrop-blur-sm">
-                  <h3 className="text-xl font-bold text-brand-navy">{item.title}</h3>
-                  <p className="mt-2 text-gray-600">{item.desc}</p>
+                <div key={item.title} className="card-lift card-border-top rounded-lg bg-white/95 p-4 shadow-lg backdrop-blur-sm md:p-6">
+                  <h3 className="text-lg font-bold text-brand-navy md:text-xl">{item.title}</h3>
+                  <p className="mt-1 text-sm text-gray-600 md:mt-2 md:text-base">{item.desc}</p>
                 </div>
               ))}
             </div>

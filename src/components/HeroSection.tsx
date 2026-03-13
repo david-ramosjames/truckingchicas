@@ -44,19 +44,32 @@ export default function HeroSection({
 
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
-      {/* Desktop: side-by-side layout */}
-      <div className="relative mx-auto grid max-w-7xl lg:grid-cols-2">
-        {/* Left: Content */}
-        <div className="flex flex-col justify-center px-6 py-16 md:px-10 md:py-24 lg:py-28 xl:px-16">
-          <h1 className="text-center text-4xl font-extrabold leading-[1.1] md:text-5xl lg:text-left lg:text-6xl">
+      {/* Mobile/Tablet: image as background behind content */}
+      <div className="relative lg:hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/laura-hero.png"
+            alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
+            fill
+            className="object-cover object-top"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/80 via-brand-navy/70 to-brand-navy/90" />
+        </div>
+
+        {/* Content on top of image */}
+        <div className="relative px-6 py-16 sm:py-20">
+          <h1 className="text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
             {headline || dict.hero.headline}
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-center text-lg leading-relaxed text-gray-300 md:text-xl lg:mx-0 lg:text-left">
+          <p className="mx-auto mt-6 max-w-xl text-center text-lg leading-relaxed text-gray-200 md:text-xl">
             {subhead || dict.hero.subhead}
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href={routes.contact}
               className="btn-lift btn-glow-coral flex w-full items-center justify-center gap-2 rounded-xl bg-brand-coral px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-coral-light sm:w-auto"
@@ -78,7 +91,52 @@ export default function HeroSection({
           </div>
 
           {/* Trust signals */}
-          <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 lg:justify-start">
+          <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3">
+            {trustSignals.map((s) => (
+              <div key={s.text} className="flex items-center gap-2 text-sm font-medium text-gray-200">
+                {s.icon}
+                {s.text}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop: side-by-side layout */}
+      <div className="relative mx-auto hidden max-w-7xl lg:grid lg:grid-cols-2">
+        {/* Left: Content */}
+        <div className="flex flex-col justify-center px-6 py-24 md:px-10 xl:px-16 lg:py-28">
+          <h1 className="text-left text-4xl font-extrabold leading-[1.1] md:text-5xl lg:text-6xl">
+            {headline || dict.hero.headline}
+          </h1>
+          <p className="mt-6 max-w-xl text-left text-lg leading-relaxed text-gray-300 md:text-xl">
+            {subhead || dict.hero.subhead}
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row">
+            <Link
+              href={routes.contact}
+              className="btn-lift btn-glow-coral flex w-full items-center justify-center gap-2 rounded-xl bg-brand-coral px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-coral-light sm:w-auto"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              {dict.hero.cta1}
+            </Link>
+            <a
+              href={`tel:+1${PHONE_NUMBER}`}
+              className="btn-lift btn-glow-rose flex w-full items-center justify-center gap-2 rounded-xl bg-brand-rose px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-rose-dark sm:w-auto"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              {dict.hero.cta2}: {PHONE_DISPLAY}
+            </a>
+          </div>
+
+          {/* Trust signals */}
+          <div className="mt-8 flex flex-wrap justify-start gap-x-6 gap-y-3">
             {trustSignals.map((s) => (
               <div key={s.text} className="flex items-center gap-2 text-sm font-medium text-gray-200">
                 {s.icon}
@@ -88,8 +146,8 @@ export default function HeroSection({
           </div>
         </div>
 
-        {/* Right: Full-height hero image — desktop */}
-        <div className="relative hidden min-h-[500px] lg:block">
+        {/* Right: Full-height hero image */}
+        <div className="relative min-h-[500px]">
           <Image
             src="/laura-hero.png"
             alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
@@ -104,19 +162,6 @@ export default function HeroSection({
           <div className="absolute -left-10 top-1/4 h-40 w-40 rounded-full bg-brand-coral/15 blur-3xl" />
           <div className="absolute -left-10 bottom-1/4 h-40 w-40 rounded-full bg-brand-rose/15 blur-3xl" />
         </div>
-      </div>
-
-      {/* Mobile hero image — shown below content on mobile/tablet */}
-      <div className="relative h-80 sm:h-96 lg:hidden">
-        <Image
-          src="/laura-hero.png"
-          alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
-          fill
-          className="object-cover object-top"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent" />
       </div>
     </section>
   );
