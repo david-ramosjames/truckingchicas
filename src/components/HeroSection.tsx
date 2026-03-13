@@ -77,24 +77,13 @@ export default function HeroSection({
           <div className="hidden md:block">
             <div className="relative mx-auto aspect-[4/3] max-w-lg overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
               <Image
-                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80"
-                alt={locale === "en" ? "Justice and legal representation" : "Justicia y representación legal"}
+                src="/laura-hero.png"
+                alt={locale === "en" ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/60 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-lg font-semibold text-white">
-                  {locale === "en" ? "Fighting for Justice" : "Luchando por la Justicia"}
-                </p>
-                <p className="mt-1 text-sm text-gray-200">
-                  {locale === "en"
-                    ? "Experienced truck accident attorneys on your side"
-                    : "Abogados experimentados en accidentes de camión a tu lado"}
-                </p>
-              </div>
               <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-brand-coral/20 blur-2xl" />
               <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-brand-rose/20 blur-2xl" />
             </div>

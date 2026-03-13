@@ -9,6 +9,7 @@ import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
+import CaseEstimateModal from "@/components/CaseEstimateModal";
 import { localBusinessSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -323,6 +324,9 @@ export default function HomePage() {
 
       {/* Final CTA */}
       <CTASection dict={dict} locale="en" variant="dark" />
+
+      {/* Case Estimate Modal */}
+      <CaseEstimateModal dict={dict} locale="en" />
     </PageShell>
   );
 }
