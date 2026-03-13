@@ -203,16 +203,16 @@ export default function HomePageES() {
         </div>
       </section>
 
-      {/* Texas highway image banner */}
+      {/* Why Choose Us — image banner */}
       <section className="relative h-64 md:h-80">
         <Image
-          src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1600&q=80"
-          alt="Carretera de Texas"
+          src="/choose-us.png"
+          alt="Por qué elegir Trucking Chicas"
           fill
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-brand-navy/50" />
+        <div className="absolute inset-0 bg-brand-navy/60" />
         <div className="relative flex h-full items-center justify-center text-center">
           <p className="text-3xl font-extrabold text-white md:text-4xl">
             {dict.home.whyUsTitle}
