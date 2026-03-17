@@ -107,7 +107,7 @@ export default function HeroSection({
       </div>
 
       {/* ── Desktop ── full-width two-column with image on right */}
-      <div className="relative hidden lg:block">
+      <div className="relative hidden min-h-[520px] lg:block">
         {/* Background image spanning full width */}
         <div className="absolute inset-0">
           <Image
