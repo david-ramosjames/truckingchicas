@@ -103,10 +103,10 @@ export default function HeroSection({
         </div>
       </div>
 
-      {/* Desktop: side-by-side layout */}
-      <div className="relative mx-auto hidden max-w-7xl lg:grid lg:grid-cols-2">
+      {/* Desktop: side-by-side layout, full width */}
+      <div className="relative hidden lg:grid lg:grid-cols-2">
         {/* Left: Content */}
-        <div className="flex flex-col justify-center px-6 py-24 md:px-10 xl:px-16 lg:py-28">
+        <div className="mx-auto flex w-full max-w-3xl flex-col justify-center px-6 py-24 md:px-10 lg:py-28 xl:pl-[max(4rem,calc((100vw-80rem)/2+4rem))]">
           <h1 className="text-left text-4xl font-extrabold leading-[1.1] md:text-5xl lg:text-6xl">
             {headline || dict.hero.headline}
           </h1>
