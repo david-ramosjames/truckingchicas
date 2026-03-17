@@ -119,7 +119,7 @@ export default function HeroSection({
             priority
           />
           {/* Gradient: solid navy on left for text, fading to transparent on right to reveal image */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 via-[45%] to-transparent" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-brand-navy)_0%,var(--color-brand-navy)_35%,transparent_75%)]" />
         </div>
 
         {/* Content */}
