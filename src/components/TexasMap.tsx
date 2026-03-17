@@ -5,7 +5,7 @@ export default function TexasMap({ locale }: { locale: Locale }) {
   return (
     <div className="relative mx-auto aspect-[16/9] max-w-2xl overflow-hidden rounded-2xl shadow-lg">
       <Image
-        src="/texas-highway.png"
+        src="/texas-highway-sign.png"
         alt={
           locale === "en"
             ? "Texas highway — we serve clients across the state"
