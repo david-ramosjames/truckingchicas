@@ -91,7 +91,7 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-brand-navy)_0%,var(--color-brand-navy)/0.7_40%,transparent_75%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1E2A44_0%,rgba(30,42,68,0.6)_50%,transparent_80%)]" />
         </div>
 
         <div className="relative px-6 py-14 sm:py-20">
