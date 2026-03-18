@@ -95,10 +95,10 @@ export default function HeroSection({
         </div>
 
         <div className="relative px-6 py-14 sm:py-20">
-          <h1 className="text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
+          <h1 className="text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
             {headline || dict.hero.headline}
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-center text-lg leading-relaxed text-gray-200 md:text-xl">
+          <p className="mt-4 max-w-xl text-left text-lg leading-relaxed text-gray-200 md:text-xl">
             {subhead || dict.hero.subhead}
           </p>
           {ctaButtons(true)}
