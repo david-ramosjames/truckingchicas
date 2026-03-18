@@ -91,14 +91,14 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/50 via-brand-navy/65 to-brand-navy/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/40 via-brand-navy/55 to-brand-navy/80" />
         </div>
 
         <div className="relative px-6 py-14 sm:py-20">
-          <h1 className="text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
+          <h1 className="w-4/5 text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
             {headline || dict.hero.headline}
           </h1>
-          <p className="mt-4 max-w-xl text-left text-lg leading-relaxed text-gray-200 md:text-xl">
+          <p className="mt-4 w-4/5 text-left text-lg leading-relaxed text-gray-200 md:text-xl">
             {subhead || dict.hero.subhead}
           </p>
           {ctaButtons(true)}
