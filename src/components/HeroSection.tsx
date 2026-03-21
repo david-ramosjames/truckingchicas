@@ -93,9 +93,9 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          {/* Dark charcoal overlay with subtle red glow on left */}
+          {/* Dark charcoal overlay with red glow on left */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_0%,rgba(18,18,18,0.85)_40%,rgba(18,18,18,0.3)_80%,transparent_100%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_50%,rgba(229,57,53,0.12)_0%,transparent_60%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_40%,rgba(229,57,53,0.35)_0%,rgba(229,57,53,0.15)_30%,transparent_65%)]" />
         </div>
 
         <div className="relative px-6 py-14 sm:py-20">
@@ -122,9 +122,9 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          {/* Dark charcoal-to-black gradient with subtle red glow */}
+          {/* Dark charcoal-to-black gradient with red glow */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_0%,#121212_35%,transparent_75%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_15%_50%,rgba(229,57,53,0.1)_0%,transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_10%_45%,rgba(229,57,53,0.3)_0%,rgba(229,57,53,0.12)_35%,transparent_60%)]" />
         </div>
 
         {/* Content */}
