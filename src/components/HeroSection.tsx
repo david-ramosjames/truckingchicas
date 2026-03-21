@@ -93,20 +93,21 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          {/* Dark charcoal overlay with red glow on left */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_0%,rgba(18,18,18,0.85)_40%,rgba(18,18,18,0.3)_80%,transparent_100%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_40%,rgba(229,57,53,0.35)_0%,rgba(229,57,53,0.15)_30%,transparent_65%)]" />
+          {/* Dark overlay on left 50%, transparent on right 50% */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_0%,rgba(18,18,18,0.92)_30%,rgba(18,18,18,0.6)_45%,transparent_50%)]" />
+          {/* Strong red glow on the left half */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_40%,rgba(229,57,53,0.5)_0%,rgba(229,57,53,0.25)_25%,transparent_50%)]" />
         </div>
 
         <div className="relative px-6 py-14 sm:py-20">
-          <h1 className="w-4/5 text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
+          <h1 className="w-1/2 text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
             {headline || dict.hero.headline}
           </h1>
-          <p className="mt-4 w-4/5 text-left text-lg leading-relaxed text-[#D1D5DB] md:text-xl">
+          <p className="mt-4 w-1/2 text-left text-lg leading-relaxed text-[#D1D5DB] md:text-xl">
             {subhead || dict.hero.subhead}
           </p>
-          {ctaButtons(true)}
-          {trustBadges(true)}
+          {ctaButtons(false)}
+          {trustBadges(false)}
         </div>
       </div>
 
@@ -122,9 +123,10 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          {/* Dark charcoal-to-black gradient with red glow */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_0%,#121212_35%,transparent_75%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_10%_45%,rgba(229,57,53,0.3)_0%,rgba(229,57,53,0.12)_35%,transparent_60%)]" />
+          {/* Dark overlay on left half, fully transparent at 50% */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_0%,#121212_30%,rgba(18,18,18,0.5)_42%,transparent_50%)]" />
+          {/* Strong red glow on the left side */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_8%_45%,rgba(229,57,53,0.5)_0%,rgba(229,57,53,0.2)_30%,transparent_50%)]" />
         </div>
 
         {/* Content */}
