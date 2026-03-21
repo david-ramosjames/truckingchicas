@@ -228,6 +228,7 @@ export default function ChatWidget() {
         <div className="fixed bottom-0 right-0 z-50 flex h-full w-full flex-col bg-white shadow-2xl sm:bottom-4 sm:right-4 sm:h-[32rem] sm:w-96 sm:rounded-xl">
           {/* Header */}
           <div className="flex items-center justify-between rounded-t-xl bg-brand-navy px-4 py-3 text-white">
+
             <div className="flex items-center gap-2">
               <div className="h-3 w-3 rounded-full bg-green-400" />
               <span className="font-bold">{t.chatTitle}</span>
@@ -282,7 +283,7 @@ export default function ChatWidget() {
                     handleRequestReview();
                   }
                 }}
-                className="rounded-full border border-brand-coral px-3 py-1 text-xs font-medium text-brand-navy transition-colors hover:bg-brand-coral/10"
+                className="rounded-full border border-brand-red px-3 py-1 text-xs font-medium text-gray-800 transition-colors hover:bg-brand-red/10"
               >
                 {qr.label}
               </button>

@@ -61,7 +61,7 @@ export default function CaseEstimateModal({
         </div>
 
         {/* Content */}
-        <h3 className="text-center text-2xl font-bold text-brand-navy">
+        <h3 className="text-center text-2xl font-bold text-gray-900">
           {isEn ? "What's Your Case Worth?" : "¿Cuánto Vale Tu Caso?"}
         </h3>
         <p className="mt-3 text-center text-gray-600">

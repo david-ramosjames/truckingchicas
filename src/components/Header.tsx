@@ -139,7 +139,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
                 key={s.label}
                 href={s.href}
                 aria-label={s.label}
-                className="text-gray-400 transition-colors hover:text-brand-coral"
+                className="text-gray-400 transition-colors hover:text-brand-red"
               >
                 {s.icon}
               </a>
@@ -148,11 +148,11 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
           {/* Center: CTA badges */}
           <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
-            <span className="text-brand-coral">
+            <span className="text-brand-red">
               {locale === "en" ? "No Fees Unless We Win" : "No Cobramos Si No Ganamos"}
             </span>
             <span className="text-gray-500">|</span>
-            <span className="text-brand-coral">
+            <span className="text-brand-red">
               {locale === "en" ? "Available 24/7" : "Disponible 24/7"}
             </span>
           </div>
@@ -191,7 +191,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         {/* Logo */}
         <Link href={routes.home} className="shrink-0 text-xl font-bold tracking-tight">
-          <span className="text-brand-coral">TRUCKING</span>{" "}
+          <span className="text-brand-red">TRUCKING</span>{" "}
           <span>CHICAS</span>
         </Link>
 
@@ -204,8 +204,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             <Link
               key={l.href}
               href={l.href}
-              className={`whitespace-nowrap text-center text-[13px] font-medium leading-tight transition-colors hover:text-brand-coral ${
-                pathname === l.href ? "text-brand-coral" : ""
+              className={`whitespace-nowrap text-center text-[13px] font-medium leading-tight transition-colors hover:text-brand-red ${
+                pathname === l.href ? "text-brand-red" : ""
               }`}
             >
               {l.short}
@@ -234,10 +234,10 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             )}
           </Link>
 
-          {/* Desktop phone CTA — prominent teal/sky button like reference */}
+          {/* Desktop phone CTA — bright red, most prominent */}
           <a
             href={`tel:+1${PHONE_NUMBER}`}
-            className="hidden items-center gap-2.5 rounded-lg bg-sky-500 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-sky-500/25 transition-all hover:bg-sky-400 hover:shadow-sky-400/30 md:inline-flex"
+            className="pulse-halo hidden items-center gap-2.5 rounded-lg bg-brand-red px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-brand-red/25 transition-all hover:bg-brand-red-light hover:shadow-brand-red/30 md:inline-flex"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -277,7 +277,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
                 key={l.href}
                 href={l.href}
                 className={`block rounded px-3 py-2 text-base font-medium transition-colors hover:bg-white/10 ${
-                  pathname === l.href ? "text-brand-coral" : ""
+                  pathname === l.href ? "text-brand-red" : ""
                 }`}
                 onClick={() => setOpen(false)}
               >
@@ -292,7 +292,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="text-gray-400 transition-colors hover:text-brand-coral"
+                  className="text-gray-400 transition-colors hover:text-brand-red"
                 >
                   {s.icon}
                 </a>
@@ -320,7 +320,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
             <a
               href={`tel:+1${PHONE_NUMBER}`}
-              className="mt-3 flex items-center justify-center gap-2 rounded-lg bg-sky-500 px-4 py-3 text-center font-bold shadow-lg transition-colors hover:bg-sky-400"
+              className="pulse-halo mt-3 flex items-center justify-center gap-2 rounded-lg bg-brand-red px-4 py-3 text-center font-bold shadow-lg transition-colors hover:bg-brand-red-light"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path

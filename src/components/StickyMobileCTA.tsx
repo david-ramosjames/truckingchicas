@@ -14,11 +14,12 @@ export default function StickyMobileCTA({
   const routes = ROUTES[locale];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-gray-200 bg-white p-2 shadow-[0_-4px_12px_rgba(0,0,0,0.15)] md:hidden">
+    <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-brand-navy p-2 shadow-[0_-4px_12px_rgba(0,0,0,0.3)] md:hidden">
       <div className="flex gap-2">
+        {/* PRIMARY: Call — bright red, dominant */}
         <a
           href={`tel:+1${PHONE_NUMBER}`}
-          className="pulse-halo btn-glow-rose flex flex-1 items-center justify-center gap-2 rounded-xl bg-brand-rose px-4 py-3 font-bold text-white transition-colors hover:bg-brand-rose-dark"
+          className="pulse-halo btn-glow-coral flex flex-[1.2] items-center justify-center gap-2 rounded-xl bg-brand-red px-4 py-3 font-bold text-white transition-colors hover:bg-brand-red-light"
         >
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
@@ -30,9 +31,10 @@ export default function StickyMobileCTA({
           </svg>
           {dict.cta.callNow}
         </a>
+        {/* SECONDARY: Free Review — dark red */}
         <Link
           href={routes.contact}
-          className="pulse-halo-coral btn-glow-coral flex flex-1 items-center justify-center gap-2 rounded-xl bg-brand-coral px-4 py-3 font-bold text-white transition-colors hover:bg-brand-coral-light"
+          className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-brand-red-dark px-4 py-3 font-bold text-white transition-colors hover:bg-[#A52222]"
         >
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path

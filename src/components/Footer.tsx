@@ -13,7 +13,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
           {/* Brand */}
           <div>
             <p className="text-xl font-bold">
-              <span className="text-brand-coral">TRUCKING</span> CHICAS
+              <span className="text-brand-red">TRUCKING</span> CHICAS
             </p>
             <p className="mt-2 text-sm text-gray-400">
               {locale === "en"
@@ -27,7 +27,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             </address>
             <a
               href={`tel:+1${PHONE_NUMBER}`}
-              className="mt-2 inline-block text-lg font-bold text-brand-coral hover:text-brand-coral-light"
+              className="mt-2 inline-block text-lg font-bold text-brand-red hover:text-brand-red-light"
             >
               {PHONE_DISPLAY}
             </a>
@@ -44,7 +44,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-brand-coral"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-brand-red"
                 >
                   <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d={s.icon} />
@@ -71,7 +71,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="block text-sm text-gray-300 transition-colors hover:text-brand-coral"
+                  className="block text-sm text-gray-300 transition-colors hover:text-brand-red"
                 >
                   {l.label}
                 </Link>
@@ -88,13 +88,13 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
                 href={`tel:+1${PHONE_NUMBER}`}
-                className="rounded-lg bg-brand-rose px-6 py-3 text-center font-bold transition-colors hover:bg-brand-rose-dark"
+                className="rounded-lg bg-brand-red px-6 py-3 text-center font-bold transition-colors hover:bg-brand-red-light"
               >
                 {dict.cta.callNow}
               </a>
               <Link
                 href={routes.contact}
-                className="rounded-lg bg-brand-coral px-6 py-3 text-center font-bold text-white transition-colors hover:bg-brand-coral-light"
+                className="rounded-lg bg-brand-red-dark px-6 py-3 text-center font-bold text-white transition-colors hover:bg-[#A52222]"
               >
                 {dict.cta.freeReview}
               </Link>

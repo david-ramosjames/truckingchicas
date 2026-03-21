@@ -1,24 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  /* Deep Indigo — authority, legal credibility */
-  --color-brand-navy: #1E2A44;
-  --color-brand-navy-dark: #161F33;
+  /* Primary dark — premium black */
+  --color-brand-navy: #121212;
+  --color-brand-navy-dark: #0A0A0A;
+  /* Secondary dark surface */
+  --color-brand-charcoal: #1A1A1A;
   /* Warm Sand — Texas warmth, empathetic */
   --color-brand-cream: #F3E8D9;
-  /* Dusty Rose — confident feminine energy */
-  --color-brand-rose: #C84B6C;
-  --color-brand-rose-dark: #A83D5A;
-  /* Sunset Coral — high-conversion CTA */
-  --color-brand-coral: #FF6B4A;
-  --color-brand-coral-light: #FF8266;
+  /* Primary CTA red */
+  --color-brand-red: #E53935;
+  --color-brand-red-light: #EF5350;
+  /* Dark red / secondary CTA */
+  --color-brand-red-dark: #8B1E1E;
+  /* Legacy coral aliases → now map to red */
+  --color-brand-coral: #E53935;
+  --color-brand-coral-light: #EF5350;
+  /* Legacy rose aliases → now map to red */
+  --color-brand-rose: #E53935;
+  --color-brand-rose-dark: #C62828;
   /* Highway Steel — industrial trucking tone */
   --color-brand-steel: #5C6B73;
-  /* Legacy aliases for components using old names */
-  --color-brand-red: #C84B6C;
-  --color-brand-red-dark: #A83D5A;
-  --color-brand-gold: #FF6B4A;
-  --color-brand-gold-light: #FF8266;
+  /* Legacy gold alias */
+  --color-brand-gold: #E53935;
+  --color-brand-gold-light: #EF5350;
+  /* Trust/accent gold for stars and stat icons */
+  --color-brand-accent-gold: #FBBF24;
   --font-heading: 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
 }
@@ -47,13 +54,13 @@ body {
 
 @keyframes pulse-halo {
   0% {
-    box-shadow: 0 0 0 0 rgba(200, 75, 108, 0.5);
+    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(200, 75, 108, 0);
+    box-shadow: 0 0 0 10px rgba(229, 57, 53, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(200, 75, 108, 0);
+    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0);
   }
 }
 
@@ -63,13 +70,13 @@ body {
 
 @keyframes pulse-halo-coral {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 107, 74, 0.45);
+    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.45);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(255, 107, 74, 0);
+    box-shadow: 0 0 0 10px rgba(229, 57, 53, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 107, 74, 0);
+    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0);
   }
 }
 
@@ -85,28 +92,28 @@ body {
   transform: translateY(-2px);
 }
 
-/* Coral glow for primary CTA */
+/* Red glow for primary CTA */
 .btn-glow-coral {
-  box-shadow: 0 4px 14px rgba(255, 107, 74, 0.4);
+  box-shadow: 0 4px 14px rgba(229, 57, 53, 0.4);
 }
 .btn-glow-coral:hover {
-  box-shadow: 0 6px 20px rgba(255, 107, 74, 0.55);
+  box-shadow: 0 6px 20px rgba(229, 57, 53, 0.55);
 }
 
-/* Rose glow for call CTA */
+/* Red glow for call CTA */
 .btn-glow-rose {
-  box-shadow: 0 4px 14px rgba(200, 75, 108, 0.35);
+  box-shadow: 0 4px 14px rgba(229, 57, 53, 0.35);
 }
 .btn-glow-rose:hover {
-  box-shadow: 0 6px 20px rgba(200, 75, 108, 0.5);
+  box-shadow: 0 6px 20px rgba(229, 57, 53, 0.5);
 }
 
 /* Chat launcher halo */
 .chat-launcher-shadow {
-  box-shadow: 0 10px 30px rgba(255, 107, 74, 0.35);
+  box-shadow: 0 10px 30px rgba(229, 57, 53, 0.35);
 }
 .chat-launcher-shadow:hover {
-  box-shadow: 0 12px 36px rgba(255, 107, 74, 0.5);
+  box-shadow: 0 12px 36px rgba(229, 57, 53, 0.5);
 }
 
 /* Card hover lift effect */
@@ -115,7 +122,7 @@ body {
 }
 .card-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px -4px rgba(30, 42, 68, 0.12), 0 4px 8px -2px rgba(30, 42, 68, 0.08);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.12), 0 4px 8px -2px rgba(0, 0, 0, 0.08);
 }
 
 /* Gradient top border for cards */
@@ -130,10 +137,10 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #FF6B4A, #C84B6C);
+  background: linear-gradient(90deg, #E53935, #8B1E1E);
 }
 
 /* Left accent border */
 .card-border-left {
-  border-left: 4px solid #FF6B4A;
+  border-left: 4px solid #E53935;
 }
