@@ -11,6 +11,10 @@ export function getAlternateUrl(currentPath: string, targetLocale: Locale): stri
     const pathMap: Record<string, string> = {
       "/truck-accident-lawyer": "/es/abogado-accidentes-de-camion",
       "/18-wheeler-accident-lawyer": "/es/abogado-accidentes-18-ruedas",
+      "/fedex-ups-truck-accident-lawyer": "/es/abogado-accidentes-camion-reparto",
+      "/oilfield-tanker-truck-accident-lawyer": "/es/abogado-accidentes-camion-cisterna",
+      "/dump-truck-construction-accident-lawyer": "/es/abogado-accidentes-camion-volteo",
+      "/box-truck-commercial-van-accident-lawyer": "/es/abogado-accidentes-camion-carga",
       "/areas-we-serve": "/es/areas-que-servimos",
       "/faq": "/es/preguntas-frecuentes",
       "/about": "/es/sobre-nosotros",
@@ -24,6 +28,10 @@ export function getAlternateUrl(currentPath: string, targetLocale: Locale): stri
     const pathMap: Record<string, string> = {
       "/es/abogado-accidentes-de-camion": "/truck-accident-lawyer",
       "/es/abogado-accidentes-18-ruedas": "/18-wheeler-accident-lawyer",
+      "/es/abogado-accidentes-camion-reparto": "/fedex-ups-truck-accident-lawyer",
+      "/es/abogado-accidentes-camion-cisterna": "/oilfield-tanker-truck-accident-lawyer",
+      "/es/abogado-accidentes-camion-volteo": "/dump-truck-construction-accident-lawyer",
+      "/es/abogado-accidentes-camion-carga": "/box-truck-commercial-van-accident-lawyer",
       "/es/areas-que-servimos": "/areas-we-serve",
       "/es/preguntas-frecuentes": "/faq",
       "/es/sobre-nosotros": "/about",

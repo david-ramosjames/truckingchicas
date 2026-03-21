@@ -243,6 +243,188 @@ const es: Dictionary = {
     regulationsDesc:
       "Los tráileres de 18 ruedas están sujetos a estrictas normas federales de seguridad establecidas por la FMCSA. Cuando las compañías de transporte o los conductores violan estas regulaciones, esto puede servir como evidencia poderosa de negligencia en tu caso.",
   },
+  deliveryTruck: {
+    title: "Abogado de Accidentes de Camiones de Reparto",
+    metaTitle: "Abogado de Accidentes de Camiones FedEx y UPS en Texas | Trucking Chicas",
+    metaDesc:
+      "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestros abogados manejan casos de accidentes de camiones de reparto. Evaluación gratis.",
+    heroHeadline: "Abogado de Accidentes de Camiones de Reparto",
+    heroSubhead:
+      "Camiones de reparto de FedEx, UPS, Amazon y otros servicios están involucrados en miles de accidentes cada año. Luchamos por las víctimas de accidentes con vehículos de entrega en todo Texas.",
+    introTitle: "El Peligro Creciente de los Camiones de Reparto",
+    introDesc:
+      "Las compras en línea han puesto más camiones de reparto en las carreteras de Texas que nunca. FedEx, UPS, Amazon y otros servicios imponen horarios de entrega agresivos que frecuentemente llevan al exceso de velocidad, conducción distraída y fatiga del conductor. Cuando un vehículo de reparto grande choca contra un auto particular, los resultados pueden ser devastadores.",
+    causesTitle: "Por Qué Ocurren los Accidentes de Camiones de Reparto",
+    causes: [
+      "Horarios de entrega poco realistas y presión de tiempo",
+      "Fatiga del conductor por turnos largos y horas extra",
+      "Conducción distraída — escaneando paquetes, usando GPS, revisando rutas",
+      "Paradas frecuentes que causan frenazos repentinos y cambios de carril",
+      "Camiones estacionados en doble fila forzando maniobras peligrosas",
+      "Vehículos mal mantenidos con fallas en frenos o llantas",
+      "Conductores temporales sin experiencia o con poca capacitación",
+    ],
+    liabilityTitle: "¿Quién Es Responsable?",
+    liabilityItems: [
+      { title: "El Conductor del Reparto", desc: "Por conducción negligente o imprudente, distracción, o ignorar señales de tránsito." },
+      { title: "La Empresa (FedEx, UPS, Amazon)", desc: "Por imponer horarios inseguros, falta de capacitación a conductores, o usar vehículos mal mantenidos." },
+      { title: "Subcontratistas", desc: "Muchos servicios usan contratistas independientes. La responsabilidad puede extenderse a las empresas que los contratan y supervisan." },
+      { title: "Fabricante del Vehículo", desc: "Si un defecto del vehículo — como frenos o dirección defectuosos — contribuyó al choque." },
+    ],
+    injuriesTitle: "Lesiones Comunes en Accidentes de Camiones de Reparto",
+    injuries: [
+      "Latigazo cervical y lesiones de cuello",
+      "Lesiones cerebrales traumáticas",
+      "Huesos rotos y fracturas",
+      "Lesiones de médula espinal",
+      "Daño a órganos internos",
+      "Lesiones a peatones y ciclistas por entregas de última milla",
+    ],
+  },
+  oilfieldTanker: {
+    title: "Abogado de Accidentes de Camiones Cisterna y Petroleros",
+    metaTitle: "Abogado de Accidentes de Camiones Cisterna en Texas | Trucking Chicas",
+    metaDesc:
+      "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados se especializan en choques del sector energético. Consulta gratis.",
+    heroHeadline: "Abogado de Accidentes de Camiones Cisterna",
+    heroSubhead:
+      "Las operaciones petroleras de Texas ponen miles de camiones cisterna, de agua y transportadores de equipo en las carreteras. Cuando chocan, las consecuencias son catastróficas.",
+    introTitle: "El Peligro de los Camiones Cisterna y Petroleros",
+    introDesc:
+      "La Cuenca Pérmica y Eagle Ford Shale generan un volumen masivo de transporte en todo Texas. Los camiones cisterna transportan petróleo crudo, agua producida, químicos de fracturación hidráulica y otros materiales peligrosos en carreteras rurales de dos carriles que frecuentemente no están diseñadas para tráfico comercial pesado. La combinación de cargas pesadas, largas horas y caminos remotos hace que los accidentes petroleros estén entre los más mortales del estado.",
+    causesTitle: "Por Qué Ocurren los Accidentes de Camiones Petroleros",
+    causes: [
+      "Fatiga del conductor por turnos de más de 12 horas en áreas remotas",
+      "Camiones cisterna sobrecargados que exceden los límites de peso",
+      "Derrames de materiales peligrosos y explosiones",
+      "Carreteras mal mantenidas en regiones productoras de petróleo",
+      "Conductores sin experiencia contratados durante booms de producción",
+      "Centro de gravedad alto causando volcaduras en curvas",
+      "Polvo, baja visibilidad y condiciones de caminos sin pavimentar",
+    ],
+    liabilityTitle: "¿Quién Puede Ser Responsable?",
+    liabilityItems: [
+      { title: "Empresa de Servicios Petroleros", desc: "Por imponer horarios inseguros, saltarse mantenimiento o contratar conductores no calificados." },
+      { title: "Conductor del Camión", desc: "Por fatiga, deterioro, exceso de velocidad u otra conducción negligente." },
+      { title: "Operador de Petróleo y Gas", desc: "Por crear condiciones viales peligrosas, no mantener caminos de acceso o exigir horarios excesivos." },
+      { title: "Fabricante del Cisterna", desc: "Por defectos de diseño o manufactura en la construcción del tanque, válvulas o sistemas de seguridad." },
+    ],
+    hazmatTitle: "Riesgos de Materiales Peligrosos",
+    hazmatDesc:
+      "Los accidentes de camiones cisterna frecuentemente involucran materiales peligrosos — petróleo crudo, líquidos de gas natural, químicos de fracturación o agua producida. Estos derrames pueden causar explosiones, quemaduras químicas, exposición tóxica y daño ambiental a largo plazo. Las víctimas de accidentes con cisternas de materiales peligrosos pueden enfrentar riesgos de salud únicos que requieren atención médica y representación legal especializada.",
+  },
+  dumpTruck: {
+    title: "Abogado de Accidentes de Camiones de Volteo y Construcción",
+    metaTitle: "Abogado de Accidentes de Camiones de Volteo en Texas | Trucking Chicas",
+    metaDesc:
+      "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestros abogados luchan por las víctimas de accidentes en zonas de trabajo. Evaluación gratis.",
+    heroHeadline: "Abogado de Accidentes de Camiones de Volteo",
+    heroSubhead:
+      "Camiones de volteo, mezcladoras de concreto y vehículos de construcción causan choques devastadores en zonas de trabajo y en las carreteras de Texas. Luchamos por las víctimas de estos accidentes prevenibles.",
+    introTitle: "Vehículos de Construcción en las Carreteras de Texas",
+    introDesc:
+      "Texas lidera la nación en gastos de construcción vial, poniendo miles de camiones de volteo, mezcladoras de concreto, grúas y transportadores de equipo pesado en las carreteras cada día. Estos vehículos masivos son difíciles de maniobrar, tienen grandes puntos ciegos y frecuentemente operan en zonas de trabajo congestionadas donde las diferencias de velocidad y los cambios de carril crean condiciones peligrosas.",
+    causesTitle: "Causas Comunes de Accidentes de Vehículos de Construcción",
+    causes: [
+      "Cargas no aseguradas — grava, tierra y escombros cayendo de camiones de volteo",
+      "Vehículos sobredimensionados o con sobrepeso que exceden los límites viales",
+      "Poca visibilidad por grandes puntos ciegos",
+      "Confusión en zonas de trabajo — carriles estrechos, fusiones repentinas, señalización confusa",
+      "Volcaduras por centro de gravedad alto",
+      "Fallas mecánicas — pérdida de frenos en pendientes",
+      "Operadores fatigados trabajando turnos largos de construcción",
+    ],
+    liabilityTitle: "¿Quién Es Responsable?",
+    liabilityItems: [
+      { title: "Empresa Constructora", desc: "Por configuración insegura de zona de trabajo, señalización inadecuada o presionar a los trabajadores para cumplir plazos." },
+      { title: "Operador del Vehículo", desc: "Por conducción negligente, cargas no aseguradas o no verificar puntos ciegos." },
+      { title: "Contratista General", desc: "Por fallas generales de seguridad en el sitio y supervisión de subcontratistas." },
+      { title: "Entidad Gubernamental", desc: "Por advertencias inadecuadas en zonas de trabajo, mal diseño vial o no mantener un flujo de tráfico seguro." },
+    ],
+    injuriesTitle: "Lesiones por Accidentes de Camiones de Volteo y Construcción",
+    injuries: [
+      "Lesiones por aplastamiento de vehículos pesados",
+      "Lesiones cerebrales traumáticas por escombros",
+      "Lesiones de médula espinal y parálisis",
+      "Quemaduras graves por incendios de equipo",
+      "Amputaciones por contacto con maquinaria pesada",
+      "Muerte injusta",
+    ],
+  },
+  boxTruck: {
+    title: "Abogado de Accidentes de Camiones de Carga y Vans Comerciales",
+    metaTitle: "Abogado de Accidentes de Camiones de Carga en Texas | Trucking Chicas",
+    metaDesc:
+      "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestros abogados de accidentes de camión pueden ayudar. Evaluación gratis.",
+    heroHeadline: "Abogado de Accidentes de Camiones de Carga",
+    heroSubhead:
+      "Camiones de carga, vans sprinter y vehículos comerciales medianos están en todas las carreteras de Texas — y causan accidentes graves cada día.",
+    introTitle: "El Peligro Subestimado de los Camiones de Carga",
+    introDesc:
+      "Los camiones de carga, vans de carga y vans sprinter pueden ser más pequeños que los tráileres, pero aún pesan de 4,500 a 12,000 kilogramos — suficiente para causar lesiones catastróficas en una colisión. Muchos son operados por conductores con licencias estándar y capacitación mínima, empleados por compañías de mudanzas, flotas de renta y pequeñas empresas que recortan en seguridad y mantenimiento.",
+    causesTitle: "Por Qué Ocurren los Accidentes de Camiones de Carga",
+    causes: [
+      "Conductores con capacitación mínima en vehículos comerciales",
+      "Operadores de camiones rentados sin familiaridad con el tamaño y manejo del vehículo",
+      "Carga sobrecargada que se desplaza durante giros y frenazos",
+      "Visibilidad trasera limitada — sin espejo retrovisor en la mayoría de camiones de carga",
+      "Exceso de velocidad para cumplir horarios de entrega o mudanza",
+      "Conductores fatigados trabajando largas horas sin descansos requeridos",
+      "Mal mantenimiento del vehículo por pequeños operadores y compañías de renta",
+    ],
+    liabilityTitle: "¿Quién Puede Ser Responsable?",
+    liabilityItems: [
+      { title: "El Conductor", desc: "Por conducción negligente, exceso de velocidad, distracción o conducir sin capacitación adecuada para el tamaño del vehículo." },
+      { title: "El Empleador", desc: "Por contratación negligente, falta de capacitación, imponer horarios inseguros o no mantener los vehículos." },
+      { title: "Compañía de Renta", desc: "Por rentar vehículos a conductores no calificados o no mantener la flota de vehículos de renta." },
+      { title: "Cargador", desc: "Por carga inadecuada o no asegurar la mercancía que se desplaza y causa que el conductor pierda el control." },
+    ],
+    injuriesTitle: "Lesiones Comunes por Accidentes de Camiones de Carga",
+    injuries: [
+      "Lesiones cerebrales traumáticas",
+      "Lesiones de cuello y espalda",
+      "Huesos rotos y fracturas",
+      "Sangrado interno y daño a órganos",
+      "Lesiones por cinturón de seguridad y bolsa de aire en colisiones de alto impacto",
+      "Lesiones a peatones en zonas de entrega urbanas",
+    ],
+  },
+  accidentTypes: {
+    title: "Tipos de Accidentes de Camión que Manejamos",
+    subtitle: "Nuestros abogados se especializan en todo tipo de accidente de camión comercial en Texas.",
+    items: [
+      {
+        title: "Accidentes de 18 Ruedas",
+        desc: "Tráileres que pesan hasta 36,000 kg causan las lesiones más catastróficas en las carreteras de Texas.",
+        href: "eighteenWheeler",
+      },
+      {
+        title: "Accidentes de Camiones de Reparto",
+        desc: "Conductores de FedEx, UPS y Amazon enfrentan presión por cumplir horarios, lo que lleva a exceso de velocidad y fatiga.",
+        href: "deliveryTruck",
+      },
+      {
+        title: "Camiones Cisterna y Petroleros",
+        desc: "Las operaciones petroleras de Texas ponen camiones cisterna sobrecargados en carreteras rurales. Los choques frecuentemente involucran derrames peligrosos.",
+        href: "oilfieldTanker",
+      },
+      {
+        title: "Camiones de Volteo y Construcción",
+        desc: "Choques en zonas de trabajo, cargas no aseguradas y volcaduras de equipo pesado de construcción en carreteras de Texas.",
+        href: "dumpTruck",
+      },
+      {
+        title: "Camiones de Carga y Vans",
+        desc: "Camiones medianos y vans de carga operados por conductores sin experiencia causan colisiones graves en áreas urbanas.",
+        href: "boxTruck",
+      },
+      {
+        title: "Todos los Accidentes de Camión",
+        desc: "Desde choques de flotas comerciales hasta negligencia de operadores independientes — manejamos todo tipo de caso de camión en Texas.",
+        href: "truckAccident",
+      },
+    ],
+  },
   areas: {
     title: "Áreas que Servimos en Texas",
     metaTitle: "Abogado de Accidentes de Camión en Texas — Áreas que Servimos | Trucking Chicas",

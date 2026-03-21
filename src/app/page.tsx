@@ -87,6 +87,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Types of Truck Accidents */}
+      <section className="bg-brand-navy py-16 text-white">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="text-center text-3xl font-bold md:text-4xl">
+            {dict.accidentTypes.title}
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-300">
+            {dict.accidentTypes.subtitle}
+          </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {dict.accidentTypes.items.map((item) => (
+              <Link
+                key={item.title}
+                href={routes[item.href as keyof typeof routes]}
+                className="card-lift group rounded-xl border border-white/10 bg-white/5 p-6 transition-colors hover:border-brand-red hover:bg-white/10"
+              >
+                <h3 className="text-lg font-bold group-hover:text-brand-red">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-300">{item.desc}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-red">
+                  Learn more
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Core Values */}
       <section className="bg-brand-cream py-16">
         <div className="mx-auto max-w-6xl px-4">

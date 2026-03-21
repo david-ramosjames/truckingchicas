@@ -242,6 +242,188 @@ const en = {
     regulationsDesc:
       "18-wheelers are subject to strict federal safety rules set by the FMCSA. When trucking companies or drivers violate these regulations, it can serve as powerful evidence of negligence in your case.",
   },
+  deliveryTruck: {
+    title: "FedEx & UPS Truck Accident Lawyer",
+    metaTitle: "FedEx & UPS Truck Accident Lawyer in Texas | Trucking Chicas",
+    metaDesc:
+      "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our attorneys handle delivery truck accident cases. Free case review.",
+    heroHeadline: "FedEx & UPS Truck Accident Lawyer",
+    heroSubhead:
+      "Delivery trucks from FedEx, UPS, Amazon, and other carriers are involved in thousands of crashes every year. We fight for victims of delivery vehicle accidents across Texas.",
+    introTitle: "The Growing Danger of Delivery Trucks",
+    introDesc:
+      "Online shopping has put more delivery trucks on Texas roads than ever. FedEx, UPS, Amazon, and other carriers push aggressive delivery schedules that often lead to speeding, distracted driving, and driver fatigue. When a large delivery vehicle strikes a passenger car, the results can be devastating.",
+    causesTitle: "Why Delivery Truck Accidents Happen",
+    causes: [
+      "Unrealistic delivery schedules and time pressure",
+      "Driver fatigue from long shifts and overtime",
+      "Distracted driving — scanning packages, using GPS, checking routes",
+      "Frequent stops creating sudden braking and lane changes",
+      "Double-parked trucks forcing other drivers into unsafe maneuvers",
+      "Poorly maintained vehicles with brake or tire failures",
+      "Inexperienced or undertrained seasonal drivers",
+    ],
+    liabilityTitle: "Who Is Responsible?",
+    liabilityItems: [
+      { title: "The Delivery Driver", desc: "For negligent or reckless driving, distraction, or running red lights and stop signs." },
+      { title: "The Carrier (FedEx, UPS, Amazon)", desc: "For imposing unsafe schedules, failing to train drivers, or using poorly maintained vehicles." },
+      { title: "Subcontractors", desc: "Many carriers use independent contractors. Liability may extend to the companies that hire and supervise them." },
+      { title: "Vehicle Manufacturer", desc: "If a vehicle defect — such as faulty brakes or steering — contributed to the crash." },
+    ],
+    injuriesTitle: "Common Injuries in Delivery Truck Crashes",
+    injuries: [
+      "Whiplash and neck injuries",
+      "Traumatic brain injuries",
+      "Broken bones and fractures",
+      "Spinal cord injuries",
+      "Internal organ damage",
+      "Pedestrian and cyclist injuries from last-mile delivery",
+    ],
+  },
+  oilfieldTanker: {
+    title: "Oilfield & Tanker Truck Accident Lawyer",
+    metaTitle: "Oilfield & Tanker Truck Accident Lawyer in Texas | Trucking Chicas",
+    metaDesc:
+      "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers specialize in energy-sector trucking crashes. Free consultation.",
+    heroHeadline: "Oilfield & Tanker Truck Accident Lawyer",
+    heroSubhead:
+      "Texas oil and gas operations put thousands of tankers, water trucks, and equipment haulers on the road. When they crash, the consequences are catastrophic.",
+    introTitle: "The Danger of Oilfield & Tanker Trucks",
+    introDesc:
+      "The Permian Basin and Eagle Ford Shale generate massive trucking volume across Texas. Tanker trucks haul crude oil, produced water, fracking chemicals, and other hazardous materials on rural two-lane roads often not designed for heavy commercial traffic. The combination of heavy loads, long hours, and remote roads makes oilfield truck accidents among the most deadly in the state.",
+    causesTitle: "Why Oilfield Truck Accidents Happen",
+    causes: [
+      "Driver fatigue from 12+ hour shifts in remote areas",
+      "Overloaded tankers exceeding weight limits",
+      "Hazardous material spills and explosions",
+      "Poorly maintained roads in oil-producing regions",
+      "Undertrained drivers hired during production booms",
+      "High center of gravity causing rollovers on curves",
+      "Dust, low visibility, and unpaved road conditions",
+    ],
+    liabilityTitle: "Who Can Be Held Liable?",
+    liabilityItems: [
+      { title: "Oilfield Service Company", desc: "For pushing unsafe schedules, skipping maintenance, or hiring unqualified drivers." },
+      { title: "Truck Driver", desc: "For fatigue, impairment, speeding, or other negligent driving behavior." },
+      { title: "Oil & Gas Operator", desc: "For creating dangerous road conditions, failing to maintain site access roads, or requiring excessive hauling schedules." },
+      { title: "Tanker Manufacturer", desc: "For design or manufacturing defects in tanker construction, valves, or safety systems." },
+    ],
+    hazmatTitle: "Hazardous Material Risks",
+    hazmatDesc:
+      "Tanker truck accidents often involve hazardous materials — crude oil, natural gas liquids, fracking chemicals, or produced water. These spills can cause explosions, chemical burns, toxic exposure, and long-term environmental damage. Victims of hazmat tanker crashes may face unique health risks that require specialized medical attention and legal representation.",
+  },
+  dumpTruck: {
+    title: "Dump Truck & Construction Vehicle Accident Lawyer",
+    metaTitle: "Dump Truck & Construction Vehicle Accident Lawyer in Texas | Trucking Chicas",
+    metaDesc:
+      "Injured by a dump truck or construction vehicle in Texas? Our attorneys fight for victims of work zone and heavy equipment crashes. Free case review.",
+    heroHeadline: "Dump Truck & Construction Accident Lawyer",
+    heroSubhead:
+      "Dump trucks, cement mixers, and construction vehicles cause devastating crashes in work zones and on Texas highways. We fight for victims of these preventable accidents.",
+    introTitle: "Construction Vehicles on Texas Roads",
+    introDesc:
+      "Texas leads the nation in road construction spending, putting thousands of dump trucks, cement mixers, cranes, and heavy equipment haulers on the roads every day. These massive vehicles are difficult to maneuver, have large blind spots, and often operate in congested work zones where speed differentials and lane shifts create dangerous conditions for other drivers.",
+    causesTitle: "Common Causes of Construction Vehicle Accidents",
+    causes: [
+      "Unsecured loads — gravel, dirt, and debris falling from dump trucks",
+      "Oversized or overweight vehicles exceeding road limits",
+      "Poor visibility from large blind spots",
+      "Work zone confusion — narrow lanes, sudden merges, unclear signage",
+      "Rollover accidents from high center of gravity",
+      "Mechanical failures — brake loss on steep grades",
+      "Fatigued operators working long construction shifts",
+    ],
+    liabilityTitle: "Who Is Responsible?",
+    liabilityItems: [
+      { title: "Construction Company", desc: "For unsafe work zone setup, inadequate signage, or pushing workers to meet deadlines." },
+      { title: "Vehicle Operator", desc: "For negligent driving, unsecured loads, or failing to check blind spots." },
+      { title: "General Contractor", desc: "For overall site safety failures and subcontractor oversight." },
+      { title: "Government Entity", desc: "For inadequate work zone warnings, poor road design, or failing to maintain safe traffic flow." },
+    ],
+    injuriesTitle: "Injuries from Dump Truck & Construction Crashes",
+    injuries: [
+      "Crush injuries from heavy vehicles",
+      "Traumatic brain injuries from falling debris",
+      "Spinal cord injuries and paralysis",
+      "Severe burns from equipment fires",
+      "Amputations from heavy machinery contact",
+      "Wrongful death",
+    ],
+  },
+  boxTruck: {
+    title: "Box Truck & Commercial Van Accident Lawyer",
+    metaTitle: "Box Truck & Commercial Van Accident Lawyer in Texas | Trucking Chicas",
+    metaDesc:
+      "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident lawyers can help. Free case review.",
+    heroHeadline: "Box Truck & Commercial Van Accident Lawyer",
+    heroSubhead:
+      "Box trucks, sprinter vans, and medium-duty commercial vehicles are everywhere on Texas roads — and they cause serious accidents every day.",
+    introTitle: "The Overlooked Danger of Box Trucks & Commercial Vans",
+    introDesc:
+      "Box trucks, cargo vans, and sprinter vans may be smaller than 18-wheelers, but they still weigh 10,000 to 26,000 pounds — enough to cause catastrophic injuries in a collision. Many are operated by drivers with standard licenses and minimal training, employed by moving companies, rental fleets, and small businesses that cut corners on safety and maintenance.",
+    causesTitle: "Why Box Truck Accidents Happen",
+    causes: [
+      "Drivers with minimal commercial vehicle training",
+      "Rental truck operators unfamiliar with vehicle size and handling",
+      "Overloaded cargo shifting during turns and braking",
+      "Limited rear visibility — no rearview mirror in most box trucks",
+      "Speeding to meet tight delivery or moving schedules",
+      "Fatigued drivers working long hours without required breaks",
+      "Poor vehicle maintenance by small operators and rental companies",
+    ],
+    liabilityTitle: "Who Can Be Held Liable?",
+    liabilityItems: [
+      { title: "The Driver", desc: "For negligent driving, speeding, distraction, or driving without proper training for the vehicle size." },
+      { title: "The Employer", desc: "For negligent hiring, failure to train, pushing unsafe schedules, or failing to maintain vehicles." },
+      { title: "Rental Company", desc: "For renting vehicles to unqualified drivers or failing to maintain rental fleet vehicles." },
+      { title: "Cargo Loader", desc: "For improperly loading or securing cargo that shifts and causes the driver to lose control." },
+    ],
+    injuriesTitle: "Common Injuries from Box Truck Crashes",
+    injuries: [
+      "Traumatic brain injuries",
+      "Neck and back injuries",
+      "Broken bones and fractures",
+      "Internal bleeding and organ damage",
+      "Seat belt and airbag injuries from high-impact collisions",
+      "Pedestrian injuries in urban delivery zones",
+    ],
+  },
+  accidentTypes: {
+    title: "Types of Truck Accidents We Handle",
+    subtitle: "Our attorneys specialize in every type of commercial trucking accident across Texas.",
+    items: [
+      {
+        title: "18-Wheeler Accidents",
+        desc: "Semi-trucks and tractor-trailers weighing up to 80,000 lbs cause the most catastrophic injuries on Texas highways.",
+        href: "eighteenWheeler",
+      },
+      {
+        title: "FedEx & UPS Truck Accidents",
+        desc: "Delivery truck drivers face pressure to meet tight schedules, leading to speeding, distraction, and fatigue-related crashes.",
+        href: "deliveryTruck",
+      },
+      {
+        title: "Oilfield & Tanker Trucks",
+        desc: "Texas oil operations put overloaded tankers on rural roads. Crashes often involve hazmat spills and explosions.",
+        href: "oilfieldTanker",
+      },
+      {
+        title: "Dump Trucks & Construction",
+        desc: "Work zone crashes, unsecured loads, and rollover accidents from heavy construction equipment on Texas roads.",
+        href: "dumpTruck",
+      },
+      {
+        title: "Box Trucks & Commercial Vans",
+        desc: "Medium-duty trucks and cargo vans operated by undertrained drivers cause serious collisions in urban and suburban areas.",
+        href: "boxTruck",
+      },
+      {
+        title: "All Truck Accidents",
+        desc: "From commercial fleet crashes to independent operator negligence — we handle every type of trucking case in Texas.",
+        href: "truckAccident",
+      },
+    ],
+  },
   areas: {
     title: "Areas We Serve in Texas",
     metaTitle: "Texas Truck Accident Lawyer — Areas We Serve | Trucking Chicas",
