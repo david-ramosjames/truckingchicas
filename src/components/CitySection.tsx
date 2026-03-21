@@ -28,7 +28,7 @@ export default function CitySection({
       {/* City photo */}
       <div className="relative h-48 w-full bg-brand-navy/5">
         <Image
-          src={`/cities/${slug}.png`}
+          src={`/cities/${slug}.jpg`}
           alt={city}
           fill
           className="object-cover"
