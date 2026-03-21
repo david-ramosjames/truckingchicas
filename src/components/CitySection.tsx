@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
 import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
@@ -20,9 +21,22 @@ export default function CitySection({
   locale: Locale;
 }) {
   const routes = ROUTES[locale];
+  const slug = city.toLowerCase().replace(/\s+/g, "-");
 
   return (
-    <article className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md md:p-8">
+    <article className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+      {/* City photo */}
+      <div className="relative h-48 w-full bg-brand-navy/5">
+        <Image
+          src={`/cities/${slug}.png`}
+          alt={city}
+          fill
+          className="object-cover"
+          sizes="(min-width: 768px) 50vw, 100vw"
+        />
+      </div>
+
+      <div className="p-6 md:p-8">
       <h2 className="text-2xl font-bold text-brand-navy">
         {locale === "en"
           ? `${city} Truck Accident Lawyer`
@@ -100,6 +114,7 @@ export default function CitySection({
           </svg>
           {dict.cta.callNow}: {PHONE_DISPLAY}
         </a>
+      </div>
       </div>
     </article>
   );
