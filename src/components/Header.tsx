@@ -193,7 +193,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
         {/* Logo */}
         <Link href={routes.home} className="shrink-0">
           <Image
-            src="/logo-transparent.png"
+            src="/logo-transparent-crop.PNG"
             alt="Trucking Chicas"
             width={300}
             height={83}
