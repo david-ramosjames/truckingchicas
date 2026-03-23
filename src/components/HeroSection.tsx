@@ -86,7 +86,7 @@ export default function HeroSection({
       <div className="relative lg:hidden">
         <div className="absolute inset-0">
           <Image
-            src="/laura-hero.png"
+            src="/hero.png"
             alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
             fill
             className="object-cover object-[center_20%]"
@@ -116,7 +116,7 @@ export default function HeroSection({
         {/* Background image spanning full width */}
         <div className="absolute inset-0">
           <Image
-            src="/laura-hero.png"
+            src="/hero.png"
             alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
             fill
             className="object-cover object-[center_20%]"
