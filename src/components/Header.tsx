@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Dictionary } from "@/dictionaries";
@@ -190,9 +191,15 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
       {/* Main nav bar */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         {/* Logo */}
-        <Link href={routes.home} className="shrink-0 text-xl font-bold tracking-tight">
-          <span className="text-brand-red">TRUCKING</span>{" "}
-          <span>CHICAS</span>
+        <Link href={routes.home} className="shrink-0">
+          <Image
+            src="/logo-transparent.png"
+            alt="Trucking Chicas"
+            width={180}
+            height={50}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav — centered */}
