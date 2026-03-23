@@ -133,29 +133,42 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
       {/* Top bar — desktop only */}
       <div className="hidden border-b border-white/10 lg:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
-          {/* Left: social icons */}
-          <div className="flex items-center gap-3">
-            {socialLinks.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                aria-label={s.label}
-                className="text-gray-400 transition-colors hover:text-brand-red"
-              >
-                {s.icon}
-              </a>
-            ))}
-          </div>
+          {/* Left: Logo */}
+          <Link href={routes.home} className="shrink-0">
+            <Image
+              src="/logo-transparent-crop.PNG"
+              alt="Trucking Chicas"
+              width={300}
+              height={83}
+              className="h-auto w-[15vw] min-w-[150px]"
+              priority
+            />
+          </Link>
 
-          {/* Center: CTA badges */}
-          <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
-            <span className="text-brand-red">
-              {locale === "en" ? "No Fees Unless We Win" : "No Cobramos Si No Ganamos"}
-            </span>
+          {/* Center-right: CTA badges + social icons */}
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
+              <span className="text-brand-red">
+                {locale === "en" ? "No Fees Unless We Win" : "No Cobramos Si No Ganamos"}
+              </span>
+              <span className="text-gray-500">|</span>
+              <span className="text-brand-red">
+                {locale === "en" ? "Available 24/7" : "Disponible 24/7"}
+              </span>
+            </div>
             <span className="text-gray-500">|</span>
-            <span className="text-brand-red">
-              {locale === "en" ? "Available 24/7" : "Disponible 24/7"}
-            </span>
+            <div className="flex items-center gap-3">
+              {socialLinks.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  aria-label={s.label}
+                  className="text-gray-400 transition-colors hover:text-brand-red"
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Right: language switcher */}
@@ -190,8 +203,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
       {/* Main nav bar */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        {/* Logo */}
-        <Link href={routes.home} className="shrink-0">
+        {/* Mobile-only logo (desktop logo is in top bar) */}
+        <Link href={routes.home} className="shrink-0 lg:hidden">
           <Image
             src="/logo-transparent-crop.PNG"
             alt="Trucking Chicas"
