@@ -128,24 +128,44 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
     { icon: <YouTubeIcon />, href: "#", label: "YouTube" },
   ];
 
+  const phoneCta = (
+    <a
+      href={`tel:+1${PHONE_NUMBER}`}
+      className="pulse-halo inline-flex items-center gap-2.5 rounded-lg bg-brand-red px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-brand-red/25 transition-all hover:bg-brand-red-light hover:shadow-brand-red/30"
+    >
+      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+        />
+      </svg>
+      {PHONE_DISPLAY}
+    </a>
+  );
+
   return (
     <header className="sticky top-0 z-50 bg-brand-navy text-white shadow-lg">
-      {/* Top bar — desktop only */}
-      <div className="hidden border-b border-white/10 lg:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
-          {/* Left: Logo */}
-          <Link href={routes.home} className="shrink-0">
+      {/* ===== DESKTOP HEADER — 2-column grid, logo spans both rows ===== */}
+      <div className="mx-auto hidden max-w-7xl lg:grid" style={{ gridTemplateColumns: "auto 1fr", gridTemplateRows: "auto auto" }}>
+        {/* Logo block — spans both rows */}
+        <div className="row-span-2 flex items-center px-6 py-3">
+          <Link href={routes.home} className="block">
             <Image
               src="/logo-transparent-crop.PNG"
               alt="Trucking Chicas"
-              width={300}
-              height={83}
-              className="h-auto w-[15vw] min-w-[150px]"
+              width={400}
+              height={110}
+              className="h-auto w-[280px] xl:w-[310px]"
               priority
             />
           </Link>
+        </div>
 
-          {/* Center-right: CTA badges + social icons */}
+        {/* Top utility row */}
+        <div className="flex items-center justify-between border-b border-white/10 px-4 py-2">
+          {/* CTA badges + social */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
               <span className="text-brand-red">
@@ -171,7 +191,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             </div>
           </div>
 
-          {/* Right: language switcher */}
+          {/* Language switcher */}
           <div className="flex items-center gap-1">
             <Link
               href={locale === "en" ? pathname : altPath}
@@ -199,46 +219,51 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             </Link>
           </div>
         </div>
+
+        {/* Bottom nav row */}
+        <div className="flex items-center justify-between px-4 py-3">
+          <nav
+            className="flex items-center gap-5 xl:gap-6"
+            aria-label="Main navigation"
+          >
+            {links.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`whitespace-nowrap text-[13px] font-medium leading-tight transition-colors hover:text-brand-red ${
+                  pathname === l.href ? "text-brand-red" : ""
+                }`}
+              >
+                {l.short}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Phone CTA */}
+          {phoneCta}
+        </div>
       </div>
 
-      {/* Main nav bar */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        {/* Mobile-only logo (desktop logo is in top bar) */}
-        <Link href={routes.home} className="shrink-0 lg:hidden">
+      {/* ===== MOBILE HEADER ===== */}
+      <div className="flex items-center justify-between px-4 py-3 lg:hidden">
+        {/* Logo */}
+        <Link href={routes.home} className="shrink-0">
           <Image
             src="/logo-transparent-crop.PNG"
             alt="Trucking Chicas"
             width={300}
             height={83}
-            className="h-auto w-[15vw] min-w-[150px]"
+            className="h-auto w-[40vw] min-w-[140px] max-w-[200px]"
             priority
           />
         </Link>
 
-        {/* Desktop nav — centered */}
-        <nav
-          className="mx-4 hidden flex-1 items-center justify-center gap-5 xl:gap-6 lg:flex"
-          aria-label="Main navigation"
-        >
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`whitespace-nowrap text-center text-[13px] font-medium leading-tight transition-colors hover:text-brand-red ${
-                pathname === l.href ? "text-brand-red" : ""
-              }`}
-            >
-              {l.short}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Right side: phone CTA + lang (mobile) + hamburger */}
+        {/* Right controls */}
         <div className="flex shrink-0 items-center gap-3">
-          {/* Mobile-only language toggle */}
+          {/* Language toggle */}
           <Link
             href={altPath}
-            className="flex items-center gap-1.5 rounded-md border border-white/25 px-2.5 py-1.5 text-xs font-bold transition-colors hover:bg-white/10 lg:hidden"
+            className="flex items-center gap-1.5 rounded-md border border-white/25 px-2.5 py-1.5 text-xs font-bold transition-colors hover:bg-white/10"
             aria-label={`Switch to ${altLocale === "en" ? "English" : "Español"}`}
           >
             {altLocale === "en" ? (
@@ -254,10 +279,10 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             )}
           </Link>
 
-          {/* Desktop phone CTA — bright red, most prominent */}
+          {/* Phone CTA (compact on mobile) */}
           <a
             href={`tel:+1${PHONE_NUMBER}`}
-            className="pulse-halo hidden items-center gap-2.5 rounded-lg bg-brand-red px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-brand-red/25 transition-all hover:bg-brand-red-light hover:shadow-brand-red/30 md:inline-flex"
+            className="pulse-halo inline-flex items-center gap-2 rounded-lg bg-brand-red px-3 py-2 text-sm font-bold text-white shadow-lg shadow-brand-red/25 transition-all hover:bg-brand-red-light"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -267,12 +292,12 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            {PHONE_DISPLAY}
+            <span className="hidden sm:inline">{PHONE_DISPLAY}</span>
           </a>
 
           {/* Hamburger */}
           <button
-            className="lg:hidden"
+            className="p-1"
             onClick={() => setOpen(!open)}
             aria-expanded={open}
             aria-label="Toggle menu"
@@ -288,7 +313,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* ===== MOBILE MENU ===== */}
       {open && (
         <nav className="border-t border-white/10 bg-brand-navy-dark lg:hidden" aria-label="Mobile navigation">
           <div className="mx-auto max-w-7xl space-y-1 px-4 py-4">
@@ -305,8 +330,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
               </Link>
             ))}
 
-            {/* Social icons in mobile */}
-            <div className="flex items-center gap-4 px-3 py-3 border-t border-white/10 mt-2 pt-3">
+            {/* Social icons */}
+            <div className="mt-2 flex items-center gap-4 border-t border-white/10 px-3 pt-3 py-3">
               {socialLinks.map((s) => (
                 <a
                   key={s.label}
@@ -319,7 +344,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
               ))}
             </div>
 
-            {/* Language toggle in mobile menu */}
+            {/* Language toggle */}
             <Link
               href={altPath}
               className="flex items-center gap-2 rounded px-3 py-2 text-base font-medium transition-colors hover:bg-white/10"
