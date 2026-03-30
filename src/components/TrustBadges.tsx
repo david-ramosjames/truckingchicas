@@ -1,25 +1,20 @@
 import Image from "next/image";
 
-const BADGE_SIZE = 180;
-
 const badges = [
   {
     name: "Top 10 Trucking Trial Lawyers",
     href: "https://badges.thenationaltriallawyers.org/en/verify/83695412777973",
-    image: "https://storage.googleapis.com/verified-storage/badge/83695412777973.png",
-    isExternal: true,
+    image: "/top-10-trucking-badge.png",
   },
   {
     name: "Academy of Truck Accident Attorneys",
     href: "https://ataalaw.org/",
     image: "/academy-of-truck-accident-attorneys.svg",
-    isExternal: false,
   },
   {
     name: "The National Top 100 Trial Lawyers",
     href: "https://thenationaltriallawyers.org/members/laura-ramos-james/",
     image: "/NTL-Top-100-Brass-Badge.png",
-    isExternal: false,
   },
 ];
 
@@ -40,22 +35,13 @@ export default function TrustBadges() {
               className="relative block h-[150px] w-[150px] shrink-0 transition-opacity hover:opacity-80"
               aria-label={b.name}
             >
-              {b.isExternal ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={b.image}
-                  alt={b.name}
-                  className="absolute inset-0 h-full w-full object-contain"
-                />
-              ) : (
-                <Image
-                  src={b.image}
-                  alt={b.name}
-                  fill
-                  className="object-contain"
-                  sizes="150px"
-                />
-              )}
+              <Image
+                src={b.image}
+                alt={b.name}
+                fill
+                className="object-contain"
+                sizes="150px"
+              />
             </a>
           ))}
         </div>
