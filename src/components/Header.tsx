@@ -162,14 +162,14 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
       {/* ===== DESKTOP HEADER — 2-column grid, logo spans both rows ===== */}
       <div className="mx-auto hidden max-w-7xl lg:grid" style={{ gridTemplateColumns: "auto 1fr", gridTemplateRows: "auto auto" }}>
         {/* Logo block — spans both rows */}
-        <div className="row-span-2 flex items-center px-6 py-3">
+        <div className="row-span-2 flex items-center px-6 py-2">
           <Link href={routes.home} className="block">
             <Image
               src="/logo-transparent-crop.PNG"
               alt="Trucking Chicas"
-              width={400}
-              height={110}
-              className="h-auto w-[280px] xl:w-[310px]"
+              width={220}
+              height={60}
+              className="h-[60px] w-auto"
               priority
             />
           </Link>
@@ -303,9 +303,9 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
           <Image
             src="/logo-transparent-crop.PNG"
             alt="Trucking Chicas"
-            width={300}
-            height={83}
-            className="h-auto w-[40vw] min-w-[140px] max-w-[200px]"
+            width={146}
+            height={40}
+            className="h-[40px] w-auto"
             priority
           />
         </Link>
