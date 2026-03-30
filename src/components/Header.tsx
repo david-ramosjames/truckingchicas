@@ -167,9 +167,9 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             <Image
               src="/logo-transparent-crop.PNG"
               alt="Trucking Chicas"
-              width={220}
-              height={60}
-              className="h-[60px] w-auto"
+              width={330}
+              height={90}
+              className="h-[90px] w-auto"
               priority
             />
           </Link>
@@ -303,9 +303,9 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
           <Image
             src="/logo-transparent-crop.PNG"
             alt="Trucking Chicas"
-            width={146}
-            height={40}
-            className="h-[40px] w-auto"
+            width={220}
+            height={60}
+            className="h-[60px] w-auto"
             priority
           />
         </Link>

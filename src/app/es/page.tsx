@@ -98,11 +98,11 @@ export default function HomePageES() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {dict.accidentTypes.items.map((item) => {
               const images: Record<string, string> = {
-                eighteenWheeler: "/trucks/18-wheeler.svg",
-                deliveryTruck: "/trucks/delivery-truck.svg",
+                eighteenWheeler: "/trucks/18-wheelers.jpg",
+                deliveryTruck: "/trucks/fedex.webp",
                 oilfieldTanker: "/trucks/oilfield-tanker.svg",
-                dumpTruck: "/trucks/dump-truck.svg",
-                boxTruck: "/trucks/box-truck.svg",
+                dumpTruck: "/trucks/dump-truck.webp",
+                boxTruck: "/trucks/box-truck.webp",
                 truckAccident: "/trucks/all-trucks.svg",
               };
               return (
