@@ -37,7 +37,7 @@ export default function TrustBadges() {
               href={b.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-opacity hover:opacity-80"
+              className="relative block h-[150px] w-[150px] shrink-0 transition-opacity hover:opacity-80"
               aria-label={b.name}
             >
               {b.isExternal ? (
@@ -45,17 +45,15 @@ export default function TrustBadges() {
                 <img
                   src={b.image}
                   alt={b.name}
-                  width={BADGE_SIZE}
-                  height={BADGE_SIZE}
-                  className="h-[180px] w-[180px] object-contain"
+                  className="absolute inset-0 h-full w-full object-contain"
                 />
               ) : (
                 <Image
                   src={b.image}
                   alt={b.name}
-                  width={BADGE_SIZE}
-                  height={BADGE_SIZE}
-                  className="h-[180px] w-[180px] object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="150px"
                 />
               )}
             </a>
