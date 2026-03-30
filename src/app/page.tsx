@@ -156,23 +156,34 @@ export default function HomePage() {
           <p className="mx-auto mt-4 max-w-2xl text-center text-gray-300">
             {dict.accidentTypes.subtitle}
           </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {dict.accidentTypes.items.map((item) => (
-              <Link
-                key={item.title}
-                href={routes[item.href as keyof typeof routes]}
-                className="card-lift group rounded-xl border border-white/10 bg-white/5 p-6 transition-colors hover:border-brand-red hover:bg-white/10"
-              >
-                <h3 className="text-lg font-bold group-hover:text-brand-red">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-300">{item.desc}</p>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-red">
-                  Learn more
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </Link>
-            ))}
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {dict.accidentTypes.items.map((item) => {
+              const icons: Record<string, string> = {
+                eighteenWheeler: "M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10 M17 16V8a1 1 0 00-1-1h-2l-3 8",
+                deliveryTruck: "M20 7h-4l-2-3H4a2 2 0 00-2 2v10a2 2 0 002 2h1m10 0h6a2 2 0 002-2v-5l-3-4zM9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z",
+                oilfieldTanker: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707 M12 8a4 4 0 100 8 4 4 0 000-8z",
+                dumpTruck: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+                boxTruck: "M20 7h-4l-2-3H4a2 2 0 00-2 2v10a2 2 0 002 2h1m10 0h6a2 2 0 002-2v-5l-3-4zM9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z",
+                truckAccident: "M13 10V3L4 14h7v7l9-11h-7z",
+              };
+              return (
+                <Link
+                  key={item.title}
+                  href={routes[item.href as keyof typeof routes]}
+                  className="card-lift group flex items-start gap-4 rounded-xl border border-white/10 bg-white/5 p-5 transition-all hover:border-brand-red hover:bg-white/10"
+                >
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-red/20 text-brand-red transition-colors group-hover:bg-brand-red group-hover:text-white">
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d={icons[item.href] || icons.truckAccident} />
+                    </svg>
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-base font-bold group-hover:text-brand-red">{item.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-gray-400">{item.desc}</p>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

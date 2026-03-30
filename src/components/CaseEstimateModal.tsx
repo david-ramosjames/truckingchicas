@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import type { Dictionary } from "@/dictionaries";
 import { type Locale, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 
 const STORAGE_KEY = "tc_estimate_modal_dismissed";
-const SHOW_DELAY_MS = 25000; // 25 seconds — let users engage with content first
+const MIN_TIME_ON_PAGE_MS = 8000; // Don't show before 8 seconds even on exit-intent
 
 export default function CaseEstimateModal({
   dict,
@@ -15,16 +15,49 @@ export default function CaseEstimateModal({
   locale: Locale;
 }) {
   const [visible, setVisible] = useState(false);
+  const [ready, setReady] = useState(false);
+
+  const showModal = useCallback(() => {
+    if (sessionStorage.getItem(STORAGE_KEY)) return;
+    setVisible(true);
+    sessionStorage.setItem(STORAGE_KEY, "1");
+  }, []);
 
   useEffect(() => {
     if (sessionStorage.getItem(STORAGE_KEY)) return;
-    const timer = setTimeout(() => setVisible(true), SHOW_DELAY_MS);
-    return () => clearTimeout(timer);
+
+    // Wait minimum time before arming the exit-intent listener
+    const armTimer = setTimeout(() => setReady(true), MIN_TIME_ON_PAGE_MS);
+    return () => clearTimeout(armTimer);
   }, []);
+
+  useEffect(() => {
+    if (!ready) return;
+
+    // Desktop: mouse leaves viewport (exit-intent)
+    function handleMouseLeave(e: MouseEvent) {
+      if (e.clientY <= 0) {
+        showModal();
+      }
+    }
+
+    // Mobile fallback: trigger on back button / visibility change
+    function handleVisibilityChange() {
+      if (document.visibilityState === "hidden") {
+        showModal();
+      }
+    }
+
+    document.addEventListener("mouseleave", handleMouseLeave);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [ready, showModal]);
 
   function dismiss() {
     setVisible(false);
-    sessionStorage.setItem(STORAGE_KEY, "1");
   }
 
   if (!visible) return null;
@@ -63,7 +96,7 @@ export default function CaseEstimateModal({
 
         {/* Headline */}
         <h3 className="text-center text-2xl font-extrabold text-gray-900">
-          {isEn ? "Injured in a Truck Accident?" : "\u00bfLesionado en un Accidente de Cami\u00f3n?"}
+          {isEn ? "Wait \u2014 Don\u2019t Leave Without Your Free Case Review" : "Espere \u2014 No Se Vaya Sin Su Revisi\u00f3n Gratis"}
         </h3>
 
         {/* Trust badges */}
@@ -80,8 +113,8 @@ export default function CaseEstimateModal({
         {/* Description */}
         <p className="mt-4 text-center text-gray-600">
           {isEn
-            ? "Get a free, no-obligation case review from an experienced truck accident attorney. One call can change everything."
-            : "Obtenga una revisi\u00f3n gratuita de su caso sin compromiso con un abogado experimentado en accidentes de cami\u00f3n. Una llamada puede cambiar todo."}
+            ? "Speak with an experienced truck accident attorney today. One call can change everything \u2014 and it costs you nothing."
+            : "Hable con un abogado experimentado en accidentes de cami\u00f3n hoy. Una llamada puede cambiarlo todo \u2014 y no le cuesta nada."}
         </p>
 
         {/* Primary CTA — Call */}
@@ -100,11 +133,11 @@ export default function CaseEstimateModal({
           {isEn ? `Call Now: ${PHONE_DISPLAY}` : `Llame Ahora: ${PHONE_DISPLAY}`}
         </a>
 
-        {/* Urgency note */}
+        {/* Urgency */}
         <p className="mt-3 text-center text-xs font-medium text-gray-500">
           {isEn
-            ? "Speak with an attorney today — free consultation"
-            : "Hable con un abogado hoy \u2014 consulta gratis"}
+            ? "Free consultation \u2014 no obligation"
+            : "Consulta gratis \u2014 sin compromiso"}
         </p>
       </div>
     </div>

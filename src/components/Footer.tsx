@@ -4,6 +4,7 @@ import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY, FIRM_ADDRESS } from "
 
 export default function Footer({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   const routes = ROUTES[locale];
+  const isEn = locale === "en";
   const year = new Date().getFullYear();
 
   return (
@@ -16,9 +17,9 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
               <span className="text-brand-red">TRUCKING</span> CHICAS
             </p>
             <p className="mt-2 text-sm text-gray-400">
-              {locale === "en"
+              {isEn
                 ? "Texas Truck Accident Lawyers"
-                : "Abogados de Accidentes de Camión en Texas"}
+                : "Abogados de Accidentes de Cami\u00f3n en Texas"}
             </p>
             <address className="mt-4 text-sm not-italic text-gray-400">
               {FIRM_ADDRESS.street}
@@ -54,19 +55,19 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             </div>
           </div>
 
-          {/* Quick links */}
+          {/* Truck Accident Cases */}
           <div>
             <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
-              {locale === "en" ? "Quick Links" : "Enlaces Rápidos"}
+              {isEn ? "Truck Accident Cases" : "Casos de Accidentes"}
             </h3>
-            <nav className="space-y-2" aria-label="Footer navigation">
+            <nav className="space-y-2" aria-label="Truck accident types">
               {[
-                { href: routes.truckAccident, label: dict.nav.truckAccident },
-                { href: routes.eighteenWheeler, label: dict.nav.eighteenWheeler },
-                { href: routes.areas, label: dict.nav.areas },
-                { href: routes.faq, label: dict.nav.faq },
-                { href: routes.about, label: dict.nav.about },
-                { href: routes.contact, label: dict.nav.contact },
+                { href: routes.truckAccident, label: isEn ? "Truck Accident Lawyer" : "Abogado de Accidentes de Cami\u00f3n" },
+                { href: routes.eighteenWheeler, label: isEn ? "18-Wheeler Accidents" : "Accidentes de 18 Ruedas" },
+                { href: routes.deliveryTruck, label: isEn ? "FedEx & UPS Accidents" : "Accidentes FedEx y UPS" },
+                { href: routes.oilfieldTanker, label: isEn ? "Oilfield & Tanker Accidents" : "Accidentes de Cisterna" },
+                { href: routes.dumpTruck, label: isEn ? "Dump Truck & Construction" : "Camiones de Volteo" },
+                { href: routes.boxTruck, label: isEn ? "Box Truck & Commercial Van" : "Camiones de Carga" },
               ].map((l) => (
                 <Link
                   key={l.href}
@@ -79,25 +80,47 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             </nav>
           </div>
 
-          {/* CTA */}
+          {/* Quick links + CTA */}
           <div>
             <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
-              {dict.cta.heading}
+              {isEn ? "Quick Links" : "Enlaces R\u00e1pidos"}
             </h3>
-            <p className="mb-4 text-sm text-gray-300">{dict.cta.subtext}</p>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <a
-                href={`tel:+1${PHONE_NUMBER}`}
-                className="rounded-lg bg-brand-red px-6 py-3 text-center font-bold transition-colors hover:bg-brand-red-light"
-              >
-                {dict.cta.callNow}
-              </a>
-              <Link
-                href={routes.contact}
-                className="rounded-lg bg-brand-red-dark px-6 py-3 text-center font-bold text-white transition-colors hover:bg-[#A52222]"
-              >
-                {dict.cta.freeReview}
-              </Link>
+            <nav className="space-y-2" aria-label="Footer navigation">
+              {[
+                { href: routes.areas, label: dict.nav.areas },
+                { href: routes.faq, label: dict.nav.faq },
+                { href: routes.about, label: dict.nav.about },
+                { href: routes.contact, label: dict.nav.contact },
+                { href: routes.caseEstimate, label: dict.nav.caseEstimate },
+              ].map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="block text-sm text-gray-300 transition-colors hover:text-brand-red"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="mt-6">
+              <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
+                {dict.cta.heading}
+              </h3>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <a
+                  href={`tel:+1${PHONE_NUMBER}`}
+                  className="rounded-lg bg-brand-red px-6 py-3 text-center font-bold transition-colors hover:bg-brand-red-light"
+                >
+                  {dict.cta.callNow}
+                </a>
+                <Link
+                  href={routes.contact}
+                  className="rounded-lg bg-brand-red-dark px-6 py-3 text-center font-bold text-white transition-colors hover:bg-[#A52222]"
+                >
+                  {dict.cta.freeReview}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

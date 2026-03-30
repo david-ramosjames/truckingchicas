@@ -109,16 +109,28 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
   const altLocale: Locale = locale === "en" ? "es" : "en";
   const altPath = getAlternateUrl(pathname, altLocale);
 
-  const links = [
+  const isEn = locale === "en";
+
+  const truckDropdownItems = [
+    { href: routes.eighteenWheeler, label: isEn ? "18-Wheeler Accidents" : "Accidentes de 18 Ruedas" },
+    { href: routes.deliveryTruck, label: isEn ? "FedEx & UPS Accidents" : "Accidentes FedEx y UPS" },
+    { href: routes.oilfieldTanker, label: isEn ? "Oilfield & Tanker Accidents" : "Accidentes de Cisterna" },
+    { href: routes.dumpTruck, label: isEn ? "Dump Truck & Construction" : "Camiones de Volteo" },
+    { href: routes.boxTruck, label: isEn ? "Box Truck & Commercial Van" : "Camiones de Carga" },
+    { href: routes.truckAccident, label: isEn ? "All Truck Accidents" : "Todos los Accidentes" },
+  ];
+
+  const navLinks = [
     { href: routes.home, label: dict.nav.home, short: dict.nav.homeShort },
-    { href: routes.truckAccident, label: dict.nav.truckAccident, short: dict.nav.truckAccidentShort },
-    { href: routes.eighteenWheeler, label: dict.nav.eighteenWheeler, short: dict.nav.eighteenWheelerShort },
     { href: routes.areas, label: dict.nav.areas, short: dict.nav.areasShort },
     { href: routes.faq, label: dict.nav.faq, short: dict.nav.faqShort },
     { href: routes.caseEstimate, label: dict.nav.caseEstimate, short: dict.nav.caseEstimateShort },
     { href: routes.about, label: dict.nav.about, short: dict.nav.aboutShort },
     { href: routes.contact, label: dict.nav.contact, short: dict.nav.contactShort },
   ];
+
+  const truckAccidentPaths: string[] = truckDropdownItems.map((i) => i.href);
+  const isTruckPage = truckAccidentPaths.includes(pathname);
 
   const socialLinks = [
     { icon: <InstagramIcon />, href: "#", label: "Instagram" },
@@ -226,7 +238,47 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             className="flex items-center gap-5 xl:gap-6"
             aria-label="Main navigation"
           >
-            {links.map((l) => (
+            {/* Home */}
+            <Link
+              href={routes.home}
+              className={`whitespace-nowrap text-[13px] font-medium leading-tight transition-colors hover:text-brand-red ${
+                pathname === routes.home ? "text-brand-red" : ""
+              }`}
+            >
+              {dict.nav.homeShort}
+            </Link>
+
+            {/* Truck Accidents dropdown */}
+            <div className="group relative">
+              <button
+                className={`flex items-center gap-1 whitespace-nowrap text-[13px] font-medium leading-tight transition-colors hover:text-brand-red ${
+                  isTruckPage ? "text-brand-red" : ""
+                }`}
+              >
+                {isEn ? "Truck Accidents" : "Accidentes"}
+                <svg className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="invisible absolute left-0 top-full z-50 min-w-[240px] pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
+                <div className="rounded-lg border border-white/10 bg-brand-navy-dark py-2 shadow-xl">
+                  {truckDropdownItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`block px-4 py-2 text-sm transition-colors hover:bg-white/10 hover:text-brand-red ${
+                        pathname === item.href ? "text-brand-red" : "text-gray-300"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Rest of nav */}
+            {navLinks.slice(1).map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
@@ -317,7 +369,36 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
       {open && (
         <nav className="border-t border-white/10 bg-brand-navy-dark lg:hidden" aria-label="Mobile navigation">
           <div className="mx-auto max-w-7xl space-y-1 px-4 py-4">
-            {links.map((l) => (
+            {/* Home */}
+            <Link
+              href={routes.home}
+              className={`block rounded px-3 py-2 text-base font-medium transition-colors hover:bg-white/10 ${
+                pathname === routes.home ? "text-brand-red" : ""
+              }`}
+              onClick={() => setOpen(false)}
+            >
+              {dict.nav.home}
+            </Link>
+
+            {/* Truck Accidents section */}
+            <div className="rounded px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-400">
+              {isEn ? "Truck Accidents" : "Accidentes de Cami\u00f3n"}
+            </div>
+            {truckDropdownItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`block rounded px-6 py-2 text-base font-medium transition-colors hover:bg-white/10 ${
+                  pathname === item.href ? "text-brand-red" : ""
+                }`}
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+
+            {/* Other nav links */}
+            {navLinks.slice(1).map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
