@@ -10,6 +10,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
 import CaseEstimateModal from "@/components/CaseEstimateModal";
+import TrustBadges from "@/components/TrustBadges";
 import { localBusinessSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -433,6 +434,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Trust Badges */}
+      <TrustBadges />
 
       {/* Final CTA */}
       <CTASection dict={dict} locale="en" variant="dark" />

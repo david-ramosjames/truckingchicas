@@ -5,6 +5,7 @@ import { SITE_URL } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
+import TrustBadges from "@/components/TrustBadges";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -86,6 +87,9 @@ export default function AboutPageES() {
           </div>
         </div>
       </section>
+
+      {/* Trust Badges */}
+      <TrustBadges />
 
       <CTASection dict={dict} locale="es" variant="dark" />
     </PageShell>
