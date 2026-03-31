@@ -1,171 +1,369 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import { PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 
+/* ─── Types ─── */
 type Locale = "en" | "es";
+type BubbleRole = "assistant" | "user";
 
-interface IntakeStep {
+interface ChatMessage {
+  role: BubbleRole;
+  content: string;
+  showSeen?: boolean;
+}
+
+interface FlowStep {
   message: string;
   buttons: { label: string; value: string }[];
 }
 
-function getSteps(locale: Locale): IntakeStep[] {
+/* ─── Flow definitions ─── */
+function getFlow(locale: Locale): FlowStep[] {
   const isEn = locale === "en";
   return [
     {
       message: isEn
-        ? "Do you have a truck accident case? I can help you find out in 30 seconds."
-        : "\u00bfTiene un caso de accidente de cami\u00f3n? Puedo ayudarle a averiguarlo en 30 segundos.",
+        ? "Hi, I\u2019m Maria with Trucking Chicas. I can help you find out if you may have a truck accident case in about 30 seconds."
+        : "Hola, soy Mar\u00eda de Trucking Chicas. Puedo ayudarle a descubrir si tiene un caso de accidente de cami\u00f3n en unos 30 segundos.",
       buttons: isEn
         ? [
-            { label: "Yes, I was in a truck accident", value: "yes" },
+            { label: "Yes \u2014 truck accident", value: "truck" },
+            { label: "Not sure", value: "unsure" },
+            { label: "Different situation", value: "other" },
+          ]
+        : [
+            { label: "S\u00ed \u2014 accidente de cami\u00f3n", value: "truck" },
+            { label: "No estoy seguro/a", value: "unsure" },
+            { label: "Otra situaci\u00f3n", value: "other" },
+          ],
+    },
+    {
+      message: isEn
+        ? "Did this involve an 18-wheeler or commercial truck?"
+        : "\u00bfEstuvo involucrado un tr\u00e1iler o cami\u00f3n comercial?",
+      buttons: isEn
+        ? [
+            { label: "Yes", value: "yes" },
+            { label: "No", value: "no" },
             { label: "Not sure", value: "unsure" },
           ]
         : [
-            { label: "S\u00ed, tuve un accidente de cami\u00f3n", value: "yes" },
+            { label: "S\u00ed", value: "yes" },
+            { label: "No", value: "no" },
             { label: "No estoy seguro/a", value: "unsure" },
           ],
     },
     {
       message: isEn
-        ? "About when did the accident happen?"
-        : "\u00bfAproximadamente cu\u00e1ndo ocurri\u00f3 el accidente?",
+        ? "Were you or a loved one injured?"
+        : "\u00bfResult\u00f3 usted o un ser querido lesionado/a?",
       buttons: isEn
         ? [
-            { label: "Within the last 30 days", value: "recent" },
+            { label: "Yes", value: "yes" },
+            { label: "No", value: "no" },
+            { label: "Not sure", value: "unsure" },
+          ]
+        : [
+            { label: "S\u00ed", value: "yes" },
+            { label: "No", value: "no" },
+            { label: "No estoy seguro/a", value: "unsure" },
+          ],
+    },
+    {
+      message: isEn
+        ? "When did this happen?"
+        : "\u00bfCu\u00e1ndo ocurri\u00f3?",
+      buttons: isEn
+        ? [
+            { label: "Within 30 days", value: "recent" },
             { label: "1\u20136 months ago", value: "medium" },
-            { label: "More than 6 months ago", value: "old" },
+            { label: "6+ months ago", value: "old" },
           ]
         : [
             { label: "\u00daltimos 30 d\u00edas", value: "recent" },
             { label: "Hace 1\u20136 meses", value: "medium" },
-            { label: "Hace m\u00e1s de 6 meses", value: "old" },
-          ],
-    },
-    {
-      message: isEn ? "Were you injured?" : "\u00bfResult\u00f3 lesionado/a?",
-      buttons: isEn
-        ? [
-            { label: "Yes", value: "yes" },
-            { label: "No", value: "no" },
-            { label: "Not sure", value: "unsure" },
-          ]
-        : [
-            { label: "S\u00ed", value: "yes" },
-            { label: "No", value: "no" },
-            { label: "No estoy seguro/a", value: "unsure" },
-          ],
-    },
-    {
-      message: isEn
-        ? "Was a commercial truck (18-wheeler) involved?"
-        : "\u00bfEstuvo involucrado un cami\u00f3n comercial (tr\u00e1iler)?",
-      buttons: isEn
-        ? [
-            { label: "Yes", value: "yes" },
-            { label: "No", value: "no" },
-            { label: "Not sure", value: "unsure" },
-          ]
-        : [
-            { label: "S\u00ed", value: "yes" },
-            { label: "No", value: "no" },
-            { label: "No estoy seguro/a", value: "unsure" },
+            { label: "M\u00e1s de 6 meses", value: "old" },
           ],
     },
   ];
 }
 
-function isStrongCase(answers: string[]): boolean {
-  // answers: [0] accident, [1] timing, [2] injured, [3] truck
-  const timing = answers[1];
-  const injured = answers[2];
-  const truck = answers[3];
+function isHighIntent(answers: string[]): boolean {
   return (
-    (timing === "recent" || timing === "medium") &&
-    (injured === "yes" || injured === "unsure") &&
-    (truck === "yes" || truck === "unsure")
+    (answers[0] === "truck" || answers[0] === "unsure") &&
+    (answers[1] === "yes" || answers[1] === "unsure")
   );
 }
 
-interface ChatMessage {
-  role: "bot" | "user";
-  content: string;
+/* ─── Sub-components ─── */
+
+function TypingIndicator() {
+  return (
+    <div className="mb-3 flex items-start gap-2">
+      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-red-600 text-[10px] font-bold text-white">
+        M
+      </div>
+      <div className="rounded-2xl rounded-tl-sm bg-[#f1f1f1] px-4 py-3">
+        <div className="flex gap-1">
+          <span className="inline-block h-2 w-2 animate-bounce rounded-full bg-gray-400" style={{ animationDelay: "0ms" }} />
+          <span className="inline-block h-2 w-2 animate-bounce rounded-full bg-gray-400" style={{ animationDelay: "150ms" }} />
+          <span className="inline-block h-2 w-2 animate-bounce rounded-full bg-gray-400" style={{ animationDelay: "300ms" }} />
+        </div>
+      </div>
+    </div>
+  );
 }
+
+function ChatBubble({ msg, isEn }: { msg: ChatMessage; isEn: boolean }) {
+  if (msg.role === "user") {
+    return (
+      <div className="mb-3 animate-[fadeSlideIn_0.25s_ease-out]">
+        <div className="flex justify-end">
+          <div className="max-w-[80%] rounded-2xl rounded-br-sm bg-black px-4 py-2.5 text-sm text-white">
+            {msg.content}
+          </div>
+        </div>
+        {msg.showSeen && (
+          <p className="mt-0.5 text-right text-[10px] text-gray-400">
+            {isEn ? "Seen" : "Visto"}
+          </p>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mb-3 flex items-start gap-2 animate-[fadeSlideIn_0.3s_ease-out]">
+      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-red-600 text-[10px] font-bold text-white">
+        M
+      </div>
+      <div>
+        <p className="mb-0.5 text-[10px] font-semibold text-gray-500">
+          {isEn ? "Maria \u2022 Case Specialist" : "Mar\u00eda \u2022 Especialista de Casos"}
+        </p>
+        <div className="max-w-[85%] rounded-2xl rounded-tl-sm bg-[#f1f1f1] px-4 py-2.5 text-sm leading-relaxed text-[#111]">
+          {msg.content}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ─── Nudge storage ─── */
+const NUDGE_KEY = "tc_chat_nudges";
+
+function getNudgeCount(): number {
+  try {
+    return parseInt(sessionStorage.getItem(NUDGE_KEY) || "0", 10);
+  } catch {
+    return 0;
+  }
+}
+
+function incrementNudge(): number {
+  const n = getNudgeCount() + 1;
+  try {
+    sessionStorage.setItem(NUDGE_KEY, String(n));
+  } catch { /* */ }
+  return n;
+}
+
+/* ─── Main Component ─── */
 
 export default function ChatWidget() {
   const pathname = usePathname();
   const locale: Locale = pathname.startsWith("/es") ? "es" : "en";
   const isEn = locale === "en";
+  const flow = getFlow(locale);
 
   const [isOpen, setIsOpen] = useState(false);
-  const [expanded, setExpanded] = useState(false);
+  const [hasBeenOpened, setHasBeenOpened] = useState(false);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [typing, setTyping] = useState(false);
+  const [showCallCta, setShowCallCta] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [nudgeText, setNudgeText] = useState("");
+  const [buttonLabel, setBtnLabel] = useState(isEn ? "Do I have a case?" : "\u00bfTengo un caso?");
+  const [expandLabel, setExpandLabel] = useState(false);
+
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const idleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const nudgedRef = useRef({ scroll: false, idle: false, exit: false, initial: false });
 
-  const steps = getSteps(locale);
-
-  // Expand the floating button after 3 seconds, then collapse after 4 more
-  useEffect(() => {
-    const expandTimer = setTimeout(() => setExpanded(true), 3000);
-    const collapseTimer = setTimeout(() => setExpanded(false), 7000);
-    return () => {
-      clearTimeout(expandTimer);
-      clearTimeout(collapseTimer);
-    };
-  }, []);
-
-  // Scroll to bottom on new messages
+  /* ─── Scroll to bottom ─── */
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [messages, typing]);
 
-  // Add first bot message when chat opens
-  function openChat() {
+  /* ─── Add assistant message with typing delay ─── */
+  const addAssistantMessage = useCallback(
+    (text: string, delay = 700 + Math.random() * 500) => {
+      setTyping(true);
+      setTimeout(() => {
+        setTyping(false);
+        setMessages((prev) => [...prev, { role: "assistant", content: text }]);
+      }, delay);
+    },
+    []
+  );
+
+  /* ─── Open chat ─── */
+  const openChat = useCallback(() => {
     setIsOpen(true);
-    if (messages.length === 0) {
-      setMessages([{ role: "bot", content: steps[0].message }]);
+    setNudgeText("");
+    if (!hasBeenOpened) {
+      setHasBeenOpened(true);
+      setMessages([]);
+      addAssistantMessage(flow[0].message, 600);
     }
-  }
+  }, [hasBeenOpened, addAssistantMessage, flow]);
 
-  function handleAnswer(buttonLabel: string, value: string) {
-    const currentStep = step;
+  /* ─── Show nudge (minimized prompt) ─── */
+  const showNudge = useCallback(
+    (text: string) => {
+      if (isOpen || getNudgeCount() >= 3) return;
+      incrementNudge();
+      setNudgeText(text);
+      setTimeout(() => setNudgeText(""), 8000);
+    },
+    [isOpen]
+  );
+
+  /* ─── TRIGGER 1: Initial expand (3s) ─── */
+  useEffect(() => {
+    if (nudgedRef.current.initial) return;
+    const t = setTimeout(() => {
+      nudgedRef.current.initial = true;
+      setExpandLabel(true);
+      setTimeout(() => setExpandLabel(false), 4000);
+    }, 3000);
+    return () => clearTimeout(t);
+  }, []);
+
+  /* ─── TRIGGER 2: Scroll 50% ─── */
+  useEffect(() => {
+    function onScroll() {
+      if (nudgedRef.current.scroll) return;
+      const scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (scrollPct > 0.5) {
+        nudgedRef.current.scroll = true;
+        if (!isOpen && hasBeenOpened) {
+          showNudge(isEn ? "Still wondering if you have a case?" : "\u00bfA\u00fan se pregunta si tiene un caso?");
+        } else if (!isOpen) {
+          openChat();
+        }
+      }
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isOpen, hasBeenOpened, openChat, showNudge, isEn]);
+
+  /* ─── TRIGGER 3: Idle 25s ─── */
+  const resetIdleTimer = useCallback(() => {
+    if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    idleTimerRef.current = setTimeout(() => {
+      if (nudgedRef.current.idle) return;
+      nudgedRef.current.idle = true;
+      if (!isOpen) {
+        showNudge(isEn ? "Want me to check your case?" : "\u00bfQuiere que revise su caso?");
+      }
+    }, 25000);
+  }, [isOpen, showNudge, isEn]);
+
+  useEffect(() => {
+    resetIdleTimer();
+    const events = ["mousemove", "keydown", "scroll", "touchstart"];
+    events.forEach((e) => window.addEventListener(e, resetIdleTimer, { passive: true }));
+    return () => {
+      events.forEach((e) => window.removeEventListener(e, resetIdleTimer));
+      if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+    };
+  }, [resetIdleTimer]);
+
+  /* ─── TRIGGER 4: Exit intent (desktop) ─── */
+  useEffect(() => {
+    function onMouseLeave(e: MouseEvent) {
+      if (e.clientY > 0 || nudgedRef.current.exit || isOpen) return;
+      nudgedRef.current.exit = true;
+      showNudge(
+        isEn
+          ? "Before you go \u2014 check your case in 30 seconds"
+          : "Antes de irse \u2014 revise su caso en 30 segundos"
+      );
+    }
+    document.addEventListener("mouseleave", onMouseLeave);
+    return () => document.removeEventListener("mouseleave", onMouseLeave);
+  }, [isOpen, showNudge, isEn]);
+
+  /* ─── Handle answer selection ─── */
+  function handleAnswer(label: string, value: string) {
+    const showSeen = Math.random() > 0.4;
     const newAnswers = [...answers, value];
     const newMessages: ChatMessage[] = [
       ...messages,
-      { role: "user", content: buttonLabel },
+      { role: "user", content: label, showSeen },
     ];
 
     setAnswers(newAnswers);
+    setMessages(newMessages);
 
-    if (currentStep < steps.length - 1) {
-      // Next question
+    const currentStep = step;
+
+    // Check for high-intent shortcut after step 2 (truck accident + commercial truck)
+    if (currentStep === 1 && isHighIntent(newAnswers)) {
+      setStep(flow.length);
+      setShowCallCta(true);
+      setTimeout(() => {
+        setTyping(true);
+        setTimeout(() => {
+          setTyping(false);
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "assistant",
+              content: isEn
+                ? "Based on what you\u2019ve shared, you may have a strong case. Truck accident cases are often worth significantly more than standard injury claims. Speak to a lawyer now \u2014 it\u2019s free and takes 2 minutes."
+                : "Seg\u00fan lo que ha compartido, es posible que tenga un caso s\u00f3lido. Los casos de accidentes de cami\u00f3n a menudo valen significativamente m\u00e1s que las reclamaciones est\u00e1ndar. Hable con un abogado ahora \u2014 es gratis y toma 2 minutos.",
+            },
+          ]);
+        }, 900 + Math.random() * 400);
+      }, 200);
+      return;
+    }
+
+    // Continue to next step
+    if (currentStep < flow.length - 1) {
       const nextStep = currentStep + 1;
-      newMessages.push({ role: "bot", content: steps[nextStep].message });
-      setMessages(newMessages);
       setStep(nextStep);
+      setTimeout(() => {
+        addAssistantMessage(flow[nextStep].message);
+      }, 200);
     } else {
       // Final step — show result
-      const strong = isStrongCase(newAnswers);
+      setStep(flow.length);
+      const strong =
+        (newAnswers[0] === "truck" || newAnswers[0] === "unsure") &&
+        (newAnswers[2] === "yes" || newAnswers[2] === "unsure");
+      setShowCallCta(strong);
       const resultMsg = strong
         ? isEn
-          ? "Based on what you shared, you may have a strong case. Let\u2019s get you connected with an attorney right away."
-          : "Seg\u00fan lo que comparti\u00f3, es posible que tenga un caso s\u00f3lido. Conect\u00e9mosle con un abogado de inmediato."
+          ? "You may have a strong case. Truck accident cases are often worth significantly more than standard injury claims. Speak to a lawyer now \u2014 it\u2019s free."
+          : "Es posible que tenga un caso s\u00f3lido. Los casos de accidentes de cami\u00f3n valen significativamente m\u00e1s. Hable con un abogado ahora \u2014 es gratis."
         : isEn
           ? "Thanks for sharing. A lawyer can review your situation and give you a free assessment."
           : "Gracias por compartir. Un abogado puede revisar su situaci\u00f3n y darle una evaluaci\u00f3n gratuita.";
-      newMessages.push({ role: "bot", content: resultMsg });
-      setMessages(newMessages);
-      setStep(steps.length); // Move past all steps to show contact form
+
+      setTimeout(() => addAssistantMessage(resultMsg), 200);
     }
   }
 
+  /* ─── Submit contact form ─── */
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!name.trim() || !phone.trim()) return;
@@ -174,80 +372,83 @@ export default function ChatWidget() {
       await fetch("/api/slack", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          channel: "leads",
-          leadFields: { name, phone },
-          intake: answers,
-          locale,
-        }),
+        body: JSON.stringify({ channel: "leads", leadFields: { name, phone }, intake: answers, locale }),
       });
-    } catch {
-      // Silent
-    }
+    } catch { /* silent */ }
 
     setSubmitted(true);
-    setMessages((prev) => [
-      ...prev,
-      {
-        role: "bot",
-        content: isEn
-          ? `Thank you, ${name.split(" ")[0]}! Our team will call you shortly. You can also call us now at ${PHONE_DISPLAY}.`
-          : `\u00a1Gracias, ${name.split(" ")[0]}! Nuestro equipo le llamar\u00e1 pronto. Tambi\u00e9n puede llamarnos al ${PHONE_DISPLAY}.`,
-      },
-    ]);
+    addAssistantMessage(
+      isEn
+        ? `Thank you, ${name.split(" ")[0]}! Our team will call you shortly. You can also reach us now at ${PHONE_DISPLAY}.`
+        : `\u00a1Gracias, ${name.split(" ")[0]}! Nuestro equipo le llamar\u00e1 pronto. Tambi\u00e9n puede llamarnos al ${PHONE_DISPLAY}.`
+    );
   }
 
-  const showForm = step >= steps.length && !submitted;
-  const currentButtons = step < steps.length ? steps[step].buttons : [];
+  const showForm = step >= flow.length && !submitted;
+  const currentButtons = step < flow.length ? flow[step].buttons : [];
 
   return (
     <>
-      {/* ===== FLOATING BUTTON ===== */}
+      {/* ═══ FLOATING BUTTON ═══ */}
       {!isOpen && (
-        <button
-          onClick={openChat}
-          className="fixed bottom-20 right-4 z-50 flex items-center gap-2 rounded-full bg-brand-red px-4 py-3 text-white shadow-lg shadow-brand-red/30 transition-all hover:scale-105 hover:shadow-brand-red/40 md:bottom-6"
-          aria-label={isEn ? "Open chat" : "Abrir chat"}
-        >
-          {/* Chat icon */}
-          <svg className="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-            />
-          </svg>
-          {/* Expandable text */}
-          <span
-            className={`whitespace-nowrap text-sm font-bold transition-all duration-500 ${
-              expanded ? "max-w-[200px] opacity-100" : "max-w-0 overflow-hidden opacity-0"
-            }`}
+        <div className="fixed bottom-20 right-4 z-50 flex flex-col items-end gap-2 md:bottom-6">
+          {/* Nudge bubble */}
+          {nudgeText && (
+            <button
+              onClick={openChat}
+              className="animate-[fadeSlideIn_0.3s_ease-out] rounded-2xl bg-black px-4 py-2.5 text-left text-sm text-white shadow-xl"
+              style={{ maxWidth: 260 }}
+            >
+              {nudgeText}
+            </button>
+          )}
+
+          {/* Main button */}
+          <button
+            onClick={openChat}
+            className="flex items-center gap-2 rounded-full bg-red-600 px-4 py-3 text-white shadow-lg shadow-red-600/30 transition-all hover:scale-105 hover:bg-red-700"
+            aria-label={isEn ? "Open chat" : "Abrir chat"}
           >
-            {isEn ? "Do I have a case?" : "\u00bfTengo un caso?"}
-          </span>
-          {/* Online pulse */}
-          <span className="absolute -right-0.5 -top-0.5 flex h-3.5 w-3.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-            <span className="relative inline-flex h-3.5 w-3.5 rounded-full border-2 border-white bg-green-500" />
-          </span>
-        </button>
+            <svg className="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            <span
+              className={`whitespace-nowrap text-sm font-bold transition-all duration-500 ${
+                expandLabel ? "max-w-[200px] opacity-100" : "max-w-0 overflow-hidden opacity-0"
+              }`}
+            >
+              {buttonLabel}
+            </span>
+            {/* Online pulse */}
+            <span className="absolute -right-0.5 -top-0.5 flex h-3.5 w-3.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex h-3.5 w-3.5 rounded-full border-2 border-white bg-green-500" />
+            </span>
+          </button>
+        </div>
       )}
 
-      {/* ===== CHAT WINDOW ===== */}
+      {/* ═══ CHAT WINDOW ═══ */}
       {isOpen && (
-        <div className="fixed bottom-0 right-0 z-50 flex h-full w-full flex-col bg-white shadow-2xl sm:bottom-4 sm:right-4 sm:h-[34rem] sm:w-96 sm:rounded-xl">
-          {/* Header */}
-          <div className="flex items-center justify-between rounded-t-none bg-brand-navy px-4 py-3 text-white sm:rounded-t-xl">
-            <div className="flex items-center gap-2">
-              <div className="h-3 w-3 rounded-full bg-green-400" />
-              <span className="font-bold">
-                {isEn ? "Trucking Chicas" : "Trucking Chicas"}
+        <div className="fixed bottom-0 right-0 z-50 flex h-[85vh] w-full flex-col shadow-2xl sm:bottom-4 sm:right-4 sm:h-[36rem] sm:w-[380px] sm:rounded-2xl" style={{ maxHeight: "calc(100vh - 20px)" }}>
+
+          {/* ── Header ── */}
+          <div className="flex items-center justify-between bg-black px-4 py-3 sm:rounded-t-2xl">
+            <div className="flex items-center gap-2.5">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
               </span>
+              <div>
+                <p className="text-sm font-bold text-white">Trucking Chicas</p>
+                <p className="text-[10px] text-gray-400">
+                  {isEn ? "Live case screening" : "Evaluaci\u00f3n de caso en vivo"}
+                </p>
+              </div>
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="hover:text-gray-300"
+              className="text-gray-400 transition-colors hover:text-white"
               aria-label="Close chat"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -256,37 +457,25 @@ export default function ChatWidget() {
             </button>
           </div>
 
-          {/* Messages area */}
-          <div className="flex-1 overflow-y-auto px-4 py-4">
+          {/* ── Messages ── */}
+          <div className="flex-1 overflow-y-auto bg-[#f7f7f7] px-4 py-4">
             {messages.map((msg, i) => (
-              <div
-                key={i}
-                className={`mb-3 flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-              >
-                <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
-                    msg.role === "user"
-                      ? "bg-brand-navy text-white"
-                      : "bg-gray-100 text-gray-800"
-                  }`}
-                >
-                  {msg.content}
-                </div>
-              </div>
+              <ChatBubble key={i} msg={msg} isEn={isEn} />
             ))}
+            {typing && <TypingIndicator />}
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Step buttons OR contact form */}
-          <div className="border-t border-gray-100 px-4 py-3">
-            {/* Active step — show answer buttons */}
-            {step < steps.length && (
+          {/* ── Action area ── */}
+          <div className="border-t border-gray-200 bg-white px-4 py-3 sm:rounded-b-2xl">
+            {/* Step buttons */}
+            {step < flow.length && !typing && messages.length > 0 && (
               <div className="flex flex-wrap gap-2">
                 {currentButtons.map((btn) => (
                   <button
                     key={btn.value}
                     onClick={() => handleAnswer(btn.label, btn.value)}
-                    className="rounded-full border-2 border-brand-red bg-white px-4 py-2 text-sm font-semibold text-brand-red transition-all hover:bg-brand-red hover:text-white"
+                    className="rounded-full border-2 border-black bg-white px-4 py-2.5 text-sm font-semibold text-black transition-all hover:bg-black hover:text-white active:scale-95"
                   >
                     {btn.label}
                   </button>
@@ -294,44 +483,55 @@ export default function ChatWidget() {
               </div>
             )}
 
-            {/* Contact form */}
-            {showForm && (
-              <form onSubmit={handleSubmit} className="space-y-3">
+            {/* High-intent call CTA */}
+            {showForm && showCallCta && !submitted && (
+              <div className="space-y-3">
+                <a
+                  href={`tel:+1${PHONE_NUMBER}`}
+                  className="flex w-full items-center justify-center gap-2.5 rounded-full bg-red-600 px-5 py-3.5 text-base font-bold text-white shadow-lg shadow-red-600/25 transition-all hover:bg-red-700 active:scale-95"
+                >
+                  <span className="text-lg">📞</span>
+                  {isEn ? `Call Now ${PHONE_DISPLAY}` : `Llame Ahora ${PHONE_DISPLAY}`}
+                </a>
+
+                <button
+                  onClick={() => setShowCallCta(false)}
+                  className="w-full rounded-full border-2 border-black bg-white px-4 py-2.5 text-sm font-semibold text-black transition-all hover:bg-black hover:text-white"
+                >
+                  {isEn ? "Continue chat instead" : "Continuar por chat"}
+                </button>
+              </div>
+            )}
+
+            {/* Contact form (after dismissing call CTA or low intent) */}
+            {showForm && !showCallCta && !submitted && (
+              <form onSubmit={handleSubmit} className="space-y-2.5">
                 <input
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={isEn ? "Your name" : "Su nombre"}
-                  className="w-full rounded-lg border border-gray-300 px-3 py-2.5 text-sm focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+                  className="w-full rounded-xl border border-gray-300 px-3.5 py-2.5 text-sm focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
                   required
                 />
                 <input
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder={isEn ? "Your phone number" : "Su n\u00famero de tel\u00e9fono"}
-                  className="w-full rounded-lg border border-gray-300 px-3 py-2.5 text-sm focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+                  placeholder={isEn ? "Phone number" : "N\u00famero de tel\u00e9fono"}
+                  className="w-full rounded-xl border border-gray-300 px-3.5 py-2.5 text-sm focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500"
                   required
                 />
-                {/* Primary CTA: Call */}
                 <a
                   href={`tel:+1${PHONE_NUMBER}`}
-                  className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand-red px-4 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-brand-red-light"
+                  className="flex w-full items-center justify-center gap-2 rounded-full bg-red-600 px-4 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-red-700 active:scale-95"
                 >
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                  {isEn ? `Call Now: ${PHONE_DISPLAY}` : `Llame Ahora: ${PHONE_DISPLAY}`}
+                  <span>📞</span>
+                  {isEn ? `Call Now ${PHONE_DISPLAY}` : `Llame Ahora ${PHONE_DISPLAY}`}
                 </a>
-                {/* Secondary CTA: Submit form */}
                 <button
                   type="submit"
-                  className="w-full rounded-lg border-2 border-brand-navy bg-white px-4 py-2.5 text-sm font-bold text-brand-navy transition-all hover:bg-brand-navy hover:text-white"
+                  className="w-full rounded-full border-2 border-black bg-white px-4 py-2.5 text-sm font-semibold text-black transition-all hover:bg-black hover:text-white active:scale-95"
                 >
                   {isEn ? "Get Free Case Review" : "Obtener Revisi\u00f3n Gratis"}
                 </button>
@@ -342,27 +542,35 @@ export default function ChatWidget() {
             {submitted && (
               <a
                 href={`tel:+1${PHONE_NUMBER}`}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand-red px-4 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-brand-red-light"
+                className="flex w-full items-center justify-center gap-2 rounded-full bg-red-600 px-4 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-red-700 active:scale-95"
               >
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                {isEn ? `Call Now: ${PHONE_DISPLAY}` : `Llame Ahora: ${PHONE_DISPLAY}`}
+                <span>📞</span>
+                {isEn ? `Call Now ${PHONE_DISPLAY}` : `Llame Ahora ${PHONE_DISPLAY}`}
               </a>
             )}
 
+            {/* Footer trust line */}
             <p className="mt-2 text-center text-[10px] text-gray-400">
-              {isEn ? "No fees unless we win" : "No cobramos si no ganamos"} &middot;{" "}
+              {isEn ? "No fee unless we win" : "No cobramos si no ganamos"} &bull;{" "}
               {isEn ? "Available 24/7" : "Disponible 24/7"}
             </p>
           </div>
         </div>
       )}
+
+      {/* ═══ Keyframe for fade + slide ═══ */}
+      <style jsx global>{`
+        @keyframes fadeSlideIn {
+          from {
+            opacity: 0;
+            transform: translateY(8px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </>
   );
 }
