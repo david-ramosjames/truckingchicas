@@ -136,6 +136,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
   const navLinks = [
     { href: routes.home, label: dict.nav.home, short: dict.nav.homeShort },
+    { href: routes.help, label: dict.nav.help, short: dict.nav.helpShort },
     { href: routes.faq, label: dict.nav.faq, short: dict.nav.faqShort },
     { href: routes.caseEstimate, label: dict.nav.caseEstimate, short: dict.nav.caseEstimateShort },
     { href: routes.about, label: dict.nav.about, short: dict.nav.aboutShort },
