@@ -215,24 +215,62 @@ export default function HomePage() {
       {/* CTA */}
       <CTASection dict={dict} locale="en" variant="dark" />
 
-      {/* Results */}
-      <section className="py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
-            {dict.home.resultsTitle}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-            {dict.home.resultsSubtitle}
-          </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {dict.home.results.map((r) => (
-              <div key={r.desc} className="card-lift card-border-top rounded-xl bg-white p-6 text-center shadow-md">
-                <p className="text-4xl font-extrabold text-brand-coral">{r.amount}</p>
-                <p className="mt-2 font-medium text-brand-navy">{r.desc}</p>
+      {/* Results — Premium Editorial Layout */}
+      <section className="relative overflow-hidden bg-brand-navy py-20 text-white">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-4">
+          {/* Editorial header */}
+          <div className="text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-coral">
+              Proven Track Record
+            </p>
+            <h2 className="mt-3 text-3xl font-extrabold md:text-5xl">
+              {dict.home.resultsTitle}
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
+              {dict.home.resultsSubtitle}
+            </p>
+          </div>
+
+          {/* Featured result — hero card */}
+          <div className="mt-14 flex justify-center">
+            <div className="card-lift relative w-full max-w-lg rounded-2xl border border-brand-coral/30 bg-gradient-to-br from-brand-coral to-brand-rose p-8 text-center shadow-2xl md:p-10">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-white px-4 py-1 text-xs font-bold uppercase tracking-wider text-brand-coral shadow-md">
+                Largest Recovery
+              </div>
+              <p className="text-6xl font-black md:text-7xl">{dict.home.results[0].amount}</p>
+              <p className="mt-3 text-xl font-medium text-white/90">{dict.home.results[0].desc}</p>
+            </div>
+          </div>
+
+          {/* Remaining results — editorial grid */}
+          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
+            {dict.home.results.slice(1).map((r) => (
+              <div key={r.desc} className="group bg-brand-navy p-6 text-center transition-colors hover:bg-white/5">
+                <p className="text-3xl font-extrabold text-brand-coral transition-transform group-hover:scale-110 lg:text-4xl">{r.amount}</p>
+                <div className="mx-auto mt-3 h-px w-8 bg-brand-coral/40" />
+                <p className="mt-3 text-sm font-medium leading-snug text-gray-300">{r.desc}</p>
               </div>
             ))}
           </div>
-          <p className="mt-6 text-center text-xs text-gray-400">{dict.home.resultsDisclaimer}</p>
+
+          <p className="mt-8 text-center text-xs text-gray-500">{dict.home.resultsDisclaimer}</p>
+
+          {/* CTA under results */}
+          <div className="mt-10 text-center">
+            <a
+              href={`tel:+1${PHONE_NUMBER}`}
+              className="btn-lift inline-flex items-center gap-3 rounded-xl bg-brand-coral px-10 py-4 text-lg font-bold text-white shadow-lg transition-colors hover:bg-brand-coral-light"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Get Your Free Case Review
+            </a>
+          </div>
         </div>
       </section>
 

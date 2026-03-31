@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES } from "@/lib/constants";
@@ -32,6 +33,19 @@ export default function DeliveryTruckPageES() {
       <JsonLd data={breadcrumbSchema([{ name: "Inicio", url: "/es" }, { name: d.title, url: "/es/abogado-accidentes-camion-reparto" }])} />
 
       <HeroSection dict={dict} locale="es" headline={d.heroHeadline} subhead={d.heroSubhead} />
+
+      {/* Truck banner */}
+      <div className="relative h-48 w-full overflow-hidden md:h-64">
+        <Image
+          src="/trucks/fedex.webp"
+          alt="Camión de reparto FedEx"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/30 to-transparent" />
+      </div>
 
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4">

@@ -165,7 +165,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
         <div className="row-span-2 flex items-center px-6 py-2">
           <Link href={routes.home} className="block">
             <Image
-              src="/logo-transparent-crop.PNG"
+              src="/logo-transparent-crop.png"
               alt="Trucking Chicas"
               width={365}
               height={100}
@@ -301,7 +301,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
         {/* Logo */}
         <Link href={routes.home} className="shrink-0">
           <Image
-            src="/logo-transparent-crop.PNG"
+            src="/logo-transparent-crop.png"
             alt="Trucking Chicas"
             width={256}
             height={70}
