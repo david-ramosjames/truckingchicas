@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
-import { SITE_URL, TEXAS_CITIES, PHONE_NUMBER, PHONE_DISPLAY, ROUTES } from "@/lib/constants";
+import { SITE_URL, TEXAS_CITIES, PHONE_NUMBER, PHONE_DISPLAY, ROUTES, type CityRouteKey } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CitySection from "@/components/CitySection";
@@ -27,6 +27,19 @@ export default function AreasPage() {
   const dict = getDictionary("en");
   const d = dict.areas;
   const routes = ROUTES.en;
+
+  const cityRouteMap: Record<string, CityRouteKey> = {
+    Houston: "houston",
+    Dallas: "dallas",
+    Austin: "austin",
+    "San Antonio": "sanAntonio",
+    "Fort Worth": "fortWorth",
+    "El Paso": "elPaso",
+    Arlington: "arlington",
+    "Corpus Christi": "corpusChristi",
+    Plano: "plano",
+    Lubbock: "lubbock",
+  };
 
   return (
     <PageShell dict={dict} locale="en">
@@ -94,6 +107,7 @@ export default function AreasPage() {
                 data={d.cities[city]}
                 dict={dict}
                 locale="en"
+                routeKey={cityRouteMap[city]}
               />
             ))}
           </div>

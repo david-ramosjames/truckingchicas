@@ -51,6 +51,42 @@ inLanguage: locale === "en" ? "en-US" : "es",
   };
 }
 
+export function cityLegalServiceSchema(city: string, state: string, locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    name: `Trucking Chicas — ${city} Truck Accident Lawyer`,
+    description:
+      locale === "en"
+        ? `Truck accident lawyers serving ${city}, ${state}. Free consultation for 18-wheeler and commercial truck accident victims.`
+        : `Abogados de accidentes de camión en ${city}, ${state}. Consulta gratis para víctimas de accidentes de 18 ruedas y camiones comerciales.`,
+    url: locale === "en" ? SITE_URL : `${SITE_URL}/es`,
+    telephone: `+1${PHONE_NUMBER}`,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: city,
+      addressRegion: state,
+      addressCountry: "US",
+    },
+    areaServed: {
+      "@type": "City",
+      name: city,
+      containedInPlace: { "@type": "State", name: "Texas" },
+    },
+    priceRange: "Free Consultation",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday", "Tuesday", "Wednesday", "Thursday",
+        "Friday", "Saturday", "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
+    inLanguage: locale === "en" ? "en-US" : "es",
+  };
+}
+
 export function faqSchema(items: readonly { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

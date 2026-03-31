@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
-import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
+import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY, type CityRouteKey } from "@/lib/constants";
 
 interface CityData {
   desc: string;
@@ -14,11 +14,13 @@ export default function CitySection({
   data,
   dict,
   locale,
+  routeKey,
 }: {
   city: string;
   data: CityData;
   dict: Dictionary;
   locale: Locale;
+  routeKey?: CityRouteKey;
 }) {
   const routes = ROUTES[locale];
   const slug = city.toLowerCase().replace(/\s+/g, "-");
@@ -114,6 +116,17 @@ export default function CitySection({
           </svg>
           {dict.cta.callNow}: {PHONE_DISPLAY}
         </a>
+        {routeKey && (
+          <Link
+            href={routes[routeKey]}
+            className="ml-4 inline-flex items-center gap-1 font-medium text-brand-coral underline transition-colors hover:text-brand-rose"
+          >
+            {locale === "en" ? "Learn More" : "Más Información"}
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        )}
       </div>
       </div>
     </article>

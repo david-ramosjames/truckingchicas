@@ -120,9 +120,22 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
     { href: routes.truckAccident, label: isEn ? "All Truck Accidents" : "Todos los Accidentes" },
   ];
 
+  const areasDropdownItems = [
+    { href: routes.houston, label: "Houston" },
+    { href: routes.dallas, label: "Dallas" },
+    { href: routes.austin, label: "Austin" },
+    { href: routes.sanAntonio, label: "San Antonio" },
+    { href: routes.fortWorth, label: "Fort Worth" },
+    { href: routes.elPaso, label: "El Paso" },
+    { href: routes.arlington, label: "Arlington" },
+    { href: routes.corpusChristi, label: "Corpus Christi" },
+    { href: routes.plano, label: "Plano" },
+    { href: routes.lubbock, label: "Lubbock" },
+    { href: routes.areas, label: isEn ? "All Areas" : "Todas las Áreas" },
+  ];
+
   const navLinks = [
     { href: routes.home, label: dict.nav.home, short: dict.nav.homeShort },
-    { href: routes.areas, label: dict.nav.areas, short: dict.nav.areasShort },
     { href: routes.faq, label: dict.nav.faq, short: dict.nav.faqShort },
     { href: routes.caseEstimate, label: dict.nav.caseEstimate, short: dict.nav.caseEstimateShort },
     { href: routes.about, label: dict.nav.about, short: dict.nav.aboutShort },
@@ -131,6 +144,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
   const truckAccidentPaths: string[] = truckDropdownItems.map((i) => i.href);
   const isTruckPage = truckAccidentPaths.includes(pathname);
+  const areasPaths: string[] = areasDropdownItems.map((i) => i.href);
+  const isAreaPage = areasPaths.includes(pathname);
 
   const socialLinks = [
     { icon: <InstagramIcon />, href: "#", label: "Instagram" },
@@ -277,6 +292,35 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
               </div>
             </div>
 
+            {/* Areas dropdown */}
+            <div className="group relative">
+              <button
+                className={`flex items-center gap-1 whitespace-nowrap text-[13px] font-medium leading-tight transition-colors hover:text-brand-red ${
+                  isAreaPage ? "text-brand-red" : ""
+                }`}
+              >
+                {isEn ? "Areas" : "Áreas"}
+                <svg className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="invisible absolute left-0 top-full z-50 min-w-[220px] pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
+                <div className="rounded-lg border border-white/10 bg-brand-navy-dark py-2 shadow-xl">
+                  {areasDropdownItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`block px-4 py-2 text-sm transition-colors hover:bg-white/10 hover:text-brand-red ${
+                        pathname === item.href ? "text-brand-red" : "text-gray-300"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             {/* Rest of nav */}
             {navLinks.slice(1).map((l) => (
               <Link
@@ -385,6 +429,23 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
               {isEn ? "Truck Accidents" : "Accidentes de Cami\u00f3n"}
             </div>
             {truckDropdownItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`block rounded px-6 py-2 text-base font-medium transition-colors hover:bg-white/10 ${
+                  pathname === item.href ? "text-brand-red" : ""
+                }`}
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+
+            {/* Areas section */}
+            <div className="rounded px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-400">
+              {isEn ? "Areas We Serve" : "Áreas que Servimos"}
+            </div>
+            {areasDropdownItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
