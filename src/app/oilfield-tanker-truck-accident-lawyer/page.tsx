@@ -34,22 +34,20 @@ export default function OilfieldTankerPage() {
 
       <HeroSection dict={dict} locale="en" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
-      {/* Truck banner */}
-      <div className="relative h-48 w-full overflow-hidden md:h-64">
-        <Image
-          src="/trucks/oil-tanker.jpg"
-          alt="Oilfield tanker truck"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy/30 to-transparent" />
-      </div>
-
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.introTitle}</h2>
+          <div className="mt-6 overflow-hidden rounded-xl">
+            <Image
+              src="/trucks/oil-tanker.jpg"
+              alt="Oilfield tanker truck"
+              width={800}
+              height={450}
+              className="h-auto w-full rounded-xl"
+              sizes="(max-width: 768px) 100vw, 800px"
+              priority
+            />
+          </div>
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.introDesc}</p>
         </div>
       </section>

@@ -215,60 +215,65 @@ export default function HomePage() {
       {/* CTA */}
       <CTASection dict={dict} locale="en" variant="dark" />
 
-      {/* Results — Premium Editorial Layout */}
-      <section className="relative overflow-hidden bg-brand-navy py-20 text-white">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
-        </div>
-        <div className="relative mx-auto max-w-6xl px-4">
-          {/* Editorial header */}
+      {/* Featured Results — Premium Editorial */}
+      <section className="bg-white py-20 md:py-24">
+        <div className="mx-auto max-w-5xl px-4">
+          {/* Header */}
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-coral">
-              Proven Track Record
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C62828]">
+              Featured Results
             </p>
-            <h2 className="mt-3 text-3xl font-extrabold md:text-5xl">
-              {dict.home.resultsTitle}
+            <h2 className="mt-3 text-3xl font-bold text-brand-navy md:text-4xl">
+              Fighting for Maximum Compensation — Case by Case
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-300">
-              {dict.home.resultsSubtitle}
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-500 md:text-lg">
+              Every case is different. But when serious injuries and commercial vehicles are involved, we fight to recover the full value our clients deserve.
             </p>
           </div>
 
-          {/* Featured result — hero card */}
-          <div className="mt-14 flex justify-center">
-            <div className="card-lift relative w-full max-w-lg rounded-2xl border border-brand-coral/30 bg-gradient-to-br from-brand-coral to-brand-rose p-8 text-center shadow-2xl md:p-10">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-white px-4 py-1 text-xs font-bold uppercase tracking-wider text-brand-coral shadow-md">
-                Largest Recovery
-              </div>
-              <p className="text-6xl font-black md:text-7xl">{dict.home.results[0].amount}</p>
-              <p className="mt-3 text-xl font-medium text-white/90">{dict.home.results[0].desc}</p>
-            </div>
-          </div>
-
-          {/* Remaining results — editorial grid */}
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-5">
-            {dict.home.results.slice(1).map((r) => (
-              <div key={r.desc} className="group bg-brand-navy p-6 text-center transition-colors hover:bg-white/5">
-                <p className="text-3xl font-extrabold text-brand-coral transition-transform group-hover:scale-110 lg:text-4xl">{r.amount}</p>
-                <div className="mx-auto mt-3 h-px w-8 bg-brand-coral/40" />
-                <p className="mt-3 text-sm font-medium leading-snug text-gray-300">{r.desc}</p>
+          {/* Featured case cards */}
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {[
+              { amount: "$475,000", label: "Recovery", title: "Company Vehicle Crash", detail: "Client required spine surgery" },
+              { amount: "$375,000", label: "Recovery", title: "18-Wheeler Side-Swipe Collision", detail: "Commercial vehicle negligence" },
+              { amount: "High Six-Figure", label: "Settlement", title: "18-Wheeler Crash (Confidential)", detail: "Severe damages" },
+            ].map((c) => (
+              <div
+                key={c.title}
+                className="rounded-xl border border-gray-200 bg-gray-50/50 px-6 py-8 text-center shadow-sm transition-shadow hover:shadow-md"
+              >
+                <div className="mx-auto mb-5 h-px w-10 bg-[#C62828]/50" />
+                <p className="text-2xl font-bold text-[#C62828] md:text-3xl">{c.amount}</p>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-[#C62828]/60">{c.label}</p>
+                <p className="mt-4 text-base font-semibold text-brand-navy">{c.title}</p>
+                <p className="mt-1 text-sm italic text-gray-500">{c.detail}</p>
               </div>
             ))}
           </div>
 
-          <p className="mt-8 text-center text-xs text-gray-500">{dict.home.resultsDisclaimer}</p>
+          {/* Support line */}
+          <p className="mt-10 text-center text-sm font-medium text-gray-600">
+            + Additional six-figure recoveries across 18-wheeler, Mack truck, and company vehicle cases
+          </p>
 
-          {/* CTA under results */}
-          <div className="mt-10 text-center">
+          {/* Disclaimer */}
+          <p className="mt-3 text-center text-xs text-gray-400">
+            Results depend on the facts of each case. Not all cases result in the same outcome.
+          </p>
+
+          {/* CTA */}
+          <div className="mt-12 text-center">
+            <p className="mb-4 text-lg font-medium text-brand-navy">
+              Find out what your case could be worth
+            </p>
             <a
               href={`tel:+1${PHONE_NUMBER}`}
-              className="btn-lift inline-flex items-center gap-3 rounded-xl bg-brand-coral px-10 py-4 text-lg font-bold text-white shadow-lg transition-colors hover:bg-brand-coral-light"
+              className="btn-lift inline-flex items-center gap-3 rounded-xl bg-brand-rose px-10 py-4 text-lg font-bold text-white shadow-lg transition-colors hover:bg-brand-rose-dark"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Get Your Free Case Review
+              Call Now: {PHONE_DISPLAY}
             </a>
           </div>
         </div>
