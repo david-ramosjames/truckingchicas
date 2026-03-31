@@ -456,7 +456,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
       {/* ===== MOBILE MENU ===== */}
       {open && (
-        <nav className="border-t border-white/10 bg-brand-navy-dark lg:hidden" aria-label="Mobile navigation">
+        <nav className="max-h-[80vh] overflow-y-auto border-t border-white/10 bg-brand-navy-dark lg:hidden" aria-label="Mobile navigation">
           <div className="mx-auto max-w-7xl space-y-1 px-4 py-4">
             {/* Home */}
             <Link

@@ -107,8 +107,8 @@ function isOtherPI(answers: string[]): boolean {
 function TypingIndicator() {
   return (
     <div className="mb-3 flex items-start gap-2 animate-[fadeSlideIn_0.2s_ease-out]">
-      <div className="relative h-7 w-7 shrink-0 overflow-hidden rounded-full">
-        <Image src="/laura-chat.jpg" alt="" fill className="object-cover" sizes="28px" />
+      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full">
+        <Image src="/laura-chat.jpg" alt="" fill className="object-cover" sizes="40px" />
       </div>
       <div className="rounded-2xl rounded-tl-sm bg-[#f1f1f1] px-4 py-3">
         <div className="flex gap-1">
@@ -141,8 +141,8 @@ function ChatBubble({ msg, isEn }: { msg: ChatMessage; isEn: boolean }) {
 
   return (
     <div className="mb-3 flex items-start gap-2 animate-[fadeSlideIn_0.3s_ease-out]">
-      <div className="relative h-7 w-7 shrink-0 overflow-hidden rounded-full">
-        <Image src="/laura-chat.jpg" alt="" fill className="object-cover" sizes="28px" />
+      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full">
+        <Image src="/laura-chat.jpg" alt="" fill className="object-cover" sizes="40px" />
       </div>
       <div>
         <p className="mb-0.5 text-[10px] font-semibold text-gray-500">
@@ -402,8 +402,8 @@ export default function ChatWidget() {
             aria-label={isEn ? "Open chat" : "Abrir chat"}
           >
             {showLauraAvatar ? (
-              <div className="relative h-7 w-7 shrink-0 overflow-hidden rounded-full ring-2 ring-white/50">
-                <Image src="/laura-chat.jpg" alt="" fill className="object-cover" sizes="28px" />
+              <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full ring-2 ring-white/50">
+                <Image src="/laura-chat.jpg" alt="" fill className="object-cover" sizes="40px" />
               </div>
             ) : (
               <svg className="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
