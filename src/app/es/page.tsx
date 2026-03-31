@@ -100,10 +100,10 @@ export default function HomePageES() {
               const images: Record<string, string> = {
                 eighteenWheeler: "/trucks/18-wheelers.jpg",
                 deliveryTruck: "/trucks/fedex.webp",
-                oilfieldTanker: "/trucks/oilfield-tanker.svg",
+                oilfieldTanker: "/trucks/oil-tanker.jpg",
                 dumpTruck: "/trucks/dump-truck.webp",
                 boxTruck: "/trucks/box-truck.webp",
-                truckAccident: "/trucks/all-trucks.svg",
+                truckAccident: "/trucks/all-trucks.webp",
               };
               return (
                 <Link
@@ -111,13 +111,13 @@ export default function HomePageES() {
                   href={routes[item.href as keyof typeof routes]}
                   className="card-lift group flex items-start gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition-all hover:border-brand-red hover:bg-white/10"
                 >
-                  <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-lg">
+                  <div className="relative h-24 w-28 shrink-0 overflow-hidden rounded-lg">
                     <Image
                       src={images[item.href] || images.truckAccident}
                       alt={item.title}
                       fill
                       className="object-cover transition-transform group-hover:scale-110"
-                      sizes="80px"
+                      sizes="112px"
                     />
                   </div>
                   <div className="min-w-0">
