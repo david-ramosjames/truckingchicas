@@ -11,7 +11,7 @@ export default function StickyMobileCTA({
   locale: Locale;
 }) {
   return (
-    <div className="fixed bottom-6 left-3 z-40 flex flex-col gap-3 md:hidden">
+    <div className="fixed left-3 top-1/2 z-40 flex -translate-y-1/2 flex-col gap-3 md:hidden">
       {/* Call button */}
       <a
         href={`tel:+1${PHONE_NUMBER}`}

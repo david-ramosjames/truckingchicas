@@ -191,18 +191,17 @@ export default function ChatWidget() {
   const [nudgeText, setNudgeText] = useState("");
   const [expandLabel, setExpandLabel] = useState(false);
 
-  // Avatar animation: start as chat icon, reveal laura, back to chat
-  const [avatarPhase, setAvatarPhase] = useState<"chat" | "laura" | "chat2">("chat");
+  // Avatar animation: start as chat icon, reveal laura and keep her visible
+  const [avatarPhase, setAvatarPhase] = useState<"chat" | "laura">("chat");
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const idleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const nudgedRef = useRef({ scroll: false, idle: false, exit: false, initial: false });
 
-  // Avatar cycle on mount
+  // Avatar: reveal laura after 2s and keep her visible
   useEffect(() => {
     const t1 = setTimeout(() => setAvatarPhase("laura"), 2000);
-    const t2 = setTimeout(() => setAvatarPhase("chat2"), 5000);
-    return () => { clearTimeout(t1); clearTimeout(t2); };
+    return () => { clearTimeout(t1); };
   }, []);
 
   useEffect(() => {

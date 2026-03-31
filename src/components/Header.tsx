@@ -134,9 +134,22 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
     { href: routes.areas, label: isEn ? "All Areas" : "Todas las Áreas" },
   ];
 
+  const helpDropdownItems = [
+    { href: routes.helpDoIHaveACase, label: isEn ? "Do I Have a Case?" : "¿Tengo un Caso?" },
+    { href: routes.helpCanISue, label: isEn ? "Can I Sue the Truck Driver?" : "¿Puedo Demandar al Conductor?" },
+    { href: routes.helpRearEnded, label: isEn ? "Rear-Ended by 18-Wheeler" : "Choque Trasero por Tráiler" },
+    { href: routes.helpSueTruckingCompany, label: isEn ? "Sue a Trucking Company" : "Demandar Compañía de Camiones" },
+    { href: routes.helpPhoneUse, label: isEn ? "Driver Was on Phone" : "Conductor Usando Teléfono" },
+    { href: routes.helpFatiguedDriver, label: isEn ? "Tired/Asleep Truck Driver" : "Conductor Cansado/Dormido" },
+    { href: routes.helpCaseWorth, label: isEn ? "How Much Is My Case Worth?" : "¿Cuánto Vale Mi Caso?" },
+    { href: routes.helpSettlement, label: isEn ? "Trucking Company Lawsuit Money" : "Dinero por Demanda de Camión" },
+    { href: routes.helpAverageSettlement, label: isEn ? "Average 18-Wheeler Settlement" : "Acuerdo Promedio de Tráiler" },
+    { href: routes.helpDrunkDriver, label: isEn ? "Drunk Truck Driver Accident" : "Accidente con Conductor Ebrio" },
+    { href: routes.help, label: isEn ? "All Truck Accident Help" : "Toda la Ayuda" },
+  ];
+
   const navLinks = [
     { href: routes.home, label: dict.nav.home, short: dict.nav.homeShort },
-    { href: routes.help, label: dict.nav.help, short: dict.nav.helpShort },
     { href: routes.faq, label: dict.nav.faq, short: dict.nav.faqShort },
     { href: routes.caseEstimate, label: dict.nav.caseEstimate, short: dict.nav.caseEstimateShort },
     { href: routes.about, label: dict.nav.about, short: dict.nav.aboutShort },
@@ -147,6 +160,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
   const isTruckPage = truckAccidentPaths.includes(pathname);
   const areasPaths: string[] = areasDropdownItems.map((i) => i.href);
   const isAreaPage = areasPaths.includes(pathname);
+  const helpPaths: string[] = helpDropdownItems.map((i) => i.href);
+  const isHelpPage = helpPaths.includes(pathname);
 
   const socialLinks = [
     { icon: <InstagramIcon />, href: "#", label: "Instagram" },
@@ -322,6 +337,35 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
               </div>
             </div>
 
+            {/* Accident Help dropdown */}
+            <div className="group relative">
+              <button
+                className={`flex items-center gap-1 whitespace-nowrap text-[13px] font-medium leading-tight transition-colors hover:text-brand-red ${
+                  isHelpPage ? "text-brand-red" : ""
+                }`}
+              >
+                {dict.nav.helpShort}
+                <svg className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="invisible absolute left-0 top-full z-50 min-w-[280px] pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
+                <div className="rounded-lg border border-white/10 bg-brand-navy-dark py-2 shadow-xl">
+                  {helpDropdownItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`block px-4 py-2 text-sm transition-colors hover:bg-white/10 hover:text-brand-red ${
+                        pathname === item.href ? "text-brand-red" : "text-gray-300"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             {/* Rest of nav */}
             {navLinks.slice(1).map((l) => (
               <Link
@@ -447,6 +491,23 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
               {isEn ? "Areas We Serve" : "Áreas que Servimos"}
             </div>
             {areasDropdownItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`block rounded px-6 py-2 text-base font-medium transition-colors hover:bg-white/10 ${
+                  pathname === item.href ? "text-brand-red" : ""
+                }`}
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+
+            {/* Accident Help section */}
+            <div className="rounded px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-400">
+              {isEn ? "Truck Accident Help" : "Ayuda — Accidentes de Camión"}
+            </div>
+            {helpDropdownItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
