@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
@@ -36,7 +37,7 @@ export default function AustinPage() {
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Areas We Serve", url: "/areas-we-serve" }, { name: "Austin", url: "/truck-accident-lawyer-austin" }])} />
       <JsonLd data={faqSchema(d.faq)} />
       <HeroSection dict={dict} locale="en" headline={d.heroHeadline} subhead={d.heroSubhead} />
-      <section className="py-16"><div className="mx-auto max-w-3xl px-4"><h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2><p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p></div></section>
+      <section className="py-16"><div className="mx-auto max-w-3xl px-4"><h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2><p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p><div className="mt-8 flex justify-center"><Image src="/cities/austin.jpg" alt="Austin, Texas" width={800} height={450} className="rounded-xl" /></div></div></section>
       <section className="bg-gray-50 py-16"><div className="mx-auto max-w-6xl px-4"><h2 className="text-center text-3xl font-bold text-brand-navy">{cp.servicesTitle}</h2><div className="mt-10 grid gap-6 sm:grid-cols-2">{cp.services.map((s) => (<div key={s.title} className="card-lift card-border-left rounded-lg bg-white p-6 shadow-md"><h3 className="text-lg font-bold text-brand-navy">{s.title}</h3><p className="mt-2 text-gray-600">{s.desc}</p></div>))}</div></div></section>
       <CTASection dict={dict} locale="en" variant="dark" />
       <section className="py-16"><div className="mx-auto max-w-6xl px-4"><h2 className="text-center text-3xl font-bold text-brand-navy">{cp.whyUsTitle}</h2><div className="mt-10 grid gap-6 sm:grid-cols-2">{cp.whyUsItems.map((item) => (<div key={item.title} className="card-lift rounded-xl bg-white p-6 shadow-md"><h3 className="text-lg font-bold text-brand-navy">{item.title}</h3><p className="mt-2 text-sm leading-relaxed text-gray-600">{item.desc}</p></div>))}</div></div></section>

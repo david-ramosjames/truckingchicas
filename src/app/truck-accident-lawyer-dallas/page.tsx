@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
@@ -45,6 +46,15 @@ export default function DallasPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          <div className="mt-8 flex justify-center">
+            <Image
+              src="/cities/dallas.jpg"
+              alt="Dallas, Texas"
+              width={800}
+              height={450}
+              className="rounded-xl"
+            />
+          </div>
         </div>
       </section>
 
