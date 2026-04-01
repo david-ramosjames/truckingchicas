@@ -655,6 +655,19 @@ const es: Dictionary = {
       heroSubhead: "¿Lesionado por un camión comercial en Houston? Nuestros abogados luchan por la máxima compensación mientras usted se recupera.",
       localTitle: "Por Qué los Accidentes de Camión Son Tan Comunes en Houston",
       localContent: "Houston es la capital energética del mundo y alberga el puerto más grande de EE.UU. por tonelaje extranjero. Miles de camiones de 18 ruedas, cisternas y vehículos comerciales inundan las autopistas de Houston todos los días. El cruce de la I-10 y la I-45 es uno de los corredores de camiones más peligrosos del país. Si fue herido en un choque en cualquier parte del área metropolitana de Houston, Trucking Chicas está lista para luchar por usted.",
+      highways: [
+        { name: "I-10 / I-45 Intercambio", desc: "Uno de los corredores de camiones más peligrosos del país — dos autopistas principales convergiendo con enorme volumen de carga." },
+        { name: "I-69 / US-59 Corredor Petroquímico", desc: "Tráfico pesado de cisternas y camiones de 18 ruedas sirviendo a la industria petroquímica de Houston." },
+        { name: "Sam Houston Tollway / Beltway 8", desc: "El circuito de 88 millas lleva tráfico comercial constante conectando el puerto, refinerías y centros de distribución." },
+        { name: "I-610 Inner Loop", desc: "Tráfico denso de camiones urbanos a través de la Galleria, Centro Médico y distritos de almacenes." },
+      ],
+      dangerZones: [
+        "Puerto de Houston / área del Ship Channel — camiones cisterna y carga pesada las 24 horas",
+        "Katy Freeway (I-10 Oeste) — una de las autopistas más anchas y congestionadas del mundo",
+        "Gulf Freeway (I-45 Sur) — corredor de camiones de alta velocidad entre el centro y Galveston",
+        "Energy Corridor / Westchase — área de camiones petroquímicos y petroleros",
+        "Pasadena / La Porte — tráfico de refinerías y transporte de materiales peligrosos",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Houston?", a: "Póngase a salvo, llame al 911, busque atención médica inmediata y no hable con el ajustador de seguros de la compañía de camiones. Contacte a un abogado de accidentes de camión de inmediato." },
         { q: "¿Cuánto vale mi caso de accidente de camión?", a: "El valor depende de la gravedad de sus lesiones, costos médicos, salarios perdidos y dolor y sufrimiento. Evaluamos cada caso individualmente." },
@@ -668,6 +681,19 @@ const es: Dictionary = {
       heroSubhead: "¿Herido en un accidente de camión en Dallas? Responsabilizamos a las compañías de camiones.",
       localTitle: "Accidentes de Camión en el Metroplex Dallas–Fort Worth",
       localContent: "Dallas está en la encrucijada de algunos de los corredores de carga más transitados de América. I-35, I-30, I-20 e I-45 convergen aquí. Si un accidente de camión ha cambiado su vida en Dallas, nuestros abogados saben cómo enfrentar a las compañías de camiones.",
+      highways: [
+        { name: "I-35E (Stemmons Freeway)", desc: "Corredor principal de carga NAFTA que atraviesa el centro de Dallas con alto volumen de camiones." },
+        { name: "I-635 (LBJ Freeway)", desc: "Circuito de alta velocidad con tráfico comercial alrededor de Dallas — conocido por choques con camiones." },
+        { name: "I-30 (Tom Landry Highway)", desc: "Ruta de carga este-oeste conectando Dallas con Fort Worth y Arkansas." },
+        { name: "I-20", desc: "Corredor de carga sur que conecta Dallas con centros de distribución en Mesquite y Terrell." },
+      ],
+      dangerZones: [
+        "Intercambio I-35E / I-635 (Mixmaster) — uno de los intercambios más peligrosos del norte de Texas",
+        "Centro de Dallas / Deep Ellum — calles estrechas con camiones de entrega y construcción",
+        "Sur de Dallas / corredor I-45 — área de almacenes y camiones industriales",
+        "Mesquite / I-30 Este — creciente tráfico de centros de distribución",
+        "Frisco / McKinney — vehículos de construcción y camiones de entrega en carreteras suburbanas",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Dallas?", a: "Llame al 911, obtenga ayuda médica, fotografíe la escena y evite dar declaraciones grabadas al asegurador de la compañía de camiones." },
         { q: "¿Cuánta compensación puedo obtener?", a: "Cada caso es diferente, pero los accidentes de camión en Dallas a menudo involucran lesiones graves que resultan en facturas médicas significativas y necesidades de cuidado a largo plazo." },
@@ -680,6 +706,19 @@ const es: Dictionary = {
       heroSubhead: "¿Chocado por un camión en la I-35 o en Austin? Nuestro equipo lucha por los texanos lesionados.",
       localTitle: "Por Qué Austin Ve Tantos Accidentes de Camión",
       localContent: "Austin es una de las ciudades de más rápido crecimiento del país. El corredor de la I-35 por el centro de Austin es notoriamente peligroso — carriles estrechos, construcción constante y una mezcla de tráfico. Si un accidente de camión lo ha dejado lesionado en el área metropolitana de Austin, Trucking Chicas buscará cada dólar que le corresponde.",
+      highways: [
+        { name: "I-35 (Centro de Austin)", desc: "El corredor de camiones más peligroso de Austin — construcción constante, carriles estrechos y tráfico pesado." },
+        { name: "Highway 130 (SH-130)", desc: "Construida para desviar camiones pero con vehículos comerciales a alta velocidad con límite de 85 mph." },
+        { name: "US-183 (Research Blvd)", desc: "Ruta comercial principal del norte de Austin con creciente tráfico de entregas y carga." },
+        { name: "SH-71 / US-290 Este", desc: "Ruta de carga conectando Austin con Houston con alto volumen de camiones." },
+      ],
+      dangerZones: [
+        "I-35 por el centro de Austin — el tramo más congestionado y propenso a choques",
+        "Round Rock / I-35 Norte — tráfico masivo de almacenes y centros de distribución",
+        "South Congress / I-35 Sur — zonas de fusión de alta velocidad con camiones comerciales",
+        "Corredor Buda / Kyle — área de rápido crecimiento con más tráfico de camiones",
+        "Intercambio US-290 Este / SH-130 — corredor de camiones de alta velocidad",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Austin?", a: "Póngase a salvo, llame al 911, busque tratamiento médico y documente la escena. No discuta la culpa con nadie." },
         { q: "¿Cuánto vale mi caso de Austin?", a: "Depende de sus lesiones, gastos médicos, ingresos perdidos y las circunstancias del choque." },
@@ -692,6 +731,19 @@ const es: Dictionary = {
       heroSubhead: "¿Lesionado en un choque de camión en San Antonio? Nuestros abogados saben cómo enfrentar a las grandes compañías.",
       localTitle: "San Antonio: Una Encrucijada Peligrosa para el Tráfico de Camiones",
       localContent: "San Antonio está en la intersección de la I-35 y la I-10, dos de los corredores de carga más pesados de Estados Unidos. Como última parada importante en la ruta comercial NAFTA desde Laredo, San Antonio ve un volumen asombroso de camiones de 18 ruedas.",
+      highways: [
+        { name: "I-35 (Corredor NAFTA)", desc: "La ruta comercial principal desde la frontera mexicana — uno de los corredores de camiones más pesados de EE.UU." },
+        { name: "I-10 (Carga Este-Oeste)", desc: "Ruta de carga transcontinental que lleva tráfico comercial de costa a costa a través de la ciudad." },
+        { name: "I-410 Loop", desc: "El circuito interior de San Antonio con tráfico pesado de vehículos comerciales." },
+        { name: "I-37 (a Corpus Christi)", desc: "Ruta principal de carga conectando el distrito industrial de San Antonio con el Puerto de Corpus Christi." },
+      ],
+      dangerZones: [
+        "Intercambio I-35 / I-410 Sur — cuello de botella de camiones NAFTA y punto de choques",
+        "Intercambio I-10 / I-35 centro — dos corredores de carga principales fusionándose",
+        "Highway 281 Norte — crecimiento suburbano rápido mezclado con vehículos comerciales",
+        "Corredor Southside / I-37 — tráfico industrial y de camiones al puerto",
+        "Área de Joint Base San Antonio — logística militar y vehículos pesados",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en San Antonio?", a: "Póngase a salvo, llame al 911, obtenga atención médica y no dé declaraciones a ninguna compañía de seguros." },
         { q: "¿Quién es responsable de los accidentes de camión en San Antonio?", a: "Múltiples partes pueden compartir la responsabilidad: el conductor, la compañía, los corredores de carga y los contratistas de mantenimiento." },
@@ -704,6 +756,19 @@ const es: Dictionary = {
       heroSubhead: "¿Lesionado por un camión en Fort Worth? Enfrentamos a la industria de camiones para que usted se recupere.",
       localTitle: "Carga Pesada y Caminos Peligrosos en Fort Worth",
       localContent: "Fort Worth es un importante centro de carga donde el ferrocarril y los camiones se cruzan. La I-30 y la I-20 llevan volúmenes masivos de carga a través de la ciudad.",
+      highways: [
+        { name: "I-30 (Carga Este-Oeste)", desc: "Corredor masivo de carga este-oeste que lleva tráfico comercial entre Fort Worth y Dallas." },
+        { name: "I-35W (Ruta NAFTA)", desc: "Conecta con la ruta comercial NAFTA desde la frontera mexicana a través del metroplex DFW." },
+        { name: "I-20 (Corredor Sur)", desc: "Ruta principal de carga que conecta Fort Worth con centros de distribución del oeste y este de Texas." },
+        { name: "SH-121 / SH-114 (Corredor Alliance)", desc: "Centro logístico de rápido crecimiento cerca del Texas Motor Speedway con tráfico pesado de almacenes." },
+      ],
+      dangerZones: [
+        "Área de Alliance / Texas Motor Speedway — tráfico masivo de centros de distribución",
+        "Intercambio I-30 / I-35W (centro) — dos corredores de carga fusionándose en espacio urbano estrecho",
+        "Distrito Stockyards — calles estrechas con mezcla de tráfico comercial y turístico",
+        "I-20 Oeste / Benbrook — corredor de camiones de alta velocidad en transición rural-urbana",
+        "Cultural District / Camp Bowie — camiones de construcción y entrega en calles congestionadas",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Fort Worth?", a: "Llame al 911, busque atención médica inmediata, documente la escena y no discuta el accidente con representantes de la compañía de camiones." },
         { q: "¿En qué se diferencian los accidentes de camión de los de auto?", a: "Los accidentes de camión involucran regulaciones federales, múltiples partes responsables y lesiones típicamente mucho más severas." },
@@ -716,6 +781,19 @@ const es: Dictionary = {
       heroSubhead: "¿Golpeado por un camión comercial en El Paso? Luchamos por las familias fronterizas lesionadas en accidentes.",
       localTitle: "El Transporte Fronterizo de El Paso Crea Peligros Únicos",
       localContent: "El Paso es uno de los cruces de camiones internacionales más transitados de Norteamérica. Miles de vehículos comerciales cruzan diariamente por los puertos de entrada de Zaragoza y BOTA.",
+      highways: [
+        { name: "I-10 (Carga Transcontinental)", desc: "Corredor de carga de costa a costa con enorme volumen de camiones a través del área metropolitana." },
+        { name: "US-54 (Patriot Freeway)", desc: "Ruta norte-sur conectando Fort Bliss con tráfico militar y comercial pesado." },
+        { name: "Loop 375 (Border Highway)", desc: "Corre a lo largo de la frontera EE.UU.-México con tráfico constante de camiones transfronterizos." },
+        { name: "US-85 / Paisano Drive", desc: "Corredor clave conectando el puerto BOTA con la I-10 — pesado con camiones de carga internacional." },
+      ],
+      dangerZones: [
+        "Puerto BOTA (Bridge of the Americas) — cruce internacional de camiones con alta congestión",
+        "Puerto de entrada Zaragoza / Lower Valley — carga transfronteriza y colas de camiones",
+        "Intercambio I-10 / US-54 — dos rutas principales de camiones convergiendo a alta velocidad",
+        "Área de Fort Bliss — vehículos logísticos militares mezclados con tráfico comercial",
+        "Westside / Canutillo — áreas residenciales crecientes junto a la I-10 con tráfico de camiones",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en El Paso?", a: "Priorice la seguridad y atención médica. Llame al 911, fotografíe la escena y contacte a un abogado de accidentes de camión." },
         { q: "¿Son responsables las compañías de camiones transfronterizas?", a: "Sí. Si un camión transfronterizo causó su accidente, la compañía puede ser responsable bajo la ley de Texas." },
@@ -728,6 +806,19 @@ const es: Dictionary = {
       heroSubhead: "¿Involucrado en un choque de camión en Arlington? Ayudamos a las víctimas entre Dallas y Fort Worth.",
       localTitle: "La Posición de Arlington Entre Dos Ciudades Significa Más Camiones",
       localContent: "Arlington está en el medio del metroplex Dallas–Fort Worth, directamente en el camino del tráfico pesado de camiones comerciales en la I-30 y la I-20.",
+      highways: [
+        { name: "I-30 (Corredor Dallas–Fort Worth)", desc: "Ruta principal de carga este-oeste que atraviesa el corazón de Arlington." },
+        { name: "I-20 (Ruta de Carga Sur)", desc: "Corredor comercial pesado sirviendo las zonas industriales y de almacenes del sur de Arlington." },
+        { name: "Highway 360", desc: "Ruta norte-sur por el distrito de entretenimiento — zona conocida por choques con camiones." },
+        { name: "Corredor Cooper Street", desc: "Arterial principal con tráfico frecuente de camiones de entrega y construcción." },
+      ],
+      dangerZones: [
+        "Distrito de Entretenimiento (AT&T Stadium / Globe Life Field) — tráfico turístico mezclado con carga",
+        "Intercambio I-30 / Highway 360 — zona de fusión de alta velocidad con camiones pesados",
+        "Corredor industrial I-20 — distritos de almacenes generando tráfico constante de camiones",
+        "Great Southwest Industrial District — uno de los parques industriales más grandes del norte de Texas",
+        "Área Cooper Street / I-20 — vecindarios residenciales junto a rutas de camiones pesados",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Arlington?", a: "Llame al 911, obtenga ayuda médica, fotografíe la escena y no firme nada de una compañía de seguros." },
         { q: "¿Quién es responsable en Arlington?", a: "El conductor del camión, la compañía, el fabricante del vehículo y los proveedores de mantenimiento pueden compartir la responsabilidad." },
@@ -740,6 +831,19 @@ const es: Dictionary = {
       heroSubhead: "¿Lesionado cerca del puerto o las refinerías? Luchamos por las familias de Corpus Christi.",
       localTitle: "El Tráfico Portuario y Petroquímico Hace Peligrosas las Carreteras de Corpus Christi",
       localContent: "Corpus Christi es una importante ciudad portuaria y centro petroquímico donde el tráfico de camiones industriales es constante.",
+      highways: [
+        { name: "I-37 (San Antonio–Corpus Christi)", desc: "Corredor principal de carga conectando el Puerto de Corpus Christi con San Antonio y distribución interior." },
+        { name: "US-77 (Corredor Sur de Texas)", desc: "Ruta principal de tráfico de camiones agrícolas e industriales por el Valle del Río Grande." },
+        { name: "SH-358 (South Padre Island Drive)", desc: "Arteria comercial principal de Corpus Christi con tráfico pesado de entregas y carga." },
+        { name: "Harbor Bridge / US-181", desc: "Cruce clave sobre el canal naviero con tráfico constante de camiones portuarios." },
+      ],
+      dangerZones: [
+        "Puerto de Corpus Christi / Inner Harbor — camiones cisterna y de contenedores las 24 horas",
+        "Corredor Harbor Bridge — cruce estrecho con vehículos comerciales pesados y materiales peligrosos",
+        "Refinery Row / Portland — tráfico petroquímico y transporte de materiales peligrosos",
+        "JFK Causeway / Flour Bluff — ruta costera con fuertes vientos cruzados que afectan camiones",
+        "Calallen / I-37 Norte — corredor de paradas de camiones y área de carga",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Corpus Christi?", a: "Póngase a salvo, llame al 911, busque atención médica y trate de fotografiar cualquier placa de materiales peligrosos." },
         { q: "¿Son responsables las compañías petroquímicas de camiones?", a: "Sí. Deben seguir regulaciones estrictas federales y estatales. Cuando cortan esquinas, son totalmente responsables." },
@@ -752,6 +856,19 @@ const es: Dictionary = {
       heroSubhead: "¿Chocado por un camión comercial en Plano? Ayudamos a las familias suburbanas a recuperarse.",
       localTitle: "El Crecimiento del Tráfico Impulsa los Accidentes de Camión en Plano",
       localContent: "Plano y los suburbios del norte de Dallas–Fort Worth han experimentado un crecimiento comercial explosivo, trayendo más tráfico de camiones a carreteras que no fueron diseñadas para ello.",
+      highways: [
+        { name: "US-75 (Central Expressway)", desc: "Ruta comercial norte-sur principal con tráfico pesado de entregas y carga por el centro de Plano." },
+        { name: "Dallas North Tollway (DNT)", desc: "Corredor de alta velocidad conectando los campus corporativos de Plano con tráfico comercial constante." },
+        { name: "Sam Rayburn Tollway (SH-121)", desc: "Ruta este-oeste por los distritos comerciales en crecimiento de Plano." },
+        { name: "George Bush Turnpike (SH-190)", desc: "Circuito principal conectando suburbios del norte de Texas — pesado con camiones de construcción y entrega." },
+      ],
+      dangerZones: [
+        "Intercambio US-75 / SH-121 — zona de fusión de alta velocidad con tráfico comercial pesado",
+        "Legacy West / corredor corporativo — camiones de entrega sirviendo campus corporativos principales",
+        "Oeste de Plano / Dallas North Tollway — vehículos de construcción por desarrollo continuo",
+        "Spring Creek Parkway / US-75 — intersección congestionada con giros frecuentes de camiones",
+        "Frontera Allen / Frisco — zona de crecimiento suburbano con tráfico de construcción y entregas",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Plano?", a: "Llame al 911, busque atención médica, fotografíe la escena y contacte a un abogado antes de tratar con cualquier compañía de seguros." },
         { q: "¿Son responsables las compañías de camiones de reparto?", a: "Sí. Compañías como contratistas de Amazon, FedEx y UPS pueden ser responsables cuando sus conductores causan accidentes." },
@@ -764,6 +881,19 @@ const es: Dictionary = {
       heroSubhead: "¿Herido en un choque de camión en el oeste de Texas? Representamos a familias de Lubbock.",
       localTitle: "Carreteras del Oeste de Texas, Camiones Agrícolas y Tráfico Petrolero",
       localContent: "Lubbock está en la encrucijada de la agricultura del oeste de Texas y la energía de la Cuenca Pérmica, convirtiéndola en un centro importante para el tráfico pesado de camiones.",
+      highways: [
+        { name: "US-84 (Slaton Highway)", desc: "Ruta este-oeste principal con camiones algodoneros, petroleros y de equipo pesado a través de Lubbock." },
+        { name: "US-87 (Corredor Norte-Sur)", desc: "Conecta Lubbock con Amarillo y la Cuenca Pérmica — pesado con camiones agrícolas y energéticos." },
+        { name: "Loop 289", desc: "Circuito principal de Lubbock con tráfico comercial y choques frecuentes con camiones." },
+        { name: "I-27 / US-87 (Corredor Ports-to-Plains)", desc: "Ruta de carga creciente conectando el Panhandle de Texas a través de Lubbock hasta la frontera mexicana." },
+      ],
+      dangerZones: [
+        "Intercambio US-84 / US-87 — dos rutas principales de camiones cruzándose con tráfico de alta velocidad",
+        "Loop 289 / Slide Road — corredor comercial con movimientos frecuentes de giro de camiones",
+        "Wolfforth / US-62/82 — zona de transición rural-suburbana con tráfico de camiones petroleros",
+        "Slaton Highway (US-84 Este) — carretera rural sin dividir con camiones algodoneros y de ganado",
+        "Shallowater / I-27 Norte — área de camiones agrícolas y corredor de alta velocidad",
+      ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Lubbock?", a: "Llame al 911, busque atención médica aunque las lesiones parezcan menores, documente la escena y contacte a un abogado inmediatamente." },
         { q: "¿Son responsables las compañías de camiones petroleros?", a: "Sí. Deben cumplir con las regulaciones federales de seguridad. Cuando envían camiones sobrecargados o mal mantenidos, son responsables." },

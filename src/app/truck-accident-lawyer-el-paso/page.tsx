@@ -39,22 +39,63 @@ export default function ElPasoPage() {
 
       <HeroSection dict={dict} locale="en" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
-      <section className="py-16">
+      {/* City Photo */}
+      <section className="py-12">
+        <div className="mx-auto max-w-3xl px-4 flex justify-center">
+          <Image src="/cities/el-paso.jpg" alt="El Paso, Texas" width={800} height={450} className="rounded-xl" />
+        </div>
+      </section>
+
+      {/* Localized Content */}
+      <section className="pb-16">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
-          <div className="mt-8 flex justify-center">
-            <Image
-              src="/cities/el-paso.jpg"
-              alt="El Paso, Texas"
-              width={800}
-              height={450}
-              className="rounded-xl"
-            />
+        </div>
+      </section>
+
+      {/* Map Placeholder */}
+      <section className="bg-gray-50 py-12">
+        <div className="mx-auto max-w-3xl px-4 text-center">
+          <div className="flex aspect-[16/9] items-center justify-center rounded-xl border-2 border-dashed border-gray-300 bg-gray-100">
+            <div className="text-center">
+              <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+              <p className="mt-2 text-sm font-medium text-gray-500">El Paso Area Truck Accident Map</p>
+              <p className="text-xs text-gray-400">Coming Soon</p>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Highways & Danger Zones */}
+      <section className="py-16">
+        <div className="mx-auto max-w-4xl px-4">
+          <h2 className="text-center text-3xl font-bold text-brand-navy">
+            Dangerous Highways &amp; Truck Accident Hotspots
+          </h2>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2">
+            {d.highways.map((h) => (
+              <div key={h.name} className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+                <h3 className="text-lg font-bold text-brand-navy">{h.name}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{h.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10">
+            <h3 className="text-xl font-bold text-brand-navy">High-Risk Locations in El Paso</h3>
+            <ul className="mt-4 space-y-3">
+              {d.dangerZones.map((zone) => (
+                <li key={zone} className="flex items-start gap-3 text-gray-600">
+                  <svg className="mt-1 h-5 w-5 shrink-0 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <span className="text-sm leading-relaxed">{zone}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">{cp.servicesTitle}</h2>
