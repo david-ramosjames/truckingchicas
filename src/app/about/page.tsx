@@ -103,46 +103,35 @@ export default function AboutPage() {
               </p>
               <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Named &ldquo;Changemaker&rdquo; by Austin Woman Magazine for 2025, Winner of the 2023
-                  Austin Woman&rsquo;s Magazine &ldquo;Woman&rsquo;s Way&rdquo; Award and the &ldquo;Advocacy and
-                  Activism&rdquo; Award by the Latina Foundation, Laura Ramos James is one of the most
-                  recognized Lawyers in Texas and a women attorney who has supported disadvantaged
-                  communities in Austin and South Texas for several years.
+                  When an <strong className="font-semibold text-brand-navy">18-wheeler or commercial truck</strong> is involved, the stakes change and so does the complexity. Laura Ramos James has built her practice around exactly these cases, earning recognition as a <strong className="font-semibold text-brand-navy">Top 10 Trucking Trial Lawyer by the National Trial Lawyers</strong> and securing <strong className="font-semibold text-brand-navy">many recoveries exceeding $250,000</strong> for clients injured by <strong className="font-semibold text-brand-navy">semi-trucks and commercial carriers across Texas</strong>.
                 </p>
                 <p>
-                  A personal injury victim herself, Laura hoped that one day she&rsquo;d be the loud and
-                  fierce voice of those who could not speak on their own behalf in court and amplify the
-                  voice of those who could. After graduating law school at Baylor Law with honors, Laura
-                  began the arduous professional path that culminated in the founding of Ramos James Law,
-                  PLLC in 2018.
+                  Laura founded Ramos James Law, PLLC in 2018 after her own experience as a personal injury victim shaped a career devoted to fighting for people facing some of the most powerful opponents in civil litigation. <strong className="font-semibold text-brand-navy">Trucking cases put injured clients up against major carriers, corporate insurers, and seasoned defense teams.</strong> That is exactly the fight she has spent over a decade preparing for.
                 </p>
                 <p>
-                  With well over a decade of legal experience, Laura has successfully handled hundreds of
-                  personal injury cases involving auto and trucking accidents, drunk driving accidents,
-                  distracted driver accidents, commercial vehicle accidents, work injury, product liability,
-                  Texas Health Care Liability claims, sexual assault cases, complex construction accident and
-                  construction defects, catastrophic injury, wrongful death cases and more.
+                  Her experience spans the full range of commercial vehicle cases, from <strong className="font-semibold text-brand-navy">18-wheeler collisions and disputed liability crashes to catastrophic injury claims against large carriers</strong>, with <strong className="font-semibold text-brand-navy">multiple six-figure recoveries for trucking clients across Texas</strong>.
                 </p>
+
+                <h4 className="mt-6 text-lg font-bold text-brand-navy">Recognition</h4>
+                <ul className="list-disc space-y-1 pl-5">
+                  <li>Named a <strong className="font-semibold text-brand-navy">Top 10 Trucking Trial Lawyer</strong> by the National Trial Lawyers</li>
+                  <li>Lifetime member of the Million Dollar and Multi-Million Dollar Advocates Forums</li>
+                  <li>Super Lawyers&trade; Up-and-Coming 100: Texas Rising Stars (2023 &amp; 2024) and Up-and-Coming 50: Women Texas Rising Stars (2023 &amp; 2024)</li>
+                  <li>National Trial Lawyers Top 100 and Top 40 Under 40</li>
+                  <li>America&rsquo;s Top 100 Attorneys&reg; High Stakes Litigator (2020)</li>
+                </ul>
+
+                <h4 className="mt-6 text-lg font-bold text-brand-navy">Associations</h4>
+                <ul className="list-disc space-y-1 pl-5">
+                  <li>Capital Area Trial Lawyers Association, Executive Committee</li>
+                  <li>Texas Trial Lawyers Association, Diversity, Equity and Inclusivity Committee</li>
+                  <li>Travis County Women Lawyers Association</li>
+                  <li>Hispanic Bar Association</li>
+                  <li>Mexican-American Association of Texas</li>
+                </ul>
+
                 <p>
-                  For Laura, the most significant and transforming influence in her life has been becoming
-                  the mother of two little girls with her husband Jon: Victoria &amp; Alexandra.
-                </p>
-                <p>
-                  Laura has received some of the highest recognitions in her industry, being named a
-                  &ldquo;Rising Star&rdquo; by the Super Lawyers&trade; organization for five consecutive years,
-                  being honored as part of even more exclusive recognition within Super Lawyers&trade; for
-                  the years 2023 &amp; 2024 (Up-and-Coming 100: Texas Rising Stars: 2023 &amp; 2024;
-                  Up-and-Coming 50: Women Texas Rising Stars: 2023 &amp; 2024) and with lifetime membership
-                  in the coveted Million and Multi-Million Advocates Forums. Laura is also a member of the
-                  National Trial Lawyers Top 100 and National Trial Lawyers Top 40 Under 40. By 2020, Laura
-                  had been distinguished as one of America&rsquo;s Top 100 Attorneys&reg; High Stakes Litigator.
-                </p>
-                <p>
-                  Laura is a member of several trial lawyer associations such as Capital Area Trial Lawyers
-                  Association where she serves as part of the Executive Committee; Texas Trial Lawyers
-                  Association, where she serves as part of the Diversity, Equity and Inclusivity committee;
-                  the Travis County Women Lawyers Association, Hispanic Bar Association, and
-                  Mexican-American Association of Texas, to name a few.
+                  Outside the courtroom, the greatest chapter of Laura&rsquo;s life has been raising her two daughters, Victoria and Alexandra, alongside her husband Jon.
                 </p>
               </div>
             </div>
