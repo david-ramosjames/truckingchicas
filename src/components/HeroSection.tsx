@@ -30,7 +30,7 @@ export default function HeroSection({
       icon: (
         <span className="text-lg font-extrabold text-[#FBBF24]">$</span>
       ),
-      text: isEn ? "$50M+ recovered" : "$50M+ recuperados",
+      text: isEn ? "Millions recovered" : "Millones recuperados",
     },
     {
       icon: (

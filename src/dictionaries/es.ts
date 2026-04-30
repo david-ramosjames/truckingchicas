@@ -109,19 +109,9 @@ const es: Dictionary = {
         icon: "shield",
       },
       {
-        title: "Compasión",
-        desc: "Las personas son lo primero. Escuchamos porque genuinamente nos importa tu historia, tu dolor y tu camino hacia la recuperación.",
-        icon: "heart",
-      },
-      {
-        title: "Confianza",
-        desc: "La confianza no se da — se gana. Ganamos la tuya con respeto, comunicación clara y seguimiento incansable.",
-        icon: "handshake",
-      },
-      {
-        title: "Abogacía",
-        desc: "Somos la voz de quienes más lo necesitan. Respaldados por experiencia profunda y preparación incansable, luchamos para que tú no tengas que hacerlo.",
-        icon: "megaphone",
+        title: "Experiencia",
+        desc: "Nos enfocamos exclusivamente en casos de camiones y tráileres de 18 ruedas. Profundo conocimiento de las regulaciones FMCSA, las tácticas de la industria y la estrategia en juicio le da a nuestros clientes una ventaja decisiva.",
+        icon: "scale",
       },
       {
         title: "Resultados",

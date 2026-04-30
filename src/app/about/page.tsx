@@ -88,7 +88,7 @@ export default function AboutPage() {
             <div className="mx-auto w-[280px] shrink-0">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/Ramos-James-Badge2_11zon.webp"
+                  src="/Laura-Ramos-James-2026-1851.jpg"
                   alt="Attorney Laura Ramos James"
                   fill
                   className="object-cover"

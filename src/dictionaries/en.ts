@@ -108,19 +108,9 @@ const en = {
         icon: "shield",
       },
       {
-        title: "Compassion",
-        desc: "People come first. We listen because we genuinely care about your story, your pain, and your path to recovery.",
-        icon: "heart",
-      },
-      {
-        title: "Trust",
-        desc: "Trust isn't given — it's earned. We earn yours through respect, clear communication, and relentless follow-through.",
-        icon: "handshake",
-      },
-      {
-        title: "Advocacy",
-        desc: "We are the voice for those who need one most. Backed by deep experience and relentless preparation, we fight so you don't have to.",
-        icon: "megaphone",
+        title: "Expertise",
+        desc: "We focus exclusively on truck and 18-wheeler cases. Deep knowledge of FMCSA regulations, industry tactics, and trial strategy gives our clients a decisive edge.",
+        icon: "scale",
       },
       {
         title: "Results",
