@@ -95,39 +95,35 @@ export default function AboutPageES() {
               </p>
               <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Nombrada &ldquo;Changemaker&rdquo; por Austin Woman Magazine en 2025, ganadora del premio
-                  &ldquo;Woman&rsquo;s Way&rdquo; de Austin Woman&rsquo;s Magazine 2023 y del premio
-                  &ldquo;Advocacy and Activism&rdquo; de la Latina Foundation, Laura Ramos James es una de
-                  las abogadas m&aacute;s reconocidas en Texas y una abogada que ha apoyado a comunidades
-                  desfavorecidas en Austin y el sur de Texas durante varios a&ntilde;os.
+                  Cuando se trata de un <strong className="font-semibold text-brand-navy">tr&aacute;iler de 18 ruedas o cami&oacute;n comercial</strong>, lo que est&aacute; en juego cambia, y tambi&eacute;n la complejidad. Laura Ramos James ha construido su pr&aacute;ctica en torno precisamente a estos casos, ganando reconocimiento como <strong className="font-semibold text-brand-navy">Top 10 Trucking Trial Lawyer por la National Trial Lawyers</strong> y asegurando <strong className="font-semibold text-brand-navy">muchas recuperaciones que superan los $250,000</strong> para clientes lesionados por <strong className="font-semibold text-brand-navy">tr&aacute;ileres y transportistas comerciales en todo Texas</strong>.
                 </p>
                 <p>
-                  Como v&iacute;ctima de lesi&oacute;n personal, Laura esper&oacute; que alg&uacute;n
-                  d&iacute;a ser&iacute;a la voz fuerte y feroz de aquellos que no pod&iacute;an hablar por
-                  s&iacute; mismos en los tribunales. Despu&eacute;s de graduarse de la Facultad de Derecho
-                  de Baylor con honores, Laura comenz&oacute; el arduo camino profesional que culmin&oacute;
-                  con la fundaci&oacute;n de Ramos James Law, PLLC en 2018.
+                  Laura fund&oacute; Ramos James Law, PLLC en 2018, despu&eacute;s de que su propia experiencia como v&iacute;ctima de lesi&oacute;n personal moldeara una carrera dedicada a luchar por personas que enfrentan a algunos de los oponentes m&aacute;s poderosos en litigios civiles. <strong className="font-semibold text-brand-navy">Los casos de cami&oacute;n enfrentan a los clientes lesionados con grandes transportistas, aseguradoras corporativas y equipos de defensa experimentados.</strong> Esa es exactamente la pelea para la que se ha preparado durante m&aacute;s de una d&eacute;cada.
                 </p>
                 <p>
-                  Con m&aacute;s de una d&eacute;cada de experiencia legal, Laura ha manejado exitosamente
-                  cientos de casos de lesi&oacute;n personal que involucran accidentes de auto y
-                  cami&oacute;n, accidentes por conductor ebrio, accidentes por conductor distra&iacute;do,
-                  accidentes de veh&iacute;culos comerciales, lesiones laborales, responsabilidad de
-                  productos, reclamos de responsabilidad de atenci&oacute;n m&eacute;dica de Texas, casos de
-                  agresi&oacute;n sexual, accidentes de construcci&oacute;n complejos, lesiones
-                  catastr&oacute;ficas, casos de muerte injusta y m&aacute;s.
+                  Su experiencia abarca toda la gama de casos de veh&iacute;culos comerciales, desde <strong className="font-semibold text-brand-navy">colisiones con tr&aacute;ileres de 18 ruedas y accidentes con responsabilidad disputada hasta reclamos por lesiones catastr&oacute;ficas contra grandes transportistas</strong>, con <strong className="font-semibold text-brand-navy">m&uacute;ltiples recuperaciones de seis cifras para clientes de cami&oacute;n en todo Texas</strong>.
                 </p>
+
+                <h4 className="mt-6 text-lg font-bold text-brand-navy">Reconocimientos</h4>
+                <ul className="list-disc space-y-1 pl-5">
+                  <li>Nombrada <strong className="font-semibold text-brand-navy">Top 10 Trucking Trial Lawyer</strong> por la National Trial Lawyers</li>
+                  <li>Miembro vitalicia de los Million Dollar y Multi-Million Dollar Advocates Forums</li>
+                  <li>Super Lawyers&trade; Up-and-Coming 100: Texas Rising Stars (2023 y 2024) y Up-and-Coming 50: Women Texas Rising Stars (2023 y 2024)</li>
+                  <li>National Trial Lawyers Top 100 y Top 40 Under 40</li>
+                  <li>America&rsquo;s Top 100 Attorneys&reg; High Stakes Litigator (2020)</li>
+                </ul>
+
+                <h4 className="mt-6 text-lg font-bold text-brand-navy">Asociaciones</h4>
+                <ul className="list-disc space-y-1 pl-5">
+                  <li>Capital Area Trial Lawyers Association, Comit&eacute; Ejecutivo</li>
+                  <li>Texas Trial Lawyers Association, Comit&eacute; de Diversidad, Equidad e Inclusi&oacute;n</li>
+                  <li>Travis County Women Lawyers Association</li>
+                  <li>Hispanic Bar Association</li>
+                  <li>Mexican-American Association of Texas</li>
+                </ul>
+
                 <p>
-                  Para Laura, la influencia m&aacute;s significativa y transformadora en su vida ha sido
-                  convertirse en madre de dos ni&ntilde;as con su esposo Jon: Victoria y Alexandra.
-                </p>
-                <p>
-                  Laura ha recibido algunos de los reconocimientos m&aacute;s altos de su industria, siendo
-                  nombrada &ldquo;Rising Star&rdquo; por Super Lawyers&trade; durante cinco a&ntilde;os
-                  consecutivos, y con membres&iacute;a vitalicia en los codiciados Million and Multi-Million
-                  Advocates Forums. Laura tambi&eacute;n es miembro del National Trial Lawyers Top 100 y
-                  National Trial Lawyers Top 40 Under 40. Para 2020, Laura hab&iacute;a sido distinguida
-                  como una de las Top 100 Attorneys&reg; High Stakes Litigator de Am&eacute;rica.
+                  Fuera del tribunal, el cap&iacute;tulo m&aacute;s grande de la vida de Laura ha sido criar a sus dos hijas, Victoria y Alexandra, junto a su esposo Jon.
                 </p>
               </div>
             </div>
