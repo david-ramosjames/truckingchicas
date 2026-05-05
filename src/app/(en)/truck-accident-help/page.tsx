@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Help — Texas Truck Accident Lawyer | Trucking Chicas",
+  title: "Truck Accident Help — Texas Truck Accident Lawyer",
   description:
     "Truck accident answers for Texas victims. Learn about your rights, how truck accident cases work, and what to do after an 18-wheeler crash. Free consultation.",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Truck Accident Help — Texas Truck Accident Lawyer | Trucking Chicas",
+    title: "Truck Accident Help — Texas Truck Accident Lawyer",
     description:
       "Truck accident answers for Texas victims. Learn about your rights, how truck accident cases work, and what to do after an 18-wheeler crash.",
     url: `${SITE_URL}/truck-accident-help`,

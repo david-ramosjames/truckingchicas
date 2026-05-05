@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How Much Is My Truck Accident Case Worth? | Trucking Chicas",
+  title: "How Much Is My Truck Accident Case Worth?",
   description: "Wondering how much your truck accident case is worth? Learn what factors determine case value and why truck cases pay more.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/how-much-is-my-case-worth`,

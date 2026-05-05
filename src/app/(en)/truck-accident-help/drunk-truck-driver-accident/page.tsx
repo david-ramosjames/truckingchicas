@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Will I Get More Money If the Truck Driver Was Drunk? | Trucking Chicas",
+  title: "Will I Get More Money If the Truck Driver Was Drunk?",
   description: "Drunk truck driver caused your accident? Learn how intoxication affects your case value and potential punitive damages in Texas.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/drunk-truck-driver-accident`,

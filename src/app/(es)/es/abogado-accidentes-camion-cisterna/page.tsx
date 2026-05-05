@@ -10,7 +10,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camiones Cisterna en Texas | Trucking Chicas",
+  title: "Abogado de Accidentes de Camiones Cisterna en Texas",
   description:
     "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados se especializan en choques del sector energético. Consulta gratis.",
   alternates: {

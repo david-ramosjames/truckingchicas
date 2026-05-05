@@ -166,7 +166,7 @@ const es: Dictionary = {
   },
   truckAccident: {
     title: "Abogado de Accidentes de Camión en Texas",
-    metaTitle: "Abogado de Accidentes de Camión en Texas | Trucking Chicas",
+    metaTitle: "Abogado de Accidentes de Camión en Texas",
     metaDesc:
       "¿Lesionado en un accidente de camión en Texas? Nuestros abogados especializados luchan por la máxima compensación. Evaluación gratis. No cobramos si no ganamos.",
     heroHeadline: "Abogado de Accidentes de Camión en Texas",
@@ -212,7 +212,7 @@ const es: Dictionary = {
   },
   eighteenWheeler: {
     title: "Abogado de Accidentes de 18 Ruedas en Texas",
-    metaTitle: "Abogado de Accidentes de 18 Ruedas en Texas | Trucking Chicas",
+    metaTitle: "Abogado de Accidentes de 18 Ruedas en Texas",
     metaDesc:
       "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nuestros abogados se especializan en accidentes de vehículos comerciales. Llama para una consulta gratis.",
     heroHeadline: "Abogado de Accidentes de 18 Ruedas en Texas",
@@ -237,7 +237,7 @@ const es: Dictionary = {
   },
   deliveryTruck: {
     title: "Abogado de Accidentes de Camiones de Reparto",
-    metaTitle: "Abogado de Accidentes de Camiones FedEx y UPS en Texas | Trucking Chicas",
+    metaTitle: "Abogado de Accidentes de Camiones FedEx y UPS en Texas",
     metaDesc:
       "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestros abogados manejan casos de accidentes de camiones de reparto. Evaluación gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones de Reparto",
@@ -275,7 +275,7 @@ const es: Dictionary = {
   },
   oilfieldTanker: {
     title: "Abogado de Accidentes de Camiones Cisterna y Petroleros",
-    metaTitle: "Abogado de Accidentes de Camiones Cisterna en Texas | Trucking Chicas",
+    metaTitle: "Abogado de Accidentes de Camiones Cisterna en Texas",
     metaDesc:
       "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados se especializan en choques del sector energético. Consulta gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones Cisterna",
@@ -307,7 +307,7 @@ const es: Dictionary = {
   },
   dumpTruck: {
     title: "Abogado de Accidentes de Camiones de Volteo y Construcción",
-    metaTitle: "Abogado de Accidentes de Camiones de Volteo en Texas | Trucking Chicas",
+    metaTitle: "Abogado de Accidentes de Camiones de Volteo en Texas",
     metaDesc:
       "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestros abogados luchan por las víctimas de accidentes en zonas de trabajo. Evaluación gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones de Volteo",
@@ -345,7 +345,7 @@ const es: Dictionary = {
   },
   boxTruck: {
     title: "Abogado de Accidentes de Camiones de Carga y Vans Comerciales",
-    metaTitle: "Abogado de Accidentes de Camiones de Carga en Texas | Trucking Chicas",
+    metaTitle: "Abogado de Accidentes de Camiones de Carga en Texas",
     metaDesc:
       "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestros abogados de accidentes de camión pueden ayudar. Evaluación gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones de Carga",
@@ -419,7 +419,7 @@ const es: Dictionary = {
   },
   areas: {
     title: "Áreas que Servimos en Texas",
-    metaTitle: "Abogado de Accidentes de Camión en Texas — Áreas que Servimos | Trucking Chicas",
+    metaTitle: "Abogado de Accidentes de Camión en Texas — Áreas que Servimos",
     metaDesc:
       "Trucking Chicas sirve a víctimas de accidentes de camión y tráiler en todo Texas, incluyendo Houston, Dallas, Austin, San Antonio y más.",
     heading: "Sirviendo a Víctimas de Accidentes de Camión en Todo Texas",
@@ -894,7 +894,7 @@ const es: Dictionary = {
   },
   faq: {
     title: "Preguntas Frecuentes",
-    metaTitle: "Preguntas Frecuentes sobre Accidentes de Camión | Trucking Chicas",
+    metaTitle: "Preguntas Frecuentes sobre Accidentes de Camión",
     metaDesc:
       "Obtén respuestas a preguntas comunes sobre reclamaciones por accidentes de camión en Texas, incluyendo responsabilidad, compensación y el plazo de prescripción.",
     heading: "Preguntas Frecuentes sobre Accidentes de Camión",
@@ -993,7 +993,7 @@ const es: Dictionary = {
   },
   caseEstimate: {
     title: "Estimación de Caso IA",
-    metaTitle: "Estimación de Caso Gratis con IA | Trucking Chicas",
+    metaTitle: "Estimación de Caso Gratis con IA",
     metaDesc:
       "Obtén una estimación gratuita e instantánea con IA para tu caso de accidente de camión en Texas. Responde unas preguntas y recibe una evaluación preliminar.",
     heading: "Obtén Tu Estimación de Caso Gratis con IA",

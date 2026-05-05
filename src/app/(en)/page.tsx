@@ -14,7 +14,7 @@ import TrustBadges from "@/components/TrustBadges";
 import { localBusinessSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Texas Truck & 18-Wheeler Accident Lawyers | Trucking Chicas",
+  title: "Texas Truck & 18-Wheeler Accident Lawyers",
   description:
     "Hit by a truck in Texas? Trucking Chicas fights for truck and 18-wheeler accident victims. Free case review. No fees unless we win.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     languages: { en: SITE_URL, es: `${SITE_URL}/es` },
   },
   openGraph: {
-    title: "Texas Truck & 18-Wheeler Accident Lawyers | Trucking Chicas",
+    title: "Texas Truck & 18-Wheeler Accident Lawyers",
     description:
       "Hit by a truck in Texas? Trucking Chicas fights for truck and 18-wheeler accident victims. Free case review. No fees unless we win.",
     url: SITE_URL,

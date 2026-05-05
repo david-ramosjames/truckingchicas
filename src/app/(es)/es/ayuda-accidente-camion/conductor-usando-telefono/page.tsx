@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Qué Pasa Si el Camionero Estaba Usando Su Teléfono? | Trucking Chicas",
+  title: "¿Qué Pasa Si el Camionero Estaba Usando Su Teléfono?",
   description: "¿Estaba el camionero usando su teléfono cuando lo golpeó? Aprenda cómo esto fortalece su caso.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/conductor-usando-telefono`,

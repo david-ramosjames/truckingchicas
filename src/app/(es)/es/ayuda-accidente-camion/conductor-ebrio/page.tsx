@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Obtendré Más Compensación Si el Camionero Estaba Ebrio? | Trucking Chicas",
+  title: "¿Obtendré Más Compensación Si el Camionero Estaba Ebrio?",
   description: "Si el camionero estaba intoxicado, su caso puede dar derecho a daños punitivos. Aprenda más.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/conductor-ebrio`,

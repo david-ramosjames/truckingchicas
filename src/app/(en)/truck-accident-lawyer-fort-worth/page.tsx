@@ -12,14 +12,14 @@ import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Fort Worth, TX | Trucking Chicas",
+  title: "Truck Accident Lawyer in Fort Worth, TX",
   description: "Injured in a truck accident in Fort Worth? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-fort-worth`,
     languages: { en: `${SITE_URL}/truck-accident-lawyer-fort-worth`, es: `${SITE_URL}/es/abogado-accidentes-camion-fort-worth` },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Fort Worth, TX | Trucking Chicas",
+    title: "Truck Accident Lawyer in Fort Worth, TX",
     description: "Injured in a truck accident in Fort Worth? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
     url: `${SITE_URL}/truck-accident-lawyer-fort-worth`,
   },

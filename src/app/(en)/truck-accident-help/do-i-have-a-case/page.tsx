@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Do I Have a Case If I Got Hit by a Semi Truck? | Trucking Chicas",
+  title: "Do I Have a Case If I Got Hit by a Semi Truck?",
   description: "Hit by a semi truck in Texas? Learn if you have a case, what evidence matters, and how to protect your rights. Free consultation.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/do-i-have-a-case`,

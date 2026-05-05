@@ -9,7 +9,7 @@ import TrustBadges from "@/components/TrustBadges";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "About Trucking Chicas | Texas Truck Accident Lawyers",
+  title: "About Our Texas Truck Accident Lawyers",
   description:
     "Learn about Trucking Chicas, a Texas law firm focused exclusively on truck and 18-wheeler accident cases.",
   alternates: {

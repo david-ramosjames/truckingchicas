@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Average 18-Wheeler Accident Settlement | Trucking Chicas",
+  title: "Average 18-Wheeler Accident Settlement",
   description: "What is the average settlement for an 18-wheeler accident? Learn what factors affect settlement amounts in Texas truck accident cases.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/average-18-wheeler-settlement`,

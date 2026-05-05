@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Cuánto Vale Mi Caso de Accidente de Camión? | Trucking Chicas",
+  title: "¿Cuánto Vale Mi Caso de Accidente de Camión?",
   description: "Aprenda qué factores determinan el valor de un caso de accidente de camión en Texas.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/cuanto-vale-mi-caso`,

@@ -12,14 +12,14 @@ import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Corpus Christi, TX | Trucking Chicas",
+  title: "Truck Accident Lawyer in Corpus Christi, TX",
   description: "Injured in a truck accident in Corpus Christi? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
     languages: { en: `${SITE_URL}/truck-accident-lawyer-corpus-christi`, es: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi` },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Corpus Christi, TX | Trucking Chicas",
+    title: "Truck Accident Lawyer in Corpus Christi, TX",
     description: "Injured in a truck accident in Corpus Christi? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
     url: `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
   },

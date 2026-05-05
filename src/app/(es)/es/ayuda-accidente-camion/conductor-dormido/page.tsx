@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Importa Si el Camionero Estaba Cansado o Se Quedó Dormido? | Trucking Chicas",
+  title: "¿Importa Si el Camionero Estaba Cansado o Se Quedó Dormido?",
   description: "La fatiga del camionero es una causa principal de accidentes. Aprenda cómo afecta su caso bajo la ley de Texas.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/conductor-dormido`,

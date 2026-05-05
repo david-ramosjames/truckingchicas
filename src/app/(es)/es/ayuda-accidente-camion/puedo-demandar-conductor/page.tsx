@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Puedo Demandar Si un Camionero Se Pasó un Semáforo en Rojo? | Trucking Chicas",
+  title: "¿Puedo Demandar Si un Camionero Se Pasó un Semáforo en Rojo?",
   description: "¿Lo golpeó un camionero que se pasó un semáforo en rojo? Aprenda sus derechos legales y cómo proceder con un reclamo.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/puedo-demandar-conductor`,

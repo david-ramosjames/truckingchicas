@@ -10,7 +10,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Dump Truck & Construction Vehicle Accident Lawyer in Texas | Trucking Chicas",
+  title: "Dump Truck & Construction Vehicle Accident Lawyer in Texas",
   description:
     "Injured by a dump truck or construction vehicle in Texas? Our attorneys fight for victims of work zone and heavy equipment crashes. Free case review.",
   alternates: {

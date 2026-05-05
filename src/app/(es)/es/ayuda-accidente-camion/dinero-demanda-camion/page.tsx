@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Cuánto Dinero Puedo Obtener de una Demanda? | Trucking Chicas",
+  title: "¿Cuánto Dinero Puedo Obtener de una Demanda?",
   description: "Aprenda qué tipos de daños puede recuperar en una demanda contra una compañía de camiones.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/dinero-demanda-camion`,

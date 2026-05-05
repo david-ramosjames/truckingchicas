@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Can I Sue If a Truck Driver Ran a Red Light? | Trucking Chicas",
+  title: "Can I Sue If a Truck Driver Ran a Red Light?",
   description: "A truck driver ran a red light and hit you? Learn your legal options for suing the driver and trucking company in Texas.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/can-i-sue-truck-driver`,

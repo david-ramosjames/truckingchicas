@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Does It Matter If the Truck Driver Was Tired? | Trucking Chicas",
+  title: "Does It Matter If the Truck Driver Was Tired?",
   description: "Fatigued truck driver caused your accident? Learn how hours-of-service violations and driver fatigue affect your Texas truck accident claim.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/truck-driver-fell-asleep`,

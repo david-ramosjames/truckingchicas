@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How Much Money Can I Get from a Trucking Company Lawsuit? | Trucking Chicas",
+  title: "How Much Money Can I Get from a Trucking Company Lawsuit?",
   description: "Learn how much you can recover from a trucking company lawsuit in Texas. Understand damages, insurance limits, and what affects your settlement.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/trucking-company-lawsuit-money`,

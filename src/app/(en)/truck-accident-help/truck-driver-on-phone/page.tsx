@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "What If the Truck Driver Was On Their Phone? | Trucking Chicas",
+  title: "What If the Truck Driver Was On Their Phone?",
   description: "Truck driver was texting or on the phone when they hit you? Learn how distracted driving violations strengthen your Texas truck accident case.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/truck-driver-on-phone`,

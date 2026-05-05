@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "18-Wheeler Accident Lawyer in Texas | Trucking Chicas",
+    title: "18-Wheeler Accident Lawyer in Texas",
     description:
       "Hurt in an 18-wheeler crash in Texas? Our attorneys specialize in commercial truck accident cases.",
     url: `${SITE_URL}/18-wheeler-accident-lawyer`,

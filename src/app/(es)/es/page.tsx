@@ -14,7 +14,7 @@ import TrustBadges from "@/components/TrustBadges";
 import { localBusinessSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Abogados de Accidentes de Camión en Texas | Trucking Chicas",
+  title: "Abogados de Accidentes de Camión en Texas",
   description:
     "¿Te chocó un camión en Texas? Trucking Chicas lucha por las víctimas de accidentes de camión y tráiler. Evaluación gratis. No cobramos si no ganamos.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     languages: { en: SITE_URL, es: `${SITE_URL}/es` },
   },
   openGraph: {
-    title: "Abogados de Accidentes de Camión en Texas | Trucking Chicas",
+    title: "Abogados de Accidentes de Camión en Texas",
     description:
       "¿Te chocó un camión en Texas? Trucking Chicas lucha por las víctimas de accidentes de camión y tráiler. Evaluación gratis. No cobramos si no ganamos.",
     url: `${SITE_URL}/es`,

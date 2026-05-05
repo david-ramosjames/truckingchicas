@@ -10,7 +10,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camiones de Carga en Texas | Trucking Chicas",
+  title: "Abogado de Accidentes de Camiones de Carga en Texas",
   description:
     "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestros abogados de accidentes de camión pueden ayudar. Evaluación gratis.",
   alternates: {

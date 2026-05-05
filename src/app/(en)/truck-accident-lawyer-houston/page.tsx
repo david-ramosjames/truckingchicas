@@ -12,7 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Houston, TX | Trucking Chicas",
+  title: "Truck Accident Lawyer in Houston, TX",
   description:
     "Injured in a truck accident in Houston? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Houston, TX | Trucking Chicas",
+    title: "Truck Accident Lawyer in Houston, TX",
     description:
       "Injured in a truck accident in Houston? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
     url: `${SITE_URL}/truck-accident-lawyer-houston`,

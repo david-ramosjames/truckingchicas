@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Cuáles Son Mis Derechos Si un 18 Ruedas Me Chocó por Detrás? | Trucking Chicas",
+  title: "¿Cuáles Son Mis Derechos Si un 18 Ruedas Me Chocó por Detrás?",
   description: "¿Lo chocó por detrás un 18 ruedas en Texas? Conozca sus derechos y la compensación a la que puede tener acceso.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/choque-trasero-18-ruedas`,

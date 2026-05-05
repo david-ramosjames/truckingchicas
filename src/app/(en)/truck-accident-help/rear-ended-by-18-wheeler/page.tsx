@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "What Are My Rights If Rear-Ended by an 18-Wheeler? | Trucking Chicas",
+  title: "What Are My Rights If Rear-Ended by an 18-Wheeler?",
   description: "Rear-ended by an 18-wheeler in Texas? Understand your rights, liability, and how to pursue maximum compensation.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/rear-ended-by-18-wheeler`,

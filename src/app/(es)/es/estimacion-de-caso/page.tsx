@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Estimación de Caso Gratis con IA | Trucking Chicas",
+  title: "Estimación de Caso Gratis con IA",
   description:
     "Obtén una estimación gratuita e instantánea con IA para tu caso de accidente de camión en Texas. Responde unas preguntas y recibe una evaluación preliminar.",
   alternates: {

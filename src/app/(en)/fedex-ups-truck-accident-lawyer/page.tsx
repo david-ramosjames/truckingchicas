@@ -10,7 +10,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "FedEx & UPS Truck Accident Lawyer in Texas | Trucking Chicas",
+  title: "FedEx & UPS Truck Accident Lawyer in Texas",
   description:
     "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our attorneys handle delivery truck accident cases. Free case review.",
   alternates: {

@@ -165,7 +165,7 @@ const en = {
   },
   truckAccident: {
     title: "Texas Truck Accident Lawyer",
-    metaTitle: "Texas Truck Accident Lawyer | Trucking Chicas",
+    metaTitle: "Texas Truck Accident Lawyer",
     metaDesc:
       "Injured in a truck accident in Texas? Our specialized truck accident attorneys fight for maximum compensation. Free case review. No fees unless we win.",
     heroHeadline: "Texas Truck Accident Lawyer",
@@ -211,7 +211,7 @@ const en = {
   },
   eighteenWheeler: {
     title: "18-Wheeler Accident Lawyer in Texas",
-    metaTitle: "18-Wheeler Accident Lawyer in Texas | Trucking Chicas",
+    metaTitle: "18-Wheeler Accident Lawyer in Texas",
     metaDesc:
       "Hurt in an 18-wheeler crash in Texas? Our attorneys specialize in commercial truck accident cases. Call for a free consultation.",
     heroHeadline: "18-Wheeler Accident Lawyer in Texas",
@@ -236,7 +236,7 @@ const en = {
   },
   deliveryTruck: {
     title: "FedEx & UPS Truck Accident Lawyer",
-    metaTitle: "FedEx & UPS Truck Accident Lawyer in Texas | Trucking Chicas",
+    metaTitle: "FedEx & UPS Truck Accident Lawyer in Texas",
     metaDesc:
       "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our attorneys handle delivery truck accident cases. Free case review.",
     heroHeadline: "FedEx & UPS Truck Accident Lawyer",
@@ -274,7 +274,7 @@ const en = {
   },
   oilfieldTanker: {
     title: "Oilfield & Tanker Truck Accident Lawyer",
-    metaTitle: "Oilfield & Tanker Truck Accident Lawyer in Texas | Trucking Chicas",
+    metaTitle: "Oilfield & Tanker Truck Accident Lawyer in Texas",
     metaDesc:
       "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers specialize in energy-sector trucking crashes. Free consultation.",
     heroHeadline: "Oilfield & Tanker Truck Accident Lawyer",
@@ -306,7 +306,7 @@ const en = {
   },
   dumpTruck: {
     title: "Dump Truck & Construction Vehicle Accident Lawyer",
-    metaTitle: "Dump Truck & Construction Vehicle Accident Lawyer in Texas | Trucking Chicas",
+    metaTitle: "Dump Truck & Construction Vehicle Accident Lawyer in Texas",
     metaDesc:
       "Injured by a dump truck or construction vehicle in Texas? Our attorneys fight for victims of work zone and heavy equipment crashes. Free case review.",
     heroHeadline: "Dump Truck & Construction Accident Lawyer",
@@ -344,7 +344,7 @@ const en = {
   },
   boxTruck: {
     title: "Box Truck & Commercial Van Accident Lawyer",
-    metaTitle: "Box Truck & Commercial Van Accident Lawyer in Texas | Trucking Chicas",
+    metaTitle: "Box Truck & Commercial Van Accident Lawyer in Texas",
     metaDesc:
       "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident lawyers can help. Free case review.",
     heroHeadline: "Box Truck & Commercial Van Accident Lawyer",
@@ -418,7 +418,7 @@ const en = {
   },
   areas: {
     title: "Areas We Serve in Texas",
-    metaTitle: "Texas Truck Accident Lawyer — Areas We Serve | Trucking Chicas",
+    metaTitle: "Texas Truck Accident Lawyer — Areas We Serve",
     metaDesc:
       "Trucking Chicas serves truck and 18-wheeler accident victims across Texas, including Houston, Dallas, Austin, San Antonio, and more.",
     heading: "Serving Truck Accident Victims Across Texas",
@@ -893,7 +893,7 @@ const en = {
   },
   faq: {
     title: "Frequently Asked Questions",
-    metaTitle: "Truck Accident FAQ | Trucking Chicas",
+    metaTitle: "Truck Accident FAQ",
     metaDesc:
       "Get answers to common questions about truck accident claims in Texas, including liability, compensation, and the statute of limitations.",
     heading: "Truck Accident FAQ",
@@ -993,7 +993,7 @@ const en = {
   },
   caseEstimate: {
     title: "AI Case Estimate",
-    metaTitle: "Free AI Case Estimate | Trucking Chicas",
+    metaTitle: "Free AI Case Estimate",
     metaDesc:
       "Get a free, instant AI-powered estimate for your Texas truck accident case. Answer a few questions and receive a preliminary case evaluation.",
     heading: "Get Your Free AI Case Estimate",

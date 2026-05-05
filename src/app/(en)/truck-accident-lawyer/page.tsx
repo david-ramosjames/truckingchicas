@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Texas Truck Accident Lawyer | Trucking Chicas",
+    title: "Texas Truck Accident Lawyer",
     description:
       "Injured in a truck accident in Texas? Our specialized truck accident attorneys fight for maximum compensation.",
     url: `${SITE_URL}/truck-accident-lawyer`,

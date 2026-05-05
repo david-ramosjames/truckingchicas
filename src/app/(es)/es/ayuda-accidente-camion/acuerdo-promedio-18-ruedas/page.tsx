@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Cuál Es el Acuerdo Promedio para un Accidente de 18 Ruedas? | Trucking Chicas",
+  title: "¿Cuál Es el Acuerdo Promedio para un Accidente de 18 Ruedas?",
   description: "Conozca los rangos típicos de acuerdos para accidentes de 18 ruedas y los factores que influyen.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/acuerdo-promedio-18-ruedas`,

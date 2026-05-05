@@ -10,7 +10,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Oilfield & Tanker Truck Accident Lawyer in Texas | Trucking Chicas",
+  title: "Oilfield & Tanker Truck Accident Lawyer in Texas",
   description:
     "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers specialize in energy-sector trucking crashes. Free consultation.",
   alternates: {

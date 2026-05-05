@@ -11,7 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Corpus Christi, TX | Trucking Chicas",
+  title: "Abogado de Accidentes de Camión en Corpus Christi, TX",
   description: "¿Lesionado en un accidente de camión en Corpus Christi? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Corpus Christi, TX | Trucking Chicas",
+    title: "Abogado de Accidentes de Camión en Corpus Christi, TX",
     description: "¿Lesionado en un accidente de camión en Corpus Christi? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
     url: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
   },

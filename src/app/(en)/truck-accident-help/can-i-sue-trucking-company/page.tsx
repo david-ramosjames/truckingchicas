@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Can I Sue a Trucking Company for My Injuries? | Trucking Chicas",
+  title: "Can I Sue a Trucking Company for My Injuries?",
   description: "Injured by a commercial truck? Learn how to hold the trucking company liable for negligent hiring, maintenance, and safety violations.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/can-i-sue-trucking-company`,

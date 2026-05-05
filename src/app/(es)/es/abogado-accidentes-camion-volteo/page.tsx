@@ -10,7 +10,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camiones de Volteo en Texas | Trucking Chicas",
+  title: "Abogado de Accidentes de Camiones de Volteo en Texas",
   description:
     "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestros abogados luchan por las víctimas. Evaluación gratis.",
   alternates: {

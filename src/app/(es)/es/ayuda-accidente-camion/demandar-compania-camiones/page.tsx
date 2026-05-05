@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Puedo Demandar a una Compañía de Camiones por Mis Lesiones? | Trucking Chicas",
+  title: "¿Puedo Demandar a una Compañía de Camiones por Mis Lesiones?",
   description: "Aprenda cómo y por qué demandar a una compañía de camiones después de un accidente en Texas.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/demandar-compania-camiones`,
