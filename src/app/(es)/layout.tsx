@@ -27,6 +27,12 @@ export const metadata: Metadata = {
       es: `${SITE_URL}/es`,
     },
   },
+  verification: {
+    other: {
+      "ahrefs-site-verification":
+        "59e744354fefb8e5a68605c7444d638c6e461feec79674299bb8c773edbcf6c1",
+    },
+  },
 };
 
 export default function EsRootLayout({
