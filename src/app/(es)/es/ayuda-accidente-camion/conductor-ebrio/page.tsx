@@ -8,7 +8,7 @@ import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "¿Obtendré Más Compensación Si el Camionero Estaba Ebrio?",
-  description: "Si el camionero estaba intoxicado, su caso puede dar derecho a daños punitivos. Aprenda más.",
+  description: "Si el camionero estaba intoxicado, su caso puede dar derecho a daños punitivos en Texas. Aprenda más con una consulta gratis de Trucking Chicas.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/conductor-ebrio`,
     languages: {

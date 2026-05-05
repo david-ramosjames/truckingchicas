@@ -8,7 +8,7 @@ import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "¿Puedo Demandar a una Compañía de Camiones por Mis Lesiones?",
-  description: "Aprenda cómo y por qué demandar a una compañía de camiones después de un accidente en Texas.",
+  description: "Aprenda cómo y por qué demandar a una compañía de camiones después de un accidente en Texas. Sin honorarios si no ganamos. Consulta gratis con Trucking Chicas.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/demandar-compania-camiones`,
     languages: {

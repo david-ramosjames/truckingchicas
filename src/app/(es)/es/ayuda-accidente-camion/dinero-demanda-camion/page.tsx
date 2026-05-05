@@ -8,7 +8,7 @@ import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "¿Cuánto Dinero Puedo Obtener de una Demanda?",
-  description: "Aprenda qué tipos de daños puede recuperar en una demanda contra una compañía de camiones.",
+  description: "Aprenda qué tipos de daños puede recuperar en una demanda contra una compañía de camiones en Texas. Consulta gratis con Trucking Chicas.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/dinero-demanda-camion`,
     languages: {

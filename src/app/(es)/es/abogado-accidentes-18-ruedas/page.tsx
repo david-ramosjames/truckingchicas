@@ -12,7 +12,7 @@ import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de 18 Ruedas en Texas",
   description:
-    "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nuestros abogados se especializan en accidentes de vehículos comerciales. Llama para una consulta gratis.",
+    "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nos especializamos en accidentes de vehículos comerciales. Llama para una consulta gratis.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-18-ruedas`,
     languages: {

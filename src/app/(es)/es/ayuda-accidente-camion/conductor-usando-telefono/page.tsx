@@ -8,7 +8,7 @@ import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "¿Qué Pasa Si el Camionero Estaba Usando Su Teléfono?",
-  description: "¿Estaba el camionero usando su teléfono cuando lo golpeó? Aprenda cómo esto fortalece su caso.",
+  description: "¿Estaba el camionero usando su teléfono cuando lo golpeó? Aprenda cómo la distracción fortalece su caso en Texas. Consulta gratis con Trucking Chicas.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/conductor-usando-telefono`,
     languages: {
