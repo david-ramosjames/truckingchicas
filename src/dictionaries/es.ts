@@ -104,19 +104,19 @@ const es: Dictionary = {
     coreValuesTitle: "Nuestros Valores",
     coreValues: [
       {
-        title: "Integridad",
-        desc: "Respaldamos cada palabra. Asesoría honesta, comunicación transparente y un compromiso con hacer lo correcto — incluso cuando nadie está mirando.",
-        icon: "shield",
+        title: "Excelencia",
+        desc: "Nos exigimos el más alto estándar en cada caso. Preparación meticulosa, defensa incansable y el compromiso de trabajar más duro que el otro lado en cada paso.",
+        icon: "trophy",
+      },
+      {
+        title: "Empatía",
+        desc: "Primero escuchamos. Cada cliente trae una historia, una lesión, una familia — y tratamos a cada uno con el cuidado y respeto que querríamos para los nuestros.",
+        icon: "heart",
       },
       {
         title: "Experiencia",
         desc: "Nos enfocamos exclusivamente en casos de camiones y tráileres de 18 ruedas. Profundo conocimiento de las regulaciones FMCSA, las tácticas de la industria y la estrategia en juicio le da a nuestros clientes una ventaja decisiva.",
         icon: "scale",
-      },
-      {
-        title: "Resultados",
-        desc: "Medimos el éxito con un solo estándar: hacer justicia para nuestros clientes. Cada caso recibe todo nuestro esfuerzo, recursos y determinación.",
-        icon: "trophy",
       },
     ],
     resultsTitle: "Resultados Que Hablan por Sí Mismos",

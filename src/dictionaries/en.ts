@@ -103,19 +103,19 @@ const en = {
     coreValuesTitle: "Our Core Values",
     coreValues: [
       {
-        title: "Integrity",
-        desc: "We stand behind every word. Honest counsel, transparent communication, and a commitment to doing what's right — even when no one is watching.",
-        icon: "shield",
+        title: "Excellence",
+        desc: "We hold ourselves to the highest standard in every case. Meticulous preparation, relentless advocacy, and a commitment to outwork the other side at every turn.",
+        icon: "trophy",
+      },
+      {
+        title: "Empathy",
+        desc: "We listen first. Every client carries a story, an injury, a family — and we treat each one with the care and respect we'd want for our own.",
+        icon: "heart",
       },
       {
         title: "Expertise",
         desc: "We focus exclusively on truck and 18-wheeler cases. Deep knowledge of FMCSA regulations, industry tactics, and trial strategy gives our clients a decisive edge.",
         icon: "scale",
-      },
-      {
-        title: "Results",
-        desc: "We measure success by one standard: making our clients whole. Every case gets our full effort, resources, and determination.",
-        icon: "trophy",
       },
     ],
     resultsTitle: "Results That Speak for Themselves",
