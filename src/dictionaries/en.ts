@@ -134,22 +134,22 @@ const en = {
       {
         quote: "Laura and her team went above and beyond. I always felt supported and personally cared for. A compassionate legal team of integrity.",
         name: "David W.",
-        location: "Drunk Driver Case",
+        location: "Compassionate Support",
       },
       {
         quote: "Laura is an incredibly hard working and smart attorney. Courageous, focused, and has a genuine concern for her clients. She will make sure your rights are protected.",
         name: "Tomas C.",
-        location: "Workplace Injury",
+        location: "Dedicated Advocacy",
       },
       {
         quote: "My experience with Laura and everyone in that office has been amazing. She fought to get me what was fair and deserved. She has done so much for me and my family.",
         name: "Stephanie P.",
-        location: "Truck Accident Client",
+        location: "Fierce Representation",
       },
       {
         quote: "After a semi truck rear-ended me, I had an amazing experience from beginning to end. The team ensured I didn't have to worry about a thing.",
         name: "Gil M.",
-        location: "Semi-Truck Rear-End",
+        location: "Stress-Free Process",
       },
     ],
     areasHomeTitle: "Serving All of Texas",

@@ -135,22 +135,22 @@ const es: Dictionary = {
       {
         quote: "Laura y su equipo fueron más allá de lo esperado. Siempre me sentí apoyado y atendido personalmente. Un equipo legal compasivo y de integridad.",
         name: "David W.",
-        location: "Caso de Conductor Ebrio",
+        location: "Apoyo Compasivo",
       },
       {
         quote: "Laura es una abogada increíblemente trabajadora e inteligente. Valiente, enfocada y con genuina preocupación por sus clientes. Se asegurará de que tus derechos estén protegidos.",
         name: "Tomas C.",
-        location: "Lesión en el Trabajo",
+        location: "Defensa Dedicada",
       },
       {
         quote: "Mi experiencia con Laura y todos en esa oficina ha sido increíble. Luchó por conseguir lo que era justo y merecido. Ha hecho tanto por mí y mi familia.",
         name: "Stephanie P.",
-        location: "Cliente de Accidente de Camión",
+        location: "Representación Feroz",
       },
       {
         quote: "Después de que un semi tráiler me chocó por detrás, tuve una experiencia increíble de principio a fin. El equipo se aseguró de que no tuviera que preocuparme por nada.",
         name: "Gil M.",
-        location: "Choque Trasero con Semi-Tráiler",
+        location: "Proceso Sin Estrés",
       },
     ],
     areasHomeTitle: "Sirviendo a Todo Texas",
