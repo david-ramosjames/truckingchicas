@@ -77,23 +77,12 @@ export default function HomePage() {
       {/* Hero */}
       <HeroSection dict={dict} locale="en" />
 
-      {/* Why Clients Trust Trucking Chicas — Video + Trust Bullets */}
+      {/* Why Clients Trust Trucking Chicas — Trust Bullets */}
       <section className="bg-brand-cream py-16">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
             Why Clients Trust Trucking Chicas
           </h2>
-
-          {/* Video embed placeholder */}
-          <div className="mt-10 aspect-video w-full overflow-hidden rounded-2xl bg-brand-navy/10 shadow-lg">
-            {/* Replace the div below with your embed code (YouTube, Vimeo, etc.) */}
-            <div className="flex h-full items-center justify-center text-brand-navy/40">
-              <svg className="mr-3 h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-              <span className="text-lg font-medium">Video coming soon</span>
-            </div>
-          </div>
 
           {/* Trust bullets */}
           <ul className="mt-8 space-y-3">

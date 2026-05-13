@@ -159,24 +159,67 @@ export default function HomePageES() {
 
       <CTASection dict={dict} locale="es" variant="dark" />
 
-      {/* Results */}
-      <section className="py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
-            {dict.home.resultsTitle}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-            {dict.home.resultsSubtitle}
-          </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {dict.home.results.map((r) => (
-              <div key={r.desc} className="card-lift card-border-top rounded-xl bg-white p-6 text-center shadow-md">
-                <p className="text-4xl font-extrabold text-brand-coral">{r.amount}</p>
-                <p className="mt-2 font-medium text-brand-navy">{r.desc}</p>
+      {/* Featured Results — Premium Editorial */}
+      <section className="bg-white py-20 md:py-24">
+        <div className="mx-auto max-w-5xl px-4">
+          {/* Header */}
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C62828]">
+              Resultados Destacados
+            </p>
+            <h2 className="mt-3 text-3xl font-bold text-brand-navy md:text-4xl">
+              Luchando por la Máxima Compensación — Caso por Caso
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-500 md:text-lg">
+              Cada caso es diferente. Pero cuando hay lesiones graves y vehículos comerciales involucrados, luchamos para recuperar el valor total que nuestros clientes merecen.
+            </p>
+          </div>
+
+          {/* Featured case cards */}
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {[
+              { amount: "$475,000", label: "Recuperación", title: "Choque con Vehículo de Empresa", detail: "Cliente requirió cirugía de columna" },
+              { amount: "$375,000", label: "Recuperación", title: "Colisión Lateral con 18 Ruedas", detail: "Negligencia de vehículo comercial" },
+              { amount: "Alta Cifra de Seis Dígitos", label: "Acuerdo", title: "Choque de 18 Ruedas (Confidencial)", detail: "Daños severos" },
+            ].map((c) => (
+              <div
+                key={c.title}
+                className="rounded-xl border border-gray-200 bg-gray-50/50 px-6 py-8 text-center shadow-sm transition-shadow hover:shadow-md"
+              >
+                <div className="mx-auto mb-5 h-px w-10 bg-[#C62828]/50" />
+                <p className="text-2xl font-bold text-[#C62828] md:text-3xl">{c.amount}</p>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-[#C62828]/60">{c.label}</p>
+                <p className="mt-4 text-base font-semibold text-brand-navy">{c.title}</p>
+                <p className="mt-1 text-sm italic text-gray-500">{c.detail}</p>
               </div>
             ))}
           </div>
-          <p className="mt-6 text-center text-xs text-gray-400">{dict.home.resultsDisclaimer}</p>
+
+          {/* Support line */}
+          <p className="mt-10 text-center text-sm font-medium text-gray-600">
+            + Recuperaciones adicionales de seis cifras en casos de 18 ruedas, camiones Mack y vehículos de empresa
+          </p>
+
+          {/* Disclaimer */}
+          <p className="mt-3 text-center text-xs text-gray-400">
+            Los resultados dependen de los hechos de cada caso. No todos los casos resultan en el mismo desenlace.
+          </p>
+
+          {/* CTA */}
+          <div className="mt-12 text-center">
+            <p className="mb-4 text-lg font-medium text-brand-navy">
+              Descubra cuánto podría valer su caso
+            </p>
+            <a
+              href={`tel:+1${PHONE_NUMBER}`}
+              className="btn-lift inline-flex items-center gap-3 rounded-xl bg-brand-rose px-10 py-4 text-lg font-bold text-white shadow-lg transition-colors hover:bg-brand-rose-dark"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Llame Ahora: {PHONE_DISPLAY}
+            </a>
+          </div>
         </div>
       </section>
 
