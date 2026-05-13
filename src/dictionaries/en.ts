@@ -132,19 +132,24 @@ const en = {
     testimonialsTitle: "What Our Clients Say",
     testimonials: [
       {
-        quote: "They fought for me when I felt completely alone. After my accident, I didn't know where to turn: Trucking Chicas took over and handled everything.",
-        name: "Maria G.",
-        location: "Houston, TX",
+        quote: "Laura and her team went above and beyond. I always felt supported and personally cared for. A compassionate legal team of integrity.",
+        name: "David W.",
+        location: "Drunk Driver Case",
       },
       {
-        quote: "Professional, compassionate, and relentless. They got me a settlement that covered all my medical bills and then some. I can't thank them enough.",
-        name: "James R.",
-        location: "Dallas, TX",
+        quote: "Laura is an incredibly hard working and smart attorney. Courageous, focused, and has a genuine concern for her clients. She will make sure your rights are protected.",
+        name: "Tomas C.",
+        location: "Workplace Injury",
       },
       {
-        quote: "Being able to speak to someone in Spanish made all the difference. They treated me like family, not just a case number.",
-        name: "Carlos M.",
-        location: "San Antonio, TX",
+        quote: "My experience with Laura and everyone in that office has been amazing. She fought to get me what was fair and deserved. She has done so much for me and my family.",
+        name: "Stephanie P.",
+        location: "Truck Accident Client",
+      },
+      {
+        quote: "After a semi truck rear-ended me, I had an amazing experience from beginning to end. The team ensured I didn't have to worry about a thing.",
+        name: "Gil M.",
+        location: "Semi-Truck Rear-End",
       },
     ],
     areasHomeTitle: "Serving All of Texas",

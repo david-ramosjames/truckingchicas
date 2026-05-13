@@ -133,19 +133,24 @@ const es: Dictionary = {
     testimonialsTitle: "Lo Que Dicen Nuestros Clientes",
     testimonials: [
       {
-        quote: "Lucharon por mí cuando me sentía completamente sola. Después de mi accidente, no sabía a quién acudir: Trucking Chicas tomó el control y manejó todo.",
-        name: "Maria G.",
-        location: "Houston, TX",
+        quote: "Laura y su equipo fueron más allá de lo esperado. Siempre me sentí apoyado y atendido personalmente. Un equipo legal compasivo y de integridad.",
+        name: "David W.",
+        location: "Caso de Conductor Ebrio",
       },
       {
-        quote: "Profesionales, compasivos e incansables. Lograron un acuerdo que cubrió todos mis gastos médicos y más. No puedo agradecerles lo suficiente.",
-        name: "James R.",
-        location: "Dallas, TX",
+        quote: "Laura es una abogada increíblemente trabajadora e inteligente. Valiente, enfocada y con genuina preocupación por sus clientes. Se asegurará de que tus derechos estén protegidos.",
+        name: "Tomas C.",
+        location: "Lesión en el Trabajo",
       },
       {
-        quote: "Poder hablar con alguien en español hizo toda la diferencia. Me trataron como familia, no solo como un número de caso.",
-        name: "Carlos M.",
-        location: "San Antonio, TX",
+        quote: "Mi experiencia con Laura y todos en esa oficina ha sido increíble. Luchó por conseguir lo que era justo y merecido. Ha hecho tanto por mí y mi familia.",
+        name: "Stephanie P.",
+        location: "Cliente de Accidente de Camión",
+      },
+      {
+        quote: "Después de que un semi tráiler me chocó por detrás, tuve una experiencia increíble de principio a fin. El equipo se aseguró de que no tuviera que preocuparme por nada.",
+        name: "Gil M.",
+        location: "Choque Trasero con Semi-Tráiler",
       },
     ],
     areasHomeTitle: "Sirviendo a Todo Texas",

@@ -329,7 +329,7 @@ export default function HomePageES() {
           <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
             {dict.home.testimonialsTitle}
           </h2>
-          <div className="mt-10 grid gap-8 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {dict.home.testimonials.map((t) => (
               <div key={t.name} className="card-lift rounded-xl border-l-4 border-brand-coral bg-white p-6 shadow-md">
                 <svg className="mb-3 h-8 w-8 text-brand-coral/30" fill="currentColor" viewBox="0 0 24 24">
