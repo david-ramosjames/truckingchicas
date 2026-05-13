@@ -13,7 +13,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camiones Cisterna en Texas",
   description:
-    "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados se especializan en choques del sector energético. Consulta gratis.",
+    "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados tienen un enfoque especial en choques del sector energético. Consulta gratis.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-cisterna`,
     languages: {

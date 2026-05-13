@@ -13,7 +13,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camión en Texas",
   description:
-    "¿Lesionado en un accidente de camión en Texas? Nuestros abogados especializados luchan por la máxima compensación. Evaluación gratis. No cobramos si no ganamos.",
+    "¿Lesionado en un accidente de camión en Texas? Nuestros abogados altamente experimentados luchan por la máxima compensación. Evaluación gratis. No cobramos si no ganamos.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-de-camion`,
     languages: {

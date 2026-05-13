@@ -13,7 +13,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de 18 Ruedas en Texas",
   description:
-    "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nos especializamos en accidentes de vehículos comerciales. Llama para una consulta gratis.",
+    "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Tenemos un enfoque especial en accidentes de vehículos comerciales. Llama para una consulta gratis.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-18-ruedas`,
     languages: {

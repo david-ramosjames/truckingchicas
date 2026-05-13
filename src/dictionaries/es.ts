@@ -40,7 +40,7 @@ const es: Dictionary = {
     callNow: "Llamar 24/7",
     heading: "¿Lista para Luchar por tus Derechos?",
     subtext:
-      "Obtén una evaluación de caso gratuita y sin compromiso de nuestros abogados especializados en accidentes de camión.",
+      "Obtén una evaluación de caso gratuita y sin compromiso de nuestros abogados altamente experimentados en accidentes de camión.",
     formHeading: "Comienza tu Evaluación Gratis",
     microcopy: "Sin compromiso. No cobramos si no ganamos.",
   },
@@ -86,7 +86,7 @@ const es: Dictionary = {
     whyUsItems: [
       {
         title: "Enfoque en Accidentes de Camión",
-        desc: "Manejamos exclusivamente casos de camiones y tráileres. Esta especialización significa conocimiento más profundo y mejores resultados.",
+        desc: "Manejamos exclusivamente casos de camiones y tráileres. Este enfoque especial significa conocimiento más profundo y mejores resultados.",
       },
       {
         title: "Historial Comprobado",
@@ -168,7 +168,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de Camión en Texas",
     metaTitle: "Abogado de Accidentes de Camión en Texas",
     metaDesc:
-      "¿Lesionado en un accidente de camión en Texas? Nuestros abogados especializados luchan por la máxima compensación. Evaluación gratis. No cobramos si no ganamos.",
+      "¿Lesionado en un accidente de camión en Texas? Nuestros abogados altamente experimentados luchan por la máxima compensación. Evaluación gratis. No cobramos si no ganamos.",
     heroHeadline: "Abogado de Accidentes de Camión en Texas",
     heroSubhead:
       "Los choques de camiones causan lesiones devastadoras. Nuestro equipo lucha exclusivamente por las víctimas de accidentes de camión en todo Texas.",
@@ -214,7 +214,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de 18 Ruedas en Texas",
     metaTitle: "Abogado de Accidentes de 18 Ruedas en Texas",
     metaDesc:
-      "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nuestros abogados se especializan en accidentes de vehículos comerciales. Llama para una consulta gratis.",
+      "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nuestros abogados tienen un enfoque especial en accidentes de vehículos comerciales. Llama para una consulta gratis.",
     heroHeadline: "Abogado de Accidentes de 18 Ruedas en Texas",
     heroSubhead:
       "Los choques con tráileres de 18 ruedas están entre los accidentes más peligrosos en las carreteras de Texas. Luchamos por las víctimas de colisiones catastróficas con vehículos comerciales.",
@@ -277,7 +277,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de Camiones Cisterna y Petroleros",
     metaTitle: "Abogado de Accidentes de Camiones Cisterna en Texas",
     metaDesc:
-      "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados se especializan en choques del sector energético. Consulta gratis.",
+      "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados tienen un enfoque especial en choques del sector energético. Consulta gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones Cisterna",
     heroSubhead:
       "Las operaciones petroleras de Texas ponen miles de camiones cisterna, de agua y transportadores de equipo en las carreteras. Cuando chocan, las consecuencias son catastróficas.",
@@ -303,7 +303,7 @@ const es: Dictionary = {
     ],
     hazmatTitle: "Riesgos de Materiales Peligrosos",
     hazmatDesc:
-      "Los accidentes de camiones cisterna frecuentemente involucran materiales peligrosos — petróleo crudo, líquidos de gas natural, químicos de fracturación o agua producida. Estos derrames pueden causar explosiones, quemaduras químicas, exposición tóxica y daño ambiental a largo plazo. Las víctimas de accidentes con cisternas de materiales peligrosos pueden enfrentar riesgos de salud únicos que requieren atención médica y representación legal especializada.",
+      "Los accidentes de camiones cisterna frecuentemente involucran materiales peligrosos — petróleo crudo, líquidos de gas natural, químicos de fracturación o agua producida. Estos derrames pueden causar explosiones, quemaduras químicas, exposición tóxica y daño ambiental a largo plazo. Las víctimas de accidentes con cisternas de materiales peligrosos pueden enfrentar riesgos de salud únicos que requieren atención médica y representación legal experimentada.",
   },
   dumpTruck: {
     title: "Abogado de Accidentes de Camiones de Volteo y Construcción",
@@ -383,7 +383,7 @@ const es: Dictionary = {
   },
   accidentTypes: {
     title: "Tipos de Accidentes de Camión que Manejamos",
-    subtitle: "Nuestros abogados se especializan en todo tipo de accidente de camión comercial en Texas.",
+    subtitle: "Nuestros abogados tienen un enfoque especial en todo tipo de accidente de camión comercial en Texas.",
     items: [
       {
         title: "Accidentes de 18 Ruedas",
@@ -935,7 +935,7 @@ const es: Dictionary = {
     ],
     chooseTitle: "Cómo Elegir un Abogado de Accidentes de Camión",
     chooseItems: [
-      "Se especializa en casos de accidentes de camión y tráiler",
+      "Tiene un enfoque especial en casos de accidentes de camión y tráiler",
       "Entiende las regulaciones de la FMCSA y la industria del transporte",
       "Tiene recursos para investigar y litigar contra grandes transportistas",
       "Trabaja sobre contingencia — no cobra si no ganas",
@@ -954,11 +954,11 @@ const es: Dictionary = {
       "Trucking Chicas es un bufete de abogados en Texas dedicado exclusivamente a representar a víctimas de accidentes de camión y tráiler en todo el estado.",
     missionTitle: "Nuestra Misión",
     missionDesc:
-      "Creemos que cada víctima de accidente de camión merece una representación legal feroz y conocedora — sin importar el idioma que hable o dónde viva en Texas. Trucking Chicas fue creada para llevar experiencia especializada en accidentes de camión directamente a las comunidades que más la necesitan.",
+      "Creemos que cada víctima de accidente de camión merece una representación legal feroz y conocedora — sin importar el idioma que hable o dónde viva en Texas. Trucking Chicas fue creada para llevar experiencia profunda en accidentes de camión directamente a las comunidades que más la necesitan.",
     valuesTitle: "Lo Que Nos Distingue",
     values: [
       {
-        title: "Especialización en Camiones",
+        title: "Enfoque en Camiones",
         desc: "Nos enfocamos exclusivamente en casos de camiones y tráileres, lo que nos da experiencia profunda en regulaciones de la FMCSA, prácticas de la industria y las tácticas que usan las compañías de camiones.",
       },
       {
@@ -1058,7 +1058,7 @@ const es: Dictionary = {
       submit: "Obtener Mi Estimación Gratis",
       required: "Por favor completa este campo",
     },
-    nonCommercialHeading: "Nos Especializamos en Accidentes de Camiones Comerciales",
+    nonCommercialHeading: "Nuestro Enfoque Especial: Accidentes de Camiones Comerciales",
     nonCommercialMessage: "Nuestro bufete se enfoca específicamente en accidentes de camiones comerciales (tráileres de 18 ruedas, cisternas, camiones de reparto y otros vehículos comerciales). Para accidentes con camiones no comerciales, recomendamos contactar a un abogado general de lesiones personales. Sin embargo, si crees que un vehículo comercial estuvo involucrado, estamos aquí para ayudarte.",
     nonCommercialCta: "Contáctanos de Todas Formas",
   },

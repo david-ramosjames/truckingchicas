@@ -85,7 +85,7 @@ const en = {
     whyUsItems: [
       {
         title: "Trucking-Focused",
-        desc: "We handle truck and 18-wheeler cases exclusively. This specialization means deeper knowledge and stronger results.",
+        desc: "We handle truck and 18-wheeler cases exclusively. This special focus means deeper knowledge and stronger results.",
       },
       {
         title: "Proven Track Record",
@@ -167,7 +167,7 @@ const en = {
     title: "Texas Truck Accident Lawyer",
     metaTitle: "Texas Truck Accident Lawyer",
     metaDesc:
-      "Injured in a truck accident in Texas? Our specialized truck accident attorneys fight for maximum compensation. Free case review. No fees unless we win.",
+      "Injured in a truck accident in Texas? Our highly experienced truck accident attorneys fight for maximum compensation. Free case review. No fees unless we win.",
     heroHeadline: "Texas Truck Accident Lawyer",
     heroSubhead:
       "Truck crashes cause devastating injuries. Our team fights exclusively for truck accident victims across Texas.",
@@ -213,7 +213,7 @@ const en = {
     title: "18-Wheeler Accident Lawyer in Texas",
     metaTitle: "18-Wheeler Accident Lawyer in Texas",
     metaDesc:
-      "Hurt in an 18-wheeler crash in Texas? Our attorneys specialize in commercial truck accident cases. Call for a free consultation.",
+      "Hurt in an 18-wheeler crash in Texas? Our attorneys have a special focus on commercial truck accident cases. Call for a free consultation.",
     heroHeadline: "18-Wheeler Accident Lawyer in Texas",
     heroSubhead:
       "18-wheeler crashes are among the most dangerous accidents on Texas roads. We fight for victims of catastrophic commercial vehicle collisions.",
@@ -276,7 +276,7 @@ const en = {
     title: "Oilfield & Tanker Truck Accident Lawyer",
     metaTitle: "Oilfield & Tanker Truck Accident Lawyer in Texas",
     metaDesc:
-      "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers specialize in energy-sector trucking crashes. Free consultation.",
+      "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers have a special focus on energy-sector trucking crashes. Free consultation.",
     heroHeadline: "Oilfield & Tanker Truck Accident Lawyer",
     heroSubhead:
       "Texas oil and gas operations put thousands of tankers, water trucks, and equipment haulers on the road. When they crash, the consequences are catastrophic.",
@@ -302,7 +302,7 @@ const en = {
     ],
     hazmatTitle: "Hazardous Material Risks",
     hazmatDesc:
-      "Tanker truck accidents often involve hazardous materials — crude oil, natural gas liquids, fracking chemicals, or produced water. These spills can cause explosions, chemical burns, toxic exposure, and long-term environmental damage. Victims of hazmat tanker crashes may face unique health risks that require specialized medical attention and legal representation.",
+      "Tanker truck accidents often involve hazardous materials — crude oil, natural gas liquids, fracking chemicals, or produced water. These spills can cause explosions, chemical burns, toxic exposure, and long-term environmental damage. Victims of hazmat tanker crashes may face unique health risks that require experienced medical attention and legal representation.",
   },
   dumpTruck: {
     title: "Dump Truck & Construction Vehicle Accident Lawyer",
@@ -382,7 +382,7 @@ const en = {
   },
   accidentTypes: {
     title: "Types of Truck Accidents We Handle",
-    subtitle: "Our attorneys specialize in every type of commercial trucking accident across Texas.",
+    subtitle: "Our attorneys have a special focus on every type of commercial trucking accident across Texas.",
     items: [
       {
         title: "18-Wheeler Accidents",
@@ -929,12 +929,12 @@ const en = {
       },
       {
         q: "How do I choose a truck accident lawyer?",
-        a: "Look for a lawyer who specializes in trucking cases, has experience with FMCSA regulations, has the resources to take on large trucking companies, and works on a contingency fee basis. Ask about their track record with truck accident cases specifically.",
+        a: "Look for a lawyer with a special focus on trucking cases, has experience with FMCSA regulations, has the resources to take on large trucking companies, and works on a contingency fee basis. Ask about their track record with truck accident cases specifically.",
       },
     ],
     chooseTitle: "How to Choose a Truck Accident Lawyer",
     chooseItems: [
-      "Specializes in truck and 18-wheeler accident cases",
+      "Has a special focus on truck and 18-wheeler accident cases",
       "Understands FMCSA regulations and the trucking industry",
       "Has resources to investigate and litigate against large carriers",
       "Works on contingency — no fees unless you win",
@@ -953,12 +953,12 @@ const en = {
       "Trucking Chicas is a Texas law firm dedicated exclusively to representing victims of truck and 18-wheeler accidents across the state.",
     missionTitle: "Our Mission",
     missionDesc:
-      "We believe that every truck accident victim deserves fierce, knowledgeable legal representation — regardless of the language they speak or where they live in Texas. Trucking Chicas was created to bring specialized trucking accident expertise directly to the communities that need it most.",
+      "We believe that every truck accident victim deserves fierce, knowledgeable legal representation — regardless of the language they speak or where they live in Texas. Trucking Chicas was created to bring deep trucking accident experience directly to the communities that need it most.",
     valuesTitle: "What Sets Us Apart",
     values: [
       {
-        title: "Trucking Specialization",
-        desc: "We focus exclusively on truck and 18-wheeler cases, giving us deep expertise in FMCSA regulations, industry practices, and the tactics trucking companies use.",
+        title: "Trucking Focus",
+        desc: "We focus exclusively on truck and 18-wheeler cases, giving us deep experience with FMCSA regulations, industry practices, and the tactics trucking companies use.",
       },
       {
         title: "Bilingual Service",
@@ -1058,7 +1058,7 @@ const en = {
       submit: "Get My Free Estimate",
       required: "Please fill in this field",
     },
-    nonCommercialHeading: "We Specialize in Commercial Truck Accidents",
+    nonCommercialHeading: "Our Special Focus: Commercial Truck Accidents",
     nonCommercialMessage: "Our firm focuses specifically on commercial trucking accidents (18-wheelers, tankers, delivery trucks, and other commercial vehicles). For non-commercial truck accidents, we recommend contacting a general personal injury attorney who can better serve your needs. However, if you believe a commercial vehicle was involved, we're here to help.",
     nonCommercialCta: "Contact Us Anyway",
   },

@@ -7,8 +7,8 @@ export function localBusinessSchema(locale: Locale) {
     name: "Trucking Chicas",
     description:
       locale === "en"
-        ? "Texas truck accident lawyers specializing in 18-wheeler accident cases."
-        : "Abogados de accidentes de camión en Texas especializados en casos de accidentes de 18 ruedas.",
+        ? "Texas truck accident lawyers with a special focus on 18-wheeler accident cases."
+        : "Abogados de accidentes de camión en Texas con un enfoque especial en casos de accidentes de 18 ruedas.",
     url: locale === "en" ? SITE_URL : `${SITE_URL}/es`,
     telephone: `+1${PHONE_NUMBER}`,
     address: {

@@ -67,7 +67,7 @@ export const chatStrings = {
       pedestrian: "Peatón",
     },
     likelyCase:
-      "Según lo que nos compartiste, parece que podrías tener un caso fuerte. Te recomendamos hablar con uno de nuestros abogados especializados en accidentes de camión para una evaluación gratuita y sin compromiso. Esta es información general solamente — no es asesoría legal.",
+      "Según lo que nos compartiste, parece que podrías tener un caso fuerte. Te recomendamos hablar con uno de nuestros abogados altamente experimentados en accidentes de camión para una evaluación gratuita y sin compromiso. Esta es información general solamente — no es asesoría legal.",
     needsReview:
       "Gracias por compartir esa información. Tu situación puede tener factores únicos que un abogado debería revisar. Recomendamos una consulta gratuita para entender mejor tus opciones. Esta es información general solamente — no es asesoría legal.",
     generalInfo:

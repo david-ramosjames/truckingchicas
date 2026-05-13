@@ -13,7 +13,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "18-Wheeler Accident Lawyer in Texas",
   description:
-    "Hurt in an 18-wheeler crash in Texas? Our attorneys specialize in commercial truck accident cases. Call for a free consultation.",
+    "Hurt in an 18-wheeler crash in Texas? Our attorneys have a special focus on commercial truck accident cases. Call for a free consultation.",
   alternates: {
     canonical: `${SITE_URL}/18-wheeler-accident-lawyer`,
     languages: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "18-Wheeler Accident Lawyer in Texas",
     description:
-      "Hurt in an 18-wheeler crash in Texas? Our attorneys specialize in commercial truck accident cases.",
+      "Hurt in an 18-wheeler crash in Texas? Our attorneys have a special focus on commercial truck accident cases.",
     url: `${SITE_URL}/18-wheeler-accident-lawyer`,
   },
 };

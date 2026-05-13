@@ -13,7 +13,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Oilfield & Tanker Truck Accident Lawyer in Texas",
   description:
-    "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers specialize in energy-sector trucking crashes. Free consultation.",
+    "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers have a special focus on energy-sector trucking crashes. Free consultation.",
   alternates: {
     canonical: `${SITE_URL}/oilfield-tanker-truck-accident-lawyer`,
     languages: {
