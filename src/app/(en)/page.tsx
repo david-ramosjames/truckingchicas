@@ -77,35 +77,87 @@ export default function HomePage() {
       {/* Hero */}
       <HeroSection dict={dict} locale="en" />
 
-      {/* Why Clients Trust Trucking Chicas — Trust Bullets */}
-      <section className="bg-brand-cream py-16">
-        <div className="mx-auto max-w-4xl px-4">
-          <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
-            Why Clients Trust Trucking Chicas
-          </h2>
+      {/* Why Clients Trust Trucking Chicas */}
+      <section className="bg-brand-cream py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-brand-navy md:text-4xl">
+              Why Clients Trust Trucking Chicas
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-gray-600">
+              Truck accident cases are complex. We make them clearer, faster, and less overwhelming.
+            </p>
+          </div>
 
-          {/* Trust bullets */}
-          <ul className="mt-8 space-y-3">
+          {/* Trust cards */}
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              "We only represent truck accident victims — never trucking companies",
-              "No fees unless we win your case",
-              "Bilingual team — Hablamos español",
-              "Millions recovered for Texas families",
-            ].map((bullet) => (
-              <li key={bullet} className="flex items-start gap-3">
-                <svg className="mt-1 h-5 w-5 shrink-0 text-brand-coral" fill="currentColor" viewBox="0 0 20 20">
+              {
+                title: "Truck Accident Focused",
+                desc: "We help victims after 18-wheeler, semi-truck, and commercial vehicle crashes — not your everyday fender-bender.",
+                icon: (
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 17h1m16 0h1m-1 0a2 2 0 11-4 0 2 2 0 014 0zM7 17a2 2 0 11-4 0 2 2 0 014 0zm-4 0V7a1 1 0 011-1h10a1 1 0 011 1v10m0-7h4l3 3v4" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Real Support From Start to Finish",
+                desc: "We help you understand your case, your next steps, and what compensation may be available.",
+                icon: (
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Maximum Compensation Mindset",
+                desc: "We look at medical bills, lost income, pain, property damage, and long-term impact — not just the obvious costs.",
+                icon: (
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                ),
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="rounded-2xl border border-brand-coral/15 bg-white p-7 shadow-sm transition-shadow hover:shadow-md"
+              >
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-rose/10 text-brand-rose">
+                  {card.icon}
+                </div>
+                <h3 className="text-lg font-bold text-brand-navy">{card.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{card.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Trust chips */}
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+            {[
+              "No Fee Unless We Win",
+              "Free Case Review",
+              "Available 24/7",
+              "Hablamos Español",
+            ].map((chip) => (
+              <span
+                key={chip}
+                className="inline-flex items-center gap-2 rounded-full border border-brand-coral/30 bg-white px-4 py-1.5 text-sm font-medium text-brand-navy shadow-sm"
+              >
+                <svg className="h-4 w-4 text-brand-rose" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-lg text-gray-700">{bullet}</span>
-              </li>
+                {chip}
+              </span>
             ))}
-          </ul>
+          </div>
 
-          {/* Single strong CTA */}
+          {/* CTA */}
           <div className="mt-10 text-center">
             <a
               href={`tel:+1${PHONE_NUMBER}`}
