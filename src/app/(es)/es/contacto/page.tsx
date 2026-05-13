@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Contáctanos — Evaluación Gratis",
+  title: "Contáctanos: Evaluación Gratis",
   description:
     "Contacta a Trucking Chicas para una evaluación de caso gratuita y sin compromiso. Llama las 24 horas o llena nuestro formulario.",
   alternates: {

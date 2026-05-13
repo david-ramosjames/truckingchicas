@@ -43,7 +43,7 @@ export default function HeroSection({
     },
   ];
 
-  /* Above-the-fold CTA buttons — call is PRIMARY, form is SECONDARY (ghost) */
+  /* Above-the-fold CTA buttons, call is PRIMARY, form is SECONDARY (ghost) */
   const ctaButtons = (centered: boolean) => (
     <div className={`mt-6 flex flex-col gap-3 sm:flex-row ${centered ? "items-center sm:justify-center" : "items-start"}`}>
       {/* PRIMARY: Call CTA */}
@@ -141,7 +141,7 @@ export default function HeroSection({
               {subhead || dict.hero.subhead}
             </p>
             <p className="mt-2 text-sm font-medium text-brand-red">
-              {isEn ? "Speak to a lawyer now — Available 24/7" : "Habla con un abogado ahora — Disponible 24/7"}
+              {isEn ? "Speak to a lawyer now: Available 24/7" : "Habla con un abogado ahora: Disponible 24/7"}
             </p>
             {ctaButtons(false)}
             {trustBadges(false)}

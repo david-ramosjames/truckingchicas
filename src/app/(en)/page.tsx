@@ -94,7 +94,7 @@ export default function HomePage() {
             {[
               {
                 title: "Truck Accident Focused",
-                desc: "We help victims after 18-wheeler, semi-truck, and commercial vehicle crashes — not your everyday fender-bender.",
+                desc: "We help victims after 18-wheeler, semi-truck, and commercial vehicle crashes, not your everyday fender-bender.",
                 icon: (
                   <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 17h1m16 0h1m-1 0a2 2 0 11-4 0 2 2 0 014 0zM7 17a2 2 0 11-4 0 2 2 0 014 0zm-4 0V7a1 1 0 011-1h10a1 1 0 011 1v10m0-7h4l3 3v4" />
@@ -112,7 +112,7 @@ export default function HomePage() {
               },
               {
                 title: "Maximum Compensation Mindset",
-                desc: "We look at medical bills, lost income, pain, property damage, and long-term impact — not just the obvious costs.",
+                desc: "We look at medical bills, lost income, pain, property damage, and long-term impact, not just the obvious costs.",
                 icon: (
                   <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -262,7 +262,7 @@ export default function HomePage() {
       {/* CTA */}
       <CTASection dict={dict} locale="en" variant="dark" />
 
-      {/* Featured Results — Premium Editorial */}
+      {/* Featured Results: Premium Editorial */}
       <section className="bg-white py-20 md:py-24">
         <div className="mx-auto max-w-5xl px-4">
           {/* Header */}
@@ -271,7 +271,7 @@ export default function HomePage() {
               Featured Results
             </p>
             <h2 className="mt-3 text-3xl font-bold text-brand-navy md:text-4xl">
-              Fighting for Maximum Compensation — Case by Case
+              Fighting for Maximum Compensation: Case by Case
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-500 md:text-lg">
               Every case is different. But when serious injuries and commercial vehicles are involved, we fight to recover the full value our clients deserve.

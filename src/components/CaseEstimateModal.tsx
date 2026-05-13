@@ -117,7 +117,7 @@ export default function CaseEstimateModal({
             : "Hable con un abogado experimentado en accidentes de cami\u00f3n hoy. Una llamada puede cambiarlo todo \u2014 y no le cuesta nada."}
         </p>
 
-        {/* Primary CTA — Call */}
+        {/* Primary CTA: Call */}
         <a
           href={`tel:+1${PHONE_NUMBER}`}
           className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-xl bg-brand-red px-6 py-4 text-lg font-bold text-white shadow-lg shadow-brand-red/25 transition-all hover:bg-brand-red-light hover:shadow-brand-red/40"

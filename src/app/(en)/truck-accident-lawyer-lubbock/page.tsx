@@ -124,7 +124,7 @@ export default function LubbockPage() {
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">
-            Truck Accident FAQ — Lubbock
+            Truck Accident FAQ: Lubbock
           </h2>
           <div className="mt-10">
             <FAQAccordion items={d.faq} />

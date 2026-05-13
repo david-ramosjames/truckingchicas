@@ -75,7 +75,7 @@ const es: Dictionary = {
     ],
     recoverTitle: "Lo Que Puedes Recuperar",
     recoverItems: [
-      "Gastos médicos — pasados y futuros",
+      "Gastos médicos, pasados y futuros",
       "Salarios perdidos y capacidad de ingresos",
       "Dolor y sufrimiento",
       "Discapacidad y desfiguración",
@@ -98,7 +98,7 @@ const es: Dictionary = {
       },
       {
         title: "Equipo Bilingüe",
-        desc: "Servimos a nuestra comunidad en inglés y español — porque el idioma nunca debe ser una barrera para la justicia.",
+        desc: "Servimos a nuestra comunidad en inglés y español, porque el idioma nunca debe ser una barrera para la justicia.",
       },
     ],
     coreValuesTitle: "Nuestros Valores",
@@ -110,7 +110,7 @@ const es: Dictionary = {
       },
       {
         title: "Empatía",
-        desc: "Primero escuchamos. Cada cliente trae una historia, una lesión, una familia — y tratamos a cada uno con el cuidado y respeto que querríamos para los nuestros.",
+        desc: "Primero escuchamos. Cada cliente trae una historia, una lesión, una familia, y tratamos a cada uno con el cuidado y respeto que querríamos para los nuestros.",
         icon: "heart",
       },
       {
@@ -133,7 +133,7 @@ const es: Dictionary = {
     testimonialsTitle: "Lo Que Dicen Nuestros Clientes",
     testimonials: [
       {
-        quote: "Lucharon por mí cuando me sentía completamente sola. Después de mi accidente, no sabía a quién acudir — Trucking Chicas tomó el control y manejó todo.",
+        quote: "Lucharon por mí cuando me sentía completamente sola. Después de mi accidente, no sabía a quién acudir: Trucking Chicas tomó el control y manejó todo.",
         name: "Maria G.",
         location: "Houston, TX",
       },
@@ -152,7 +152,7 @@ const es: Dictionary = {
     areasHomeSubtitle: "De Houston a El Paso, nuestros abogados de accidentes de camión representan a víctimas en todas las ciudades principales de Texas.",
     areasHomeCta: "Ver Todas las Áreas",
     consultFormTitle: "Obtén Tu Evaluación de Caso Gratis",
-    consultFormSubtitle: "Habla con un abogado de accidentes de camión hoy — sin costo, sin compromiso, sin presión.",
+    consultFormSubtitle: "Habla con un abogado de accidentes de camión hoy, sin costo, sin compromiso, sin presión.",
     consultFormNoFee: "No Cobramos Si No Ganamos",
     consultFormNoFeeDesc: "No pagas nada a menos que obtengamos compensación para ti. Esa es nuestra promesa.",
     stepsTitle: "Qué Hacer Después de un Accidente de Camión",
@@ -207,7 +207,7 @@ const es: Dictionary = {
       "Identificamos a todas las partes responsables para maximizar tu recuperación",
       "Contratamos expertos en reconstrucción de accidentes y medicina",
       "Manejamos toda la comunicación con las compañías de seguros",
-      "Luchamos por una compensación completa y justa — en juicio si es necesario",
+      "Luchamos por una compensación completa y justa, en juicio si es necesario",
     ],
   },
   eighteenWheeler: {
@@ -220,7 +220,7 @@ const es: Dictionary = {
       "Los choques con tráileres de 18 ruedas están entre los accidentes más peligrosos en las carreteras de Texas. Luchamos por las víctimas de colisiones catastróficas con vehículos comerciales.",
     commercialTitle: "El Peligro de los Tráileres Comerciales de 18 Ruedas",
     commercialDesc:
-      "Los tráileres comerciales de 18 ruedas — también llamados tractocamiones o semirremolques — pueden pesar de 20 a 30 veces más que un automóvil de pasajeros. Cuando chocan con vehículos más pequeños, los resultados son a menudo catastróficos: lesiones cerebrales traumáticas, daño a la médula espinal, amputaciones y muerte injusta.",
+      "Los tráileres comerciales de 18 ruedas, también llamados tractocamiones o semirremolques, pueden pesar de 20 a 30 veces más que un automóvil de pasajeros. Cuando chocan con vehículos más pequeños, los resultados son a menudo catastróficos: lesiones cerebrales traumáticas, daño a la médula espinal, amputaciones y muerte injusta.",
     injuriesTitle: "Lesiones Catastróficas por Choques con Tráileres de 18 Ruedas",
     injuries: [
       "Lesiones cerebrales traumáticas (TBI)",
@@ -250,7 +250,7 @@ const es: Dictionary = {
     causes: [
       "Horarios de entrega poco realistas y presión de tiempo",
       "Fatiga del conductor por turnos largos y horas extra",
-      "Conducción distraída — escaneando paquetes, usando GPS, revisando rutas",
+      "Conducción distraída, escaneando paquetes, usando GPS, revisando rutas",
       "Paradas frecuentes que causan frenazos repentinos y cambios de carril",
       "Camiones estacionados en doble fila forzando maniobras peligrosas",
       "Vehículos mal mantenidos con fallas en frenos o llantas",
@@ -261,7 +261,7 @@ const es: Dictionary = {
       { title: "El Conductor del Reparto", desc: "Por conducción negligente o imprudente, distracción, o ignorar señales de tránsito." },
       { title: "La Empresa (FedEx, UPS, Amazon)", desc: "Por imponer horarios inseguros, falta de capacitación a conductores, o usar vehículos mal mantenidos." },
       { title: "Subcontratistas", desc: "Muchos servicios usan contratistas independientes. La responsabilidad puede extenderse a las empresas que los contratan y supervisan." },
-      { title: "Fabricante del Vehículo", desc: "Si un defecto del vehículo — como frenos o dirección defectuosos — contribuyó al choque." },
+      { title: "Fabricante del Vehículo", desc: "Si un defecto del vehículo, como frenos o dirección defectuosos, contribuyó al choque." },
     ],
     injuriesTitle: "Lesiones Comunes en Accidentes de Camiones de Reparto",
     injuries: [
@@ -303,7 +303,7 @@ const es: Dictionary = {
     ],
     hazmatTitle: "Riesgos de Materiales Peligrosos",
     hazmatDesc:
-      "Los accidentes de camiones cisterna frecuentemente involucran materiales peligrosos — petróleo crudo, líquidos de gas natural, químicos de fracturación o agua producida. Estos derrames pueden causar explosiones, quemaduras químicas, exposición tóxica y daño ambiental a largo plazo. Las víctimas de accidentes con cisternas de materiales peligrosos pueden enfrentar riesgos de salud únicos que requieren atención médica y representación legal experimentada.",
+      "Los accidentes de camiones cisterna frecuentemente involucran materiales peligrosos, petróleo crudo, líquidos de gas natural, químicos de fracturación o agua producida. Estos derrames pueden causar explosiones, quemaduras químicas, exposición tóxica y daño ambiental a largo plazo. Las víctimas de accidentes con cisternas de materiales peligrosos pueden enfrentar riesgos de salud únicos que requieren atención médica y representación legal experimentada.",
   },
   dumpTruck: {
     title: "Abogado de Accidentes de Camiones de Volteo y Construcción",
@@ -318,12 +318,12 @@ const es: Dictionary = {
       "Texas lidera la nación en gastos de construcción vial, poniendo miles de camiones de volteo, mezcladoras de concreto, grúas y transportadores de equipo pesado en las carreteras cada día. Estos vehículos masivos son difíciles de maniobrar, tienen grandes puntos ciegos y frecuentemente operan en zonas de trabajo congestionadas donde las diferencias de velocidad y los cambios de carril crean condiciones peligrosas.",
     causesTitle: "Causas Comunes de Accidentes de Vehículos de Construcción",
     causes: [
-      "Cargas no aseguradas — grava, tierra y escombros cayendo de camiones de volteo",
+      "Cargas no aseguradas, grava, tierra y escombros cayendo de camiones de volteo",
       "Vehículos sobredimensionados o con sobrepeso que exceden los límites viales",
       "Poca visibilidad por grandes puntos ciegos",
-      "Confusión en zonas de trabajo — carriles estrechos, fusiones repentinas, señalización confusa",
+      "Confusión en zonas de trabajo, carriles estrechos, fusiones repentinas, señalización confusa",
       "Volcaduras por centro de gravedad alto",
-      "Fallas mecánicas — pérdida de frenos en pendientes",
+      "Fallas mecánicas, pérdida de frenos en pendientes",
       "Operadores fatigados trabajando turnos largos de construcción",
     ],
     liabilityTitle: "¿Quién Es Responsable?",
@@ -350,16 +350,16 @@ const es: Dictionary = {
       "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestros abogados de accidentes de camión pueden ayudar. Evaluación gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones de Carga",
     heroSubhead:
-      "Camiones de carga, vans sprinter y vehículos comerciales medianos están en todas las carreteras de Texas — y causan accidentes graves cada día.",
+      "Camiones de carga, vans sprinter y vehículos comerciales medianos están en todas las carreteras de Texas, y causan accidentes graves cada día.",
     introTitle: "El Peligro Subestimado de los Camiones de Carga",
     introDesc:
-      "Los camiones de carga, vans de carga y vans sprinter pueden ser más pequeños que los tráileres, pero aún pesan de 4,500 a 12,000 kilogramos — suficiente para causar lesiones catastróficas en una colisión. Muchos son operados por conductores con licencias estándar y capacitación mínima, empleados por compañías de mudanzas, flotas de renta y pequeñas empresas que recortan en seguridad y mantenimiento.",
+      "Los camiones de carga, vans de carga y vans sprinter pueden ser más pequeños que los tráileres, pero aún pesan de 4,500 a 12,000 kilogramos, suficiente para causar lesiones catastróficas en una colisión. Muchos son operados por conductores con licencias estándar y capacitación mínima, empleados por compañías de mudanzas, flotas de renta y pequeñas empresas que recortan en seguridad y mantenimiento.",
     causesTitle: "Por Qué Ocurren los Accidentes de Camiones de Carga",
     causes: [
       "Conductores con capacitación mínima en vehículos comerciales",
       "Operadores de camiones rentados sin familiaridad con el tamaño y manejo del vehículo",
       "Carga sobrecargada que se desplaza durante giros y frenazos",
-      "Visibilidad trasera limitada — sin espejo retrovisor en la mayoría de camiones de carga",
+      "Visibilidad trasera limitada, sin espejo retrovisor en la mayoría de camiones de carga",
       "Exceso de velocidad para cumplir horarios de entrega o mudanza",
       "Conductores fatigados trabajando largas horas sin descansos requeridos",
       "Mal mantenimiento del vehículo por pequeños operadores y compañías de renta",
@@ -412,14 +412,14 @@ const es: Dictionary = {
       },
       {
         title: "Todos los Accidentes de Camión",
-        desc: "Desde choques de flotas comerciales hasta negligencia de operadores independientes — manejamos todo tipo de caso de camión en Texas.",
+        desc: "Desde choques de flotas comerciales hasta negligencia de operadores independientes, manejamos todo tipo de caso de camión en Texas.",
         href: "truckAccident",
       },
     ],
   },
   areas: {
     title: "Áreas que Servimos en Texas",
-    metaTitle: "Abogado de Accidentes de Camión en Texas — Áreas que Servimos",
+    metaTitle: "Abogado de Accidentes de Camión en Texas: Áreas que Servimos",
     metaDesc:
       "Trucking Chicas sirve a víctimas de accidentes de camión y tráiler en todo Texas, incluyendo Houston, Dallas, Austin, San Antonio y más.",
     heading: "Sirviendo a Víctimas de Accidentes de Camión en Todo Texas",
@@ -455,7 +455,7 @@ const es: Dictionary = {
     ],
     cities: {
       Houston: {
-        desc: "Houston es uno de los centros de transporte de carga más activos de Texas, con rutas principales a lo largo de la Interestatal 10 y la Interestatal 45. El Puerto de Houston — el puerto más grande de EE.UU. por tonelaje extranjero — genera un constante tráfico pesado de camiones comerciales en toda el área metropolitana, aumentando el riesgo de colisiones graves con tráileres.",
+        desc: "Houston es uno de los centros de transporte de carga más activos de Texas, con rutas principales a lo largo de la Interestatal 10 y la Interestatal 45. El Puerto de Houston, el puerto más grande de EE.UU. por tonelaje extranjero, genera un constante tráfico pesado de camiones comerciales en toda el área metropolitana, aumentando el riesgo de colisiones graves con tráileres.",
         why: [
           "El Puerto de Houston genera un volumen masivo de camiones comerciales",
           "La intersección de la I-10 e I-45 crea una congestión severa",
@@ -607,7 +607,7 @@ const es: Dictionary = {
     },
     bottomCtaHeading: "¿Herido en un Accidente de Camión en Texas?",
     bottomCtaSubhead: "Obtén una evaluación de caso gratuita de nuestros abogados experimentados en accidentes de camión. Sin compromiso. No cobramos si no ganamos.",
-    faqTitle: "Abogado de Accidentes de Camión en Texas — Preguntas Comunes",
+    faqTitle: "Abogado de Accidentes de Camión en Texas: Preguntas Comunes",
     faqItems: [
       {
         q: "¿Qué debo hacer después de un accidente de camión en Texas?",
@@ -646,17 +646,17 @@ const es: Dictionary = {
       localTitle: "Por Qué los Accidentes de Camión Son Tan Comunes en Houston",
       localContent: "Houston es la capital energética del mundo y alberga el puerto más grande de EE.UU. por tonelaje extranjero. Miles de camiones de 18 ruedas, cisternas y vehículos comerciales inundan las autopistas de Houston todos los días. El cruce de la I-10 y la I-45 es uno de los corredores de camiones más peligrosos del país. Si fue herido en un choque en cualquier parte del área metropolitana de Houston, Trucking Chicas está lista para luchar por usted.",
       highways: [
-        { name: "I-10 / I-45 Intercambio", desc: "Uno de los corredores de camiones más peligrosos del país — dos autopistas principales convergiendo con enorme volumen de carga." },
+        { name: "I-10 / I-45 Intercambio", desc: "Uno de los corredores de camiones más peligrosos del país, dos autopistas principales convergiendo con enorme volumen de carga." },
         { name: "I-69 / US-59 Corredor Petroquímico", desc: "Tráfico pesado de cisternas y camiones de 18 ruedas sirviendo a la industria petroquímica de Houston." },
         { name: "Sam Houston Tollway / Beltway 8", desc: "El circuito de 88 millas lleva tráfico comercial constante conectando el puerto, refinerías y centros de distribución." },
         { name: "I-610 Inner Loop", desc: "Tráfico denso de camiones urbanos a través de la Galleria, Centro Médico y distritos de almacenes." },
       ],
       dangerZones: [
-        "Puerto de Houston / área del Ship Channel — camiones cisterna y carga pesada las 24 horas",
-        "Katy Freeway (I-10 Oeste) — una de las autopistas más anchas y congestionadas del mundo",
-        "Gulf Freeway (I-45 Sur) — corredor de camiones de alta velocidad entre el centro y Galveston",
-        "Energy Corridor / Westchase — área de camiones petroquímicos y petroleros",
-        "Pasadena / La Porte — tráfico de refinerías y transporte de materiales peligrosos",
+        "Puerto de Houston / área del Ship Channel, camiones cisterna y carga pesada las 24 horas",
+        "Katy Freeway (I-10 Oeste), una de las autopistas más anchas y congestionadas del mundo",
+        "Gulf Freeway (I-45 Sur), corredor de camiones de alta velocidad entre el centro y Galveston",
+        "Energy Corridor / Westchase, área de camiones petroquímicos y petroleros",
+        "Pasadena / La Porte, tráfico de refinerías y transporte de materiales peligrosos",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Houston?", a: "Póngase a salvo, llame al 911, busque atención médica inmediata y no hable con el ajustador de seguros de la compañía de camiones. Contacte a un abogado de accidentes de camión de inmediato." },
@@ -673,16 +673,16 @@ const es: Dictionary = {
       localContent: "Dallas está en la encrucijada de algunos de los corredores de carga más transitados de América. I-35, I-30, I-20 e I-45 convergen aquí. Si un accidente de camión ha cambiado su vida en Dallas, nuestros abogados saben cómo enfrentar a las compañías de camiones.",
       highways: [
         { name: "I-35E (Stemmons Freeway)", desc: "Corredor principal de carga NAFTA que atraviesa el centro de Dallas con alto volumen de camiones." },
-        { name: "I-635 (LBJ Freeway)", desc: "Circuito de alta velocidad con tráfico comercial alrededor de Dallas — conocido por choques con camiones." },
+        { name: "I-635 (LBJ Freeway)", desc: "Circuito de alta velocidad con tráfico comercial alrededor de Dallas, conocido por choques con camiones." },
         { name: "I-30 (Tom Landry Highway)", desc: "Ruta de carga este-oeste conectando Dallas con Fort Worth y Arkansas." },
         { name: "I-20", desc: "Corredor de carga sur que conecta Dallas con centros de distribución en Mesquite y Terrell." },
       ],
       dangerZones: [
-        "Intercambio I-35E / I-635 (Mixmaster) — uno de los intercambios más peligrosos del norte de Texas",
-        "Centro de Dallas / Deep Ellum — calles estrechas con camiones de entrega y construcción",
-        "Sur de Dallas / corredor I-45 — área de almacenes y camiones industriales",
-        "Mesquite / I-30 Este — creciente tráfico de centros de distribución",
-        "Frisco / McKinney — vehículos de construcción y camiones de entrega en carreteras suburbanas",
+        "Intercambio I-35E / I-635 (Mixmaster), uno de los intercambios más peligrosos del norte de Texas",
+        "Centro de Dallas / Deep Ellum, calles estrechas con camiones de entrega y construcción",
+        "Sur de Dallas / corredor I-45, área de almacenes y camiones industriales",
+        "Mesquite / I-30 Este, creciente tráfico de centros de distribución",
+        "Frisco / McKinney, vehículos de construcción y camiones de entrega en carreteras suburbanas",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Dallas?", a: "Llame al 911, obtenga ayuda médica, fotografíe la escena y evite dar declaraciones grabadas al asegurador de la compañía de camiones." },
@@ -695,19 +695,19 @@ const es: Dictionary = {
       heroHeadline: "Abogado de Accidentes de Camión en Austin, TX",
       heroSubhead: "¿Chocado por un camión en la I-35 o en Austin? Nuestro equipo lucha por los texanos lesionados.",
       localTitle: "Por Qué Austin Ve Tantos Accidentes de Camión",
-      localContent: "Austin es una de las ciudades de más rápido crecimiento del país. El corredor de la I-35 por el centro de Austin es notoriamente peligroso — carriles estrechos, construcción constante y una mezcla de tráfico. Si un accidente de camión lo ha dejado lesionado en el área metropolitana de Austin, Trucking Chicas buscará cada dólar que le corresponde.",
+      localContent: "Austin es una de las ciudades de más rápido crecimiento del país. El corredor de la I-35 por el centro de Austin es notoriamente peligroso, carriles estrechos, construcción constante y una mezcla de tráfico. Si un accidente de camión lo ha dejado lesionado en el área metropolitana de Austin, Trucking Chicas buscará cada dólar que le corresponde.",
       highways: [
-        { name: "I-35 (Centro de Austin)", desc: "El corredor de camiones más peligroso de Austin — construcción constante, carriles estrechos y tráfico pesado." },
+        { name: "I-35 (Centro de Austin)", desc: "El corredor de camiones más peligroso de Austin, construcción constante, carriles estrechos y tráfico pesado." },
         { name: "Highway 130 (SH-130)", desc: "Construida para desviar camiones pero con vehículos comerciales a alta velocidad con límite de 85 mph." },
         { name: "US-183 (Research Blvd)", desc: "Ruta comercial principal del norte de Austin con creciente tráfico de entregas y carga." },
         { name: "SH-71 / US-290 Este", desc: "Ruta de carga conectando Austin con Houston con alto volumen de camiones." },
       ],
       dangerZones: [
-        "I-35 por el centro de Austin — el tramo más congestionado y propenso a choques",
-        "Round Rock / I-35 Norte — tráfico masivo de almacenes y centros de distribución",
-        "South Congress / I-35 Sur — zonas de fusión de alta velocidad con camiones comerciales",
-        "Corredor Buda / Kyle — área de rápido crecimiento con más tráfico de camiones",
-        "Intercambio US-290 Este / SH-130 — corredor de camiones de alta velocidad",
+        "I-35 por el centro de Austin, el tramo más congestionado y propenso a choques",
+        "Round Rock / I-35 Norte, tráfico masivo de almacenes y centros de distribución",
+        "South Congress / I-35 Sur, zonas de fusión de alta velocidad con camiones comerciales",
+        "Corredor Buda / Kyle, área de rápido crecimiento con más tráfico de camiones",
+        "Intercambio US-290 Este / SH-130, corredor de camiones de alta velocidad",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Austin?", a: "Póngase a salvo, llame al 911, busque tratamiento médico y documente la escena. No discuta la culpa con nadie." },
@@ -722,17 +722,17 @@ const es: Dictionary = {
       localTitle: "San Antonio: Una Encrucijada Peligrosa para el Tráfico de Camiones",
       localContent: "San Antonio está en la intersección de la I-35 y la I-10, dos de los corredores de carga más pesados de Estados Unidos. Como última parada importante en la ruta comercial NAFTA desde Laredo, San Antonio ve un volumen asombroso de camiones de 18 ruedas.",
       highways: [
-        { name: "I-35 (Corredor NAFTA)", desc: "La ruta comercial principal desde la frontera mexicana — uno de los corredores de camiones más pesados de EE.UU." },
+        { name: "I-35 (Corredor NAFTA)", desc: "La ruta comercial principal desde la frontera mexicana, uno de los corredores de camiones más pesados de EE.UU." },
         { name: "I-10 (Carga Este-Oeste)", desc: "Ruta de carga transcontinental que lleva tráfico comercial de costa a costa a través de la ciudad." },
         { name: "I-410 Loop", desc: "El circuito interior de San Antonio con tráfico pesado de vehículos comerciales." },
         { name: "I-37 (a Corpus Christi)", desc: "Ruta principal de carga conectando el distrito industrial de San Antonio con el Puerto de Corpus Christi." },
       ],
       dangerZones: [
-        "Intercambio I-35 / I-410 Sur — cuello de botella de camiones NAFTA y punto de choques",
-        "Intercambio I-10 / I-35 centro — dos corredores de carga principales fusionándose",
-        "Highway 281 Norte — crecimiento suburbano rápido mezclado con vehículos comerciales",
-        "Corredor Southside / I-37 — tráfico industrial y de camiones al puerto",
-        "Área de Joint Base San Antonio — logística militar y vehículos pesados",
+        "Intercambio I-35 / I-410 Sur, cuello de botella de camiones NAFTA y punto de choques",
+        "Intercambio I-10 / I-35 centro, dos corredores de carga principales fusionándose",
+        "Highway 281 Norte, crecimiento suburbano rápido mezclado con vehículos comerciales",
+        "Corredor Southside / I-37, tráfico industrial y de camiones al puerto",
+        "Área de Joint Base San Antonio, logística militar y vehículos pesados",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en San Antonio?", a: "Póngase a salvo, llame al 911, obtenga atención médica y no dé declaraciones a ninguna compañía de seguros." },
@@ -753,11 +753,11 @@ const es: Dictionary = {
         { name: "SH-121 / SH-114 (Corredor Alliance)", desc: "Centro logístico de rápido crecimiento cerca del Texas Motor Speedway con tráfico pesado de almacenes." },
       ],
       dangerZones: [
-        "Área de Alliance / Texas Motor Speedway — tráfico masivo de centros de distribución",
-        "Intercambio I-30 / I-35W (centro) — dos corredores de carga fusionándose en espacio urbano estrecho",
-        "Distrito Stockyards — calles estrechas con mezcla de tráfico comercial y turístico",
-        "I-20 Oeste / Benbrook — corredor de camiones de alta velocidad en transición rural-urbana",
-        "Cultural District / Camp Bowie — camiones de construcción y entrega en calles congestionadas",
+        "Área de Alliance / Texas Motor Speedway, tráfico masivo de centros de distribución",
+        "Intercambio I-30 / I-35W (centro), dos corredores de carga fusionándose en espacio urbano estrecho",
+        "Distrito Stockyards, calles estrechas con mezcla de tráfico comercial y turístico",
+        "I-20 Oeste / Benbrook, corredor de camiones de alta velocidad en transición rural-urbana",
+        "Cultural District / Camp Bowie, camiones de construcción y entrega en calles congestionadas",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Fort Worth?", a: "Llame al 911, busque atención médica inmediata, documente la escena y no discuta el accidente con representantes de la compañía de camiones." },
@@ -775,20 +775,20 @@ const es: Dictionary = {
         { name: "I-10 (Carga Transcontinental)", desc: "Corredor de carga de costa a costa con enorme volumen de camiones a través del área metropolitana." },
         { name: "US-54 (Patriot Freeway)", desc: "Ruta norte-sur conectando Fort Bliss con tráfico militar y comercial pesado." },
         { name: "Loop 375 (Border Highway)", desc: "Corre a lo largo de la frontera EE.UU.-México con tráfico constante de camiones transfronterizos." },
-        { name: "US-85 / Paisano Drive", desc: "Corredor clave conectando el puerto BOTA con la I-10 — pesado con camiones de carga internacional." },
+        { name: "US-85 / Paisano Drive", desc: "Corredor clave conectando el puerto BOTA con la I-10, pesado con camiones de carga internacional." },
       ],
       dangerZones: [
-        "Puerto BOTA (Bridge of the Americas) — cruce internacional de camiones con alta congestión",
-        "Puerto de entrada Zaragoza / Lower Valley — carga transfronteriza y colas de camiones",
-        "Intercambio I-10 / US-54 — dos rutas principales de camiones convergiendo a alta velocidad",
-        "Área de Fort Bliss — vehículos logísticos militares mezclados con tráfico comercial",
-        "Westside / Canutillo — áreas residenciales crecientes junto a la I-10 con tráfico de camiones",
+        "Puerto BOTA (Bridge of the Americas), cruce internacional de camiones con alta congestión",
+        "Puerto de entrada Zaragoza / Lower Valley, carga transfronteriza y colas de camiones",
+        "Intercambio I-10 / US-54, dos rutas principales de camiones convergiendo a alta velocidad",
+        "Área de Fort Bliss, vehículos logísticos militares mezclados con tráfico comercial",
+        "Westside / Canutillo, áreas residenciales crecientes junto a la I-10 con tráfico de camiones",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en El Paso?", a: "Priorice la seguridad y atención médica. Llame al 911, fotografíe la escena y contacte a un abogado de accidentes de camión." },
         { q: "¿Son responsables las compañías de camiones transfronterizas?", a: "Sí. Si un camión transfronterizo causó su accidente, la compañía puede ser responsable bajo la ley de Texas." },
         { q: "¿Cuánto puedo recuperar?", a: "La compensación depende de sus lesiones, facturas médicas, salarios perdidos y otros daños. Evaluamos cada caso individualmente." },
-        { q: "¿Cuánto tiempo tengo para presentar un reclamo?", a: "Texas generalmente permite dos años desde la fecha del accidente. No espere — la evidencia puede perderse." },
+        { q: "¿Cuánto tiempo tengo para presentar un reclamo?", a: "Texas generalmente permite dos años desde la fecha del accidente. No espere, la evidencia puede perderse." },
       ],
     },
     arlington: {
@@ -799,15 +799,15 @@ const es: Dictionary = {
       highways: [
         { name: "I-30 (Corredor Dallas–Fort Worth)", desc: "Ruta principal de carga este-oeste que atraviesa el corazón de Arlington." },
         { name: "I-20 (Ruta de Carga Sur)", desc: "Corredor comercial pesado sirviendo las zonas industriales y de almacenes del sur de Arlington." },
-        { name: "Highway 360", desc: "Ruta norte-sur por el distrito de entretenimiento — zona conocida por choques con camiones." },
+        { name: "Highway 360", desc: "Ruta norte-sur por el distrito de entretenimiento, zona conocida por choques con camiones." },
         { name: "Corredor Cooper Street", desc: "Arterial principal con tráfico frecuente de camiones de entrega y construcción." },
       ],
       dangerZones: [
-        "Distrito de Entretenimiento (AT&T Stadium / Globe Life Field) — tráfico turístico mezclado con carga",
-        "Intercambio I-30 / Highway 360 — zona de fusión de alta velocidad con camiones pesados",
-        "Corredor industrial I-20 — distritos de almacenes generando tráfico constante de camiones",
-        "Great Southwest Industrial District — uno de los parques industriales más grandes del norte de Texas",
-        "Área Cooper Street / I-20 — vecindarios residenciales junto a rutas de camiones pesados",
+        "Distrito de Entretenimiento (AT&T Stadium / Globe Life Field), tráfico turístico mezclado con carga",
+        "Intercambio I-30 / Highway 360, zona de fusión de alta velocidad con camiones pesados",
+        "Corredor industrial I-20, distritos de almacenes generando tráfico constante de camiones",
+        "Great Southwest Industrial District, uno de los parques industriales más grandes del norte de Texas",
+        "Área Cooper Street / I-20, vecindarios residenciales junto a rutas de camiones pesados",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Arlington?", a: "Llame al 911, obtenga ayuda médica, fotografíe la escena y no firme nada de una compañía de seguros." },
@@ -828,11 +828,11 @@ const es: Dictionary = {
         { name: "Harbor Bridge / US-181", desc: "Cruce clave sobre el canal naviero con tráfico constante de camiones portuarios." },
       ],
       dangerZones: [
-        "Puerto de Corpus Christi / Inner Harbor — camiones cisterna y de contenedores las 24 horas",
-        "Corredor Harbor Bridge — cruce estrecho con vehículos comerciales pesados y materiales peligrosos",
-        "Refinery Row / Portland — tráfico petroquímico y transporte de materiales peligrosos",
-        "JFK Causeway / Flour Bluff — ruta costera con fuertes vientos cruzados que afectan camiones",
-        "Calallen / I-37 Norte — corredor de paradas de camiones y área de carga",
+        "Puerto de Corpus Christi / Inner Harbor, camiones cisterna y de contenedores las 24 horas",
+        "Corredor Harbor Bridge, cruce estrecho con vehículos comerciales pesados y materiales peligrosos",
+        "Refinery Row / Portland, tráfico petroquímico y transporte de materiales peligrosos",
+        "JFK Causeway / Flour Bluff, ruta costera con fuertes vientos cruzados que afectan camiones",
+        "Calallen / I-37 Norte, corredor de paradas de camiones y área de carga",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Corpus Christi?", a: "Póngase a salvo, llame al 911, busque atención médica y trate de fotografiar cualquier placa de materiales peligrosos." },
@@ -850,14 +850,14 @@ const es: Dictionary = {
         { name: "US-75 (Central Expressway)", desc: "Ruta comercial norte-sur principal con tráfico pesado de entregas y carga por el centro de Plano." },
         { name: "Dallas North Tollway (DNT)", desc: "Corredor de alta velocidad conectando los campus corporativos de Plano con tráfico comercial constante." },
         { name: "Sam Rayburn Tollway (SH-121)", desc: "Ruta este-oeste por los distritos comerciales en crecimiento de Plano." },
-        { name: "George Bush Turnpike (SH-190)", desc: "Circuito principal conectando suburbios del norte de Texas — pesado con camiones de construcción y entrega." },
+        { name: "George Bush Turnpike (SH-190)", desc: "Circuito principal conectando suburbios del norte de Texas, pesado con camiones de construcción y entrega." },
       ],
       dangerZones: [
-        "Intercambio US-75 / SH-121 — zona de fusión de alta velocidad con tráfico comercial pesado",
-        "Legacy West / corredor corporativo — camiones de entrega sirviendo campus corporativos principales",
-        "Oeste de Plano / Dallas North Tollway — vehículos de construcción por desarrollo continuo",
-        "Spring Creek Parkway / US-75 — intersección congestionada con giros frecuentes de camiones",
-        "Frontera Allen / Frisco — zona de crecimiento suburbano con tráfico de construcción y entregas",
+        "Intercambio US-75 / SH-121, zona de fusión de alta velocidad con tráfico comercial pesado",
+        "Legacy West / corredor corporativo, camiones de entrega sirviendo campus corporativos principales",
+        "Oeste de Plano / Dallas North Tollway, vehículos de construcción por desarrollo continuo",
+        "Spring Creek Parkway / US-75, intersección congestionada con giros frecuentes de camiones",
+        "Frontera Allen / Frisco, zona de crecimiento suburbano con tráfico de construcción y entregas",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Plano?", a: "Llame al 911, busque atención médica, fotografíe la escena y contacte a un abogado antes de tratar con cualquier compañía de seguros." },
@@ -873,16 +873,16 @@ const es: Dictionary = {
       localContent: "Lubbock está en la encrucijada de la agricultura del oeste de Texas y la energía de la Cuenca Pérmica, convirtiéndola en un centro importante para el tráfico pesado de camiones.",
       highways: [
         { name: "US-84 (Slaton Highway)", desc: "Ruta este-oeste principal con camiones algodoneros, petroleros y de equipo pesado a través de Lubbock." },
-        { name: "US-87 (Corredor Norte-Sur)", desc: "Conecta Lubbock con Amarillo y la Cuenca Pérmica — pesado con camiones agrícolas y energéticos." },
+        { name: "US-87 (Corredor Norte-Sur)", desc: "Conecta Lubbock con Amarillo y la Cuenca Pérmica, pesado con camiones agrícolas y energéticos." },
         { name: "Loop 289", desc: "Circuito principal de Lubbock con tráfico comercial y choques frecuentes con camiones." },
         { name: "I-27 / US-87 (Corredor Ports-to-Plains)", desc: "Ruta de carga creciente conectando el Panhandle de Texas a través de Lubbock hasta la frontera mexicana." },
       ],
       dangerZones: [
-        "Intercambio US-84 / US-87 — dos rutas principales de camiones cruzándose con tráfico de alta velocidad",
-        "Loop 289 / Slide Road — corredor comercial con movimientos frecuentes de giro de camiones",
-        "Wolfforth / US-62/82 — zona de transición rural-suburbana con tráfico de camiones petroleros",
-        "Slaton Highway (US-84 Este) — carretera rural sin dividir con camiones algodoneros y de ganado",
-        "Shallowater / I-27 Norte — área de camiones agrícolas y corredor de alta velocidad",
+        "Intercambio US-84 / US-87, dos rutas principales de camiones cruzándose con tráfico de alta velocidad",
+        "Loop 289 / Slide Road, corredor comercial con movimientos frecuentes de giro de camiones",
+        "Wolfforth / US-62/82, zona de transición rural-suburbana con tráfico de camiones petroleros",
+        "Slaton Highway (US-84 Este), carretera rural sin dividir con camiones algodoneros y de ganado",
+        "Shallowater / I-27 Norte, área de camiones agrícolas y corredor de alta velocidad",
       ],
       faq: [
         { q: "¿Qué debo hacer después de un accidente de camión en Lubbock?", a: "Llame al 911, busque atención médica aunque las lesiones parezcan menores, documente la escena y contacte a un abogado inmediatamente." },
@@ -914,7 +914,7 @@ const es: Dictionary = {
       },
       {
         q: "¿Cuánto tiempo tengo para presentar una reclamación por accidente de camión en Texas?",
-        a: "En Texas, el plazo de prescripción para reclamaciones por lesiones personales es generalmente de dos años a partir de la fecha del accidente. Sin embargo, ciertas circunstancias pueden acortar o extender este plazo. Es importante consultar a un abogado de inmediato para proteger tus derechos. Esta es información general y no constituye asesoría legal — consulta con un abogado sobre tu situación específica.",
+        a: "En Texas, el plazo de prescripción para reclamaciones por lesiones personales es generalmente de dos años a partir de la fecha del accidente. Sin embargo, ciertas circunstancias pueden acortar o extender este plazo. Es importante consultar a un abogado de inmediato para proteger tus derechos. Esta es información general y no constituye asesoría legal, consulta con un abogado sobre tu situación específica.",
       },
       {
         q: "¿Tengo que hablar con la compañía de seguros de la empresa de camiones?",
@@ -938,7 +938,7 @@ const es: Dictionary = {
       "Tiene un enfoque especial en casos de accidentes de camión y tráiler",
       "Entiende las regulaciones de la FMCSA y la industria del transporte",
       "Tiene recursos para investigar y litigar contra grandes transportistas",
-      "Trabaja sobre contingencia — no cobra si no ganas",
+      "Trabaja sobre contingencia, no cobra si no ganas",
       "Se comunica claramente y te mantiene informado",
       "Tiene resultados comprobados en casos de accidentes de camión",
       "Ofrece consultas gratuitas y sin presión",
@@ -954,7 +954,7 @@ const es: Dictionary = {
       "Trucking Chicas es un bufete de abogados en Texas dedicado exclusivamente a representar a víctimas de accidentes de camión y tráiler en todo el estado.",
     missionTitle: "Nuestra Misión",
     missionDesc:
-      "Creemos que cada víctima de accidente de camión merece una representación legal feroz y conocedora — sin importar el idioma que hable o dónde viva en Texas. Trucking Chicas fue creada para llevar experiencia profunda en accidentes de camión directamente a las comunidades que más la necesitan.",
+      "Creemos que cada víctima de accidente de camión merece una representación legal feroz y conocedora, sin importar el idioma que hable o dónde viva en Texas. Trucking Chicas fue creada para llevar experiencia profunda en accidentes de camión directamente a las comunidades que más la necesitan.",
     valuesTitle: "Lo Que Nos Distingue",
     values: [
       {
@@ -971,7 +971,7 @@ const es: Dictionary = {
       },
       {
         title: "El Cliente Primero",
-        desc: "Tu recuperación es lo primero. Nos encargamos de cada detalle de tu caso para que puedas enfocarte en sanar — donde sea que estés en Texas.",
+        desc: "Tu recuperación es lo primero. Nos encargamos de cada detalle de tu caso para que puedas enfocarte en sanar, donde sea que estés en Texas.",
       },
     ],
     teamTitle: "Nuestro Equipo",
@@ -979,7 +979,7 @@ const es: Dictionary = {
       "Biografías de los abogados próximamente. Contáctanos para hablar directamente con uno de nuestros abogados experimentados en accidentes de camión.",
   },
   contact: {
-    title: "Contáctanos — Evaluación Gratis",
+    title: "Contáctanos: Evaluación Gratis",
     metaTitle: "Contacta a Trucking Chicas | Evaluación Gratis de Accidente de Camión",
     metaDesc:
       "Contacta a Trucking Chicas para una evaluación de caso gratuita y sin compromiso. Llama las 24 horas o llena nuestro formulario. Luchamos por las víctimas de accidentes de camión en Texas.",
@@ -1001,10 +1001,10 @@ const es: Dictionary = {
       "Responde unas preguntas rápidas sobre tu accidente y nuestra herramienta de IA te dará una estimación preliminar. Solo toma un par de minutos.",
     disclaimer:
       "Esta estimación generada por IA es solo para fines informativos y no constituye asesoría legal. Cada caso es único, y los resultados reales dependen de muchos factores que solo un abogado puede evaluar adecuadamente. No se crea una relación abogado-cliente al usar esta herramienta. Para una evaluación adecuada de tu caso, por favor habla con uno de nuestros abogados.",
-    disclaimerShort: "Estimación de IA solamente — no es asesoría legal. Cada caso es único.",
+    disclaimerShort: "Estimación de IA solamente, no es asesoría legal. Cada caso es único.",
     ctaHeading: "¿Quieres una Evaluación Real de tu Caso?",
     ctaSubhead: "Nuestra estimación de IA es un punto de partida. Para una revisión completa y sin compromiso de un abogado experimentado en accidentes de camión, comunícate hoy.",
-    ctaButton: "Habla con un Abogado — Gratis",
+    ctaButton: "Habla con un Abogado: Gratis",
     estimating: "Analizando los detalles de tu caso...",
     result: "Tu Estimación Preliminar",
     tryAgain: "Empezar de Nuevo",
@@ -1047,7 +1047,7 @@ const es: Dictionary = {
       policeReportNo: "No",
       policeReportUnsure: "No estoy seguro",
       additionalLabel: "¿Algo más que debamos saber?",
-      additionalPlaceholder: "Opcional — cualquier otro detalle sobre el accidente o tu situación",
+      additionalPlaceholder: "Opcional, cualquier otro detalle sobre el accidente o tu situación",
       nameLabel: "Tu Nombre",
       namePlaceholder: "Nombre y apellido",
       phoneLabel: "Teléfono",
@@ -1088,7 +1088,7 @@ const es: Dictionary = {
       { slug: "helpAverageSettlement", question: "¿Cuál es el acuerdo promedio para un accidente de 18 ruedas?", summary: "No hay un solo 'promedio' porque cada caso es diferente. Sin embargo, los acuerdos son típicamente mucho más altos que los accidentes de auto regulares.", fullTitle: "¿Cuál Es el Acuerdo Promedio para un Accidente de 18 Ruedas?", fullContent: "Si bien no hay un solo acuerdo promedio, estos casos consistentemente se resuelven por significativamente más que los reclamos de accidentes de auto estándar. El factor más importante es la gravedad de las lesiones. La fortaleza de su evidencia también importa enormemente." },
       { slug: "helpDrunkDriver", question: "¿Obtendré más dinero si el camionero estaba ebrio?", summary: "Sí. Si el camionero estaba intoxicado, fortalece dramáticamente su caso y puede dar derecho a daños punitivos.", fullTitle: "¿Obtendré Más Compensación Si el Camionero Estaba Ebrio?", fullContent: "Sí. Conducir un vehículo comercial bajo la influencia es tanto una ofensa federal como una violación de la ley de Texas. Los camioneros comerciales tienen un límite de BAC más estricto de 0.04%. El impacto más significativo es el potencial de daños punitivos. La compañía de camiones también es más responsable si no realizó las pruebas de drogas requeridas." },
     ],
-    texasTitle: "Ley de Accidentes de Camión en Texas — Lo Que Necesita Saber",
+    texasTitle: "Ley de Accidentes de Camión en Texas: Lo Que Necesita Saber",
     texasItems: [
       { title: "Plazo de Dos Años para Presentar", desc: "Texas impone un estatuto de limitaciones de dos años en reclamos por lesiones personales." },
       { title: "Culpa Comparativa Modificada", desc: "Texas usa un sistema de culpa comparativa modificada (regla del 51%). Puede recuperar daños incluso si tuvo parte de culpa." },

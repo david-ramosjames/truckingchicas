@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Ayuda con Accidentes de Camión — Abogado en Texas",
+  title: "Ayuda con Accidentes de Camión: Abogado en Texas",
   description:
     "Respuestas sobre accidentes de camión para víctimas en Texas. Aprenda sus derechos y qué hacer después de un choque con un 18 ruedas.",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ayuda con Accidentes de Camión — Abogado en Texas",
+    title: "Ayuda con Accidentes de Camión: Abogado en Texas",
     description:
       "Respuestas sobre accidentes de camión para víctimas en Texas. Aprenda sus derechos y qué hacer después de un choque con un 18 ruedas.",
     url: `${SITE_URL}/es/ayuda-accidente-camion`,

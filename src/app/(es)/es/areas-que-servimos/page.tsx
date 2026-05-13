@@ -11,7 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Áreas que Servimos — Abogado de Accidentes de Camión en Texas",
+  title: "Áreas que Servimos: Abogado de Accidentes de Camión en Texas",
   description:
     "Trucking Chicas sirve a víctimas de accidentes de camión y tráiler en todo Texas, incluyendo Houston, Dallas, Austin, San Antonio y más.",
   alternates: {

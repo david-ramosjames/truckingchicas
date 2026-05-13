@@ -191,9 +191,9 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
   return (
     <header className="sticky top-0 z-50 bg-brand-navy text-white shadow-lg">
-      {/* ===== DESKTOP HEADER — 2-column grid, logo spans both rows ===== */}
+      {/* ===== DESKTOP HEADER, 2-column grid, logo spans both rows ===== */}
       <div className="mx-auto hidden max-w-7xl lg:grid" style={{ gridTemplateColumns: "auto 1fr", gridTemplateRows: "auto auto" }}>
-        {/* Logo block — spans both rows */}
+        {/* Logo block, spans both rows */}
         <div className="row-span-2 flex items-center px-6 py-2">
           <Link href={routes.home} className="block">
             <Image
@@ -506,7 +506,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
             {/* Accident Help section */}
             <div className="rounded px-3 py-2 text-sm font-bold uppercase tracking-wider text-gray-400">
-              {isEn ? "Truck Accident Help" : "Ayuda — Accidentes de Camión"}
+              {isEn ? "Truck Accident Help" : "Ayuda: Accidentes de Camión"}
             </div>
             {helpDropdownItems.map((item) => (
               <Link

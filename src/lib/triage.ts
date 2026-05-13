@@ -40,7 +40,7 @@ export function triageCase(fields: LeadFields): TriageStatus {
         (now.getTime() - incidentDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000);
       if (diffYears > 2) withinWindow = false;
     } catch {
-      // Can't parse date — don't penalize
+      // Can't parse date, don't penalize
     }
   }
 
@@ -86,7 +86,7 @@ function formatTranscript(transcript: ChatSession["transcript"], limit = 10): st
 }
 
 /**
- * #tc-leads — posted immediately when:
+ * #tc-leads, posted immediately when:
  * - Phone captured
  * - User requests a call
  * - "likely_case" triage triggers
@@ -101,7 +101,7 @@ export function generateLeadPayload(session: ChatSession) {
         type: "header",
         text: {
           type: "plain_text",
-          text: `${STATUS_EMOJI[session.triageStatus]} NEW LEAD — ${STATUS_LABEL[session.triageStatus]}`,
+          text: `${STATUS_EMOJI[session.triageStatus]} NEW LEAD, ${STATUS_LABEL[session.triageStatus]}`,
         },
       },
       {
@@ -134,7 +134,7 @@ export function generateLeadPayload(session: ChatSession) {
 }
 
 /**
- * #tc-chat-log — 1 session summary posted when:
+ * #tc-chat-log, 1 session summary posted when:
  * - Chat is idle for 7 minutes
  * - 10+ user turns
  * - Chat session ends
@@ -150,7 +150,7 @@ export function generateChatLogPayload(session: ChatSession) {
         type: "header",
         text: {
           type: "plain_text",
-          text: `💬 Chat Session — ${STATUS_LABEL[session.triageStatus]}`,
+          text: `💬 Chat Session, ${STATUS_LABEL[session.triageStatus]}`,
         },
       },
       {

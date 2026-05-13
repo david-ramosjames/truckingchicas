@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     if (channel === "leads") {
       const webhookUrl = process.env.SLACK_LEADS_WEBHOOK_URL || fallbackUrl;
       if (!webhookUrl) {
-        console.warn("SLACK_LEADS_WEBHOOK_URL not configured — skipping lead notification");
+        console.warn("SLACK_LEADS_WEBHOOK_URL not configured, skipping lead notification");
         return NextResponse.json({ ok: true, skipped: true });
       }
 
@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
     if (channel === "log") {
       const webhookUrl = process.env.SLACK_LOG_WEBHOOK_URL || fallbackUrl;
       if (!webhookUrl) {
-        console.warn("SLACK_LOG_WEBHOOK_URL not configured — skipping chat log");
+        console.warn("SLACK_LOG_WEBHOOK_URL not configured, skipping chat log");
         return NextResponse.json({ ok: true, skipped: true });
       }
 

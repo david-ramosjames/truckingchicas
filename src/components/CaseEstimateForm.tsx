@@ -315,7 +315,7 @@ export default function CaseEstimateForm({
         />
       </div>
 
-      {/* Treatment — checkboxes */}
+      {/* Treatment, checkboxes */}
       <fieldset>
         <legend className="mb-3 text-lg font-bold text-brand-navy">{f.treatmentLabel}</legend>
         <div className="grid gap-2 sm:grid-cols-2">

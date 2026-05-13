@@ -55,7 +55,7 @@ export function cityLegalServiceSchema(city: string, state: string, locale: Loca
   return {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    name: `Trucking Chicas — ${city} Truck Accident Lawyer`,
+    name: `Trucking Chicas, ${city} Truck Accident Lawyer`,
     description:
       locale === "en"
         ? `Truck accident lawyers serving ${city}, ${state}. Free consultation for 18-wheeler and commercial truck accident victims.`

@@ -25,9 +25,9 @@ export const chatStrings = {
       pedestrian: "Pedestrian",
     },
     likelyCase:
-      "Based on what you've shared, it sounds like you may have a strong case. We strongly recommend speaking with one of our truck accident attorneys for a free, no-obligation case review. This is general information only — not legal advice.",
+      "Based on what you've shared, it sounds like you may have a strong case. We strongly recommend speaking with one of our truck accident attorneys for a free, no-obligation case review. This is general information only, not legal advice.",
     needsReview:
-      "Thank you for sharing that information. Your situation may have unique factors that an attorney should review. We recommend a free consultation to better understand your options. This is general information only — not legal advice.",
+      "Thank you for sharing that information. Your situation may have unique factors that an attorney should review. We recommend a free consultation to better understand your options. This is general information only, not legal advice.",
     generalInfo:
       "Thank you for your question. For specific legal guidance about your situation, we recommend speaking with one of our experienced truck accident attorneys. Consultations are free and confidential.",
     collectContact:
@@ -67,9 +67,9 @@ export const chatStrings = {
       pedestrian: "Peatón",
     },
     likelyCase:
-      "Según lo que nos compartiste, parece que podrías tener un caso fuerte. Te recomendamos hablar con uno de nuestros abogados altamente experimentados en accidentes de camión para una evaluación gratuita y sin compromiso. Esta es información general solamente — no es asesoría legal.",
+      "Según lo que nos compartiste, parece que podrías tener un caso fuerte. Te recomendamos hablar con uno de nuestros abogados altamente experimentados en accidentes de camión para una evaluación gratuita y sin compromiso. Esta es información general solamente, no es asesoría legal.",
     needsReview:
-      "Gracias por compartir esa información. Tu situación puede tener factores únicos que un abogado debería revisar. Recomendamos una consulta gratuita para entender mejor tus opciones. Esta es información general solamente — no es asesoría legal.",
+      "Gracias por compartir esa información. Tu situación puede tener factores únicos que un abogado debería revisar. Recomendamos una consulta gratuita para entender mejor tus opciones. Esta es información general solamente, no es asesoría legal.",
     generalInfo:
       "Gracias por tu pregunta. Para orientación legal específica sobre tu situación, te recomendamos hablar con uno de nuestros abogados experimentados en accidentes de camión. Las consultas son gratuitas y confidenciales.",
     collectContact:

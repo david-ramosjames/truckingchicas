@@ -124,7 +124,7 @@ export default function SanAntonioPage() {
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">
-            Truck Accident FAQ — San Antonio
+            Truck Accident FAQ: San Antonio
           </h2>
           <div className="mt-10">
             <FAQAccordion items={d.faq} />

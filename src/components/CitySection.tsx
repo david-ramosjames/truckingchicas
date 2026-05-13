@@ -100,7 +100,7 @@ export default function CitySection({
         )}
       </p>
 
-      {/* Single CTA — Call only */}
+      {/* Single CTA: Call only */}
       <div className="mt-5">
         <a
           href={`tel:+1${PHONE_NUMBER}`}

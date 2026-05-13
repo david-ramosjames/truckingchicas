@@ -11,7 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Areas We Serve — Texas Truck Accident Lawyer",
+  title: "Areas We Serve: Texas Truck Accident Lawyer",
   description:
     "Trucking Chicas serves truck and 18-wheeler accident victims across Texas, including Houston, Dallas, Austin, San Antonio, and more.",
   alternates: {
@@ -96,7 +96,7 @@ export default function AreasPage() {
         </div>
       </section>
 
-      {/* City Cards — 2-column grid on desktop, stacks on mobile */}
+      {/* City Cards, 2-column grid on desktop, stacks on mobile */}
       <section className="bg-gray-50 py-14">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-6 md:grid-cols-2">
@@ -124,7 +124,7 @@ export default function AreasPage() {
         </div>
       </section>
 
-      {/* Bottom CTA — stronger copy */}
+      {/* Bottom CTA, stronger copy */}
       <section className="bg-brand-navy py-16 text-white">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-3xl font-bold md:text-4xl">{d.bottomCtaHeading}</h2>

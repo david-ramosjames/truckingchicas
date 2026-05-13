@@ -9,8 +9,8 @@ export default function TexasMap({ locale }: { locale: Locale }) {
         src={IMAGES.texasHighwaySign}
         alt={
           locale === "en"
-            ? "Texas highway — we serve clients across the state"
-            : "Carretera de Texas — servimos clientes en todo el estado"
+            ? "Texas highway, we serve clients across the state"
+            : "Carretera de Texas, servimos clientes en todo el estado"
         }
         fill
         className="object-cover"
