@@ -25,6 +25,7 @@ const badges: Badge[] = [
   },
   {
     name: "Multi-Million Dollar Advocates Forum",
+    href: "https://www.milliondollaradvocates.com/",
     image: IMAGES.badges.multiMillionDollar,
   },
 ];
