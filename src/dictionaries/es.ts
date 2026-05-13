@@ -145,12 +145,12 @@ const es: Dictionary = {
       {
         quote: "Mi experiencia con Laura y todos en esa oficina ha sido increíble. Luchó por conseguir lo que era justo y merecido. Ha hecho tanto por mí y mi familia.",
         name: "Stephanie P.",
-        location: "Representación Feroz",
+        location: "Cliente de Accidente de Camión",
       },
       {
         quote: "Después de que un semi tráiler me chocó por detrás, tuve una experiencia increíble de principio a fin. El equipo se aseguró de que no tuviera que preocuparme por nada.",
         name: "Gil M.",
-        location: "Proceso Sin Estrés",
+        location: "Choque Trasero con Semi-Tráiler",
       },
     ],
     areasHomeTitle: "Sirviendo a Todo Texas",

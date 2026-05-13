@@ -144,12 +144,12 @@ const en = {
       {
         quote: "My experience with Laura and everyone in that office has been amazing. She fought to get me what was fair and deserved. She has done so much for me and my family.",
         name: "Stephanie P.",
-        location: "Fierce Representation",
+        location: "Truck Accident Client",
       },
       {
         quote: "After a semi truck rear-ended me, I had an amazing experience from beginning to end. The team ensured I didn't have to worry about a thing.",
         name: "Gil M.",
-        location: "Stress-Free Process",
+        location: "Semi-Truck Rear-End",
       },
     ],
     areasHomeTitle: "Serving All of Texas",
