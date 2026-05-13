@@ -8,6 +8,7 @@ import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Box Truck & Commercial Van Accident Lawyer in Texas",
@@ -39,7 +40,7 @@ export default function BoxTruckPage() {
           <h2 className="text-3xl font-bold text-brand-navy">{d.introTitle}</h2>
           <div className="mt-6 overflow-hidden rounded-xl">
             <Image
-              src="/trucks/box-truck.webp"
+              src={IMAGES.trucks.boxTruck}
               alt="Box truck on road"
               width={800}
               height={450}

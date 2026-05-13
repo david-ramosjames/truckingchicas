@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Dictionary } from "@/dictionaries";
 import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 import { getAlternateUrl } from "@/lib/i18n";
 
 /* Tiny inline flag components */
@@ -196,7 +197,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
         <div className="row-span-2 flex items-center px-6 py-2">
           <Link href={routes.home} className="block">
             <Image
-              src="/logo-transparent-crop.png"
+              src={IMAGES.logo}
               alt="Trucking Chicas"
               width={365}
               height={100}
@@ -390,7 +391,7 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
         {/* Logo */}
         <Link href={routes.home} className="shrink-0">
           <Image
-            src="/logo-transparent-crop.png"
+            src={IMAGES.logo}
             alt="Trucking Chicas"
             width={256}
             height={70}

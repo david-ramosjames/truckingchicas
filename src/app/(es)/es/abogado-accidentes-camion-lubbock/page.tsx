@@ -9,6 +9,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camión en Lubbock, TX",
@@ -42,7 +43,7 @@ export default function LubbockPageES() {
 
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
-          <Image src="/cities/lubbock.jpg" alt="Lubbock, Texas" width={800} height={450} className="rounded-xl" />
+          <Image src={IMAGES.cities.lubbock} alt="Lubbock, Texas" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
 

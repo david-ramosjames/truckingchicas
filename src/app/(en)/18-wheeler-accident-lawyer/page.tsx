@@ -8,6 +8,7 @@ import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "18-Wheeler Accident Lawyer in Texas",
@@ -51,7 +52,7 @@ export default function EighteenWheelerPage() {
           <h2 className="text-3xl font-bold text-brand-navy">{d.commercialTitle}</h2>
           <div className="mt-6 overflow-hidden rounded-xl">
             <Image
-              src="/trucks/18-wheelers.jpg"
+              src={IMAGES.trucks.eighteenWheeler}
               alt="18-wheeler truck on highway"
               width={800}
               height={450}

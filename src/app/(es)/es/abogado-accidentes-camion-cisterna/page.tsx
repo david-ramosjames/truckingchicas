@@ -8,6 +8,7 @@ import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camiones Cisterna en Texas",
@@ -39,7 +40,7 @@ export default function OilfieldTankerPageES() {
           <h2 className="text-3xl font-bold text-brand-navy">{d.introTitle}</h2>
           <div className="mt-6 overflow-hidden rounded-xl">
             <Image
-              src="/trucks/oil-tanker.jpg"
+              src={IMAGES.trucks.oilTanker}
               alt="Camión cisterna"
               width={800}
               height={450}

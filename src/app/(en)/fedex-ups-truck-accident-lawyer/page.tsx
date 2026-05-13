@@ -8,6 +8,7 @@ import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "FedEx & UPS Truck Accident Lawyer in Texas",
@@ -39,7 +40,7 @@ export default function DeliveryTruckPage() {
           <h2 className="text-3xl font-bold text-brand-navy">{d.introTitle}</h2>
           <div className="mt-6 overflow-hidden rounded-xl">
             <Image
-              src="/trucks/fedex.webp"
+              src={IMAGES.trucks.fedex}
               alt="FedEx delivery truck"
               width={800}
               height={450}

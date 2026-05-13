@@ -1,20 +1,21 @@
 import Image from "next/image";
+import { IMAGES } from "@/lib/images";
 
 const badges = [
   {
     name: "Top 10 Trucking Trial Lawyers",
     href: "https://badges.thenationaltriallawyers.org/en/verify/83695412777973",
-    image: "/top-10-trucking-badge.png",
+    image: IMAGES.badges.top10Trucking,
   },
   {
     name: "Academy of Truck Accident Attorneys",
     href: "https://ataalaw.org/",
-    image: "/academy-of-truck-accident-attorneys.svg",
+    image: IMAGES.badges.academyTruckAttorneys,
   },
   {
     name: "The National Top 100 Trial Lawyers",
     href: "https://thenationaltriallawyers.org/members/laura-ramos-james/",
-    image: "/NTL-Top-100-Brass-Badge.png",
+    image: IMAGES.badges.nationalTop100,
   },
 ];
 

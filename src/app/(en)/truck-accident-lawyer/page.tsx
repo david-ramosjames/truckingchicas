@@ -8,6 +8,7 @@ import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Texas Truck Accident Lawyer",
@@ -51,7 +52,7 @@ export default function TruckAccidentPage() {
           <h2 className="text-3xl font-bold text-brand-navy">{d.causesTitle}</h2>
           <div className="mt-6 overflow-hidden rounded-xl">
             <Image
-              src="/trucks/all-trucks.webp"
+              src={IMAGES.trucks.allTrucks}
               alt="Commercial trucks on Texas highway"
               width={800}
               height={450}

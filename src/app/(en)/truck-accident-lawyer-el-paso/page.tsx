@@ -10,6 +10,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Truck Accident Lawyer in El Paso, TX",
@@ -42,7 +43,7 @@ export default function ElPasoPage() {
       {/* City Photo */}
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
-          <Image src="/cities/el-paso.jpg" alt="El Paso, Texas" width={800} height={450} className="rounded-xl" />
+          <Image src={IMAGES.cities.elPaso} alt="El Paso, Texas" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
 
