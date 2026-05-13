@@ -1,7 +1,13 @@
 import Image from "next/image";
 import { IMAGES } from "@/lib/images";
 
-const badges = [
+type Badge = {
+  name: string;
+  image: string;
+  href?: string;
+};
+
+const badges: Badge[] = [
   {
     name: "Top 10 Trucking Trial Lawyers",
     href: "https://badges.thenationaltriallawyers.org/en/verify/83695412777973",
@@ -17,6 +23,10 @@ const badges = [
     href: "https://thenationaltriallawyers.org/members/laura-ramos-james/",
     image: IMAGES.badges.nationalTop100,
   },
+  {
+    name: "Multi-Million Dollar Advocates Forum",
+    image: IMAGES.badges.multiMillionDollar,
+  },
 ];
 
 export default function TrustBadges() {
@@ -27,15 +37,8 @@ export default function TrustBadges() {
           Recognized &amp; Trusted
         </h2>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-10 md:gap-16">
-          {badges.map((b) => (
-            <a
-              key={b.name}
-              href={b.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative block h-[150px] w-[150px] shrink-0 transition-opacity hover:opacity-80"
-              aria-label={b.name}
-            >
+          {badges.map((b) => {
+            const inner = (
               <Image
                 src={b.image}
                 alt={b.name}
@@ -43,8 +46,26 @@ export default function TrustBadges() {
                 className="object-contain"
                 sizes="150px"
               />
-            </a>
-          ))}
+            );
+            const className =
+              "relative block h-[150px] w-[150px] shrink-0";
+            return b.href ? (
+              <a
+                key={b.name}
+                href={b.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${className} transition-opacity hover:opacity-80`}
+                aria-label={b.name}
+              >
+                {inner}
+              </a>
+            ) : (
+              <div key={b.name} className={className} aria-label={b.name}>
+                {inner}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -44,6 +44,7 @@ export const IMAGES = {
     top10Trucking: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778701764/top-10-trucking-badge_gdpwlb.png",
     academyTruckAttorneys: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778701763/academy-of-truck-accident-attorneys_gidmcf.svg",
     nationalTop100: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778701763/NTL-Top-100-Brass-Badge_rig3ly.png",
+    multiMillionDollar: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778707345/multi-million-dollar-badge_nqzxn5.png",
   },
 
   trucks: {
