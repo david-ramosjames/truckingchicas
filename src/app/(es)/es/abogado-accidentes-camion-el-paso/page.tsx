@@ -56,7 +56,7 @@ export default function ElPasoPageES() {
 
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
-          <Image src="/maps/el-paso-map.png" alt="Mapa del área de El Paso" width={800} height={450} className="rounded-xl" />
+          <Image src={IMAGES.maps.elPaso} alt="Mapa del área de El Paso" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
 

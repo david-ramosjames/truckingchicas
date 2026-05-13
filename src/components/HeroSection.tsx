@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary } from "@/dictionaries";
 import { type Locale, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
+import { IMAGES } from "@/lib/images";
 
 export default function HeroSection({
   dict,
@@ -86,7 +87,7 @@ export default function HeroSection({
       <div className="relative lg:hidden">
         <div className="absolute inset-0">
           <Image
-            src="/hero.png"
+            src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
             fill
             className="object-cover object-[center_20%]"
@@ -116,7 +117,7 @@ export default function HeroSection({
         {/* Background image spanning full width */}
         <div className="absolute inset-0">
           <Image
-            src="/hero.png"
+            src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
             fill
             className="object-cover object-[center_20%]"

@@ -12,6 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import CaseEstimateModal from "@/components/CaseEstimateModal";
 import TrustBadges from "@/components/TrustBadges";
 import { localBusinessSchema, faqSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Texas Truck & 18-Wheeler Accident Lawyers",
@@ -369,7 +370,7 @@ export default function HomePage() {
       <section className="relative md:hidden">
         <div className="relative h-64 sm:h-80">
           <Image
-            src="/choose-us.png"
+            src={IMAGES.chooseUs}
             alt="Why choose Trucking Chicas"
             fill
             className="object-cover object-top"
@@ -395,7 +396,7 @@ export default function HomePage() {
       <section className="relative hidden md:block">
         <div className="relative min-h-[850px]">
           <Image
-            src="/choose-us.png"
+            src={IMAGES.chooseUs}
             alt="Why choose Trucking Chicas"
             fill
             className="object-cover object-top"

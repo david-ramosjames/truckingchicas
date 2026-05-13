@@ -56,7 +56,7 @@ export default function AustinPageES() {
 
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
-          <Image src="/maps/austin-map.png" alt="Mapa del área de Austin" width={800} height={450} className="rounded-xl" />
+          <Image src={IMAGES.maps.austin} alt="Mapa del área de Austin" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
 

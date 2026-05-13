@@ -7,6 +7,7 @@ import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
 import TrustBadges from "@/components/TrustBadges";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About Our Texas Truck Accident Lawyers",
@@ -88,7 +89,7 @@ export default function AboutPage() {
             <div className="mx-auto w-[280px] shrink-0">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/Laura-Ramos-James-2026-1851.jpg"
+                  src={IMAGES.team.lauraRamosJames}
                   alt="Attorney Laura Ramos James"
                   fill
                   className="object-cover"
@@ -145,7 +146,7 @@ export default function AboutPage() {
             <div className="mx-auto w-[280px] shrink-0">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
                 <Image
-                  src="/lyliana-zamora.webp"
+                  src={IMAGES.team.lylianaZamora}
                   alt="Senior Paralegal Lyliana Zamora"
                   fill
                   className="object-cover"

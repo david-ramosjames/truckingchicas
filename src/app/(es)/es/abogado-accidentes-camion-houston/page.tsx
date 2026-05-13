@@ -56,7 +56,7 @@ export default function HoustonPageES() {
 
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
-          <Image src="/maps/houston-map.png" alt="Mapa del área de Houston" width={800} height={450} className="rounded-xl" />
+          <Image src={IMAGES.maps.houston} alt="Mapa del área de Houston" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
 

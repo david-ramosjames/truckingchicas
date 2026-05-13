@@ -58,7 +58,7 @@ export default function FortWorthPage() {
       {/* Truck Accident Map */}
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
-          <Image src="/maps/fort-worth-map.png" alt="Fort Worth area truck accident map" width={800} height={450} className="rounded-xl" />
+          <Image src={IMAGES.maps.fortWorth} alt="Fort Worth area truck accident map" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
 
