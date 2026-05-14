@@ -1,6 +1,5 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import StickyMobileCTA from "./StickyMobileCTA";
 import type { Dictionary } from "@/dictionaries";
 import type { Locale } from "@/lib/constants";
 
@@ -18,9 +17,6 @@ export default function PageShell({
       <Header dict={dict} locale={locale} />
       <main className="flex-1">{children}</main>
       <Footer dict={dict} locale={locale} />
-      <StickyMobileCTA dict={dict} locale={locale} />
-      {/* Spacer for sticky mobile CTA bar */}
-      <div className="h-16 md:hidden" />
     </>
   );
 }
