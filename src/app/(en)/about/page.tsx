@@ -161,19 +161,13 @@ export default function AboutPage() {
               </p>
               <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Lyliana Zamora was born and raised in Austin, Texas, but has lived in the San Antonio area
-                  for the past 7 years. She has over 10 years of experience in personal injury in addition
-                  to experience with family law and business litigation. Lyliana&rsquo;s passion to work in
-                  the personal injury legal field derives from the rewarding feeling of being able to help
-                  people throughout their case. She enjoys being able to be the voice of people that feel
-                  they have no voice or a right to be heard. Lyliana always makes it a priority to ensure
-                  she&rsquo;s guiding families through this process to make sure they have no doubt their case
-                  is being properly handled.
+                  Lyliana Zamora is a <strong className="font-semibold text-brand-navy">Texas native, born and raised in Austin</strong>, with a passion for advocating for individuals and families facing life-changing injuries. With <strong className="font-semibold text-brand-navy">more than 10 years of legal experience</strong>, she has dedicated her career to helping clients navigate difficult moments with <strong className="font-semibold text-brand-navy">confidence, compassion, and strong legal guidance</strong>.
                 </p>
                 <p>
-                  During her free time, she enjoys spending time with her husband, daughter, and son. She
-                  also has two Huskies that go wherever the family goes. They love to attend live sporting
-                  events (Go Spurs Go!) and explore the outdoors as much as possible.
+                  At Trucking Chicas, Lyliana is committed to <strong className="font-semibold text-brand-navy">standing up for those impacted by serious commercial trucking accidents</strong> and ensuring they never feel alone in the process. She understands that after a devastating crash, families need more than legal representation, they need someone they can trust to <strong className="font-semibold text-brand-navy">guide them, communicate clearly, and fight relentlessly for the outcome they deserve</strong>.
+                </p>
+                <p>
+                  Outside the office, Lyliana loves spending time with her husband, daughter, and son, plus the family&rsquo;s two energetic Huskies. Whether cheering on the Spurs, attending live sporting events, or exploring the outdoors, family time is where she recharges.
                 </p>
               </div>
             </div>

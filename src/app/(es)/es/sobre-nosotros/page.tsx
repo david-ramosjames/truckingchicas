@@ -152,20 +152,13 @@ export default function AboutPageES() {
               </p>
               <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Lyliana Zamora naci&oacute; y creci&oacute; en Austin, Texas, pero ha vivido en el
-                  &aacute;rea de San Antonio durante los &uacute;ltimos 7 a&ntilde;os. Tiene m&aacute;s de
-                  10 a&ntilde;os de experiencia en lesiones personales, adem&aacute;s de experiencia en
-                  derecho familiar y litigios comerciales. La pasi&oacute;n de Lyliana por trabajar en el
-                  campo legal de lesiones personales proviene de la sensaci&oacute;n gratificante de poder
-                  ayudar a las personas durante su caso. Disfruta ser la voz de las personas que sienten que
-                  no tienen voz o derecho a ser escuchadas. Lyliana siempre se asegura de guiar a las
-                  familias durante este proceso para que no tengan duda de que su caso est&aacute; siendo
-                  manejado correctamente.
+                  Lyliana Zamora es <strong className="font-semibold text-brand-navy">texana de nacimiento, nacida y criada en Austin</strong>, con la pasi&oacute;n de defender a personas y familias que enfrentan lesiones que cambian la vida. Con <strong className="font-semibold text-brand-navy">m&aacute;s de 10 a&ntilde;os de experiencia legal</strong>, ha dedicado su carrera a ayudar a clientes a navegar momentos dif&iacute;ciles con <strong className="font-semibold text-brand-navy">confianza, compasi&oacute;n y gu&iacute;a legal s&oacute;lida</strong>.
                 </p>
                 <p>
-                  En su tiempo libre, disfruta pasar tiempo con su esposo, su hija y su hijo. Tambi&eacute;n
-                  tiene dos Huskies que van a donde va la familia. Les encanta asistir a eventos deportivos
-                  en vivo (&iexcl;Go Spurs Go!) y explorar el aire libre tanto como sea posible.
+                  En Trucking Chicas, Lyliana est&aacute; comprometida a <strong className="font-semibold text-brand-navy">defender a quienes han sido afectados por accidentes graves con camiones comerciales</strong> y a asegurar que nunca se sientan solos en el proceso. Ella entiende que despu&eacute;s de un choque devastador, las familias necesitan m&aacute;s que representaci&oacute;n legal; necesitan a alguien en quien puedan confiar para <strong className="font-semibold text-brand-navy">guiarlos, comunicarse con claridad y luchar incansablemente por el resultado que merecen</strong>.
+                </p>
+                <p>
+                  Fuera de la oficina, a Lyliana le encanta pasar tiempo con su esposo, su hija y su hijo, adem&aacute;s de los dos en&eacute;rgicos Huskies de la familia. Ya sea apoyando a los Spurs, asistiendo a eventos deportivos en vivo o explorando el aire libre, el tiempo en familia es donde recarga energ&iacute;as.
                 </p>
               </div>
             </div>
