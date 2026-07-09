@@ -110,13 +110,13 @@ export default function HeroSection({
           {ctaButtons(false)}
           {trustBadges(false)}
         </div>
-        {/* Attorney name labels */}
-        <div className="absolute bottom-4 right-3 flex flex-col items-end gap-1.5 sm:bottom-6 sm:right-5">
-          <div className="rounded bg-black/60 px-2.5 py-1 text-right backdrop-blur-sm">
+        {/* Attorney name labels — centered at 2/3 from left (≈1/3 from right) */}
+        <div className="absolute bottom-4 left-2/3 -translate-x-1/2 flex flex-row gap-2 sm:bottom-6">
+          <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
             <p className="text-xs font-bold text-white sm:text-sm">Laura Ramos James</p>
             <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Attorney" : "Abogada"}</p>
           </div>
-          <div className="rounded bg-black/60 px-2.5 py-1 text-right backdrop-blur-sm">
+          <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
             <p className="text-xs font-bold text-white sm:text-sm">Lyliana Zamora</p>
             <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
           </div>
@@ -159,13 +159,14 @@ export default function HeroSection({
           </div>
 
           {/* Right: empty space where image shows through, with attorney labels */}
+          {/* Labels centered at 1/3 of right column from left = 1/3 from right of full section */}
           <div className="relative min-h-[480px]">
-            <div className="absolute bottom-8 right-6 flex flex-col items-end gap-2 xl:right-10">
-              <div className="rounded bg-black/60 px-3 py-1.5 text-right backdrop-blur-sm">
+            <div className="absolute bottom-8 left-1/3 -translate-x-1/2 flex flex-row gap-3">
+              <div className="rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm">
                 <p className="text-sm font-bold text-white">Laura Ramos James</p>
                 <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
               </div>
-              <div className="rounded bg-black/60 px-3 py-1.5 text-right backdrop-blur-sm">
+              <div className="rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm">
                 <p className="text-sm font-bold text-white">Lyliana Zamora</p>
                 <p className="text-xs text-gray-300">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
               </div>
