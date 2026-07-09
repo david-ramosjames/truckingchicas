@@ -100,10 +100,13 @@ export default function HeroSection({
           <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.9)_28%,transparent_100%)]" />
           {/* Bottom fade so the base of the image melts into black */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.85)_35%,transparent_100%)]" />
-          {/* Strong vignette so every edge and corner fades into black */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_115%_115%_at_50%_45%,transparent_28%,rgba(18,18,18,0.55)_62%,#121212_92%)]" />
+          {/* Strong vignette so every edge and corner fades into a dark red */}
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_115%_115%_at_50%_45%,transparent_28%,rgba(120,22,20,0.5)_60%,rgba(60,10,8,0.94)_92%)]" />
+          {/* Red glow on the left and right edges */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-[linear-gradient(to_right,rgba(200,36,32,0.5)_0%,rgba(200,36,32,0.16)_45%,transparent_100%)]" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-[linear-gradient(to_left,rgba(200,36,32,0.5)_0%,rgba(200,36,32,0.16)_45%,transparent_100%)]" />
           {/* Red glow behind the headline (black/red blend at the top edge) */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_4%,rgba(229,57,53,0.45)_0%,rgba(229,57,53,0.12)_32%,transparent_58%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_4%,rgba(229,57,53,0.5)_0%,rgba(229,57,53,0.14)_32%,transparent_58%)]" />
 
           {/* Headline overlaid near the top, centered above the team */}
           <div className="relative px-6 pt-3 sm:pt-5">
