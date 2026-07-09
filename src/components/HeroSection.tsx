@@ -46,20 +46,21 @@ export default function HeroSection({
   /* Above-the-fold CTA buttons, call is PRIMARY, form is SECONDARY (ghost) */
   const ctaButtons = (centered: boolean) => (
     <div className={`mt-6 flex flex-col gap-3 sm:flex-row ${centered ? "items-center sm:justify-center" : "items-start"}`}>
-      {/* PRIMARY: Call CTA */}
+      {/* PRIMARY: Call CTA (phone number shown on desktop only) */}
       <a
         href={`tel:+1${PHONE_NUMBER}`}
-        className="pulse-halo btn-lift inline-flex items-center justify-center gap-2 rounded-lg bg-brand-red px-7 py-3.5 text-base font-bold text-white shadow-lg shadow-brand-red/30 transition-colors hover:bg-brand-red-light"
+        className="pulse-halo btn-lift inline-flex w-full items-center justify-center gap-2 rounded-lg bg-brand-red px-7 py-3.5 text-base font-bold text-white shadow-lg shadow-brand-red/30 transition-colors hover:bg-brand-red-light sm:w-auto"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
-        {dict.hero.cta2}: {PHONE_DISPLAY}
+        {dict.hero.cta2}
+        <span className="hidden lg:inline">: {PHONE_DISPLAY}</span>
       </a>
       {/* SECONDARY: Free Case Review (ghost/outline) */}
       <Link
         href={routes.contact}
-        className="btn-lift inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand-red bg-transparent px-6 py-3 text-base font-bold text-white transition-colors hover:bg-brand-red/10"
+        className="btn-lift inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-brand-red bg-transparent px-6 py-3 text-base font-bold text-white transition-colors hover:bg-brand-red/10 sm:w-auto"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -83,42 +84,42 @@ export default function HeroSection({
 
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
-      {/* ── Mobile / Tablet ── hero image as full background */}
-      <div className="relative lg:hidden">
-        <div className="absolute inset-0">
-          <Image
-            src={IMAGES.hero}
-            alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
-            fill
-            className="object-cover object-[center_20%]"
-            sizes="100vw"
-            priority
-          />
-          {/* Dark overlay on left 50%, transparent on right 50% */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_0%,rgba(18,18,18,0.92)_30%,rgba(18,18,18,0.6)_45%,transparent_50%)]" />
-          {/* Strong red glow on the left half */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_40%,rgba(229,57,53,0.5)_0%,rgba(229,57,53,0.25)_25%,transparent_50%)]" />
-        </div>
+      {/* ── Mobile / Tablet ── text on top, image below aligned right */}
+      <div className="relative bg-[#121212] lg:hidden">
+        {/* Red glow behind the headline */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_0%,rgba(229,57,53,0.45)_0%,rgba(229,57,53,0.18)_35%,transparent_60%)]" />
 
-        <div className="relative px-6 py-14 sm:py-20">
-          <h1 className="w-1/2 text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
+        {/* Text content at the top */}
+        <div className="relative px-6 pb-8 pt-10 sm:pt-14">
+          <h1 className="text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
             {headline || dict.hero.headline}
           </h1>
-          <p className="mt-4 w-1/2 text-left text-lg leading-relaxed text-[#D1D5DB] md:text-xl">
-            {subhead || dict.hero.subhead}
-          </p>
           {ctaButtons(false)}
           {trustBadges(false)}
         </div>
-        {/* Attorney name labels — centered at 2/3 from left (≈1/3 from right) */}
-        <div className="absolute bottom-4 left-2/3 -translate-x-1/2 flex flex-row gap-2 sm:bottom-6">
-          <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
-            <p className="text-xs font-bold text-white sm:text-sm">Laura Ramos James</p>
-            <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Attorney" : "Abogada"}</p>
-          </div>
-          <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
-            <p className="text-xs font-bold text-white sm:text-sm">Lyliana Zamora</p>
-            <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
+
+        {/* Image below, positioned right so both team members are visible */}
+        <div className="relative h-80 sm:h-96 md:h-[28rem]">
+          <Image
+            src={IMAGES.hero}
+            alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
+            fill
+            className="object-cover object-[70%_top]"
+            sizes="100vw"
+            priority
+          />
+          {/* Blend the top of the image into the dark text block */}
+          <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#121212] to-transparent" />
+          {/* Attorney name labels — centered at 2/3 from left (≈1/3 from right) */}
+          <div className="absolute bottom-3 left-2/3 flex -translate-x-1/2 flex-row gap-2 sm:bottom-5">
+            <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
+              <p className="text-xs font-bold text-white sm:text-sm">Laura Ramos James</p>
+              <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Attorney" : "Abogada"}</p>
+            </div>
+            <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
+              <p className="text-xs font-bold text-white sm:text-sm">Lyliana Zamora</p>
+              <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
+            </div>
           </div>
         </div>
       </div>
