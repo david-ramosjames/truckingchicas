@@ -213,14 +213,14 @@ export default function HeroSection({
         {/* Attorney name tags, positioned independently over the image (full-width %) */}
         <div
           className="absolute z-10 rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm"
-          style={{ left: "61%", top: "82%" }}
+          style={{ left: "58%", top: "85%" }}
         >
           <p className="text-sm font-bold text-white">Laura Ramos James</p>
           <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
         </div>
         <div
           className="absolute z-10 rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm"
-          style={{ left: "76%", top: "82%" }}
+          style={{ left: "76%", top: "85%" }}
         >
           <p className="text-sm font-bold text-white">Lyliana Zamora</p>
           <p className="text-xs text-gray-300">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
