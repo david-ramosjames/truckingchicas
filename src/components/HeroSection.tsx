@@ -206,20 +206,24 @@ export default function HeroSection({
             {trustBadges(false)}
           </div>
 
-          {/* Right: empty space where image shows through, with attorney labels */}
-          {/* Labels centered at 1/3 of right column from left = 1/3 from right of full section */}
-          <div className="relative min-h-[480px]">
-            <div className="absolute bottom-8 left-1/3 -translate-x-1/2 flex flex-row gap-3">
-              <div className="rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm">
-                <p className="text-sm font-bold text-white">Laura Ramos James</p>
-                <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
-              </div>
-              <div className="rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm">
-                <p className="text-sm font-bold text-white">Lyliana Zamora</p>
-                <p className="text-xs text-gray-300">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
-              </div>
-            </div>
-          </div>
+          {/* Right: empty space where the image shows through */}
+          <div className="min-h-[480px]" aria-hidden="true" />
+        </div>
+
+        {/* Attorney name tags, positioned independently over the image (full-width %) */}
+        <div
+          className="absolute z-10 rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm"
+          style={{ left: "61%", top: "82%" }}
+        >
+          <p className="text-sm font-bold text-white">Laura Ramos James</p>
+          <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
+        </div>
+        <div
+          className="absolute z-10 rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm"
+          style={{ left: "76%", top: "82%" }}
+        >
+          <p className="text-sm font-bold text-white">Lyliana Zamora</p>
+          <p className="text-xs text-gray-300">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
         </div>
       </div>
     </section>
