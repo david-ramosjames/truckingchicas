@@ -84,32 +84,30 @@ export default function HeroSection({
 
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
-      {/* ── Mobile / Tablet ── text on top, image below aligned right */}
-      <div className="relative bg-[#121212] lg:hidden">
-        {/* Red glow behind the headline */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_0%,rgba(229,57,53,0.45)_0%,rgba(229,57,53,0.18)_35%,transparent_60%)]" />
-
-        {/* Text content at the top */}
-        <div className="relative px-6 pb-8 pt-10 sm:pt-14">
-          <h1 className="text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
-            {headline || dict.hero.headline}
-          </h1>
-          {ctaButtons(false)}
-          {trustBadges(false)}
-        </div>
-
-        {/* Image below, positioned right so both team members are visible */}
-        <div className="relative h-80 sm:h-96 md:h-[28rem]">
+      {/* ── Mobile / Tablet ── headline overlaid on image, CTA below ── */}
+      <div className="bg-[#121212] lg:hidden">
+        {/* Image block with headline overlaid; tall crop shifted right shows both */}
+        <div className="relative h-[440px] overflow-hidden sm:h-[520px]">
           <Image
             src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
             fill
-            className="object-cover object-[70%_top]"
+            className="object-cover object-[78%_center]"
             sizes="100vw"
             priority
           />
-          {/* Blend the top of the image into the dark text block */}
-          <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#121212] to-transparent" />
+          {/* Dark gradient across the top so the headline stays legible */}
+          <div className="absolute inset-x-0 top-0 h-3/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.85)_35%,transparent_100%)]" />
+          {/* Red glow behind the headline */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_0%,rgba(229,57,53,0.5)_0%,rgba(229,57,53,0.15)_30%,transparent_55%)]" />
+
+          {/* Headline overlaid at the top */}
+          <div className="relative px-6 pt-10 sm:pt-12">
+            <h1 className="max-w-[85%] text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
+              {headline || dict.hero.headline}
+            </h1>
+          </div>
+
           {/* Attorney name labels — centered at 2/3 from left (≈1/3 from right) */}
           <div className="absolute bottom-3 left-2/3 flex -translate-x-1/2 flex-row gap-2 sm:bottom-5">
             <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
@@ -121,6 +119,12 @@ export default function HeroSection({
               <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
             </div>
           </div>
+        </div>
+
+        {/* CTA + trust signals directly below the image */}
+        <div className="px-6 pb-10 pt-6">
+          {ctaButtons(false)}
+          {trustBadges(false)}
         </div>
       </div>
 
