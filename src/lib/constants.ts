@@ -1,13 +1,12 @@
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://truckingchicas.com";
-export const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || "5125551234";
-export const PHONE_DISPLAY = process.env.NEXT_PUBLIC_PHONE_DISPLAY || "(512) 555-1234";
+export const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || "5128773244";
+export const PHONE_DISPLAY = process.env.NEXT_PUBLIC_PHONE_DISPLAY || "(512) 877-3244";
 
-// TODO: Replace with actual firm address
 export const FIRM_ADDRESS = {
-  street: "123 Main Street, Suite 100",
+  street: "15620 Patrica Suite #200",
   city: "Austin",
   state: "TX",
-  zip: "78701",
+  zip: "78728",
 };
 
 export const LOCALES = ["en", "es"] as const;

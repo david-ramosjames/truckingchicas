@@ -25,13 +25,13 @@ export default function HeroSection({
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ),
-      text: isEn ? "500+ clients helped" : "500+ clientes ayudados",
+      text: isEn ? "500+ Clients Helped" : "500+ Clientes Atendidos",
     },
     {
       icon: (
         <span className="text-lg font-extrabold text-[#FBBF24]">$</span>
       ),
-      text: isEn ? "Millions recovered" : "Millones recuperados",
+      text: isEn ? "Millions Recovered" : "Millones Recuperados",
     },
     {
       icon: (
@@ -39,7 +39,7 @@ export default function HeroSection({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
         </svg>
       ),
-      text: isEn ? "Texas truck accident attorneys" : "Abogados de accidentes de camión en Texas",
+      text: isEn ? "Texas Truck Accident Attorneys" : "Abogados de Accidentes de Camión en Texas",
     },
   ];
 
@@ -110,6 +110,17 @@ export default function HeroSection({
           {ctaButtons(false)}
           {trustBadges(false)}
         </div>
+        {/* Attorney name labels */}
+        <div className="absolute bottom-4 right-3 flex flex-col items-end gap-1.5 sm:bottom-6 sm:right-5">
+          <div className="rounded bg-black/60 px-2.5 py-1 text-right backdrop-blur-sm">
+            <p className="text-xs font-bold text-white sm:text-sm">Laura Ramos James</p>
+            <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Attorney" : "Abogada"}</p>
+          </div>
+          <div className="rounded bg-black/60 px-2.5 py-1 text-right backdrop-blur-sm">
+            <p className="text-xs font-bold text-white sm:text-sm">Lyliana Zamora</p>
+            <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
+          </div>
+        </div>
       </div>
 
       {/* ── Desktop ── full-width two-column with image on right */}
@@ -147,8 +158,19 @@ export default function HeroSection({
             {trustBadges(false)}
           </div>
 
-          {/* Right: empty space where image shows through */}
-          <div className="min-h-[480px]" aria-hidden="true" />
+          {/* Right: empty space where image shows through, with attorney labels */}
+          <div className="relative min-h-[480px]">
+            <div className="absolute bottom-8 right-6 flex flex-col items-end gap-2 xl:right-10">
+              <div className="rounded bg-black/60 px-3 py-1.5 text-right backdrop-blur-sm">
+                <p className="text-sm font-bold text-white">Laura Ramos James</p>
+                <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
+              </div>
+              <div className="rounded bg-black/60 px-3 py-1.5 text-right backdrop-blur-sm">
+                <p className="text-sm font-bold text-white">Lyliana Zamora</p>
+                <p className="text-xs text-gray-300">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
