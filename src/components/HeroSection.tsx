@@ -54,8 +54,8 @@ export default function HeroSection({
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
-        {dict.hero.cta2}
-        <span className="hidden lg:inline">: {PHONE_DISPLAY}</span>
+        <span className="lg:hidden">{isEn ? "Call Now" : "Llamar Ahora"}</span>
+        <span className="hidden lg:inline">{dict.hero.cta2}: {PHONE_DISPLAY}</span>
       </a>
       {/* SECONDARY: Free Case Review (ghost/outline) */}
       <Link
@@ -96,17 +96,16 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          {/* Dark gradient across the top so the headline stays legible */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.9)_28%,transparent_100%)]" />
-          {/* Bottom fade so the base of the image melts into black */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.85)_35%,transparent_100%)]" />
-          {/* Strong vignette so every edge and corner fades into a dark red */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_115%_115%_at_50%_45%,transparent_28%,rgba(120,22,20,0.5)_60%,rgba(60,10,8,0.94)_92%)]" />
-          {/* Red glow on the left and right edges */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-[linear-gradient(to_right,rgba(200,36,32,0.5)_0%,rgba(200,36,32,0.16)_45%,transparent_100%)]" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-[linear-gradient(to_left,rgba(200,36,32,0.5)_0%,rgba(200,36,32,0.16)_45%,transparent_100%)]" />
-          {/* Red glow behind the headline (black/red blend at the top edge) */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_4%,rgba(229,57,53,0.5)_0%,rgba(229,57,53,0.14)_32%,transparent_58%)]" />
+          {/* Top fade: dark for headline legibility, clears above the faces */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-2/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.9)_35%,transparent_100%)]" />
+          {/* Bottom fade: melts into black behind the name tags */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.85)_38%,transparent_100%)]" />
+          {/* Left edge: black at the very edge, red just inside, clear toward the center */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-[linear-gradient(to_right,#121212_0%,rgba(198,38,32,0.55)_22%,transparent_62%)]" />
+          {/* Right edge: mirror of the left */}
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-[linear-gradient(to_left,#121212_0%,rgba(198,38,32,0.55)_22%,transparent_62%)]" />
+          {/* Red glow behind the headline */}
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_2%,rgba(229,57,53,0.42)_0%,transparent_48%)]" />
 
           {/* Headline overlaid near the top, centered above the team */}
           <div className="relative px-6 pt-3 sm:pt-5">
@@ -115,15 +114,15 @@ export default function HeroSection({
             </h1>
           </div>
 
-          {/* Attorney name labels — centered at 2/3 from left (≈1/3 from right) */}
-          <div className="absolute bottom-3 left-2/3 flex -translate-x-1/2 flex-row gap-2 sm:bottom-5">
-            <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
-              <p className="text-xs font-bold text-white sm:text-sm">Laura Ramos James</p>
-              <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Attorney" : "Abogada"}</p>
+          {/* Attorney name labels — centered near the bottom of the image */}
+          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-row gap-3 sm:bottom-6">
+            <div className="rounded-md bg-black/60 px-3.5 py-2 backdrop-blur-sm">
+              <p className="text-sm font-bold text-white sm:text-base">Laura Ramos James</p>
+              <p className="text-xs text-gray-300 sm:text-sm">{isEn ? "Attorney" : "Abogada"}</p>
             </div>
-            <div className="rounded bg-black/60 px-2.5 py-1 backdrop-blur-sm">
-              <p className="text-xs font-bold text-white sm:text-sm">Lyliana Zamora</p>
-              <p className="text-[10px] text-gray-300 sm:text-xs">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
+            <div className="rounded-md bg-black/60 px-3.5 py-2 backdrop-blur-sm">
+              <p className="text-sm font-bold text-white sm:text-base">Lyliana Zamora</p>
+              <p className="text-xs text-gray-300 sm:text-sm">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
             </div>
           </div>
         </div>
