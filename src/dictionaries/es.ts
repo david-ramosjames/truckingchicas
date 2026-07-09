@@ -29,7 +29,7 @@ const es: Dictionary = {
     headline: "¿Te chocó un tráiler en Texas?",
     subhead:
       "Las compañías de camiones actúan rápido. Nosotros luchamos para proteger tus derechos y obtener la compensación que mereces.",
-    cta1: "Evaluación Gratis",
+    cta1: "Iniciar Evaluación Gratis",
     cta2: "Llamar 24/7",
     trust1: "No cobramos si no ganamos",
     trust2: "Consulta gratis",

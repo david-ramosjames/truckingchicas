@@ -18,6 +18,15 @@ export default function HeroSection({
   const routes = ROUTES[locale];
   const isEn = locale === "en";
 
+  const reassurance = (
+    <>
+      <span className="whitespace-nowrap">
+        ✔ {isEn ? "No Fee Unless We Win" : "No Cobramos si No Ganamos"}
+      </span>
+      <span className="whitespace-nowrap">✔ Se Habla Español</span>
+    </>
+  );
+
   const trustSignals = [
     {
       icon: (
@@ -138,11 +147,9 @@ export default function HeroSection({
             {isEn ? "Call Now — Free Consultation" : "Llamar Ahora — Consulta Gratis"}
           </a>
           {/* Reassurance line under the call button */}
-          <p className="mt-3 text-center text-sm font-medium text-gray-200">
-            {isEn
-              ? "✔ No Fee Unless We Win  •  ✔ Se Habla Español"
-              : "✔ No Cobramos si No Ganamos  •  ✔ Se Habla Español"}
-          </p>
+          <div className="mt-3 flex flex-wrap justify-center gap-x-5 gap-y-1 text-sm font-medium text-gray-200">
+            {reassurance}
+          </div>
           {/* SECONDARY: Free Case Review (ghost/outline) */}
           <Link
             href={routes.contact}
@@ -192,6 +199,10 @@ export default function HeroSection({
               {isEn ? "Speak to a lawyer now: Available 24/7" : "Habla con un abogado ahora: Disponible 24/7"}
             </p>
             {ctaButtons(false)}
+            {/* Reassurance line under the CTA buttons */}
+            <div className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm font-medium text-gray-200">
+              {reassurance}
+            </div>
             {trustBadges(false)}
           </div>
 

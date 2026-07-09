@@ -28,7 +28,7 @@ const en = {
     headline: "Hurt by an 18-Wheeler in Texas?",
     subhead:
       "Trucking companies move fast. We fight to protect your rights and recover the compensation you deserve.",
-    cta1: "Free Case Review",
+    cta1: "Start Free Case Review",
     cta2: "Call 24/7",
     trust1: "No fees unless we win",
     trust2: "Free consultation",
