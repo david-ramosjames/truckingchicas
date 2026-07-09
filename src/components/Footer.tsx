@@ -24,6 +24,8 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             <address className="mt-4 text-sm not-italic text-gray-400">
               {FIRM_ADDRESS.street}
               <br />
+              {FIRM_ADDRESS.street2}
+              <br />
               {FIRM_ADDRESS.city}, {FIRM_ADDRESS.state} {FIRM_ADDRESS.zip}
             </address>
             <a

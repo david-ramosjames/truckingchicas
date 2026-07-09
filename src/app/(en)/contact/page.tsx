@@ -68,6 +68,8 @@ export default function ContactPage() {
               <address className="mt-2 text-lg not-italic text-gray-600">
                 {FIRM_ADDRESS.street}
                 <br />
+                {FIRM_ADDRESS.street2}
+                <br />
                 {FIRM_ADDRESS.city}, {FIRM_ADDRESS.state} {FIRM_ADDRESS.zip}
               </address>
             </div>

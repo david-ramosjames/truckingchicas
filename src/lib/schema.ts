@@ -13,7 +13,7 @@ export function localBusinessSchema(locale: Locale) {
     telephone: `+1${PHONE_NUMBER}`,
     address: {
       "@type": "PostalAddress",
-      streetAddress: FIRM_ADDRESS.street,
+      streetAddress: `${FIRM_ADDRESS.street}, ${FIRM_ADDRESS.street2}`,
       addressLocality: FIRM_ADDRESS.city,
       addressRegion: FIRM_ADDRESS.state,
       postalCode: FIRM_ADDRESS.zip,

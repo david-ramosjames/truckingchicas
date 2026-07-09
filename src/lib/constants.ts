@@ -3,7 +3,8 @@ export const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || "5128773244"
 export const PHONE_DISPLAY = process.env.NEXT_PUBLIC_PHONE_DISPLAY || "(512) 877-3244";
 
 export const FIRM_ADDRESS = {
-  street: "15620 Patrica Suite #200",
+  street: "15620 Patrica St",
+  street2: "Suite #200",
   city: "Austin",
   state: "TX",
   zip: "78728",
