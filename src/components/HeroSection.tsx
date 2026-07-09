@@ -86,24 +86,26 @@ export default function HeroSection({
     <section className="relative overflow-hidden bg-brand-navy text-white">
       {/* ── Mobile / Tablet ── headline overlaid on image, CTA below ── */}
       <div className="bg-[#121212] lg:hidden">
-        {/* Image block with headline overlaid; tall crop shifted right shows both */}
+        {/* Image block with headline overlaid; tall crop, fully right-justified */}
         <div className="relative h-[440px] overflow-hidden sm:h-[520px]">
           <Image
             src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
             fill
-            className="object-cover object-[78%_center]"
+            className="object-cover object-right"
             sizes="100vw"
             priority
           />
           {/* Dark gradient across the top so the headline stays legible */}
-          <div className="absolute inset-x-0 top-0 h-3/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.85)_35%,transparent_100%)]" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-2/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.85)_40%,transparent_100%)]" />
+          {/* Soft vignette so the edges and corners blend into the background */}
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_130%_130%_at_50%_42%,transparent_48%,#121212_100%)]" />
           {/* Red glow behind the headline */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_0%,rgba(229,57,53,0.5)_0%,rgba(229,57,53,0.15)_30%,transparent_55%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(229,57,53,0.4)_0%,rgba(229,57,53,0.12)_30%,transparent_55%)]" />
 
-          {/* Headline overlaid at the top */}
-          <div className="relative px-6 pt-10 sm:pt-12">
-            <h1 className="max-w-[85%] text-left text-4xl font-extrabold leading-[1.1] md:text-5xl">
+          {/* Headline overlaid at the top, centered above the team */}
+          <div className="relative px-6 pt-8 sm:pt-10">
+            <h1 className="mx-auto max-w-md text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
               {headline || dict.hero.headline}
             </h1>
           </div>
@@ -121,10 +123,13 @@ export default function HeroSection({
           </div>
         </div>
 
-        {/* CTA + trust signals directly below the image */}
+        {/* CTA, centered trust signals, and secondary text below the image */}
         <div className="px-6 pb-10 pt-6">
           {ctaButtons(false)}
-          {trustBadges(false)}
+          {trustBadges(true)}
+          <p className="mt-5 text-center text-base leading-relaxed text-[#D1D5DB]">
+            {subhead || dict.hero.subhead}
+          </p>
         </div>
       </div>
 
