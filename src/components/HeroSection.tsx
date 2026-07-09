@@ -45,7 +45,7 @@ export default function HeroSection({
 
   /* Above-the-fold CTA buttons, call is PRIMARY, form is SECONDARY (ghost) */
   const ctaButtons = (centered: boolean) => (
-    <div className={`mt-6 flex flex-col gap-3 sm:flex-row ${centered ? "items-center sm:justify-center" : "items-start"}`}>
+    <div className={`mt-4 flex flex-col gap-3 sm:flex-row lg:mt-6 ${centered ? "items-center sm:justify-center" : "items-start"}`}>
       {/* PRIMARY: Call CTA (phone number shown on desktop only) */}
       <a
         href={`tel:+1${PHONE_NUMBER}`}
@@ -87,7 +87,7 @@ export default function HeroSection({
       {/* ── Mobile / Tablet ── headline overlaid on image, CTA below ── */}
       <div className="bg-[#121212] lg:hidden">
         {/* Image block with headline overlaid; tall crop, fully right-justified */}
-        <div className="relative h-[440px] overflow-hidden sm:h-[520px]">
+        <div className="relative h-[400px] overflow-hidden sm:h-[470px]">
           <Image
             src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
@@ -96,31 +96,29 @@ export default function HeroSection({
             sizes="100vw"
             priority
           />
-          {/* Top fade: dark for headline legibility, clears above the faces */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-2/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.9)_35%,transparent_100%)]" />
-          {/* Bottom fade: melts into black behind the name tags */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.85)_38%,transparent_100%)]" />
-          {/* Left edge: black at the very edge, red just inside, clear toward the center */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-[linear-gradient(to_right,#121212_0%,rgba(198,38,32,0.55)_22%,transparent_62%)]" />
+          {/* Left edge: red band fading to black at the outer edge, clear before the faces */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-[linear-gradient(to_right,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
           {/* Right edge: mirror of the left */}
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-[linear-gradient(to_left,#121212_0%,rgba(198,38,32,0.55)_22%,transparent_62%)]" />
-          {/* Red glow behind the headline */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_2%,rgba(229,57,53,0.42)_0%,transparent_48%)]" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-[linear-gradient(to_left,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
+          {/* Top fade to black (over the reds so the top edge and corners read black) */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-2/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.92)_40%,transparent_100%)]" />
+          {/* Bottom fade to black (over the reds so the bottom edge and corners read black) */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.9)_42%,transparent_100%)]" />
 
-          {/* Headline overlaid near the top, centered above the team */}
-          <div className="relative px-6 pt-3 sm:pt-5">
+          {/* Headline overlaid at the very top, centered above the team */}
+          <div className="relative px-6 pt-1 sm:pt-3">
             <h1 className="mx-auto max-w-md text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
               {headline || dict.hero.headline}
             </h1>
           </div>
 
           {/* Attorney name labels — centered near the bottom of the image */}
-          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-row gap-3 sm:bottom-6">
-            <div className="rounded-md bg-black/60 px-3.5 py-2 backdrop-blur-sm">
+          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-row gap-4 sm:bottom-6">
+            <div className="rounded-md bg-black/60 px-4 py-2 text-center backdrop-blur-sm">
               <p className="text-sm font-bold text-white sm:text-base">Laura Ramos James</p>
               <p className="text-xs text-gray-300 sm:text-sm">{isEn ? "Attorney" : "Abogada"}</p>
             </div>
-            <div className="rounded-md bg-black/60 px-3.5 py-2 backdrop-blur-sm">
+            <div className="rounded-md bg-black/60 px-4 py-2 text-center backdrop-blur-sm">
               <p className="text-sm font-bold text-white sm:text-base">Lyliana Zamora</p>
               <p className="text-xs text-gray-300 sm:text-sm">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
             </div>
@@ -128,7 +126,7 @@ export default function HeroSection({
         </div>
 
         {/* CTA, centered trust signals, and secondary text below the image */}
-        <div className="px-6 pb-10 pt-1">
+        <div className="px-6 pb-10 pt-0">
           {ctaButtons(false)}
           {trustBadges(true)}
           <p className="mt-5 text-center text-base leading-relaxed text-[#D1D5DB]">
