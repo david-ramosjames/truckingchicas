@@ -97,14 +97,16 @@ export default function HeroSection({
             priority
           />
           {/* Dark gradient across the top so the headline stays legible */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-2/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.85)_40%,transparent_100%)]" />
-          {/* Soft vignette so the edges and corners blend into the background */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_130%_130%_at_50%_42%,transparent_48%,#121212_100%)]" />
-          {/* Red glow behind the headline */}
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(229,57,53,0.4)_0%,rgba(229,57,53,0.12)_30%,transparent_55%)]" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.9)_28%,transparent_100%)]" />
+          {/* Bottom fade so the base of the image melts into black */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.85)_35%,transparent_100%)]" />
+          {/* Strong vignette so every edge and corner fades into black */}
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_115%_115%_at_50%_45%,transparent_28%,rgba(18,18,18,0.55)_62%,#121212_92%)]" />
+          {/* Red glow behind the headline (black/red blend at the top edge) */}
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_4%,rgba(229,57,53,0.45)_0%,rgba(229,57,53,0.12)_32%,transparent_58%)]" />
 
-          {/* Headline overlaid at the top, centered above the team */}
-          <div className="relative px-6 pt-8 sm:pt-10">
+          {/* Headline overlaid near the top, centered above the team */}
+          <div className="relative px-6 pt-3 sm:pt-5">
             <h1 className="mx-auto max-w-md text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
               {headline || dict.hero.headline}
             </h1>
@@ -124,7 +126,7 @@ export default function HeroSection({
         </div>
 
         {/* CTA, centered trust signals, and secondary text below the image */}
-        <div className="px-6 pb-10 pt-6">
+        <div className="px-6 pb-10 pt-1">
           {ctaButtons(false)}
           {trustBadges(true)}
           <p className="mt-5 text-center text-base leading-relaxed text-[#D1D5DB]">
