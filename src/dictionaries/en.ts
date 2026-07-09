@@ -25,7 +25,7 @@ const en = {
     callMicrocopy: "Speak with a lawyer now",
   },
   hero: {
-    headline: "Hit by an 18-Wheeler in Texas?",
+    headline: "Hurt by an 18-Wheeler in Texas?",
     subhead:
       "Trucking companies move fast. We fight to protect your rights and recover the compensation you deserve.",
     cta1: "Free Case Review",

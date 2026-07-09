@@ -127,7 +127,32 @@ export default function HeroSection({
 
         {/* CTA, centered trust signals, and secondary text below the image */}
         <div className="px-6 pb-10 pt-0">
-          {ctaButtons(false)}
+          {/* PRIMARY: Call CTA */}
+          <a
+            href={`tel:+1${PHONE_NUMBER}`}
+            className="pulse-halo btn-lift inline-flex w-full items-center justify-center gap-2 rounded-lg bg-brand-red px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-brand-red/30 transition-colors hover:bg-brand-red-light"
+          >
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            {isEn ? "Call Now — Free Consultation" : "Llamar Ahora — Consulta Gratis"}
+          </a>
+          {/* Reassurance line under the call button */}
+          <p className="mt-3 text-center text-sm font-medium text-gray-200">
+            {isEn
+              ? "✔ No Fee Unless We Win  •  ✔ Se Habla Español"
+              : "✔ No Cobramos si No Ganamos  •  ✔ Se Habla Español"}
+          </p>
+          {/* SECONDARY: Free Case Review (ghost/outline) */}
+          <Link
+            href={routes.contact}
+            className="btn-lift mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg border-2 border-brand-red bg-transparent px-6 py-3 text-base font-bold text-white transition-colors hover:bg-brand-red/10"
+          >
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            {isEn ? "Start Free Case Review" : "Iniciar Evaluación Gratis"}
+          </Link>
           {trustBadges(true)}
           <p className="mt-5 text-center text-base leading-relaxed text-[#D1D5DB]">
             {subhead || dict.hero.subhead}
