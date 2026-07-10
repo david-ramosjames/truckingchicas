@@ -224,7 +224,7 @@ export default function HomePage() {
       </section>
 
       {/* Core Values — brand pillars */}
-      <section className="relative overflow-hidden bg-brand-cream py-24 md:py-28">
+      <section className="relative overflow-hidden bg-brand-cream py-14 md:py-16">
         {/* Subtle tire-tread texture */}
         <div
           aria-hidden
@@ -239,38 +239,34 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-6xl px-6">
           {/* Header */}
           <div className="reveal-up mx-auto max-w-3xl text-center">
-            <h2 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-brand-navy sm:text-5xl md:text-6xl">
+            <h2 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-brand-navy sm:text-5xl">
               {dict.home.coreValuesTitle}
             </h2>
             {/* Dashed highway-lane divider */}
             <div
               aria-hidden
-              className="mx-auto mt-6 h-[3px] w-40 opacity-80 [background-image:repeating-linear-gradient(90deg,#E53935_0px,#E53935_20px,transparent_20px,transparent_32px)]"
+              className="mx-auto mt-5 h-[3px] w-40 opacity-80 [background-image:repeating-linear-gradient(90deg,#E53935_0px,#E53935_20px,transparent_20px,transparent_32px)]"
             />
-            <p className="mt-6 text-xl font-bold text-brand-red sm:text-2xl">
+            <p className="mt-4 text-xl font-bold text-brand-red sm:text-2xl">
               {dict.home.coreValuesSubtitle}
             </p>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600 md:text-lg">
+            <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-gray-600 md:text-lg">
               {dict.home.coreValuesLede}
             </p>
           </div>
 
           {/* Pillars */}
-          <div className="mt-16 grid gap-6 md:mt-20 md:grid-cols-3 md:gap-8">
-            {dict.home.coreValues.map((v, i) => (
+          <div className="mt-10 grid gap-5 md:mt-12 md:grid-cols-3 md:gap-6">
+            {dict.home.coreValues.map((v) => (
               <div
                 key={v.title}
-                className="reveal-up group relative flex flex-col rounded-3xl bg-white p-8 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.15)] ring-1 ring-black/[0.04] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_28px_60px_-15px_rgba(0,0,0,0.28)] hover:ring-2 hover:ring-brand-red/40 md:p-10"
+                className="reveal-up group relative flex flex-col rounded-3xl bg-white p-6 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.15)] ring-1 ring-black/[0.04] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_28px_60px_-15px_rgba(0,0,0,0.28)] hover:ring-2 hover:ring-brand-red/40 md:p-7"
               >
                 {/* Icon */}
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-red/10 text-brand-red transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-red/10 text-brand-red transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white">
                   {valueIcons[v.icon] || valueIcons.scale}
                 </div>
-                {/* Index */}
-                <span className="mt-7 text-xs font-bold uppercase tracking-[0.3em] text-brand-red/60">
-                  {`0${i + 1}`}
-                </span>
-                <h3 className="mt-2 text-2xl font-extrabold tracking-tight text-brand-navy">
+                <h3 className="mt-5 text-2xl font-extrabold tracking-tight text-brand-navy">
                   {v.title}
                 </h3>
                 <p className="mt-3 text-base leading-relaxed text-gray-600">
