@@ -59,7 +59,7 @@ export default function ContactPage() {
                 href={`tel:+1${PHONE_NUMBER}`}
                 className="mt-4 inline-block rounded-lg bg-brand-rose px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-rose-dark"
               >
-                {dict.cta.callNow}: {PHONE_DISPLAY}
+                <span className="lg:hidden">Call Now — Free Consultation</span><span className="hidden lg:inline">{dict.cta.callNow}: {PHONE_DISPLAY}</span>
               </a>
             </div>
 

@@ -52,7 +52,7 @@ export default function ContactPageES() {
                 href={`tel:+1${PHONE_NUMBER}`}
                 className="mt-4 inline-block rounded-lg bg-brand-rose px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-rose-dark"
               >
-                {dict.cta.callNow}: {PHONE_DISPLAY}
+                <span className="lg:hidden">Llamar Ahora — Consulta Gratis</span><span className="hidden lg:inline">{dict.cta.callNow}: {PHONE_DISPLAY}</span>
               </a>
             </div>
 
