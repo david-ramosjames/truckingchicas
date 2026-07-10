@@ -94,14 +94,14 @@ export default function HeroSection({
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
       {/* ── Mobile / Tablet ── headline overlaid on image, CTA below ── */}
-      <div className="bg-[#121212] pt-5 lg:hidden">
+      <div className="bg-[#121212] pt-8 lg:hidden">
         {/* Image block with headline overlaid; tall crop, fully right-justified */}
         <div className="relative h-[400px] overflow-hidden sm:h-[470px]">
           <Image
             src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
             fill
-            className="object-cover object-[113%_30%]"
+            className="object-cover object-[116%_30%]"
             sizes="100vw"
             priority
           />
