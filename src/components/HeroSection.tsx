@@ -101,7 +101,7 @@ export default function HeroSection({
             src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
             fill
-            className="object-cover object-right"
+            className="object-cover object-[80%_30%]"
             sizes="100vw"
             priority
           />

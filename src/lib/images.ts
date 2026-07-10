@@ -10,7 +10,7 @@ export const IMAGES = {
   texasHighwaySign: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778702000/texas-highway-sign_z7kmer.jpg",
 
   team: {
-    lauraRamosJames: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778702582/Laura-Ramos-James-2026-1851_1_avkwx0.jpg",
+    lauraRamosJames: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1783644118/Laura-Ramos-James-2026-1095_mssgv0.jpg",
     lylianaZamora: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778702579/lyliana-zamora_y4zdud.webp",
   },
 
