@@ -94,9 +94,16 @@ export default function HeroSection({
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
       {/* ── Mobile / Tablet ── headline overlaid on image, CTA below ── */}
-      <div className="bg-[#121212] pt-12 lg:hidden">
-        {/* Image block with headline overlaid; tall crop, fully right-justified */}
-        <div className="relative h-[400px] overflow-hidden sm:h-[470px]">
+      <div className="bg-[#121212] pt-6 lg:hidden">
+        {/* Headline on the dark background, near the top */}
+        <div className="px-6">
+          <h1 className="mx-auto max-w-md text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
+            {headline || dict.hero.headline}
+          </h1>
+        </div>
+
+        {/* Image block below the headline; tall crop, right-justified */}
+        <div className="relative mt-6 h-[400px] overflow-hidden sm:h-[470px]">
           <Image
             src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
@@ -109,17 +116,10 @@ export default function HeroSection({
           <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-[linear-gradient(to_right,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
           {/* Right edge: mirror of the left */}
           <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-[linear-gradient(to_left,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
-          {/* Top fade to black (over the reds so the top edge and corners read black) */}
+          {/* Top fade to black so the photo blends into the dark area under the headline */}
           <div className="pointer-events-none absolute inset-x-0 top-0 h-2/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.92)_40%,transparent_100%)]" />
           {/* Bottom fade to black (over the reds so the bottom edge and corners read black) */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.9)_42%,transparent_100%)]" />
-
-          {/* Headline overlaid at the very top, centered above the team */}
-          <div className="relative px-6 pt-1 sm:pt-3">
-            <h1 className="mx-auto max-w-md text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
-              {headline || dict.hero.headline}
-            </h1>
-          </div>
 
           {/* Attorney name labels — centered near the bottom of the image */}
           <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-row gap-4 sm:bottom-6">
