@@ -32,35 +32,19 @@ export const metadata: Metadata = {
 };
 
 const valueIcons: Record<string, React.ReactNode> = {
-  shield: (
-    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-    </svg>
-  ),
-  heart: (
-    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-    </svg>
-  ),
-  handshake: (
-    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 11l4-4 4 4m-4 8V7" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-    </svg>
-  ),
-  megaphone: (
-    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-    </svg>
-  ),
-  trophy: (
-    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3h14M9 3v2a3 3 0 006 0V3M5 3a2 2 0 00-2 2v2a5 5 0 004 4.9V15a1 1 0 001 1h8a1 1 0 001-1v-3.1A5 5 0 0021 7V5a2 2 0 00-2-2M8 21h8m-4-4v4" />
-    </svg>
-  ),
   scale: (
-    <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+    <svg className="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+    </svg>
+  ),
+  service: (
+    <svg className="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.77 9.77 0 01-4-.85L3 21l1.35-4.05A7.94 7.94 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+    </svg>
+  ),
+  grit: (
+    <svg className="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M13 10V3L4 14h7v7l9-11h-7z" />
     </svg>
   ),
 };
@@ -237,23 +221,59 @@ export default function HomePageES() {
         </div>
       </section>
 
-      {/* Core Values */}
-      <section className="bg-brand-cream py-16">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
-            {dict.home.coreValuesTitle}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-lg font-medium leading-relaxed text-brand-coral">
-            {dict.home.coreValuesSubtitle}
-          </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {dict.home.coreValues.map((v) => (
-              <div key={v.title} className="card-lift rounded-xl bg-white p-6 shadow-md">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-coral/10 text-brand-coral">
-                  {valueIcons[v.icon] || valueIcons.shield}
+      {/* Core Values — brand pillars */}
+      <section className="relative overflow-hidden bg-brand-cream py-24 md:py-28">
+        {/* Subtle tire-tread texture */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.04] [background-image:repeating-linear-gradient(45deg,#121212_0px,#121212_1px,transparent_1px,transparent_18px)]"
+        />
+        {/* Warm red glow behind the header */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(60%_100%_at_50%_0%,rgba(229,57,53,0.07),transparent_70%)]"
+        />
+
+        <div className="relative mx-auto max-w-6xl px-6">
+          {/* Header */}
+          <div className="reveal-up mx-auto max-w-3xl text-center">
+            <h2 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-brand-navy sm:text-5xl md:text-6xl">
+              {dict.home.coreValuesTitle}
+            </h2>
+            {/* Dashed highway-lane divider */}
+            <div
+              aria-hidden
+              className="mx-auto mt-6 h-[3px] w-40 opacity-80 [background-image:repeating-linear-gradient(90deg,#E53935_0px,#E53935_20px,transparent_20px,transparent_32px)]"
+            />
+            <p className="mt-6 text-xl font-bold text-brand-red sm:text-2xl">
+              {dict.home.coreValuesSubtitle}
+            </p>
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-600 md:text-lg">
+              {dict.home.coreValuesLede}
+            </p>
+          </div>
+
+          {/* Pillars */}
+          <div className="mt-16 grid gap-6 md:mt-20 md:grid-cols-3 md:gap-8">
+            {dict.home.coreValues.map((v, i) => (
+              <div
+                key={v.title}
+                className="reveal-up group relative flex flex-col rounded-3xl bg-white p-8 shadow-[0_10px_40px_-12px_rgba(0,0,0,0.15)] ring-1 ring-black/[0.04] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_28px_60px_-15px_rgba(0,0,0,0.28)] hover:ring-2 hover:ring-brand-red/40 md:p-10"
+              >
+                {/* Icon */}
+                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-red/10 text-brand-red transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white">
+                  {valueIcons[v.icon] || valueIcons.scale}
                 </div>
-                <h3 className="text-lg font-bold text-brand-navy">{v.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">{v.desc}</p>
+                {/* Index */}
+                <span className="mt-7 text-xs font-bold uppercase tracking-[0.3em] text-brand-red/60">
+                  {`0${i + 1}`}
+                </span>
+                <h3 className="mt-2 text-2xl font-extrabold tracking-tight text-brand-navy">
+                  {v.title}
+                </h3>
+                <p className="mt-3 text-base leading-relaxed text-gray-600">
+                  {v.desc}
+                </p>
               </div>
             ))}
           </div>
