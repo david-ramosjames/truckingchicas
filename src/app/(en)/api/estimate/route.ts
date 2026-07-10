@@ -20,11 +20,11 @@ IMPORTANT RULES:
 - End by encouraging them to contact Trucking Chicas for a free consultation.
 - Use markdown formatting (bold headings, bullet lists) for readability.`;
 
-async function callLLM(caseDetails: string): Promise<string> {
+async function callLLM(caseDetails: string, locale: string): Promise<string> {
   const apiKey = process.env.OPENAI_API_KEY;
 
   if (!apiKey) {
-    return generateFallbackEstimate(caseDetails);
+    return generateFallbackEstimate(locale);
   }
 
   try {
@@ -50,14 +50,14 @@ async function callLLM(caseDetails: string): Promise<string> {
     }
 
     const data = await response.json();
-    return data.choices?.[0]?.message?.content || generateFallbackEstimate(caseDetails);
+    return data.choices?.[0]?.message?.content || generateFallbackEstimate(locale);
   } catch {
-    return generateFallbackEstimate(caseDetails);
+    return generateFallbackEstimate(locale);
   }
 }
 
-function generateFallbackEstimate(caseDetails: string): string {
-  const isSpanish = /accidente|camión|lesion|hospital/i.test(caseDetails);
+function generateFallbackEstimate(locale: string): string {
+  const isSpanish = locale === "es";
 
   if (isSpanish) {
     return `**Estimación Preliminar de tu Caso**
@@ -139,7 +139,7 @@ CASE DETAILS:
 - Police Report: ${policeReport}
 - Additional Details: ${additional || "None provided"}`;
 
-    const estimate = await callLLM(caseDetails);
+    const estimate = await callLLM(caseDetails, locale === "es" ? "es" : "en");
 
     return NextResponse.json({ estimate });
   } catch (error) {

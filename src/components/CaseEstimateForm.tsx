@@ -135,6 +135,37 @@ export default function CaseEstimateForm({
   if (status === "done") {
     return (
       <div>
+        {/* Prominent consultation CTA at the top */}
+        <div className="mb-6 rounded-xl bg-brand-navy p-6 text-center text-white shadow-lg md:p-7">
+          <h3 className="text-xl font-bold md:text-2xl">
+            {locale === "en"
+              ? "Want a Real Number? Talk to an Attorney — Free"
+              : "¿Quieres una Cifra Real? Habla con un Abogado — Gratis"}
+          </h3>
+          <p className="mx-auto mt-2 max-w-xl text-gray-300">
+            {locale === "en"
+              ? "This is an AI estimate. Get a free, no-obligation review of your actual case from our team."
+              : "Esta es una estimación con IA. Recibe una evaluación gratuita y sin compromiso de tu caso real con nuestro equipo."}
+          </p>
+          <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <a
+              href={`tel:+1${PHONE_NUMBER}`}
+              className="btn-lift btn-glow-coral flex w-full items-center justify-center gap-2 rounded-xl bg-brand-red px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-red-light sm:w-auto"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span className="lg:hidden">{locale === "en" ? "Call Now — Free Consultation" : "Llamar Ahora — Consulta Gratis"}</span><span className="hidden lg:inline">{dict.nav.callNow}: {PHONE_DISPLAY}</span>
+            </a>
+            <Link
+              href={routes.contact}
+              className="btn-lift flex w-full items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-transparent px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-white/10 sm:w-auto"
+            >
+              {dict.caseEstimate.ctaButton}
+            </Link>
+          </div>
+        </div>
+
         <div className="rounded-xl border border-brand-coral/20 bg-brand-coral/5 p-6 md:p-8">
           <h3 className="mb-4 text-2xl font-bold text-brand-navy">{dict.caseEstimate.result}</h3>
           <div
