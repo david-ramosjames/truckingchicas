@@ -102,19 +102,19 @@ const es: Dictionary = {
       },
     ],
     coreValuesTitle: "Lo Que Impulsa Todo Lo Que Hacemos",
-    coreValuesSubtitle: "Representación Experta. Servicio Excepcional. Determinación Implacable.",
+    coreValuesSubtitle: "Excelencia Legal. Experiencia en Camiones. Determinación Implacable.",
     coreValuesLede:
       "Estos son los estándares que cada cliente puede esperar de Trucking Chicas, en cada caso, cada llamada y siempre.",
     coreValues: [
       {
-        title: "Representación Experta",
-        desc: "Conocemos las leyes de camiones, las regulaciones federales y las tácticas que usan las aseguradoras, para que tú no tengas que hacerlo.",
+        title: "Excelencia Legal",
+        desc: "Estrategia legal precisa y preparación meticulosa, enfocadas en la máxima compensación que mereces.",
         icon: "scale",
       },
       {
-        title: "Servicio Excepcional",
-        desc: "Siempre sabrás qué está pasando con tu caso. Comunicación clara y personas reales en cada paso del camino.",
-        icon: "service",
+        title: "Experiencia en Camiones",
+        desc: "Conocemos las leyes de camiones, las regulaciones federales y las tácticas que usan las aseguradoras, para que tú no tengas que hacerlo.",
+        icon: "truck",
       },
       {
         title: "Determinación Implacable",

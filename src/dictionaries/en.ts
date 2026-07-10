@@ -101,19 +101,19 @@ const en = {
       },
     ],
     coreValuesTitle: "What Drives Everything We Do",
-    coreValuesSubtitle: "Expert Representation. Exceptional Service. Relentless Grit.",
+    coreValuesSubtitle: "Legal Excellence. Trucking Experience. Relentless Grit.",
     coreValuesLede:
       "These are the standards every client can expect from Trucking Chicas, on every case, every call, and every time.",
     coreValues: [
       {
-        title: "Expert Representation",
-        desc: "We know trucking law, federal regulations, and the tactics insurance companies use, so you don't have to.",
+        title: "Legal Excellence",
+        desc: "Sharp legal strategy and meticulous preparation, aimed at the maximum compensation you deserve.",
         icon: "scale",
       },
       {
-        title: "Exceptional Service",
-        desc: "You'll always know what's happening with your case. Clear communication and real people every step of the way.",
-        icon: "service",
+        title: "Trucking Experience",
+        desc: "We know trucking law, federal regulations, and the tactics insurance companies use, so you don't have to.",
+        icon: "truck",
       },
       {
         title: "Relentless Grit",

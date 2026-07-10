@@ -4,7 +4,7 @@
  */
 
 export const IMAGES = {
-  logo: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778700887/trucking_chicas_logo_transparent_e5htxy.png",
+  logo: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1783706135/silver_truck_transparent_l8zkwe.png",
   hero: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778704301/hero-1_a5tomh.png",
   chooseUs: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778702581/choose-us_1_zwtxej.png",
   texasHighwaySign: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1778702000/texas-highway-sign_z7kmer.jpg",
