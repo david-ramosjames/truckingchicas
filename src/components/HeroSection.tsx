@@ -103,7 +103,7 @@ export default function HeroSection({
         </div>
 
         {/* Image block below the headline; tall crop, right-justified */}
-        <div className="relative mt-6 h-[400px] overflow-hidden sm:h-[470px]">
+        <div className="relative mt-3 h-[400px] overflow-hidden sm:h-[470px]">
           <Image
             src={IMAGES.hero}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
@@ -116,8 +116,8 @@ export default function HeroSection({
           <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-[linear-gradient(to_right,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
           {/* Right edge: mirror of the left */}
           <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-[linear-gradient(to_left,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
-          {/* Top fade to black so the photo blends into the dark area under the headline */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-2/5 bg-[linear-gradient(to_bottom,#121212_0%,rgba(18,18,18,0.92)_40%,transparent_100%)]" />
+          {/* Top edge blend only — keep it light so the top of the semi stays visible */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-[linear-gradient(to_bottom,#121212_0%,transparent_100%)]" />
           {/* Bottom fade to black (over the reds so the bottom edge and corners read black) */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.9)_42%,transparent_100%)]" />
 
