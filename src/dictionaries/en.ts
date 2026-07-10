@@ -101,21 +101,22 @@ const en = {
       },
     ],
     coreValuesTitle: "Our Core Values",
+    coreValuesSubtitle: "Expert representation. Exceptional service. Relentless grit.",
     coreValues: [
       {
+        title: "Expertise",
+        desc: "We know trucking law inside and out.",
+        icon: "scale",
+      },
+      {
         title: "Excellence",
-        desc: "We hold ourselves to the highest standard in every case. Meticulous preparation, relentless advocacy, and a commitment to outwork the other side at every turn.",
+        desc: "We deliver exceptional client service and results.",
         icon: "trophy",
       },
       {
-        title: "Empathy",
-        desc: "We listen first. Every client carries a story, an injury, a family, and we treat each one with the care and respect we'd want for our own.",
-        icon: "heart",
-      },
-      {
-        title: "Expertise",
-        desc: "We focus exclusively on truck and 18-wheeler cases. Deep knowledge of FMCSA regulations, industry tactics, and trial strategy gives our clients a decisive edge.",
-        icon: "scale",
+        title: "Grit",
+        desc: "We don't back down from trucking companies or insurers.",
+        icon: "shield",
       },
     ],
     resultsTitle: "Results That Speak for Themselves",

@@ -243,6 +243,9 @@ export default function HomePageES() {
           <h2 className="text-center text-3xl font-bold text-brand-navy md:text-4xl">
             {dict.home.coreValuesTitle}
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-lg font-medium leading-relaxed text-brand-coral">
+            {dict.home.coreValuesSubtitle}
+          </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {dict.home.coreValues.map((v) => (
               <div key={v.title} className="card-lift rounded-xl bg-white p-6 shadow-md">

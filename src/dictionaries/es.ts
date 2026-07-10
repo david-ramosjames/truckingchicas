@@ -102,21 +102,22 @@ const es: Dictionary = {
       },
     ],
     coreValuesTitle: "Nuestros Valores",
+    coreValuesSubtitle: "Representación experta. Servicio excepcional. Determinación implacable.",
     coreValues: [
       {
+        title: "Experiencia",
+        desc: "Conocemos las leyes de accidentes de camión a fondo.",
+        icon: "scale",
+      },
+      {
         title: "Excelencia",
-        desc: "Nos exigimos el más alto estándar en cada caso. Preparación meticulosa, defensa incansable y el compromiso de trabajar más duro que el otro lado en cada paso.",
+        desc: "Brindamos un servicio al cliente y resultados excepcionales.",
         icon: "trophy",
       },
       {
-        title: "Empatía",
-        desc: "Primero escuchamos. Cada cliente trae una historia, una lesión, una familia, y tratamos a cada uno con el cuidado y respeto que querríamos para los nuestros.",
-        icon: "heart",
-      },
-      {
-        title: "Experiencia",
-        desc: "Nos enfocamos exclusivamente en casos de camiones y tráileres de 18 ruedas. Profundo conocimiento de las regulaciones FMCSA, las tácticas de la industria y la estrategia en juicio le da a nuestros clientes una ventaja decisiva.",
-        icon: "scale",
+        title: "Determinación",
+        desc: "No nos echamos atrás ante las compañías de camiones ni las aseguradoras.",
+        icon: "shield",
       },
     ],
     resultsTitle: "Resultados Que Hablan por Sí Mismos",
