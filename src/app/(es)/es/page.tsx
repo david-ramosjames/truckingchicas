@@ -516,7 +516,7 @@ export default function HomePageES() {
             </div>
             <div className="rounded-xl bg-white p-6 shadow-lg md:p-8">
               <h3 className="mb-6 text-xl font-bold text-brand-navy">{dict.cta.formHeading}</h3>
-              <ContactForm dict={dict} />
+              <ContactForm dict={dict} locale="es" />
             </div>
           </div>
         </div>

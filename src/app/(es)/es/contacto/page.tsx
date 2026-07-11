@@ -40,7 +40,7 @@ export default function ContactPageES() {
           <div>
             <h2 className="text-2xl font-bold text-brand-navy">{d.formTitle}</h2>
             <div className="mt-6">
-              <ContactForm dict={dict} />
+              <ContactForm dict={dict} locale="es" />
             </div>
           </div>
 

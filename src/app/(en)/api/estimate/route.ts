@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { sendLead } from "@/lib/leads";
 
 const SYSTEM_PROMPT = `You are an AI case estimate assistant for Trucking Chicas, a Texas truck accident law firm.
 
@@ -115,15 +116,33 @@ export async function POST(request: NextRequest) {
       locale,
     } = body as Record<string, string>;
 
-    // Log lead contact info (in production, send to CRM / Slack)
-    console.log("[Case Estimate Lead]", { name, phone, email, locale });
-
     if (!accidentDate || !truckType || !injuries) {
       return NextResponse.json(
         { error: "Required fields are missing" },
         { status: 400 }
       );
     }
+
+    // Email the lead + case details to the firm
+    await sendLead(
+      "New AI Case Estimate Lead",
+      [
+        { label: "Name", value: name },
+        { label: "Phone", value: phone },
+        { label: "Email", value: email },
+        { label: "Accident Timing", value: accidentDate },
+        { label: "Location", value: location },
+        { label: "Truck Type", value: truckType },
+        { label: "Client Role", value: role },
+        { label: "Injuries", value: injuries },
+        { label: "Medical Treatment", value: treatment },
+        { label: "Work Impact", value: workImpact },
+        { label: "Police Report", value: policeReport },
+        { label: "Additional Details", value: additional },
+        { label: "Language", value: locale === "es" ? "Spanish" : "English" },
+      ],
+      email || undefined
+    );
 
     const lang = locale === "es" ? "Spanish" : "English";
     const caseDetails = `Please respond in ${lang}.

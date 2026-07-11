@@ -2,18 +2,30 @@
 
 import { useState } from "react";
 import type { Dictionary } from "@/dictionaries";
+import type { Locale } from "@/lib/constants";
 
-export default function ContactForm({ dict }: { dict: Dictionary }) {
+export default function ContactForm({
+  dict,
+  locale = "en",
+}: {
+  dict: Dictionary;
+  locale?: Locale;
+}) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
 
-    // TODO: Connect to form submission endpoint (e.g., /api/contact)
-    // For now, simulate success
+    const data = Object.fromEntries(new FormData(e.currentTarget));
+
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, locale }),
+      });
+      if (!res.ok) throw new Error("Request failed");
       setStatus("sent");
     } catch {
       setStatus("error");
