@@ -43,6 +43,10 @@ export default function CaseEstimateForm({
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("estimating");
+    // Bring the user back to the top so they see the result/spinner
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 
     try {
       const res = await fetch("/api/estimate", {
@@ -473,9 +477,11 @@ export default function CaseEstimateForm({
             <input
               type="tel"
               value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
               placeholder={f.phonePlaceholder}
               required
+              inputMode="numeric"
+              pattern="[0-9]*"
               className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
             />
           </div>

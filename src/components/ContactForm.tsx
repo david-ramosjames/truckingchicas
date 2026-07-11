@@ -66,6 +66,11 @@ export default function ContactForm({
           id="phone"
           name="phone"
           required
+          inputMode="numeric"
+          pattern="[0-9]*"
+          onInput={(e) => {
+            e.currentTarget.value = e.currentTarget.value.replace(/\D/g, "");
+          }}
           className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 transition-colors focus:border-brand-coral focus:outline-none focus:ring-2 focus:ring-brand-coral/20"
         />
       </div>

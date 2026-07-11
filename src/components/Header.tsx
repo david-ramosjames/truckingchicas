@@ -171,6 +171,8 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
     { icon: <TikTokIcon />, href: "#", label: "TikTok" },
     { icon: <YouTubeIcon />, href: "#", label: "YouTube" },
   ];
+  // Hide social icons until real profile URLs are set (href !== "#")
+  const visibleSocials = socialLinks.filter((s) => s.href && s.href !== "#");
 
   const phoneCta = (
     <a
@@ -220,19 +222,23 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
                 {locale === "en" ? "Available 24/7" : "Disponible 24/7"}
               </span>
             </div>
-            <span className="text-gray-500">|</span>
-            <div className="flex items-center gap-3">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="text-gray-400 transition-colors hover:text-brand-red"
-                >
-                  {s.icon}
-                </a>
-              ))}
-            </div>
+            {visibleSocials.length > 0 && (
+              <>
+                <span className="text-gray-500">|</span>
+                <div className="flex items-center gap-3">
+                  {visibleSocials.map((s) => (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      aria-label={s.label}
+                      className="text-gray-400 transition-colors hover:text-brand-red"
+                    >
+                      {s.icon}
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
 
           {/* Language switcher */}
@@ -536,18 +542,20 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
             ))}
 
             {/* Social icons */}
-            <div className="mt-2 flex items-center gap-4 border-t border-white/10 px-3 pt-3 py-3">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="text-gray-400 transition-colors hover:text-brand-red"
-                >
-                  {s.icon}
-                </a>
-              ))}
-            </div>
+            {visibleSocials.length > 0 && (
+              <div className="mt-2 flex items-center gap-4 border-t border-white/10 px-3 pt-3 py-3">
+                {visibleSocials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    aria-label={s.label}
+                    className="text-gray-400 transition-colors hover:text-brand-red"
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </div>
+            )}
 
             {/* Language toggle */}
             <Link
