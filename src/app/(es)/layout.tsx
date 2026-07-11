@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   },
   description:
     "Abogados de accidentes de camión y 18 ruedas en Texas. Evaluación gratuita. No cobramos si no ganamos.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     type: "website",
     locale: "es_US",

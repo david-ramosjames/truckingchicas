@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   },
   description:
     "Texas truck and 18-wheeler accident lawyers. Free case review. No fees unless we win.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
