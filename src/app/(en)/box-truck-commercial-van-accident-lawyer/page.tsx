@@ -13,7 +13,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Box Truck & Commercial Van Accident Lawyer in Texas",
   description:
-    "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident lawyers can help. Free case review.",
+    "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident law firm can help. Free case review.",
   alternates: {
     canonical: `${SITE_URL}/box-truck-commercial-van-accident-lawyer`,
     languages: {

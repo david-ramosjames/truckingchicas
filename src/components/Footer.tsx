@@ -26,7 +26,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             </p>
             <p className="mt-2 text-sm text-gray-400">
               {isEn
-                ? "Texas Truck Accident Lawyers"
+                ? "Texas Truck Accident Law Firm"
                 : "Abogados de Accidentes de Cami\u00f3n en Texas"}
             </p>
             <address className="mt-4 text-sm not-italic text-gray-400">
