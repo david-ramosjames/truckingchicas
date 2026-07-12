@@ -7,11 +7,11 @@ import "../globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Trucking Chicas | Texas Truck Accident Law Firm",
+    default: "Trucking Chicas | Texas Truck Accident Lawyer",
     template: "%s | Trucking Chicas",
   },
   description:
-    "Texas truck and 18-wheeler accident law firm. Free case review. No fees unless we win.",
+    "Texas truck and 18-wheeler accident lawyer. Free case review. No fees unless we win.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

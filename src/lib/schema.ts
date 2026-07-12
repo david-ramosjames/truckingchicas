@@ -7,7 +7,7 @@ export function localBusinessSchema(locale: Locale) {
     name: "Trucking Chicas",
     description:
       locale === "en"
-        ? "Texas truck accident law firm with a special focus on 18-wheeler accident cases."
+        ? "Texas truck accident lawyer with a special focus on 18-wheeler accident cases."
         : "Abogados de accidentes de camión en Texas con un enfoque especial en casos de accidentes de 18 ruedas.",
     url: locale === "en" ? SITE_URL : `${SITE_URL}/es`,
     telephone: `+1${PHONE_NUMBER}`,
@@ -58,7 +58,7 @@ export function cityLegalServiceSchema(city: string, state: string, locale: Loca
     name: `Trucking Chicas, ${city} Truck Accident Lawyer`,
     description:
       locale === "en"
-        ? `Truck accident law firm serving ${city}, ${state}. Free consultation for 18-wheeler and commercial truck accident victims.`
+        ? `Truck accident lawyer serving ${city}, ${state}. Free consultation for 18-wheeler and commercial truck accident victims.`
         : `Abogados de accidentes de camión en ${city}, ${state}. Consulta gratis para víctimas de accidentes de 18 ruedas y camiones comerciales.`,
     url: locale === "en" ? SITE_URL : `${SITE_URL}/es`,
     telephone: `+1${PHONE_NUMBER}`,

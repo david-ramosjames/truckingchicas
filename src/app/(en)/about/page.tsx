@@ -10,7 +10,7 @@ import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "About Our Texas Truck Accident Law Firm",
+  title: "About Our Texas Truck Accident Lawyer",
   description:
     "Learn about Trucking Chicas, a Texas law firm focused exclusively on truck and 18-wheeler accident cases.",
   alternates: {

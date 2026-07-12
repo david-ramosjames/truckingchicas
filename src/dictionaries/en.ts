@@ -354,7 +354,7 @@ const en = {
     title: "Box Truck & Commercial Van Accident Lawyer",
     metaTitle: "Box Truck & Commercial Van Accident Lawyer in Texas",
     metaDesc:
-      "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident law firm can help. Free case review.",
+      "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident lawyer can help. Free case review.",
     heroHeadline: "Box Truck & Commercial Van Accident Lawyer",
     heroSubhead:
       "Box trucks, sprinter vans, and medium-duty commercial vehicles are everywhere on Texas roads, and they cause serious accidents every day.",
@@ -953,7 +953,7 @@ const en = {
   },
   about: {
     title: "About Trucking Chicas",
-    metaTitle: "About Trucking Chicas | Texas Truck Accident Law Firm",
+    metaTitle: "About Trucking Chicas | Texas Truck Accident Lawyer",
     metaDesc:
       "Learn about Trucking Chicas, a Texas law firm focused exclusively on truck and 18-wheeler accident cases.",
     heading: "About Trucking Chicas",
