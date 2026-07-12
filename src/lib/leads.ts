@@ -1,12 +1,15 @@
 /**
- * Lead delivery — emails form submissions to the firm.
+ * Lead delivery — notifies the firm when a form is submitted.
  *
- * Sends via Resend (https://resend.com) using a simple HTTPS call so there is
- * no extra dependency. Configure two env vars in production:
- *   RESEND_API_KEY   — your Resend API key
- *   LEAD_FROM_EMAIL  — a verified sender, e.g. "Trucking Chicas <leads@truckingchicas.com>"
- * If RESEND_API_KEY is not set, the lead is logged server-side instead of emailed,
- * so the form still succeeds for the visitor.
+ * Two independent channels, each enabled by an env var (both optional):
+ *   1. Email via Resend
+ *        RESEND_API_KEY   — your Resend API key
+ *        LEAD_FROM_EMAIL  — a verified sender, e.g. "Trucking Chicas <leads@truckingchicas.com>"
+ *   2. Slack via an Incoming Webhook (posts to whichever channel the webhook is bound to)
+ *        SLACK_WEBHOOK_URL — https://hooks.slack.com/services/XXX/YYY/ZZZ
+ *
+ * If a channel's env var is missing it is skipped, and the submission is logged
+ * server-side instead, so the form always succeeds for the visitor.
  */
 
 export const LEAD_RECIPIENTS = [
@@ -24,16 +27,22 @@ function escapeHtml(s: string): string {
     .replace(/"/g, "&quot;");
 }
 
-export async function sendLead(
-  subject: string,
-  fields: LeadField[],
-  replyTo?: string
-): Promise<{ delivered: boolean }> {
-  const present = fields.filter(
-    (f) => f.value != null && String(f.value).trim() !== ""
-  );
+// Slack mrkdwn only needs &, <, > escaped.
+function escapeSlack(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
 
-  const text = present.map((f) => `${f.label}: ${f.value}`).join("\n");
+async function sendEmail(
+  subject: string,
+  present: LeadField[],
+  replyTo?: string
+): Promise<boolean> {
+  const apiKey = process.env.RESEND_API_KEY;
+  const from =
+    process.env.LEAD_FROM_EMAIL ||
+    "Trucking Chicas Website <leads@truckingchicas.com>";
+  if (!apiKey) return false;
+
   const rows = present
     .map(
       (f) =>
@@ -49,16 +58,7 @@ export async function sendLead(
     <table style="border-collapse:collapse;width:100%">${rows}</table>
     <p style="margin-top:18px;color:#999;font-size:12px">Sent automatically from truckingchicas.com</p>
   </div>`;
-
-  const apiKey = process.env.RESEND_API_KEY;
-  const from =
-    process.env.LEAD_FROM_EMAIL ||
-    "Trucking Chicas Website <leads@truckingchicas.com>";
-
-  if (!apiKey) {
-    console.log(`[Lead] ${subject} (email not configured)\n${text}`);
-    return { delivered: false };
-  }
+  const text = present.map((f) => `${f.label}: ${f.value}`).join("\n");
 
   try {
     const res = await fetch("https://api.resend.com/emails", {
@@ -76,14 +76,82 @@ export async function sendLead(
         ...(replyTo ? { reply_to: replyTo } : {}),
       }),
     });
-
     if (!res.ok) {
       console.error("[Lead] Resend error", res.status, await res.text());
-      return { delivered: false };
+      return false;
     }
-    return { delivered: true };
+    return true;
   } catch (err) {
-    console.error("[Lead] send failed", err);
-    return { delivered: false };
+    console.error("[Lead] email send failed", err);
+    return false;
   }
+}
+
+async function postToSlack(
+  subject: string,
+  present: LeadField[]
+): Promise<boolean> {
+  const webhook = process.env.SLACK_WEBHOOK_URL;
+  if (!webhook) return false;
+
+  const body = present
+    .map((f) => `*${escapeSlack(f.label)}:* ${escapeSlack(String(f.value))}`)
+    .join("\n");
+
+  try {
+    const res = await fetch(webhook, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        text: `🚛 ${subject}`,
+        blocks: [
+          {
+            type: "header",
+            text: { type: "plain_text", text: `🚛 ${subject}`, emoji: true },
+          },
+          { type: "section", text: { type: "mrkdwn", text: body } },
+          {
+            type: "context",
+            elements: [
+              { type: "mrkdwn", text: "Submitted on truckingchicas.com" },
+            ],
+          },
+        ],
+      }),
+    });
+    if (!res.ok) {
+      console.error("[Lead] Slack error", res.status, await res.text());
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.error("[Lead] Slack post failed", err);
+    return false;
+  }
+}
+
+export async function sendLead(
+  subject: string,
+  fields: LeadField[],
+  replyTo?: string
+): Promise<{ email: boolean; slack: boolean }> {
+  const present = fields.filter(
+    (f) => f.value != null && String(f.value).trim() !== ""
+  );
+
+  const [email, slack] = await Promise.all([
+    sendEmail(subject, present, replyTo),
+    postToSlack(subject, present),
+  ]);
+
+  if (!email && !slack) {
+    // Nothing configured (or both failed) — keep a server-side record.
+    console.log(
+      `[Lead] ${subject} (no delivery channel configured)\n${present
+        .map((f) => `${f.label}: ${f.value}`)
+        .join("\n")}`
+    );
+  }
+
+  return { email, slack };
 }
