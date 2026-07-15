@@ -136,9 +136,16 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
           <p className="text-xs leading-relaxed text-gray-500">
             {dict.footer.disclaimer}
           </p>
-          <p className="mt-4 text-xs text-gray-500">
-            &copy; {year} {dict.footer.copyright}
-          </p>
+          <div className="mt-4 flex flex-col gap-2 text-xs text-gray-500 sm:flex-row sm:items-center sm:gap-4">
+            <span>&copy; {year} {dict.footer.copyright}</span>
+            <span className="hidden sm:inline text-gray-600">|</span>
+            <Link href="/privacy-policy" className="transition-colors hover:text-brand-red">
+              {isEn ? "Privacy Policy" : "Política de Privacidad"}
+            </Link>
+            <Link href="/terms-of-use" className="transition-colors hover:text-brand-red">
+              {isEn ? "Terms of Use" : "Términos de Uso"}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
