@@ -1,4 +1,5 @@
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://truckingchicas.com";
+export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-NPDX5545";
 export const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || "5128773244";
 export const PHONE_DISPLAY = process.env.NEXT_PUBLIC_PHONE_DISPLAY || "(512) 877-3244";
 

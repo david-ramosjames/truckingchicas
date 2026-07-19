@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 import Script from "next/script";
 import AnalyticsPlaceholder from "@/components/AnalyticsPlaceholder";
+import { GTMScript, GTMNoScript } from "@/components/GoogleTagManager";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -47,6 +48,8 @@ export default function EnRootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col bg-white text-gray-900 antialiased">
+        <GTMNoScript />
+        <GTMScript />
         {children}
         <Script
           src="https://site-chat-production.up.railway.app/widget.js"
