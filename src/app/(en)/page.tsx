@@ -15,7 +15,7 @@ import { localBusinessSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Texas Truck & 18-Wheeler Accident Lawyer",
+  title: { absolute: "Trucking Chicas - Truck Accident Lawyers" },
   description:
     "Hit by a truck in Texas? Trucking Chicas fights for truck and 18-wheeler accident victims. Free case review. No fees unless we win.",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     languages: { en: SITE_URL, es: `${SITE_URL}/es` },
   },
   openGraph: {
-    title: "Texas Truck & 18-Wheeler Accident Lawyer",
+    title: "Trucking Chicas - Truck Accident Lawyers",
     description:
       "Hit by a truck in Texas? Trucking Chicas fights for truck and 18-wheeler accident victims. Free case review. No fees unless we win.",
     url: SITE_URL,

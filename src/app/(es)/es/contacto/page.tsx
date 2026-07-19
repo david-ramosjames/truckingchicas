@@ -59,6 +59,7 @@ export default function ContactPageES() {
             <div>
               <h2 className="text-2xl font-bold text-brand-navy">{d.addressTitle}</h2>
               <address className="mt-2 text-lg not-italic text-gray-600">
+                <span className="font-semibold text-brand-navy">Trucking Chicas - Truck Accident Lawyers</span><br />
                 {FIRM_ADDRESS.street}<br />
                 {FIRM_ADDRESS.street2}<br />
                 {FIRM_ADDRESS.city}, {FIRM_ADDRESS.state} {FIRM_ADDRESS.zip}
