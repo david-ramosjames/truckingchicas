@@ -59,7 +59,7 @@ export default function HomePage() {
       <JsonLd data={faqSchema(dict.faq.items.slice(0, 7))} />
 
       {/* Hero */}
-      <HeroSection dict={dict} locale="en" />
+      <HeroSection dict={dict} locale="en" showBrand />
 
       {/* Why Clients Trust Trucking Chicas */}
       <section className="bg-brand-cream py-20">

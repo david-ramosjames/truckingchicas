@@ -9,11 +9,13 @@ export default function HeroSection({
   locale,
   headline,
   subhead,
+  showBrand = false,
 }: {
   dict: Dictionary;
   locale: Locale;
   headline?: string;
   subhead?: string;
+  showBrand?: boolean;
 }) {
   const routes = ROUTES[locale];
   const isEn = locale === "en";
@@ -192,6 +194,12 @@ export default function HeroSection({
             <h1 className="text-4xl font-extrabold leading-[1.08] lg:text-5xl xl:text-6xl">
               {headline || dict.hero.headline}
             </h1>
+            {showBrand && (
+              <p className="mt-3 text-xl font-bold tracking-tight text-white xl:text-2xl">
+                Trucking Chicas{" "}
+                <span className="text-brand-red">- Truck Accident Lawyers</span>
+              </p>
+            )}
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-[#D1D5DB] xl:text-xl">
               {subhead || dict.hero.subhead}
             </p>
