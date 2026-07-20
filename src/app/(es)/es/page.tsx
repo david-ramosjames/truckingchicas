@@ -58,7 +58,7 @@ export default function HomePageES() {
       <JsonLd data={localBusinessSchema("es")} />
       <JsonLd data={faqSchema(dict.faq.items.slice(0, 7))} />
 
-      <HeroSection dict={dict} locale="es" />
+      <HeroSection dict={dict} locale="es" showBrand />
 
       {/* Por Qué los Clientes Confían en Trucking Chicas */}
       <section className="bg-brand-cream py-20">

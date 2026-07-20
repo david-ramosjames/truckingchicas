@@ -195,9 +195,8 @@ export default function HeroSection({
               {headline || dict.hero.headline}
             </h1>
             {showBrand && (
-              <p className="mt-3 text-xl font-bold tracking-tight text-white xl:text-2xl">
-                Trucking Chicas{" "}
-                <span className="text-brand-red">- Truck Accident Lawyers</span>
+              <p className="mt-3 text-lg font-semibold tracking-wide text-white/90 xl:text-xl">
+                Trucking Chicas - Truck Accident Lawyers
               </p>
             )}
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-[#D1D5DB] xl:text-xl">
