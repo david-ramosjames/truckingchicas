@@ -138,7 +138,7 @@ export default function CaseEstimateForm({
   /* Result view */
   if (status === "done") {
     return (
-      <div>
+      <div data-form-success="case-estimate">
         {/* Prominent consultation CTA at the top */}
         <div className="mb-6 rounded-xl bg-brand-navy p-6 text-center text-white shadow-lg md:p-7">
           <h3 className="text-xl font-bold md:text-2xl">

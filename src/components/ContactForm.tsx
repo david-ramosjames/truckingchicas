@@ -34,7 +34,10 @@ export default function ContactForm({
 
   if (status === "sent") {
     return (
-      <div className="rounded-lg bg-green-50 p-8 text-center">
+      <div
+        data-form-success="case-review"
+        className="rounded-lg bg-green-50 p-8 text-center"
+      >
         <svg className="mx-auto h-12 w-12 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
