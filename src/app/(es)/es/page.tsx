@@ -188,12 +188,12 @@ export default function HomePageES() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {dict.accidentTypes.items.map((item) => {
               const images: Record<string, string> = {
-                eighteenWheeler: "/trucks/18-wheelers.jpg",
-                deliveryTruck: "/trucks/fedex.webp",
-                oilfieldTanker: "/trucks/oil-tanker.jpg",
-                dumpTruck: "/trucks/dump-truck.webp",
-                boxTruck: "/trucks/box-truck.webp",
-                truckAccident: "/trucks/all-trucks.webp",
+                eighteenWheeler: IMAGES.trucks.eighteenWheeler,
+                deliveryTruck: IMAGES.trucks.fedex,
+                oilfieldTanker: IMAGES.trucks.oilTanker,
+                dumpTruck: IMAGES.trucks.dumpTruck,
+                boxTruck: IMAGES.trucks.boxTruck,
+                truckAccident: IMAGES.trucks.allTrucks,
               };
               return (
                 <Link
