@@ -52,11 +52,11 @@ export const IMAGES = {
   },
 
   trucks: {
-    allTrucks: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/all-trucks_qlj1ay.webp",
-    eighteenWheeler: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/18-wheelers_i44iga.jpg",
-    boxTruck: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/box-truck_zjbbmr.webp",
-    dumpTruck: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/dump-truck_nrmaz7.webp",
-    fedex: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/fedex_tiezt9.webp",
-    oilTanker: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/oil-tanker_iuhjae.jpg",
+    allTrucks: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1784925097/all-trucks_qlj1ay.png",
+    eighteenWheeler: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1784924952/18-wheelers_i44iga.png",
+    boxTruck: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1784925070/box-truck_zjbbmr.png",
+    dumpTruck: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1784925041/dump-truck_nrmaz7.png",
+    fedex: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1784924994/fedex_tiezt9.png",
+    oilTanker: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1784925020/oil-tanker_iuhjae.png",
   },
 } as const;
