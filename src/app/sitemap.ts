@@ -18,5 +18,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Standalone legal pages (not part of ROUTES)
+  ["/privacy-policy", "/terms-of-use"].forEach((path) => {
+    all.push({
+      url: `${SITE_URL}${path}`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    });
+  });
+
   return all;
 }
