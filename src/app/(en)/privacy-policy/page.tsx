@@ -6,6 +6,7 @@ import { PHONE_DISPLAY, FIRM_ADDRESS, SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for Trucking Chicas.",
+  alternates: { canonical: `${SITE_URL}/privacy-policy` },
 };
 
 const content: LegalBlock[] = [

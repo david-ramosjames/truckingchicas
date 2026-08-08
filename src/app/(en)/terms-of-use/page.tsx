@@ -6,6 +6,7 @@ import { PHONE_DISPLAY, FIRM_ADDRESS, SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description: "Terms of Use for the Trucking Chicas website.",
+  alternates: { canonical: `${SITE_URL}/terms-of-use` },
 };
 
 const content: LegalBlock[] = [
