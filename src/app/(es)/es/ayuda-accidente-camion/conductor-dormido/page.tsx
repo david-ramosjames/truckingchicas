@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/truck-driver-fell-asleep`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/conductor-dormido`,
+      "x-default": `${SITE_URL}/truck-accident-help/truck-driver-fell-asleep`,
     },
   },
 };

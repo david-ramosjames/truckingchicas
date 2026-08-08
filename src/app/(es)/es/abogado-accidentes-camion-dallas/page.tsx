@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-lawyer-dallas`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-dallas`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-dallas`,
     },
   },
   openGraph: {

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/oilfield-tanker-truck-accident-lawyer`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-cisterna`,
+      "x-default": `${SITE_URL}/oilfield-tanker-truck-accident-lawyer`,
     },
   },
 };

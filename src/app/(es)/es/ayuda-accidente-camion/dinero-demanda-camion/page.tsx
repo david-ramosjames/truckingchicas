@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/trucking-company-lawsuit-money`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/dinero-demanda-camion`,
+      "x-default": `${SITE_URL}/truck-accident-help/trucking-company-lawsuit-money`,
     },
   },
 };

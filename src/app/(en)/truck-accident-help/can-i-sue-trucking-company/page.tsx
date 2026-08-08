@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/can-i-sue-trucking-company`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/demandar-compania-camiones`,
+      "x-default": `${SITE_URL}/truck-accident-help/can-i-sue-trucking-company`,
     },
   },
 };

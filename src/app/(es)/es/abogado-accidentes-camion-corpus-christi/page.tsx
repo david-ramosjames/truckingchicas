@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
     },
   },
   openGraph: {

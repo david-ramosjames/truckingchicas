@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-lawyer-san-antonio`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-san-antonio`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-san-antonio`,
     },
   },
   openGraph: {

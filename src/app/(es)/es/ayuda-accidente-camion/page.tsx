@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help`,
       es: `${SITE_URL}/es/ayuda-accidente-camion`,
+      "x-default": `${SITE_URL}/truck-accident-help`,
     },
   },
   openGraph: {

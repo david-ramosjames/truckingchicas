@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/truck-driver-on-phone`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/conductor-usando-telefono`,
+      "x-default": `${SITE_URL}/truck-accident-help/truck-driver-on-phone`,
     },
   },
 };

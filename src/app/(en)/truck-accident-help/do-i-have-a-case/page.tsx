@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/do-i-have-a-case`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/tengo-un-caso`,
+      "x-default": `${SITE_URL}/truck-accident-help/do-i-have-a-case`,
     },
   },
 };

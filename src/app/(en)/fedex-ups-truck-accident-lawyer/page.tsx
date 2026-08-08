@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/fedex-ups-truck-accident-lawyer`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-reparto`,
+      "x-default": `${SITE_URL}/fedex-ups-truck-accident-lawyer`,
     },
   },
 };

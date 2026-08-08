@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/rear-ended-by-18-wheeler`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/choque-trasero-18-ruedas`,
+      "x-default": `${SITE_URL}/truck-accident-help/rear-ended-by-18-wheeler`,
     },
   },
 };

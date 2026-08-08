@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/average-18-wheeler-settlement`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/acuerdo-promedio-18-ruedas`,
+      "x-default": `${SITE_URL}/truck-accident-help/average-18-wheeler-settlement`,
     },
   },
 };

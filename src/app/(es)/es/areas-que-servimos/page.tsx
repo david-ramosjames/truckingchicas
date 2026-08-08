@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/areas-we-serve`,
       es: `${SITE_URL}/es/areas-que-servimos`,
+      "x-default": `${SITE_URL}/areas-we-serve`,
     },
   },
 };

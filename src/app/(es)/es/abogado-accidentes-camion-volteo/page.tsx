@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/dump-truck-construction-accident-lawyer`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-volteo`,
+      "x-default": `${SITE_URL}/dump-truck-construction-accident-lawyer`,
     },
   },
 };

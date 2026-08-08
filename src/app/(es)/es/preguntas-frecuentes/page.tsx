@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/faq`,
       es: `${SITE_URL}/es/preguntas-frecuentes`,
+      "x-default": `${SITE_URL}/faq`,
     },
   },
 };

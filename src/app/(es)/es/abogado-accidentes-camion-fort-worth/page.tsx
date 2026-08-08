@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-lawyer-fort-worth`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-fort-worth`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-fort-worth`,
     },
   },
   openGraph: {

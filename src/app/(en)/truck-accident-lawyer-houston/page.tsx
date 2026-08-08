@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-lawyer-houston`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-houston`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-houston`,
     },
   },
   openGraph: {

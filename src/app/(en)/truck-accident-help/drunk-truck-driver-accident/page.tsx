@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/drunk-truck-driver-accident`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/conductor-ebrio`,
+      "x-default": `${SITE_URL}/truck-accident-help/drunk-truck-driver-accident`,
     },
   },
 };

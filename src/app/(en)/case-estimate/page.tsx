@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/case-estimate`,
       es: `${SITE_URL}/es/estimacion-de-caso`,
+      "x-default": `${SITE_URL}/case-estimate`,
     },
   },
 };

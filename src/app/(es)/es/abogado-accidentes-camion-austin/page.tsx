@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-lawyer-austin`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-austin`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-austin`,
     },
   },
   openGraph: {

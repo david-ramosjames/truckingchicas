@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-lawyer-el-paso`,
       es: `${SITE_URL}/es/abogado-accidentes-camion-el-paso`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-el-paso`,
     },
   },
   openGraph: {

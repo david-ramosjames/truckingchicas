@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_URL}/truck-accident-help/how-much-is-my-case-worth`,
       es: `${SITE_URL}/es/ayuda-accidente-camion/cuanto-vale-mi-caso`,
+      "x-default": `${SITE_URL}/truck-accident-help/how-much-is-my-case-worth`,
     },
   },
 };

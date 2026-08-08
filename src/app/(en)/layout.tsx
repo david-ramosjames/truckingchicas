@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     languages: {
       en: SITE_URL,
       es: `${SITE_URL}/es`,
+      "x-default": SITE_URL,
     },
   },
   verification: {
