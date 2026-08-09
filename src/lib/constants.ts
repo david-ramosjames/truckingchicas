@@ -34,6 +34,12 @@ export const ROUTES = {
     corpusChristi: "/truck-accident-lawyer-corpus-christi",
     plano: "/truck-accident-lawyer-plano",
     lubbock: "/truck-accident-lawyer-lubbock",
+    laredo: "/truck-accident-lawyer-laredo",
+    waco: "/truck-accident-lawyer-waco",
+    mcallen: "/truck-accident-lawyer-mcallen",
+    beaumont: "/truck-accident-lawyer-beaumont",
+    odessa: "/truck-accident-lawyer-odessa",
+    killeen: "/truck-accident-lawyer-killeen",
     help: "/truck-accident-help",
     helpDoIHaveACase: "/truck-accident-help/do-i-have-a-case",
     helpCanISue: "/truck-accident-help/can-i-sue-truck-driver",
@@ -69,6 +75,12 @@ export const ROUTES = {
     corpusChristi: "/es/abogado-accidentes-camion-corpus-christi",
     plano: "/es/abogado-accidentes-camion-plano",
     lubbock: "/es/abogado-accidentes-camion-lubbock",
+    laredo: "/es/abogado-accidentes-camion-laredo",
+    waco: "/es/abogado-accidentes-camion-waco",
+    mcallen: "/es/abogado-accidentes-camion-mcallen",
+    beaumont: "/es/abogado-accidentes-camion-beaumont",
+    odessa: "/es/abogado-accidentes-camion-odessa",
+    killeen: "/es/abogado-accidentes-camion-killeen",
     help: "/es/ayuda-accidente-camion",
     helpDoIHaveACase: "/es/ayuda-accidente-camion/tengo-un-caso",
     helpCanISue: "/es/ayuda-accidente-camion/puedo-demandar-conductor",
@@ -90,6 +102,7 @@ export const ROUTES = {
 export const CITY_ROUTE_KEYS = [
   "houston", "dallas", "austin", "sanAntonio", "fortWorth",
   "elPaso", "arlington", "corpusChristi", "plano", "lubbock",
+  "laredo", "waco", "mcallen", "beaumont", "odessa", "killeen",
 ] as const;
 
 export type CityRouteKey = (typeof CITY_ROUTE_KEYS)[number];
@@ -105,6 +118,12 @@ export const CITY_NAMES: Record<CityRouteKey, string> = {
   corpusChristi: "Corpus Christi",
   plano: "Plano",
   lubbock: "Lubbock",
+  laredo: "Laredo",
+  waco: "Waco",
+  mcallen: "McAllen",
+  beaumont: "Beaumont",
+  odessa: "Odessa",
+  killeen: "Killeen",
 };
 
 export const TEXAS_CITIES = [
