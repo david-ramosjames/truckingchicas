@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
-import { SITE_URL, TEXAS_CITIES, PHONE_NUMBER, PHONE_DISPLAY, ROUTES } from "@/lib/constants";
+import { SITE_URL, TEXAS_CITIES, EXPANSION_CITY_KEYS, CITY_NAMES, PHONE_NUMBER, PHONE_DISPLAY, ROUTES } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CitySection from "@/components/CitySection";
@@ -91,6 +91,24 @@ export default function AreasPageES() {
                 dict={dict}
                 locale="es"
               />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Más ciudades que servimos (páginas nuevas) */}
+      <section className="py-14">
+        <div className="mx-auto max-w-4xl px-4 text-center">
+          <h2 className="text-2xl font-bold text-brand-navy">Más Ciudades de Texas que Servimos</h2>
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+            {EXPANSION_CITY_KEYS.map((key) => (
+              <Link
+                key={key}
+                href={ROUTES.es[key]}
+                className="rounded-lg border border-gray-200 bg-white px-4 py-3 text-center font-medium text-brand-navy shadow-sm transition-colors hover:border-brand-coral hover:text-brand-coral"
+              >
+                {CITY_NAMES[key]}
+              </Link>
             ))}
           </div>
         </div>

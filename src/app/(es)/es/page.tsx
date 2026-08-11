@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
-import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY, TEXAS_CITIES } from "@/lib/constants";
+import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY, TEXAS_CITIES, EXPANSION_CITY_KEYS, CITY_NAMES } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
@@ -407,6 +407,15 @@ export default function HomePageES() {
                 className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center font-medium transition-colors hover:border-brand-coral hover:bg-white/10"
               >
                 {city}
+              </Link>
+            ))}
+            {EXPANSION_CITY_KEYS.map((key) => (
+              <Link
+                key={key}
+                href={routes[key]}
+                className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center font-medium transition-colors hover:border-brand-coral hover:bg-white/10"
+              >
+                {CITY_NAMES[key]}
               </Link>
             ))}
           </div>
