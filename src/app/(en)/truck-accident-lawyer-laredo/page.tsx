@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -8,6 +9,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Truck Accident Lawyer in Laredo, TX",
@@ -40,8 +42,15 @@ export default function LaredoPage() {
 
       <HeroSection dict={dict} locale="en" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
+      {/* City Photo */}
+      <section className="py-12">
+        <div className="mx-auto max-w-3xl px-4 flex justify-center">
+          <Image src={IMAGES.cities.laredo} alt="Laredo, Texas" width={800} height={450} className="rounded-xl" />
+        </div>
+      </section>
+
       {/* Localized Content */}
-      <section className="py-16">
+      <section className="pb-16">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>

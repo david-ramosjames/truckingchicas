@@ -29,6 +29,12 @@ export const IMAGES = {
     lubbock: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/lubbock_ufu4ar.jpg",
     plano: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/plano_v7kplw.jpg",
     sanAntonio: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/san-antonio_yeufvi.jpg",
+    laredo: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/Laredo-city_rg9ndd.png",
+    waco: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/Waco-city_nvinle.png",
+    mcallen: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/McAllen-city_ld3mjf.png",
+    beaumont: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/Beaumont-city_d3uuil.png",
+    odessa: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/Odessa-city_iqknpm.png",
+    killeen: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/Killeen-city_wxjdzi.png",
   },
 
   maps: {
