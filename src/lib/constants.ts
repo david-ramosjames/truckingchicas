@@ -1,5 +1,12 @@
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://truckingchicas.com";
 export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-NPDX5545";
+
+// CallRail Dynamic Number Insertion (swap.js). This is a public CDN script —
+// it is served to every visitor, so there is no secret here. The default is
+// baked in; override per-environment with NEXT_PUBLIC_CALLRAIL_SWAP_URL.
+export const CALLRAIL_SWAP_URL =
+  process.env.NEXT_PUBLIC_CALLRAIL_SWAP_URL ||
+  "//cdn.callrail.com/companies/216293871/ad2813723ab06a1e1a24/12/swap.js";
 export const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || "5128773244";
 export const PHONE_DISPLAY = process.env.NEXT_PUBLIC_PHONE_DISPLAY || "(512) 877-3244";
 

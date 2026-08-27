@@ -3,6 +3,7 @@ import { SITE_URL } from "@/lib/constants";
 import Script from "next/script";
 import AnalyticsPlaceholder from "@/components/AnalyticsPlaceholder";
 import { GTMScript, GTMNoScript } from "@/components/GoogleTagManager";
+import { CallRailSwap } from "@/components/CallRail";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ export default function EsRootLayout({
           strategy="afterInteractive"
         />
         <AnalyticsPlaceholder />
+        <CallRailSwap />
       </body>
     </html>
   );
