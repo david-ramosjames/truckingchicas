@@ -56,7 +56,7 @@ export default function HeroSection({
 
   /* Above-the-fold CTA buttons, call is PRIMARY, form is SECONDARY (ghost) */
   const ctaButtons = (centered: boolean) => (
-    <div className={`mt-4 flex flex-col gap-3 sm:flex-row lg:mt-6 ${centered ? "items-center sm:justify-center" : "items-start"}`}>
+    <div className={`mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-6 ${centered ? "items-center sm:justify-center" : "items-start"}`}>
       {/* PRIMARY: Call CTA (phone number shown on desktop only) */}
       <a
         href={`tel:+1${PHONE_NUMBER}`}
@@ -104,36 +104,18 @@ export default function HeroSection({
           </h1>
         </div>
 
-        {/* Image block below the headline; tall crop, right-justified */}
-        <div className="relative mt-3 h-[400px] overflow-hidden sm:h-[470px]">
+        {/* Dedicated mobile composition keeps all three team members visible. */}
+        <div className="relative mx-auto mt-3 aspect-[5/4] w-full max-w-[600px] overflow-hidden">
           <Image
-            src={IMAGES.hero}
+            src={IMAGES.heroMobile}
             alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
             fill
-            className="object-cover object-[116%_30%]"
-            sizes="100vw"
+            className="object-cover object-center"
+            sizes="(max-width: 600px) 100vw, 600px"
             priority
           />
-          {/* Left edge: red band fading to black at the outer edge, clear before the faces */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-2/5 bg-[linear-gradient(to_right,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
-          {/* Right edge: mirror of the left */}
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-[linear-gradient(to_left,#121212_0%,rgba(198,38,32,0.55)_26%,transparent_50%)]" />
-          {/* Top edge blend only — keep it light so the top of the semi stays visible */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-[linear-gradient(to_bottom,#121212_0%,transparent_100%)]" />
-          {/* Bottom fade to black (over the reds so the bottom edge and corners read black) */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-[linear-gradient(to_top,#121212_0%,rgba(18,18,18,0.9)_42%,transparent_100%)]" />
-
-          {/* Attorney name labels — centered near the bottom of the image */}
-          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 flex-row gap-4 sm:bottom-6">
-            <div className="rounded-md bg-black/60 px-4 py-2 text-center backdrop-blur-sm">
-              <p className="text-sm font-bold text-white sm:text-base">Laura Ramos James</p>
-              <p className="text-xs text-gray-300 sm:text-sm">{isEn ? "Attorney" : "Abogada"}</p>
-            </div>
-            <div className="rounded-md bg-black/60 px-4 py-2 text-center backdrop-blur-sm">
-              <p className="text-sm font-bold text-white sm:text-base">Lyliana Zamora</p>
-              <p className="text-xs text-gray-300 sm:text-sm">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
-            </div>
-          </div>
+          {/* Subtle bottom blend leaves faces unobscured. */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#121212] to-transparent" />
         </div>
 
         {/* CTA, centered trust signals, and secondary text below the image */}
@@ -162,6 +144,9 @@ export default function HeroSection({
             </svg>
             {isEn ? "Start Free Case Review" : "Iniciar Evaluación Gratis"}
           </Link>
+          <Link href={routes.about} className="mt-4 block text-center text-xs leading-relaxed text-gray-300 underline underline-offset-4">
+            Nohemi Bespametnow · Laura Ramos James · Lyliana Zamora
+          </Link>
           {trustBadges(true)}
           <p className="mt-5 text-center text-base leading-relaxed text-[#D1D5DB]">
             {subhead || dict.hero.subhead}
@@ -175,9 +160,9 @@ export default function HeroSection({
         <div className="absolute inset-0">
           <Image
             src={IMAGES.hero}
-            alt={isEn ? "Trucking Chicas attorney" : "Abogada de Trucking Chicas"}
+            alt={isEn ? "Trucking Chicas legal team" : "Equipo legal de Trucking Chicas"}
             fill
-            className="object-cover object-[center_20%]"
+            className="object-cover object-[right_20%]"
             sizes="100vw"
             priority
           />
@@ -188,10 +173,10 @@ export default function HeroSection({
         </div>
 
         {/* Content */}
-        <div className="relative mx-auto grid max-w-7xl grid-cols-2">
+        <div className="relative mx-auto grid max-w-7xl grid-cols-[40%_60%]">
           {/* Left: text */}
-          <div className="flex flex-col justify-center py-16 pl-6 pr-8 xl:py-20 xl:pl-16">
-            <h1 className="text-4xl font-extrabold leading-[1.08] lg:text-5xl xl:text-6xl">
+          <div className="flex flex-col justify-center py-16 pl-6 pr-8 xl:py-20 xl:pl-8">
+            <h1 className="text-4xl font-extrabold leading-[1.08] xl:text-5xl">
               {headline || dict.hero.headline}
             </h1>
             {showBrand && (
@@ -217,20 +202,20 @@ export default function HeroSection({
           <div className="min-h-[480px]" aria-hidden="true" />
         </div>
 
-        {/* Attorney name tags, positioned independently over the image (full-width %) */}
-        <div
-          className="absolute z-10 rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm"
-          style={{ left: "58%", top: "85%" }}
-        >
-          <p className="text-sm font-bold text-white">Laura Ramos James</p>
-          <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
-        </div>
-        <div
-          className="absolute z-10 rounded bg-black/60 px-3 py-1.5 backdrop-blur-sm"
-          style={{ left: "76%", top: "85%" }}
-        >
-          <p className="text-sm font-bold text-white">Lyliana Zamora</p>
-          <p className="text-xs text-gray-300">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
+        {/* Labels follow the new photo order: Nohemi, Laura, Lyliana. */}
+        <div className="absolute bottom-4 right-0 grid w-3/5 grid-cols-3 gap-2 px-3 text-center">
+          <div className="rounded bg-black/60 px-2 py-1.5 backdrop-blur-sm">
+            <p className="text-sm font-bold text-white">Nohemi Bespametnow</p>
+            <p className="text-xs text-gray-300">{isEn ? "Executive Assistant" : "Asistente Ejecutiva"}</p>
+          </div>
+          <div className="rounded bg-black/60 px-2 py-1.5 backdrop-blur-sm">
+            <p className="text-sm font-bold text-white">Laura Ramos James</p>
+            <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
+          </div>
+          <div className="rounded bg-black/60 px-2 py-1.5 backdrop-blur-sm">
+            <p className="text-sm font-bold text-white">Lyliana Zamora</p>
+            <p className="text-xs text-gray-300">{isEn ? "Senior Paralegal" : "Paralegal Sénior"}</p>
+          </div>
         </div>
       </div>
     </section>
