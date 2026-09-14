@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import { IMAGES } from "@/lib/images";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, TEXAS_CITIES, EXPANSION_CITY_KEYS, CITY_NAMES, PHONE_NUMBER, PHONE_DISPLAY, ROUTES } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -105,9 +107,12 @@ export default function AreasPageES() {
               <Link
                 key={key}
                 href={ROUTES.es[key]}
-                className="rounded-lg border border-gray-200 bg-white px-4 py-3 text-center font-medium text-brand-navy shadow-sm transition-colors hover:border-brand-coral hover:text-brand-coral"
+                className="overflow-hidden rounded-lg border border-gray-200 bg-white text-center font-medium text-brand-navy shadow-sm transition-colors hover:border-brand-coral hover:text-brand-coral"
               >
-                {CITY_NAMES[key]}
+                <div className="relative aspect-[2/1]">
+                  <Image src={IMAGES.cities[key]} alt={CITY_NAMES[key]} fill className="object-cover" sizes="(max-width: 640px) 50vw, 280px" />
+                </div>
+                <span className="block px-4 py-3">{CITY_NAMES[key]}</span>
               </Link>
             ))}
           </div>
