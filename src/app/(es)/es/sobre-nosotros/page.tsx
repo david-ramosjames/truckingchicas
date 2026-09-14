@@ -164,6 +164,29 @@ export default function AboutPageES() {
               </div>
             </div>
           </div>
+
+          <hr className="my-14 border-gray-200" />
+
+          {/* Nohemi Bespametnow */}
+          <div className="grid items-start gap-10 md:grid-cols-[280px_1fr]">
+            <div className="mx-auto w-[280px] shrink-0">
+              <div className="relative aspect-square overflow-hidden rounded-2xl shadow-lg">
+                <Image
+                  src={IMAGES.team.nohemiBespametnow}
+                  alt="Retrato de Nohemi Bespametnow"
+                  fill
+                  className="object-cover"
+                  sizes="280px"
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-brand-navy">Nohemi Bespametnow</h3>
+              <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-brand-red">
+                Asistente Ejecutiva
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

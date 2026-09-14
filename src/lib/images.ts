@@ -2,18 +2,19 @@
  * Central image URL registry.
  * Swap the host here and every reference across the site updates.
  *
- * URLs are intentionally versionless (no /v<number>/), so they always
- * resolve to the LATEST asset for each Cloudinary public ID. When you
- * replace an image in Cloudinary, enable "Invalidate" so the CDN purges.
+ * Versioned URLs pin approved uploads. For versionless assets, enable
+ * "Invalidate" when replacing an image in Cloudinary so the CDN purges.
  */
 
 export const IMAGES = {
   logo: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/silver_truck_transparent_l8zkwe.png",
-  hero: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/hero-1_a5tomh.png",
+  hero: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1789417249/exec-064841f3-8f52-4812-afac-dcf4e2844950_k8pfxi.png",
+  heroMobile: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1789417185/exec-4c7c5f88-d1e6-4973-a788-7a4c88a3daa8_snt1bq.png",
   chooseUs: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/choose-us_1_zwtxej.png",
   texasHighwaySign: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/texas-highway-sign_z7kmer.jpg",
 
   team: {
+    nohemiBespametnow: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1789417185/exec-49c5fb7e-3719-4bcf-8a68-bbc594d7d218_agzrs5.png",
     lauraRamosJames: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/Laura-Ramos-James-2026-1095_mssgv0.jpg",
     lylianaZamora: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/lyliana-zamora_y4zdud.webp",
   },
