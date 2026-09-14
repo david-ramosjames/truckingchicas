@@ -20,6 +20,12 @@ export const IMAGES = {
   },
 
   cities: {
+    odessa: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786477110/Odessa-city_iqknpm.png",
+    beaumont: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786477111/Beaumont-city_d3uuil.png",
+    waco: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786477110/Waco-city_nvinle.png",
+    laredo: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786477110/Laredo-city_rg9ndd.png",
+    killeen: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786477110/Killeen-city_wxjdzi.png",
+    mcallen: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786477110/McAllen-city_ld3mjf.png",
     arlington: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/arlington_jdazkv.jpg",
     austin: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/austin_pymxue.jpg",
     corpusChristi: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/corpus-christi_qhzuzc.jpg",
@@ -33,6 +39,12 @@ export const IMAGES = {
   },
 
   maps: {
+    odessa: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786479609/Odessa-map_cn3lyq.png",
+    beaumont: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786479609/Beaumont-map_ecin5k.png",
+    waco: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786479610/waco-map_u0h6tb.png",
+    laredo: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786479611/laredo-map_o2teyj.png",
+    killeen: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786479609/Killeen-map_yyjspf.png",
+    mcallen: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/v1786479610/macallen-map_wfyzwm.png",
     arlington: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/arlington-map_1_v0ibnq.png",
     austin: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/austin-map_1_c02rzx.png",
     corpusChristi: "https://res.cloudinary.com/dmmxuoa3p/image/upload/q_auto/f_auto/corpus-christi-map_1_ru5ijy.png",

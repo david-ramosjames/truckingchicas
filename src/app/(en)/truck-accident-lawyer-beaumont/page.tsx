@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import { IMAGES } from "@/lib/images";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -40,11 +42,39 @@ export default function BeaumontPage() {
 
       <HeroSection dict={dict} locale="en" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
+      {/* City photo */}
+      <section className="py-12">
+        <div className="mx-auto max-w-3xl px-4">
+          <Image
+            src={IMAGES.cities.beaumont}
+            alt="Beaumont, Texas"
+            width={1774}
+            height={887}
+            className="h-auto w-full rounded-xl"
+            sizes="(max-width: 768px) calc(100vw - 32px), 736px"
+          />
+        </div>
+      </section>
+
       {/* Localized Content */}
-      <section className="py-16">
+      <section className="pb-16">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+        </div>
+      </section>
+
+      {/* City map */}
+      <section className="bg-gray-50 py-12">
+        <div className="mx-auto max-w-3xl px-4">
+          <Image
+            src={IMAGES.maps.beaumont}
+            alt="Map of Beaumont, Texas and surrounding roads"
+            width={1300}
+            height={676}
+            className="h-auto w-full rounded-xl"
+            sizes="(max-width: 768px) calc(100vw - 32px), 736px"
+          />
         </div>
       </section>
 

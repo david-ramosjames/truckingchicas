@@ -133,8 +133,8 @@ export const CITY_NAMES: Record<CityRouteKey, string> = {
   killeen: "Killeen",
 };
 
-// Newer city landing pages that don't yet have photo cards on the areas page.
-// Surfaced as lightweight text links on the home + areas pages.
+// Additional city landing pages, shown as photo cards on the areas page
+// and lightweight text links on the home page.
 export const EXPANSION_CITY_KEYS = [
   "laredo", "waco", "mcallen", "beaumont", "odessa", "killeen",
 ] as const satisfies readonly CityRouteKey[];
