@@ -41,7 +41,7 @@ export default function FAQPageES() {
 
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4">
-          <FAQAccordion items={d.items} />
+          <FAQAccordion items={d.items} headingLevel={2} />
         </div>
       </section>
 
