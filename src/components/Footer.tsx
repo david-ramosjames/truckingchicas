@@ -63,9 +63,9 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
 
           {/* Truck Accident Cases */}
           <div>
-            <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
+            <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
               {isEn ? "Truck Accident Cases" : "Casos de Accidentes"}
-            </h3>
+            </h2>
             <nav className="space-y-2" aria-label="Truck accident types">
               {[
                 { href: routes.truckAccident, label: isEn ? "Truck Accident Lawyer" : "Abogado de Accidentes de Cami\u00f3n" },
@@ -88,9 +88,9 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
 
           {/* Quick links + CTA */}
           <div>
-            <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
+            <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
               {isEn ? "Quick Links" : "Enlaces R\u00e1pidos"}
-            </h3>
+            </h2>
             <nav className="space-y-2" aria-label="Footer navigation">
               {[
                 { href: routes.areas, label: dict.nav.areas },
@@ -110,9 +110,9 @@ export default function Footer({ dict, locale }: { dict: Dictionary; locale: Loc
             </nav>
 
             <div className="mt-6">
-              <h3 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
+              <h2 className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-400">
                 {dict.cta.heading}
-              </h3>
+              </h2>
               <div className="flex flex-col gap-3 sm:flex-row">
                 <a
                   href={`tel:+1${PHONE_NUMBER}`}

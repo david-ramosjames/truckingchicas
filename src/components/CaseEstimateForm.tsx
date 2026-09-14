@@ -105,7 +105,7 @@ export default function CaseEstimateForm({
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-brand-navy">{dict.caseEstimate.nonCommercialHeading}</h3>
+        <h2 className="text-xl font-bold text-brand-navy">{dict.caseEstimate.nonCommercialHeading}</h2>
         <p className="mt-3 leading-relaxed text-gray-700">{dict.caseEstimate.nonCommercialMessage}</p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <Link
@@ -141,11 +141,11 @@ export default function CaseEstimateForm({
       <div data-form-success="case-estimate">
         {/* Prominent consultation CTA at the top */}
         <div className="mb-6 rounded-xl bg-brand-navy p-6 text-center text-white shadow-lg md:p-7">
-          <h3 className="text-xl font-bold md:text-2xl">
+          <h2 className="text-xl font-bold md:text-2xl">
             {locale === "en"
               ? "Want a Real Number? Talk to an Attorney — Free"
               : "¿Quieres una Cifra Real? Habla con un Abogado — Gratis"}
-          </h3>
+          </h2>
           <p className="mx-auto mt-2 max-w-xl text-gray-300">
             {locale === "en"
               ? "This is an AI estimate. Get a free, no-obligation review of your actual case from our team."
@@ -165,7 +165,7 @@ export default function CaseEstimateForm({
         </div>
 
         <div className="rounded-xl border border-brand-coral/20 bg-brand-coral/5 p-6 md:p-8">
-          <h3 className="mb-4 text-2xl font-bold text-brand-navy">{dict.caseEstimate.result}</h3>
+          <h2 className="mb-4 text-2xl font-bold text-brand-navy">{dict.caseEstimate.result}</h2>
           <div
             className="prose prose-gray max-w-none [&_strong]:text-brand-navy [&_li]:text-gray-700"
             dangerouslySetInnerHTML={{ __html: formatMarkdown(estimate) }}
@@ -178,7 +178,7 @@ export default function CaseEstimateForm({
 
         {/* CTA */}
         <div className="mt-8 rounded-xl bg-brand-navy p-6 text-center text-white md:p-8">
-          <h3 className="text-2xl font-bold">{dict.caseEstimate.ctaHeading}</h3>
+          <h2 className="text-2xl font-bold">{dict.caseEstimate.ctaHeading}</h2>
           <p className="mt-2 text-gray-300">{dict.caseEstimate.ctaSubhead}</p>
           <div className="mt-6 flex justify-center">
             <a
