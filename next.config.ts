@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { ROUTES } from "./src/lib/constants";
 
 const nextConfig: NextConfig = {
   // Static pages for optimal performance
@@ -18,6 +19,17 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Recover malformed language links using the same registry as the switcher.
+      ...(Object.keys(ROUTES.en) as Array<keyof typeof ROUTES.en>).flatMap((key) => {
+        if (key === "home") return [];
+        return [
+          { source: `/es${ROUTES.en[key]}`, destination: ROUTES.es[key], statusCode: 301 },
+          { source: ROUTES.es[key].replace(/^\/es/, ""), destination: ROUTES.en[key], statusCode: 301 },
+        ];
+      }),
+      ...["privacy-policy", "terms-of-use"].map((slug) => ({
+        source: `/es/${slug}`, destination: `/${slug}`, statusCode: 301,
+      })),
       // Spanish help URLs missing the /es locale prefix → add it (301)
       {
         source: "/ayuda-accidente-camion",
