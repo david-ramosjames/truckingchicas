@@ -116,6 +116,17 @@ export default function HeroSection({
           />
           {/* Subtle bottom blend leaves faces unobscured. */}
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#121212] to-transparent" />
+          <div className="absolute inset-x-0 bottom-3 grid grid-cols-3 gap-1 px-2 text-center">
+            <p className="rounded bg-black/70 px-1 py-1.5 text-[11px] font-semibold leading-tight text-white sm:text-sm">
+              Nohemi<br />Bespametnow
+            </p>
+            <p className="rounded bg-black/70 px-1 py-1.5 text-[11px] font-semibold leading-tight text-white sm:text-sm">
+              Laura<br />Ramos James
+            </p>
+            <p className="rounded bg-black/70 px-1 py-1.5 text-[11px] font-semibold leading-tight text-white sm:text-sm">
+              Lyliana<br />Zamora
+            </p>
+          </div>
         </div>
 
         {/* CTA, centered trust signals, and secondary text below the image */}
@@ -144,9 +155,6 @@ export default function HeroSection({
             </svg>
             {isEn ? "Start Free Case Review" : "Iniciar Evaluación Gratis"}
           </Link>
-          <Link href={routes.about} className="mt-4 block text-center text-xs leading-relaxed text-gray-300 underline underline-offset-4">
-            Nohemi Bespametnow · Laura Ramos James · Lyliana Zamora
-          </Link>
           {trustBadges(true)}
           <p className="mt-5 text-center text-base leading-relaxed text-[#D1D5DB]">
             {subhead || dict.hero.subhead}
@@ -155,7 +163,7 @@ export default function HeroSection({
       </div>
 
       {/* ── Desktop ── full-width two-column with image on right */}
-      <div className="relative hidden min-h-[600px] lg:block xl:min-h-[640px]">
+      <div className="relative hidden min-h-[560px] lg:block xl:min-h-[600px]">
         {/* Background image spanning full width */}
         <div className="absolute inset-0">
           <Image
@@ -175,7 +183,7 @@ export default function HeroSection({
         {/* Content */}
         <div className="relative mx-auto grid max-w-7xl grid-cols-[40%_60%]">
           {/* Left: text */}
-          <div className="flex flex-col justify-center py-16 pl-6 pr-8 xl:py-20 xl:pl-8">
+          <div className="flex flex-col justify-start py-8 pl-6 pr-8 xl:py-10 xl:pl-8">
             <h1 className="text-4xl font-extrabold leading-[1.08] xl:text-5xl">
               {headline || dict.hero.headline}
             </h1>
