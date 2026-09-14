@@ -95,13 +95,14 @@ export default function HeroSection({
 
   return (
     <section className="relative overflow-hidden bg-brand-navy text-white">
+      <h1 className="sr-only">{headline || dict.hero.headline}</h1>
       {/* ── Mobile / Tablet ── headline overlaid on image, CTA below ── */}
       <div className="bg-[#121212] pt-6 lg:hidden">
         {/* Headline on the dark background, near the top */}
         <div className="px-6">
-          <h1 className="mx-auto max-w-md text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
+          <div aria-hidden="true" className="mx-auto max-w-md text-center text-4xl font-extrabold leading-[1.1] md:text-5xl">
             {headline || dict.hero.headline}
-          </h1>
+          </div>
         </div>
 
         {/* Dedicated mobile composition keeps all three team members visible. */}
@@ -184,9 +185,9 @@ export default function HeroSection({
         <div className="relative mx-auto grid max-w-7xl grid-cols-[40%_60%]">
           {/* Left: text */}
           <div className="flex flex-col justify-start py-8 pl-6 pr-8 xl:py-10 xl:pl-8">
-            <h1 className="text-4xl font-extrabold leading-[1.08] xl:text-5xl">
+            <div aria-hidden="true" className="text-4xl font-extrabold leading-[1.08] xl:text-5xl">
               {headline || dict.hero.headline}
-            </h1>
+            </div>
             {showBrand && (
               <p className="mt-3 text-lg font-semibold tracking-wide text-white/90 xl:text-xl">
                 Trucking Chicas - Truck Accident Lawyers
