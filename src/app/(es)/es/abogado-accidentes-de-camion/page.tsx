@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import HelpArticleLinks from "@/components/HelpArticleLinks";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -114,6 +115,7 @@ export default function TruckAccidentPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-xl font-bold text-brand-navy">Páginas Relacionadas</h2>
           <div className="mt-4 flex flex-wrap gap-3">
+            <HelpArticleLinks locale="es" className="text-brand-rose underline hover:text-brand-rose-dark" />
             <Link href={routes.eighteenWheeler} className="text-brand-rose underline hover:text-brand-rose-dark">{dict.nav.eighteenWheeler}</Link>
             <Link href={routes.faq} className="text-brand-rose underline hover:text-brand-rose-dark">{dict.nav.faq}</Link>
             <Link href={routes.areas} className="text-brand-rose underline hover:text-brand-rose-dark">{dict.nav.areas}</Link>

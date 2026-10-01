@@ -137,14 +137,14 @@ export default function Header({ dict, locale }: { dict: Dictionary; locale: Loc
 
   const helpDropdownItems = [
     { href: routes.helpDoIHaveACase, label: isEn ? "Do I Have a Case?" : "¿Tengo un Caso?" },
-    { href: routes.helpCanISue, label: isEn ? "Can I Sue the Truck Driver?" : "¿Puedo Demandar al Conductor?" },
+    { href: routes.helpCanISue, label: isEn ? "Can I Sue a Truck Driver?" : "¿Puedo Demandar a un Camionero?" },
     { href: routes.helpRearEnded, label: isEn ? "Rear-Ended by 18-Wheeler" : "Choque Trasero por Tráiler" },
     { href: routes.helpSueTruckingCompany, label: isEn ? "Sue a Trucking Company" : "Demandar Compañía de Camiones" },
     { href: routes.helpPhoneUse, label: isEn ? "Driver Was on Phone" : "Conductor Usando Teléfono" },
     { href: routes.helpFatiguedDriver, label: isEn ? "Tired/Asleep Truck Driver" : "Conductor Cansado/Dormido" },
     { href: routes.helpCaseWorth, label: isEn ? "How Much Is My Case Worth?" : "¿Cuánto Vale Mi Caso?" },
     { href: routes.helpSettlement, label: isEn ? "Trucking Company Lawsuit Money" : "Dinero por Demanda de Camión" },
-    { href: routes.helpAverageSettlement, label: isEn ? "Average 18-Wheeler Settlement" : "Acuerdo Promedio de Tráiler" },
+    { href: routes.helpAverageSettlement, label: isEn ? "Average 18-Wheeler Settlement in Texas" : "Acuerdo Promedio de 18 Ruedas en Texas" },
     { href: routes.helpDrunkDriver, label: isEn ? "Drunk Truck Driver Accident" : "Accidente con Conductor Ebrio" },
     { href: routes.help, label: isEn ? "All Truck Accident Help" : "Toda la Ayuda" },
   ];

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import HelpArticleLinks from "@/components/HelpArticleLinks";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -102,13 +103,29 @@ export default function DeliveryTruckPageES() {
         </div>
       </section>
 
-      <section className="py-10">
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-3xl font-bold text-brand-navy">Accidentes de Reparto de UPS y FedEx en Arlington</h2>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            Quien busca un abogado por un accidente de reparto de UPS en Arlington a menudo llega a esta página de todo el estado. Los choques ocurren en rutas locales: los camiones salen de almacenes a lo largo de la I-20 y la SH-360 y luego se detienen en vecindarios de Arlington y en el distrito de entretenimiento. Esos son casos del Condado de Tarrant. Están en nuestra página de{" "}
+            <Link href={routes.arlington} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              abogado de accidentes de camión y 18 ruedas en Arlington
+            </Link>
+            , incluidos choques de UPS, FedEx y camiones de basura.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-10">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-xl font-bold text-brand-navy">Páginas Relacionadas</h2>
           <div className="mt-4 flex flex-wrap gap-3">
+            <HelpArticleLinks locale="es" className="text-brand-red underline hover:text-brand-red-dark" />
             <Link href={routes.truckAccident} className="text-brand-red underline hover:text-brand-red-dark">Abogado de Accidentes de Camión</Link>
             <Link href={routes.eighteenWheeler} className="text-brand-red underline hover:text-brand-red-dark">Accidentes de 18 Ruedas</Link>
             <Link href={routes.faq} className="text-brand-red underline hover:text-brand-red-dark">Preguntas Frecuentes</Link>
+            <Link href={routes.sanAntonio} className="text-brand-red underline hover:text-brand-red-dark">Abogado de accidentes de 18 ruedas en San Antonio</Link>
+            <Link href={routes.arlington} className="text-brand-red underline hover:text-brand-red-dark">Abogado de accidentes de camión en Arlington</Link>
           </div>
         </div>
       </section>

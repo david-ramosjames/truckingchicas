@@ -50,6 +50,14 @@ export default function DemandarCompaniaCamionesES() {
             <p className="text-lg leading-relaxed text-gray-700">{q.summary}</p>
           </div>
 
+          <p className="mb-8 text-lg leading-relaxed text-gray-600">
+            Si la pregunta es si puede demandar al conductor, incluido por un semáforo en rojo, empiece con{" "}
+            <Link href={routes.helpCanISue} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              ¿Puedo demandar a un camionero?
+            </Link>
+            . Esta página es sobre la compañía de camiones.
+          </p>
+
           <div className="prose prose-lg max-w-none">
             {q.fullContent.split("\n\n").map((paragraph, i) => (
               <p key={i} className="mb-6 leading-relaxed text-gray-600">{paragraph}</p>

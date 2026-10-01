@@ -39,6 +39,33 @@ export default function NearbyAreas({
             {locale === "en" ? "All Areas →" : "Todas las Áreas →"}
           </Link>
         </div>
+        <p className="mx-auto mt-8 max-w-3xl text-center text-gray-300">
+          {locale === "en" ? (
+            <>
+              Questions we hear on these cases:{" "}
+              <Link href={routes.helpCanISue} className="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:text-brand-coral">
+                Can I sue a truck driver
+              </Link>
+              {" and the "}
+              <Link href={routes.helpAverageSettlement} className="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:text-brand-coral">
+                average 18-wheeler accident settlement in Texas
+              </Link>
+              .
+            </>
+          ) : (
+            <>
+              Preguntas sobre estos casos:{" "}
+              <Link href={routes.helpCanISue} className="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:text-brand-coral">
+                ¿Puedo demandar a un camionero?
+              </Link>
+              {" y el "}
+              <Link href={routes.helpAverageSettlement} className="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:text-brand-coral">
+                acuerdo promedio de un accidente de 18 ruedas en Texas
+              </Link>
+              .
+            </>
+          )}
+        </p>
       </div>
     </section>
   );

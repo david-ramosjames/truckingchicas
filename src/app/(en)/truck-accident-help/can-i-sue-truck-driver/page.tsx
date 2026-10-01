@@ -8,8 +8,8 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Can I Sue If a Truck Driver Ran a Red Light?",
-  description: "A truck driver ran a red light and hit you? Learn your legal options for suing the driver and trucking company in Texas.",
+  title: "Can I Sue a Truck Driver? (Red Lights & More)",
+  description: "Can I sue a truck driver in Texas? Yes, for a red light and for other negligent driving. Learn what you have to prove. Free case review.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/can-i-sue-truck-driver`,
     languages: {

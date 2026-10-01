@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -12,8 +13,8 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Arlington, TX",
-  description: "¿Lesionado en un accidente de camión en Arlington? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+  title: { absolute: "Abogado de Accidentes de Camión y 18 Ruedas en Arlington | TX" },
+  description: "Abogado de accidentes de camión y 18 ruedas en Arlington. Choques en la I-30, I-20 y SH-360, incluidos camiones de basura y de UPS o FedEx. Condado de Tarrant.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-arlington`,
     languages: {
@@ -23,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Arlington, TX",
-    description: "¿Lesionado en un accidente de camión en Arlington? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+    title: "Abogado de Accidentes de Camión y 18 Ruedas en Arlington | TX",
+    description: "Abogado de accidentes de camión y 18 ruedas en Arlington. Choques en la I-30, I-20 y SH-360, incluidos camiones de basura y de UPS o FedEx. Condado de Tarrant.",
     url: `${SITE_URL}/es/abogado-accidentes-camion-arlington`,
   },
 };
@@ -52,6 +53,31 @@ export default function ArlingtonPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            Esta página es sobre choques en Arlington. Si el accidente fue en otra parte del estado, empiece en nuestra página de{" "}
+            <Link href={routes.truckAccident} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              abogado de accidentes de camión en Texas
+            </Link>
+            .
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-gray-500">
+            Fuente: TxDOT, Commercial Motor Vehicle Involved Crashes and Injuries by County, 2024, compilado del Crash Records Information System (CRIS).{" "}
+            <a href="https://www.txdot.gov/content/dam/docs/division/trf/crash-records/2024/30.pdf" className="underline" target="_blank" rel="noopener noreferrer">Informe 2024</a>
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 

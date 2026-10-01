@@ -51,6 +51,14 @@ export default function QAPage() {
             <p className="text-lg leading-relaxed text-gray-700">{q.summary}</p>
           </div>
 
+          <p className="mb-8 text-lg leading-relaxed text-gray-600">
+            If the question is whether you can sue the driver, including for a red light, start with{" "}
+            <Link href={routes.helpCanISue} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              Can I sue a truck driver
+            </Link>
+            . This page is about the trucking company.
+          </p>
+
           <div className="prose prose-lg max-w-none">
             {q.fullContent.split("\n\n").map((paragraph, i) => (
               <p key={i} className="mb-6 leading-relaxed text-gray-600">{paragraph}</p>

@@ -419,6 +419,13 @@ export default function HomePageES() {
               </Link>
             ))}
           </div>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-gray-300">
+            ¿Le golpeó un camión de 18 ruedas o un tráiler en el Condado de Bexar? Hable con un{" "}
+            <Link href={routes.sanAntonio} className="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:text-brand-coral">
+              abogado de accidentes de 18 ruedas en San Antonio
+            </Link>
+            .
+          </p>
           <div className="mt-8 text-center">
             <Link
               href={routes.areas}

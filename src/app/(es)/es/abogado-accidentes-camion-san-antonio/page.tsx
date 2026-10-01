@@ -12,8 +12,8 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en San Antonio, TX",
-  description: "¿Lesionado en un accidente de camión en San Antonio? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+  title: { absolute: "Abogado de Accidentes de 18 Ruedas en San Antonio | Trucking Chicas" },
+  description: "Abogados de accidentes de 18 ruedas y tráiler en San Antonio. Choques en la I-35, I-10, Loop 410, Loop 1604 y US-281. Casos del Condado de Bexar.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-san-antonio`,
     languages: {
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en San Antonio, TX",
-    description: "¿Lesionado en un accidente de camión en San Antonio? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+    title: "Abogado de Accidentes de 18 Ruedas en San Antonio | Trucking Chicas",
+    description: "Abogados de accidentes de 18 ruedas y tráiler en San Antonio. Choques en la I-35, I-10, Loop 410, Loop 1604 y US-281. Casos del Condado de Bexar.",
     url: `${SITE_URL}/es/abogado-accidentes-camion-san-antonio`,
   },
 };
@@ -52,6 +52,26 @@ export default function SanAntonioPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
+          <p className="mt-4 text-sm leading-relaxed text-gray-500">
+            Fuente: TxDOT, Commercial Motor Vehicle Involved Crashes and Injuries by County, compilado del Crash Records Information System (CRIS).{" "}
+            <a href="https://www.txdot.gov/content/dam/docs/division/trf/crash-records/2024/30.pdf" className="underline" target="_blank" rel="noopener noreferrer">2024</a>
+            {" · "}
+            <a href="https://www.txdot.gov/content/dam/docs/division/trf/crash-records/2023/30.pdf" className="underline" target="_blank" rel="noopener noreferrer">2023</a>
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 

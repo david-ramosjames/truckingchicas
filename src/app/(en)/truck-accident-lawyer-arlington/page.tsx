@@ -13,15 +13,19 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Arlington, TX",
-  description: "Injured in a truck accident in Arlington? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+  title: { absolute: "Arlington 18-Wheeler & Truck Accident Lawyer | TX" },
+  description: "Arlington 18-wheeler and truck accident lawyer for crashes on I-30, I-20, and SH-360, including garbage truck and UPS or FedEx cases. Tarrant County.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-arlington`,
-    languages: { en: `${SITE_URL}/truck-accident-lawyer-arlington`, es: `${SITE_URL}/es/abogado-accidentes-camion-arlington` },
+    languages: {
+      en: `${SITE_URL}/truck-accident-lawyer-arlington`,
+      es: `${SITE_URL}/es/abogado-accidentes-camion-arlington`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-arlington`,
+    },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Arlington, TX",
-    description: "Injured in a truck accident in Arlington? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+    title: "Arlington 18-Wheeler & Truck Accident Lawyer | TX",
+    description: "Arlington 18-wheeler and truck accident lawyer for crashes on I-30, I-20, and SH-360, including garbage truck and UPS or FedEx cases. Tarrant County.",
     url: `${SITE_URL}/truck-accident-lawyer-arlington`,
   },
 };
@@ -52,6 +56,31 @@ export default function ArlingtonPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            This page is about Arlington crashes. For a wreck elsewhere in the state, start with our{" "}
+            <Link href={routes.truckAccident} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              Texas truck accident lawyer
+            </Link>{" "}
+            page.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-gray-500">
+            Source: TxDOT, Commercial Motor Vehicle Involved Crashes and Injuries by County, 2024, compiled from the Crash Records Information System (CRIS).{" "}
+            <a href="https://www.txdot.gov/content/dam/docs/division/trf/crash-records/2024/30.pdf" className="underline" target="_blank" rel="noopener noreferrer">2024 report</a>
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 

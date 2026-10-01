@@ -8,8 +8,8 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Average 18-Wheeler Accident Settlement",
-  description: "What is the average settlement for an 18-wheeler accident? Learn what factors affect settlement amounts in Texas truck accident cases.",
+  title: "Average 18-Wheeler Accident Settlement in Texas",
+  description: "How Texas 18-wheeler settlement amounts are calculated, using a publicly reported jury verdict. There is no single average. Free case review.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-help/average-18-wheeler-settlement`,
     languages: {
@@ -55,6 +55,18 @@ export default function QAPage() {
             {q.fullContent.split("\n\n").map((paragraph, i) => (
               <p key={i} className="mb-6 leading-relaxed text-gray-600">{paragraph}</p>
             ))}
+            <h2 className="mb-4 mt-10 text-2xl font-bold text-brand-navy">How Texas 18-Wheeler Settlement Amounts Are Calculated</h2>
+            <p className="mb-6 leading-relaxed text-gray-600">There is no official average. A settlement, or a jury verdict, is built from the same pieces, and then cut by fault and by what insurance can pay.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">Economic damages are the bills and the paycheck: past and future medical care, lost wages, reduced earning capacity, and property damage. Non-economic damages cover pain, mental anguish, disfigurement, and physical impairment. Texas does not use a fixed multiplier for those. If the conduct was especially reckless, a jury can also consider punitive damages, which are not available in an ordinary negligence case.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">Fault comes next. Texas uses modified comparative responsibility. If you are 51% or more at fault, you recover nothing. If you are 50% or less, the amount is reduced by your percentage. The number a jury writes down is not the check. It is then limited by the insurance policy. Federal rules require at least $750,000 for many freight trucks, $1 million for oil, and $5 million for certain hazardous loads. A verdict above the policy is not the same as money collected.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">A publicly reported Texas case shows that math, and also why a verdict is not a promise. In Werner Enterprises, Inc. v. Blake, a Harris County jury considered a December 30, 2014 crash on I-20 near Odessa. A pickup lost control, crossed the median, and hit a Werner 18-wheeler. Seven-year-old Zackery Blake was killed. His 12-year-old sister, Brianna, was left quadriplegic. The jury awarded Jennifer Blake $16,500,000, Nathan Blake $5,000,000, and Brianna Blake $68,187,994. It assigned 70% of the responsibility to Werner employees other than the driver, 14% to the driver, and 16% to the pickup driver. Werner told the SEC the gross verdict was about $89.7 million. The trial court later signed a judgment of more than $100 million with interest.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">On June 27, 2025, the Texas Supreme Court reversed that judgment and rendered judgment for Werner and the driver. The Court held the pickup driver&apos;s loss of control was the sole proximate cause. See Werner Enterprises, Inc. v. Blake, No. 23-0493 (Tex. June 27, 2025), and Werner&apos;s May 17, 2018 Form 8-K. The published awards show how a jury separates each person&apos;s harms and then splits fault. They are not an average, and the family did not keep that judgment. Another firm&apos;s verdict does not predict your case.</p>
+            <p className="mb-6 text-sm leading-relaxed text-gray-500">
+              Sources:{" "}
+              <a href="https://www.txcourts.gov/media/1460821/230493.pdf" className="underline" target="_blank" rel="noopener noreferrer">Texas Supreme Court opinion</a>
+              {" · "}
+              <a href="https://www.sec.gov/Archives/edgar/data/793074/000079307418000024/wern-20180517x8k.htm" className="underline" target="_blank" rel="noopener noreferrer">Werner Form 8-K, May 17, 2018</a>
+            </p>
           </div>
 
           <div className="mt-12 rounded-xl bg-brand-navy p-8 text-center text-white">

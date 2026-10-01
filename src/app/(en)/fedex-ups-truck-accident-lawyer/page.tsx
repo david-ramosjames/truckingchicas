@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import HelpArticleLinks from "@/components/HelpArticleLinks";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -102,13 +103,29 @@ export default function DeliveryTruckPage() {
         </div>
       </section>
 
-      <section className="py-10">
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-3xl font-bold text-brand-navy">Arlington UPS and FedEx Delivery Accidents</h2>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            Searches for an Arlington UPS delivery accident lawyer often reach this statewide page. The crashes happen on local routes: package trucks leave warehouses along I-20 and SH-360, then stop through Arlington neighborhoods and the entertainment district. Those are Tarrant County cases. They are covered on our{" "}
+            <Link href={routes.arlington} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              Arlington 18-wheeler and truck accident lawyer
+            </Link>{" "}
+            page, including UPS, FedEx, and garbage truck crashes.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-10">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-xl font-bold text-brand-navy">Related Pages</h2>
           <div className="mt-4 flex flex-wrap gap-3">
+            <HelpArticleLinks locale="en" className="text-brand-red underline hover:text-brand-red-dark" />
             <Link href={routes.truckAccident} className="text-brand-red underline hover:text-brand-red-dark">Truck Accident Lawyer</Link>
             <Link href={routes.eighteenWheeler} className="text-brand-red underline hover:text-brand-red-dark">18-Wheeler Accident Lawyer</Link>
             <Link href={routes.faq} className="text-brand-red underline hover:text-brand-red-dark">FAQ</Link>
+            <Link href={routes.sanAntonio} className="text-brand-red underline hover:text-brand-red-dark">San Antonio 18-wheeler accident lawyer</Link>
+            <Link href={routes.arlington} className="text-brand-red underline hover:text-brand-red-dark">Arlington 18-wheeler and truck accident lawyer</Link>
           </div>
         </div>
       </section>

@@ -427,6 +427,13 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-gray-300">
+            Hurt by an 18-wheeler or big rig in Bexar County? Talk with a{" "}
+            <Link href={routes.sanAntonio} className="font-semibold text-white underline decoration-white/40 underline-offset-2 hover:text-brand-coral">
+              San Antonio 18-wheeler accident lawyer
+            </Link>
+            .
+          </p>
           <div className="mt-8 text-center">
             <Link
               href={routes.areas}

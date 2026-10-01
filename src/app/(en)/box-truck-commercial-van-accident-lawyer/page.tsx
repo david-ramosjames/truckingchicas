@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import HelpArticleLinks from "@/components/HelpArticleLinks";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -106,6 +107,7 @@ export default function BoxTruckPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-xl font-bold text-brand-navy">Related Pages</h2>
           <div className="mt-4 flex flex-wrap gap-3">
+            <HelpArticleLinks locale="en" className="text-brand-red underline hover:text-brand-red-dark" />
             <Link href={routes.truckAccident} className="text-brand-red underline hover:text-brand-red-dark">Truck Accident Lawyer</Link>
             <Link href={routes.deliveryTruck} className="text-brand-red underline hover:text-brand-red-dark">FedEx & UPS Truck Accidents</Link>
             <Link href={routes.faq} className="text-brand-red underline hover:text-brand-red-dark">FAQ</Link>

@@ -7,8 +7,8 @@ import JsonLd from "@/components/JsonLd";
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "¿Cuál Es el Acuerdo Promedio para un Accidente de 18 Ruedas?",
-  description: "Conozca los rangos típicos de acuerdos para accidentes de 18 ruedas en Texas y los factores que influyen en el valor. Consulta gratis con Trucking Chicas.",
+  title: "Acuerdo Promedio de un Accidente de 18 Ruedas en Texas",
+  description: "Cómo se calcula un acuerdo de accidente de 18 ruedas en Texas, con un veredicto público. No hay un promedio único. Consulta gratis.",
   alternates: {
     canonical: `${SITE_URL}/es/ayuda-accidente-camion/acuerdo-promedio-18-ruedas`,
     languages: {
@@ -54,6 +54,18 @@ export default function AcuerdoPromedio18RuedasES() {
             {q.fullContent.split("\n\n").map((paragraph, i) => (
               <p key={i} className="mb-6 leading-relaxed text-gray-600">{paragraph}</p>
             ))}
+            <h2 className="mb-4 mt-10 text-2xl font-bold text-brand-navy">Cómo se calcula un acuerdo de 18 ruedas en Texas</h2>
+            <p className="mb-6 leading-relaxed text-gray-600">No hay un promedio oficial. Un acuerdo, o un veredicto, se arma con las mismas piezas y después se reduce por la culpa y por lo que el seguro puede pagar.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">Los daños económicos son las facturas y el sueldo: atención médica pasada y futura, salarios perdidos, menor capacidad de ganar y daño a la propiedad. Los daños no económicos cubren el dolor, la angustia, la desfiguración y el impedimento físico. Texas no usa un multiplicador fijo. Si la conducta fue especialmente imprudente, un jurado puede considerar daños punitivos, que no aplican en un caso común de negligencia.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">Después va la culpa. Texas usa responsabilidad comparativa modificada. Si usted tiene 51% o más de la culpa, no recupera nada. Si tiene 50% o menos, la cantidad se reduce en su porcentaje. El número que escribe el jurado no es el cheque. Lo limita la póliza. Las reglas federales exigen al menos $750,000 para muchos camiones de carga, $1 millón para petróleo y $5 millones para ciertas cargas peligrosas. Un veredicto por encima de la póliza no es dinero cobrado.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">Un caso público de Texas muestra esa cuenta, y también por qué un veredicto no es una promesa. En Werner Enterprises, Inc. v. Blake, un jurado del Condado de Harris revisó un choque del 30 de diciembre de 2014 en la I-20 cerca de Odessa. Una pickup perdió el control, cruzó el camellón y golpeó un tráiler de Werner. Zackery Blake, de siete años, murió. Su hermana Brianna, de doce, quedó cuadripléjica. El jurado otorgó $16,500,000 a Jennifer Blake, $5,000,000 a Nathan Blake y $68,187,994 a Brianna Blake. Asignó 70% de la responsabilidad a empleados de Werner distintos del conductor, 14% al conductor y 16% al conductor de la pickup. Werner informó a la SEC un veredicto bruto de unos $89.7 millones. El tribunal después firmó un fallo de más de $100 millones con intereses.</p>
+            <p className="mb-6 leading-relaxed text-gray-600">El 27 de junio de 2025, la Corte Suprema de Texas revocó ese fallo y dictó sentencia a favor de Werner y del conductor. Sostuvo que la pérdida de control de la pickup fue la única causa próxima. Vea Werner Enterprises, Inc. v. Blake, No. 23-0493 (Tex. 27 de junio de 2025), y el Form 8-K de Werner del 17 de mayo de 2018. Las cifras publicadas muestran cómo un jurado separa el daño de cada persona y reparte la culpa. No son un promedio, y la familia no conservó ese fallo. El veredicto de otro bufete no predice su caso.</p>
+            <p className="mb-6 text-sm leading-relaxed text-gray-500">
+              Fuentes:{" "}
+              <a href="https://www.txcourts.gov/media/1460821/230493.pdf" className="underline" target="_blank" rel="noopener noreferrer">Opinión de la Corte Suprema de Texas</a>
+              {" · "}
+              <a href="https://www.sec.gov/Archives/edgar/data/793074/000079307418000024/wern-20180517x8k.htm" className="underline" target="_blank" rel="noopener noreferrer">Form 8-K de Werner, 17 de mayo de 2018</a>
+            </p>
           </div>
 
           <div className="mt-12 rounded-xl bg-brand-navy p-8 text-center text-white">

@@ -11,9 +11,12 @@ import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
 
+const CORPUS_DESCRIPTION =
+  "¿Choque con un tráiler, camión cisterna o de volteo en Corpus Christi? Consulta gratis y hablamos español. No cobramos si no ganamos.";
+
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Corpus Christi, TX",
-  description: "¿Lesionado en un accidente de camión en Corpus Christi? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+  title: { absolute: "Abogado de Accidentes de Tráiler en Corpus Christi, TX" },
+  description: CORPUS_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
     languages: {
@@ -23,11 +26,46 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Corpus Christi, TX",
-    description: "¿Lesionado en un accidente de camión en Corpus Christi? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+    title: "Abogado de Accidentes de Tráiler en Corpus Christi, TX",
+    description: CORPUS_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
   },
 };
+
+const truckTypes = [
+  {
+    title: "Choques con Camiones Cisterna en Corpus Christi",
+    paragraphs: [
+      "El camión cisterna es el que más peso tiene en esta página, porque Corpus Christi vive del puerto y de las refinerías. El Puerto de Corpus Christi mueve petróleo, gas y productos químicos, y Refinery Row, entre la ciudad y Portland, llena la I-37, el Harbor Bridge y la US-181 de cisternas. Una cisterna cargada pesa mucho más que un tráiler de caja, el líquido se mueve dentro del tanque en cada frenada, y una volcadura puede derramar combustible o un químico sobre la carretera.",
+      "Esas cargas llevan placas de materiales peligrosos. Después de un choque conviene fotografiar la placa, el nombre de la compañía y el número del tanque, sin acercarse al derrame. La compañía, la planta que cargó el producto y a veces quien contrató el viaje pueden compartir la responsabilidad. El viento del Golfo en el Harbor Bridge y en la calzada hacia Flour Bluff empeora el control de un tanque alto.",
+      "Un choque con cisterna en Corpus Christi se investiga como caso de vehículo comercial: horas de servicio, mantenimiento del tanque, si la carga iba bien sujeta y si el conductor tenía la licencia para ese material. No es un reclamo de auto con un vehículo más grande.",
+    ],
+  },
+  {
+    title: "Choques con Camiones de Volteo en Corpus Christi",
+    paragraphs: [
+      "Los camiones de volteo trabajan las obras del puerto, la ampliación de vías y las construcciones a lo largo de la SH-358 y la I-37. Una caja cargada puede pasar de 50,000 libras. Los riesgos de siempre son la caja sobrecargada, los frenos gastados, la grava sin cubrir y el giro amplio a la derecha contra un auto. La compañía de camiones y el contratista de la obra pueden estar involucrados.",
+    ],
+  },
+  {
+    title: "Choques con Camiones de Plataforma en Corpus Christi",
+    paragraphs: [
+      "Los camiones de plataforma llevan tubo, acero y equipo hacia las refinerías y el puerto. La carga va a la vista, amarrada a la cama, no dentro de una caja. Si una banda falla o una pieza se sale, golpea al vehículo de atrás o al carril de junto. En un choque de plataforma hay que ver cómo iba sujeta la carga, no solo cómo manejaba el conductor.",
+    ],
+  },
+  {
+    title: "Choques con Camiones Cementeros en Corpus Christi",
+    paragraphs: [
+      "El camión cementero es una mezcladora de concreto, no un volteo. El tambor va alto, sigue girando en el tráfico y la carga tiene poco tiempo antes de fraguar, así que el conductor va contra el reloj entre la planta y la obra. Esas obras están en el crecimiento del sur de la ciudad, en la SPID y en los proyectos del puerto. Una mezcladora que no alcanza a frenar o que vuelca en una curva es un reclamo de vehículo comercial.",
+    ],
+  },
+  {
+    title: "Choques con Camiones de Basura en Corpus Christi",
+    paragraphs: [
+      "Los camiones de basura recorren los vecindarios de Corpus Christi temprano: Flour Bluff, Calallen, el lado sur y las calles que salen de la SH-358. Se detienen cada casa, dan vuelta en calles angostas y salen de la banqueta contra el tráfico. No son tráileres del puerto, pero siguen siendo vehículos comerciales, a veces de la ciudad y a veces de una compañía privada. Si el camión es del gobierno, el plazo para dar aviso puede ser más corto que los dos años usuales para demandar.",
+    ],
+  },
+];
 
 export default function CorpusChristiPageES() {
   const dict = getDictionary("es");
@@ -52,6 +90,19 @@ export default function CorpusChristiPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              {item.paragraphs.map((para) => (
+                <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
 

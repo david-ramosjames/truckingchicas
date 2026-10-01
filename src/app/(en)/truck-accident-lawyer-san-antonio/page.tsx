@@ -13,15 +13,19 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 import { IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in San Antonio, TX",
-  description: "Injured in a truck accident in San Antonio? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+  title: { absolute: "San Antonio 18-Wheeler Accident Lawyer | Trucking Chicas" },
+  description: "San Antonio 18-wheeler and big rig accident lawyers for crashes on I-35, I-10, Loop 410, Loop 1604, and US-281. Bexar County cases. Free consultation.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-san-antonio`,
-    languages: { en: `${SITE_URL}/truck-accident-lawyer-san-antonio`, es: `${SITE_URL}/es/abogado-accidentes-camion-san-antonio` },
+    languages: {
+      en: `${SITE_URL}/truck-accident-lawyer-san-antonio`,
+      es: `${SITE_URL}/es/abogado-accidentes-camion-san-antonio`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-san-antonio`,
+    },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in San Antonio, TX",
-    description: "Injured in a truck accident in San Antonio? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+    title: "San Antonio 18-Wheeler Accident Lawyer | Trucking Chicas",
+    description: "San Antonio 18-wheeler and big rig accident lawyers for crashes on I-35, I-10, Loop 410, Loop 1604, and US-281. Bexar County cases. Free consultation.",
     url: `${SITE_URL}/truck-accident-lawyer-san-antonio`,
   },
 };
@@ -52,6 +56,26 @@ export default function SanAntonioPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
+          <p className="mt-4 text-sm leading-relaxed text-gray-500">
+            Source: TxDOT, Commercial Motor Vehicle Involved Crashes and Injuries by County, compiled from the Crash Records Information System (CRIS).{" "}
+            <a href="https://www.txdot.gov/content/dam/docs/division/trf/crash-records/2024/30.pdf" className="underline" target="_blank" rel="noopener noreferrer">2024</a>
+            {" · "}
+            <a href="https://www.txdot.gov/content/dam/docs/division/trf/crash-records/2023/30.pdf" className="underline" target="_blank" rel="noopener noreferrer">2023</a>
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
