@@ -293,7 +293,7 @@ export default function HomePage() {
               Fighting for Maximum Compensation: Case by Case
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-500 md:text-lg">
-              Every case is different. But when serious injuries and commercial vehicles are involved, we fight to recover the full value our clients deserve.
+              Every case is different. The amounts below were recovered by the lead attorney.
             </p>
           </div>
 
@@ -319,7 +319,7 @@ export default function HomePage() {
 
           {/* Support line */}
           <p className="mt-10 text-center text-sm font-medium text-gray-600">
-            + Additional six-figure recoveries across 18-wheeler, Mack truck, and company vehicle cases
+            + Additional six-figure recoveries by the lead attorney in 18-wheeler, Mack truck, and company vehicle cases
           </p>
 
           {/* Disclaimer */}

@@ -88,8 +88,8 @@ const en = {
         desc: "We handle truck and 18-wheeler cases exclusively. This special focus means deeper knowledge and stronger results.",
       },
       {
-        title: "Proven Track Record",
-        desc: "Our law firm has recovered millions for truck accident victims across Texas. We know how to build winning cases.",
+        title: "Millions Recovered by Lead Attorney",
+        desc: "The lead attorney has recovered millions for truck accident victims across Texas.",
       },
       {
         title: "Aggressive Representation",
@@ -122,7 +122,7 @@ const en = {
       },
     ],
     resultsTitle: "Results That Speak for Themselves",
-    resultsSubtitle: "Every case is unique. These results reflect our commitment to fighting for maximum compensation.",
+    resultsSubtitle: "These amounts were recovered by the lead attorney. Each case is unique.",
     resultsDisclaimer: "Past results do not guarantee a similar outcome. Each case is unique.",
     results: [
       { amount: "$5.1M", desc: "Tanker Truck Highway Accident" },

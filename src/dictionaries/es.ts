@@ -89,8 +89,8 @@ const es: Dictionary = {
         desc: "Manejamos exclusivamente casos de camiones y tráileres. Este enfoque especial significa conocimiento más profundo y mejores resultados.",
       },
       {
-        title: "Historial Comprobado",
-        desc: "Nuestro bufete ha recuperado millones para víctimas de accidentes de camión en todo Texas. Sabemos cómo construir casos ganadores.",
+        title: "Millones Recuperados por la Abogada Principal",
+        desc: "La abogada principal ha recuperado millones para víctimas de accidentes de camión en todo Texas.",
       },
       {
         title: "Representación Agresiva",
@@ -123,7 +123,7 @@ const es: Dictionary = {
       },
     ],
     resultsTitle: "Resultados Que Hablan por Sí Mismos",
-    resultsSubtitle: "Cada caso es único. Estos resultados reflejan nuestro compromiso de luchar por la máxima compensación.",
+    resultsSubtitle: "Estas cantidades las recuperó la abogada principal. Cada caso es único.",
     resultsDisclaimer: "Los resultados anteriores no garantizan un resultado similar. Cada caso es único.",
     results: [
       { amount: "$5.1M", desc: "Accidente de Camión Cisterna en Autopista" },

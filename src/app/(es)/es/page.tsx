@@ -290,7 +290,7 @@ export default function HomePageES() {
               Luchando por la Máxima Compensación: Caso por Caso
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-500 md:text-lg">
-              Cada caso es diferente. Pero cuando hay lesiones graves y vehículos comerciales involucrados, luchamos para recuperar el valor total que nuestros clientes merecen.
+              Cada caso es diferente. Las cantidades de abajo las recuperó la abogada principal.
             </p>
           </div>
 
@@ -316,7 +316,7 @@ export default function HomePageES() {
 
           {/* Support line */}
           <p className="mt-10 text-center text-sm font-medium text-gray-600">
-            + Recuperaciones adicionales de seis cifras en casos de 18 ruedas, camiones Mack y vehículos de empresa
+            + Recuperaciones adicionales de seis cifras por la abogada principal en casos de 18 ruedas, camiones Mack y vehículos de empresa
           </p>
 
           {/* Disclaimer */}

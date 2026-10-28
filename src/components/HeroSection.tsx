@@ -36,13 +36,13 @@ export default function HeroSection({
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ),
-      text: isEn ? "500+ Clients Helped" : "500+ Clientes Atendidos",
+      text: isEn ? "500+ Clients Helped by Lead Attorney" : "500+ Clientes Atendidos por la Abogada Principal",
     },
     {
       icon: (
         <span className="text-lg font-extrabold text-[#FBBF24]">$</span>
       ),
-      text: isEn ? "Millions Recovered" : "Millones Recuperados",
+      text: isEn ? "Millions Recovered by Lead Attorney" : "Millones Recuperados por la Abogada Principal",
     },
     {
       icon: (
@@ -219,7 +219,7 @@ export default function HeroSection({
           </div>
           <div className="rounded bg-black/60 px-2 py-1.5 backdrop-blur-sm">
             <p className="text-sm font-bold text-white">Laura Ramos James</p>
-            <p className="text-xs text-gray-300">{isEn ? "Attorney" : "Abogada"}</p>
+            <p className="text-xs text-gray-300">{isEn ? "Lead Attorney" : "Abogada Principal"}</p>
           </div>
           <div className="rounded bg-black/60 px-2 py-1.5 backdrop-blur-sm">
             <p className="text-sm font-bold text-white">Lyliana Zamora</p>

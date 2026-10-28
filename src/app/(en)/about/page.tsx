@@ -105,13 +105,13 @@ export default function AboutPage() {
               </p>
               <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  When an <strong className="font-semibold text-brand-navy">18-wheeler or commercial truck</strong> is involved, the stakes change and so does the complexity. Laura Ramos James has built her practice around exactly these cases, earning recognition as a <strong className="font-semibold text-brand-navy">Top 10 Trucking Trial Lawyer by the National Trial Lawyers</strong> and securing <strong className="font-semibold text-brand-navy">many recoveries exceeding $250,000</strong> for clients injured by <strong className="font-semibold text-brand-navy">semi-trucks and commercial carriers across Texas</strong>.
+                  When an <strong className="font-semibold text-brand-navy">18-wheeler or commercial truck</strong> is involved, the stakes change and so does the complexity. Laura Ramos James has built her practice around exactly these cases, earning recognition as a <strong className="font-semibold text-brand-navy">Top 10 Trucking Trial Lawyer by the National Trial Lawyers</strong> and securing <strong className="font-semibold text-brand-navy">many recoveries exceeding $250,000 as lead attorney</strong> for clients injured by <strong className="font-semibold text-brand-navy">semi-trucks and commercial carriers across Texas</strong>.
                 </p>
                 <p>
                   Laura founded Ramos James Law, PLLC in 2018 after her own experience as a personal injury victim shaped a career devoted to fighting for people facing some of the most powerful opponents in civil litigation. <strong className="font-semibold text-brand-navy">Trucking cases put injured clients up against major carriers, corporate insurers, and seasoned defense teams.</strong> That is exactly the fight she has spent over a decade preparing for.
                 </p>
                 <p>
-                  Her experience spans the full range of commercial vehicle cases, from <strong className="font-semibold text-brand-navy">18-wheeler collisions and disputed liability crashes to catastrophic injury claims against large carriers</strong>, with <strong className="font-semibold text-brand-navy">multiple six-figure recoveries for trucking clients across Texas</strong>.
+                  Her experience spans the full range of commercial vehicle cases, from <strong className="font-semibold text-brand-navy">18-wheeler collisions and disputed liability crashes to catastrophic injury claims against large carriers</strong>, with <strong className="font-semibold text-brand-navy">multiple six-figure recoveries by the lead attorney for trucking clients across Texas</strong>.
                 </p>
 
                 <h4 className="mt-6 text-lg font-bold text-brand-navy">Recognition</h4>
