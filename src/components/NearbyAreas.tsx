@@ -19,8 +19,8 @@ export default function NearbyAreas({
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-gray-300">
           {locale === "en"
-            ? "Our truck accident attorneys represent clients across Texas. Select a city to learn more."
-            : "Nuestros abogados de accidentes de camión representan clientes en todo Texas. Seleccione una ciudad para más información."}
+            ? "Our truck accident law firm represents clients across Texas. Select a city to learn more."
+            : "Nuestro bufete de accidentes de camión representa clientes en todo Texas. Seleccione una ciudad para más información."}
         </p>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3">
           {otherCities.map((key) => (

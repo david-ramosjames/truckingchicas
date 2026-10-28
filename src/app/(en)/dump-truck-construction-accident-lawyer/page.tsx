@@ -14,7 +14,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Dump Truck & Construction Vehicle Accident Lawyer in Texas",
   description:
-    "Injured by a dump truck or construction vehicle in Texas? Our attorneys fight for victims of work zone and heavy equipment crashes. Free case review.",
+    "Injured by a dump truck or construction vehicle in Texas? Our law firm fights for victims of work zone and heavy equipment crashes. Free case review.",
   alternates: {
     canonical: `${SITE_URL}/dump-truck-construction-accident-lawyer`,
     languages: {

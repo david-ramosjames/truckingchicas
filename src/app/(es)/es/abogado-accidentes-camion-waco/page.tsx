@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { IMAGES } from "@/lib/images";
 import { getDictionary } from "@/dictionaries";
-import { SITE_URL, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
+import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
@@ -33,6 +34,7 @@ export default function WacoPageES() {
   const dict = getDictionary("es");
   const d = dict.cityPages.waco;
   const cp = dict.cityPages;
+  const routes = ROUTES.es;
 
   return (
     <PageShell dict={dict} locale="es">
@@ -61,6 +63,13 @@ export default function WacoPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            Los choques al oeste de la I-35, alrededor de Fort Cavazos, están en nuestra página de{" "}
+            <Link href={routes.killeen} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              abogado de accidentes de camión en Killeen
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

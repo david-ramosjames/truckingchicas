@@ -14,7 +14,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Texas Truck Accident Lawyer",
   description:
-    "Injured in a truck accident in Texas? Our highly experienced truck accident attorneys fight for maximum compensation. Free case review. No fees unless we win.",
+    "Injured in a truck accident in Texas? Our truck accident law firm fights for maximum compensation. Free case review. No fees unless we win.",
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer`,
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Texas Truck Accident Lawyer",
     description:
-      "Injured in a truck accident in Texas? Our highly experienced truck accident attorneys fight for maximum compensation.",
+      "Injured in a truck accident in Texas? Our truck accident law firm fights for maximum compensation.",
     url: `${SITE_URL}/truck-accident-lawyer`,
   },
 };

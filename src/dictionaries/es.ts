@@ -40,7 +40,7 @@ const es: Dictionary = {
     callNow: "Llamar 24/7",
     heading: "¿Lista para Luchar por tus Derechos?",
     subtext:
-      "Obtén una evaluación de caso gratuita y sin compromiso de nuestros abogados altamente experimentados en accidentes de camión.",
+      "Obtén una evaluación de caso gratuita y sin compromiso de nuestro bufete de accidentes de camión.",
     formHeading: "Comienza tu Evaluación Gratis",
     microcopy: "Sin compromiso. No cobramos si no ganamos.",
   },
@@ -90,7 +90,7 @@ const es: Dictionary = {
       },
       {
         title: "Historial Comprobado",
-        desc: "Nuestros abogados han recuperado millones para víctimas de accidentes de camión en todo Texas. Sabemos cómo construir casos ganadores.",
+        desc: "Nuestro bufete ha recuperado millones para víctimas de accidentes de camión en todo Texas. Sabemos cómo construir casos ganadores.",
       },
       {
         title: "Representación Agresiva",
@@ -157,7 +157,7 @@ const es: Dictionary = {
       },
     ],
     areasHomeTitle: "Sirviendo a Todo Texas",
-    areasHomeSubtitle: "De Houston a El Paso, nuestros abogados de accidentes de camión representan a víctimas en todas las ciudades principales de Texas.",
+    areasHomeSubtitle: "De Houston a El Paso, nuestro bufete de accidentes de camión representa a víctimas en todas las ciudades principales de Texas.",
     areasHomeCta: "Ver Todas las Áreas",
     consultFormTitle: "Obtén Tu Evaluación de Caso Gratis",
     consultFormSubtitle: "Habla con un abogado de accidentes de camión hoy, sin costo, sin compromiso, sin presión.",
@@ -176,7 +176,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de Camión en Texas",
     metaTitle: "Abogado de Accidentes de Camión en Texas",
     metaDesc:
-      "¿Lesionado en un accidente de camión en Texas? Nuestros abogados altamente experimentados luchan por la máxima compensación. Evaluación gratis. No cobramos si no ganamos.",
+      "¿Lesionado en un accidente de camión en Texas? Nuestro bufete lucha por la máxima compensación. Evaluación gratis. No cobramos si no ganamos.",
     heroHeadline: "Abogado de Accidentes de Camión en Texas",
     heroSubhead:
       "Los choques de camiones causan lesiones devastadoras. Nuestro equipo lucha exclusivamente por las víctimas de accidentes de camión en todo Texas.",
@@ -222,7 +222,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de 18 Ruedas en Texas",
     metaTitle: "Abogado de Accidentes de 18 Ruedas en Texas",
     metaDesc:
-      "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nuestros abogados tienen un enfoque especial en accidentes de vehículos comerciales. Llama para una consulta gratis.",
+      "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nuestro bufete tiene un enfoque especial en accidentes de vehículos comerciales. Llama para una consulta gratis.",
     heroHeadline: "Abogado de Accidentes de 18 Ruedas en Texas",
     heroSubhead:
       "Los choques con tráileres de 18 ruedas están entre los accidentes más peligrosos en las carreteras de Texas. Luchamos por las víctimas de colisiones catastróficas con vehículos comerciales.",
@@ -247,7 +247,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de Camiones de Reparto",
     metaTitle: "Abogado de Accidentes de Camiones FedEx y UPS en Texas",
     metaDesc:
-      "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestros abogados manejan casos de accidentes de camiones de reparto. Evaluación gratis.",
+      "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestro bufete maneja casos de accidentes de camiones de reparto. Evaluación gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones de Reparto",
     heroSubhead:
       "Camiones de reparto de FedEx, UPS, Amazon y otros servicios están involucrados en miles de accidentes cada año. Luchamos por las víctimas de accidentes con vehículos de entrega en todo Texas.",
@@ -285,7 +285,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de Camiones Cisterna y Petroleros",
     metaTitle: "Abogado de Accidentes de Camiones Cisterna en Texas",
     metaDesc:
-      "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestros abogados tienen un enfoque especial en choques del sector energético. Consulta gratis.",
+      "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestro bufete tiene un enfoque especial en choques del sector energético. Consulta gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones Cisterna",
     heroSubhead:
       "Las operaciones petroleras de Texas ponen miles de camiones cisterna, de agua y transportadores de equipo en las carreteras. Cuando chocan, las consecuencias son catastróficas.",
@@ -317,7 +317,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de Camiones de Volteo y Construcción",
     metaTitle: "Abogado de Accidentes de Camiones de Volteo en Texas",
     metaDesc:
-      "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestros abogados luchan por las víctimas de accidentes en zonas de trabajo. Evaluación gratis.",
+      "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestro bufete lucha por las víctimas de accidentes en zonas de trabajo. Evaluación gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones de Volteo",
     heroSubhead:
       "Camiones de volteo, mezcladoras de concreto y vehículos de construcción causan choques devastadores en zonas de trabajo y en las carreteras de Texas. Luchamos por las víctimas de estos accidentes prevenibles.",
@@ -355,7 +355,7 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de Camiones de Carga y Vans Comerciales",
     metaTitle: "Abogado de Accidentes de Camiones de Carga en Texas",
     metaDesc:
-      "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestros abogados de accidentes de camión pueden ayudar. Evaluación gratis.",
+      "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestro bufete de accidentes de camión puede ayudar. Evaluación gratis.",
     heroHeadline: "Abogado de Accidentes de Camiones de Carga",
     heroSubhead:
       "Camiones de carga, vans sprinter y vehículos comerciales medianos están en todas las carreteras de Texas, y causan accidentes graves cada día.",
@@ -391,7 +391,7 @@ const es: Dictionary = {
   },
   accidentTypes: {
     title: "Tipos de Accidentes de Camión que Manejamos",
-    subtitle: "Nuestros abogados tienen un enfoque especial en todo tipo de accidente de camión comercial en Texas.",
+    subtitle: "Nuestro bufete tiene un enfoque especial en todo tipo de accidente de camión comercial en Texas.",
     items: [
       {
         title: "Accidentes de 18 Ruedas",
@@ -432,7 +432,7 @@ const es: Dictionary = {
       "Trucking Chicas sirve a víctimas de accidentes de camión y tráiler en todo Texas, incluyendo Houston, Dallas, Austin, San Antonio y más.",
     heading: "Sirviendo a Víctimas de Accidentes de Camión en Todo Texas",
     subhead:
-      "Nuestros abogados representan a clientes en todas las principales ciudades de Texas. Si fuiste herido en un accidente de camión en cualquier parte de Texas, podemos ayudarte.",
+      "Nuestro bufete representa a clientes en todas las principales ciudades de Texas. Si fuiste herido en un accidente de camión en cualquier parte de Texas, podemos ayudarte.",
     statsTitle: "Estadísticas de Accidentes de Camión en Texas",
     stats: [
       "Texas lidera la nación en accidentes fatales con camiones año tras año.",
@@ -614,7 +614,7 @@ const es: Dictionary = {
       },
     },
     bottomCtaHeading: "¿Herido en un Accidente de Camión en Texas?",
-    bottomCtaSubhead: "Obtén una evaluación de caso gratuita de nuestros abogados experimentados en accidentes de camión. Sin compromiso. No cobramos si no ganamos.",
+    bottomCtaSubhead: "Obtén una evaluación de caso gratuita de nuestro bufete de accidentes de camión. Sin compromiso. No cobramos si no ganamos.",
     faqTitle: "Abogado de Accidentes de Camión en Texas: Preguntas Comunes",
     faqItems: [
       {
@@ -634,7 +634,7 @@ const es: Dictionary = {
   cityPages: {
     laredo: {
       heroHeadline: "Abogado de Accidentes de Camión en Laredo, TX",
-      heroSubhead: "¿Lesionado por un camión comercial en Laredo? Nuestras abogadas enfrentan a las compañías de camiones que inundan la frontera con 18 ruedas.",
+      heroSubhead: "¿Lesionado por un camión comercial en Laredo? Nuestro bufete enfrenta a las compañías de camiones que inundan la frontera con 18 ruedas.",
       localTitle: "Laredo: El Cruce de Camiones Más Transitado del País",
       localContent: "Laredo es el puerto interior número uno de Estados Unidos. El Puente Internacional de Comercio Mundial procesa más camiones comerciales que cualquier otro cruce entre EE. UU. y México, decenas de miles de 18 ruedas cada día. La Interestatal 35 comienza en Laredo y lleva esa carga hacia el norte, mientras que Mines Road (FM-1472) dirige a los tráileres hacia los puentes a toda hora. Algunas empresas transfronterizas descuidan el mantenimiento y las horas de los conductores, poniendo en grave riesgo a las familias de Laredo. Si resultó lesionado en un accidente de camión en Laredo o el condado de Webb, Trucking Chicas está lista para luchar por usted.",
       highways: [
@@ -658,7 +658,7 @@ const es: Dictionary = {
     },
     waco: {
       heroHeadline: "Abogado de Accidentes de Camión en Waco, TX",
-      heroSubhead: "¿Lesionado en un choque de camión en la I-35 en Waco? Nuestras abogadas responsabilizan a las compañías de camiones en todo el centro de Texas.",
+      heroSubhead: "¿Lesionado en un choque de camión en la I-35 en Waco? Nuestro bufete responsabiliza a las compañías de camiones en todo el centro de Texas.",
       localTitle: "Waco Está Sobre Una de las Rutas de Carga Más Transitadas del País",
       localContent: "Waco es el punto medio del corredor de la I-35 entre Dallas-Fort Worth y Austin-San Antonio, una de las rutas de carga más transitadas del país. La reconstrucción de años de la I-35 por el centro de Waco ha creado un laberinto de carriles cambiantes, hombros estrechos y frenados repentinos donde chocan los 18 ruedas y los conductores. Sume el tráfico universitario y el transporte regional en la US-84 y el Loop 340, y las carreteras de Waco siguen siendo peligrosas. Si un accidente de camión ha trastornado su vida en Waco o el condado de McLennan, Trucking Chicas luchará por su recuperación total.",
       highways: [
@@ -682,7 +682,7 @@ const es: Dictionary = {
     },
     mcallen: {
       heroHeadline: "Abogado de Accidentes de Camión en McAllen, TX",
-      heroSubhead: "¿Lesionado por un camión comercial en McAllen? Nuestras abogadas luchan por las familias del Valle del Río Grande heridas por la negligencia de los camiones.",
+      heroSubhead: "¿Lesionado por un camión comercial en McAllen? Nuestro bufete lucha por las familias del Valle del Río Grande heridas por la negligencia de los camiones.",
       localTitle: "La Carga del Valle del Río Grande Hace Peligrosas las Carreteras de McAllen",
       localContent: "McAllen es el corazón del Valle del Río Grande, una de las regiones de carga agrícola y transfronteriza más transitadas de Texas. El Puente Internacional Pharr-Reynosa es el puerto terrestre número uno para los productos que entran a Estados Unidos, enviando un flujo constante de 18 ruedas y camiones refrigerados a la US-83 (Expressway 83) y la I-2. El rápido crecimiento poblacional ha llenado estas carreteras de tráfico comercial y de pasajeros. Cuando las compañías de camiones descuidan la seguridad, Trucking Chicas las responsabiliza por las familias a las que lastiman.",
       highways: [
@@ -706,7 +706,7 @@ const es: Dictionary = {
     },
     beaumont: {
       heroHeadline: "Abogado de Accidentes de Camión en Beaumont, TX",
-      heroSubhead: "¿Lesionado por un camión en Beaumont? Nuestras abogadas enfrentan a las compañías de refinería y de carga del Triángulo Dorado.",
+      heroSubhead: "¿Lesionado por un camión en Beaumont? Nuestro bufete enfrenta a las compañías de refinería y de carga del Triángulo Dorado.",
       localTitle: "Las Refinerías, el Puerto y la I-10 Hacen Peligrosas las Carreteras de Beaumont",
       localContent: "Beaumont está en el corazón del Triángulo Dorado, un centro petroquímico lleno de refinerías y servido por el Puerto de Beaumont, el puerto de embarque militar más activo del país. Los camiones cisterna que transportan materiales peligrosos, las plataformas con equipo pesado y la interminable carga entre Houston y Luisiana se vuelcan sobre la I-10 y el Eastex Freeway (US-69/96/287). Cuando uno de estos camiones pesados se ve involucrado en un choque, las lesiones suelen ser catastróficas. Trucking Chicas lucha por las familias del sureste de Texas afectadas por la negligencia de los camiones.",
       highways: [
@@ -730,7 +730,7 @@ const es: Dictionary = {
     },
     odessa: {
       heroHeadline: "Abogado de Accidentes de Camión en Odessa, TX",
-      heroSubhead: "¿Lesionado por un camión petrolero o comercial en Odessa? Nuestras abogadas enfrentan a las compañías de camiones de la Cuenca Pérmica.",
+      heroSubhead: "¿Lesionado por un camión petrolero o comercial en Odessa? Nuestro bufete enfrenta a las compañías de camiones de la Cuenca Pérmica.",
       localTitle: "La Cuenca Pérmica Hace de Odessa Una de las Carreteras Más Mortales de Texas",
       localContent: "Odessa está en el corazón de la Cuenca Pérmica, el yacimiento petrolero más activo del mundo. Las carreteras de la región están inundadas de camiones cisterna, transportes de arena y agua, traslados de equipo y conductores petroleros fatigados que trabajan turnos largos. La I-20 y la TX-191 entre Odessa y Midland están entre los tramos de carretera más mortales de Texas, y los caminos rurales de dos carriles hacia los campos petroleros ven choques frontales con demasiada frecuencia. Trucking Chicas lucha por las familias del oeste de Texas heridas por la negligencia del transporte petrolero.",
       highways: [
@@ -753,27 +753,49 @@ const es: Dictionary = {
       ],
     },
     killeen: {
-      heroHeadline: "Abogado de Accidentes de Camión en Killeen, TX",
-      heroSubhead: "¿Lesionado por un camión en Killeen? Nuestras abogadas luchan por las familias del centro de Texas y las comunidades militares heridas en accidentes de camión.",
-      localTitle: "Fort Cavazos y el Tráfico en Aumento Impulsan los Accidentes de Camión en Killeen",
-      localContent: "Killeen es sede de Fort Cavazos (antes Fort Hood), una de las instalaciones militares más grandes del mundo. Los convoyes de logística militar y los transportes de equipo pesado comparten la US-190 y el nuevo corredor de la I-14 con 18 ruedas comerciales, y el rápido crecimiento del área de Killeen-Temple ha sumado una oleada de camiones de reparto y de construcción. Las carreteras rurales de alta velocidad que conectan con la I-35 hacen que los choques graves de camiones sean demasiado comunes. Trucking Chicas lucha por las familias del centro de Texas heridas en ellos.",
+      heroHeadline: "Abogado de Accidentes de 18 Ruedas y Camión en Killeen",
+      heroSubhead: "¿Lo golpeó un tráiler o un camión comercial en la I-14, la US-190 o las vías de Fort Cavazos? Atendemos casos del Condado de Bell.",
+      localTitle: "Fort Cavazos, la I-14, la I-35 y los tribunales del Condado de Bell",
+      localContent: "Killeen está en el corredor de la I-14 y la US-190, junto a Fort Cavazos. La carga que sirve a la base, y los camiones que van entre Austin y Waco, también usan la I-35. Las demandas por lesiones de choques en Killeen se presentan en los tribunales del Condado de Bell, en Belton.",
+      localDetails: [
+        "Fort Cavazos, antes Fort Hood, es una de las bases del Ejército más grandes del país. Los convoyes militares, los transportes de equipo pesado y los tráileres comerciales comparten la US-190 y la I-14 con los autos locales en las puertas y a través de Killeen, Copperas Cove y Harker Heights. Un choque con una compañía privada en esas vías es un caso civil del Condado de Bell. Un choque con un vehículo militar u otro del gobierno puede tener un plazo de aviso mucho más corto que los dos años usuales para demandar.",
+      ],
       highways: [
-        { name: "US-190 (Central Texas Expressway)", desc: "La ruta principal por Killeen y Copperas Cove, con tráfico militar, comercial y de pasajeros por el corazón de la ciudad." },
-        { name: "Corredor de la I-14", desc: "La creciente interestatal este-oeste por Killeen trae cada vez más carga de 18 ruedas." },
-        { name: "TX-195", desc: "Conecta Killeen con Georgetown y la I-35, una ruta de alta velocidad con mucho tráfico de camiones." },
-        { name: "Accesos a Fort Cavazos", desc: "El tráfico de convoyes militares y equipo pesado entra y sale de la base a diario." },
+        { name: "I-14 / US-190", desc: "La autopista este-oeste por Killeen. La I-14 corre con la US-190 desde Copperas Cove, cruza la ciudad y llega a Belton, donde se une a la I-35. Es la ruta principal de camiones junto a Fort Cavazos." },
+        { name: "I-35", desc: "La ruta de carga norte-sur al este de Killeen. Los camiones salen de la I-35 en Belton hacia la I-14/US-190, o bajan desde Georgetown por la TX-195. En Temple y Belton el tráfico local se mezcla con la carga interestatal." },
+        { name: "TX-195", desc: "La vía rápida de Killeen hacia el sur, a Florence y al intercambio de la I-35 en Georgetown. Los camiones comerciales la usan como atajo entre la base y Austin." },
+        { name: "Puertas de Fort Cavazos", desc: "El tráfico de convoyes y equipo pesado se acumula donde la base se encuentra con la US-190. El cambio de turno mezcla vehículos militares con viajeros y camiones de reparto." },
       ],
       dangerZones: [
-        "US-190 por Killeen y Copperas Cove, tráfico mixto pesado de camiones y viajeros",
-        "Puertas y accesos de Fort Cavazos, convoyes militares y transporte de equipo",
-        "Corredor I-14 / US-190, volumen de carga en aumento",
-        "TX-195 hacia Georgetown, ruta rural de alta velocidad a la I-35",
-        "Intercambios del Central Texas Expressway, fusiones congestionadas con camiones comerciales",
+        "I-14/US-190 por Killeen y Copperas Cove, carga mezclada con el tráfico de Fort Cavazos",
+        "Puertas de Fort Cavazos sobre la US-190, convoyes y transportes que cruzan los carriles locales",
+        "I-14 con la I-35 en Belton, donde el tráfico de Killeen se une a la ruta Austin–Waco",
+        "TX-195 hacia Georgetown, una vía rural rápida con camiones rumbo a la I-35",
+        "Harker Heights y Nolanville, fusiones de viajeros camino a la interestatal",
+      ],
+      truckTypes: [
+        {
+          title: "Accidentes de camión alrededor de Fort Cavazos",
+          body: "La base genera su propio tráfico de camiones. Los convoyes, los transportes de tanques y los fleteros contratados entran y salen por las puertas de la US-190, y siguen por la I-14 hacia Belton o al oeste por Copperas Cove. Esos vehículos son más anchos y más lentos que los autos de alrededor, y las fusiones en el cambio de turno son cortas. Si una compañía comercial causó el choque, el caso corresponde al Condado de Bell. Si lo causó un vehículo militar, las reglas de aviso son distintas y el plazo puede ser corto. Esa diferencia hay que aclararla antes de hablar con una aseguradora.",
+        },
+        {
+          title: "Accidentes de camión en la I-14 y la US-190 en Killeen",
+          body: "La I-14 y la US-190 son la misma vía a través de Killeen. Los tráileres la usan para cruzar el centro de Texas sin pasar por el centro de Austin o de Waco, y los camiones locales la usan para llegar a la base, los centros comerciales y los almacenes del Central Texas Expressway. Los choques por alcance y los cambios de carril en las salidas son el patrón habitual. La compañía igual tiene un registro electrónico, un expediente del conductor y una póliza comercial, y de ahí se arma el reclamo.",
+        },
+        {
+          title: "Accidentes de camión en la I-35 cerca de Killeen",
+          body: "La I-35 no cruza el centro de Killeen. Pasa por Temple y Belton, a poco camino al este, y ahí el tráfico de Killeen se une a la carga entre Austin y Waco. Los camiones salen de la I-35 hacia la I-14, o se quedan en la interestatal y el choque ocurre en la fusión. Quien vive en Killeen y lo golpean en ese tramo de la I-35 sigue teniendo un caso del Condado de Bell cuando el choque es en ese condado. El número de la interestatal no mueve el tribunal.",
+        },
+        {
+          title: "Tribunales del Condado de Bell",
+          body: "Killeen está en el Condado de Bell. La cabecera es Belton, y ahí se presentan las demandas por lesiones de camión. Los tribunales de distrito escuchan los reclamos civiles contra compañías interestatales. Un choque dentro de los límites de Killeen no se queda en el tribunal municipal de la ciudad. El tribunal municipal es para faltas de la ciudad. Un reclamo grave contra una compañía de camiones es un caso civil del Condado de Bell.",
+        },
       ],
       faq: [
-        { q: "¿Qué debo hacer después de un accidente de camión en Killeen?", a: "Llame al 911, busque atención médica y tome fotos de la escena y de los datos del camión. No dé declaraciones a la aseguradora de la empresa y contacte a un abogado de accidentes de camión en Killeen de inmediato para preservar la evidencia." },
-        { q: "¿Qué pasa si estuvo involucrado un vehículo militar o del gobierno?", a: "Los casos con vehículos del gobierno o militares siguen reglas especiales y plazos más cortos. Es fundamental hablar con un abogado de inmediato para que su reclamo se presente correctamente y a tiempo." },
-        { q: "¿Cuánto tiempo tengo para presentar un reclamo en Texas?", a: "Generalmente dos años para casos de camiones privados, pero los reclamos que involucran entidades gubernamentales pueden tener plazos mucho más cortos. No espere para recibir asesoría legal." },
+        { q: "¿Qué debo hacer después de un accidente de camión en Killeen?", a: "Llame al 911, busque atención médica y fotografíe el camión, el nombre de la compañía y el número del tráiler. No dé una declaración a la aseguradora de la compañía. Llame a un abogado para que se conserve el registro electrónico." },
+        { q: "¿Dónde se presentan los casos de accidentes de camión en Killeen?", a: "Killeen está en el Condado de Bell. Las demandas por lesiones de choques de camión se presentan en los tribunales del Condado de Bell, en Belton, incluidos los tribunales de distrito que escuchan reclamos contra compañías comerciales." },
+        { q: "¿Qué pasa si estuvo involucrado un vehículo militar o del gobierno?", a: "Un choque con una compañía privada es un caso civil del Condado de Bell. Un choque con un vehículo militar u otro del gobierno puede seguir reglas distintas y un plazo de aviso mucho más corto. Hable con un abogado antes de que pase ese plazo. Esto es información general, no asesoría legal sobre su reclamo." },
+        { q: "¿Cuánto tiempo tengo para presentar un reclamo en Texas?", a: "Generalmente dos años contra una compañía privada. Un reclamo contra el gobierno puede ser mucho más corto. No espere para saber cuál plazo aplica." },
       ],
     },
     servicesTitle: "Cómo Ayudamos a Víctimas de Accidentes de Camión",
@@ -794,7 +816,7 @@ const es: Dictionary = {
     finalCtaSubhead: "Las compañías de camiones comienzan a construir su defensa en el momento del accidente. Cuanto antes llame, más fuerte será su caso.",
     houston: {
       heroHeadline: "Abogado de Accidentes de Camión en Houston, TX",
-      heroSubhead: "¿Lesionado por un camión comercial en Houston? Nuestros abogados luchan por la máxima compensación mientras usted se recupera.",
+      heroSubhead: "¿Lesionado por un camión comercial en Houston? Nuestro bufete lucha por la máxima compensación mientras usted se recupera.",
       localTitle: "Por Qué los Accidentes de Camión Son Tan Comunes en Houston",
       localContent: "Houston es la capital energética del mundo y alberga el puerto más grande de EE.UU. por tonelaje extranjero. Miles de camiones de 18 ruedas, cisternas y vehículos comerciales inundan las autopistas de Houston todos los días. El cruce de la I-10 y la I-45 es uno de los corredores de camiones más peligrosos del país. Si fue herido en un choque en cualquier parte del área metropolitana de Houston, Trucking Chicas está lista para luchar por usted.",
       highways: [
@@ -819,28 +841,53 @@ const es: Dictionary = {
       ],
     },
     dallas: {
-      heroHeadline: "Abogado de Accidentes de Camión en Dallas, TX",
-      heroSubhead: "¿Herido en un accidente de camión en Dallas? Responsabilizamos a las compañías de camiones.",
-      localTitle: "Accidentes de Camión en el Metroplex Dallas–Fort Worth",
-      localContent: "Dallas está en la encrucijada de algunos de los corredores de carga más transitados de América. I-35, I-30, I-20 e I-45 convergen aquí. Si un accidente de camión ha cambiado su vida en Dallas, nuestros abogados saben cómo enfrentar a las compañías de camiones.",
+      heroHeadline: "Abogado de Accidentes de 18 Ruedas y Camión en Dallas",
+      heroSubhead: "¿Lo golpeó un tráiler o un camión comercial en la I-35E, la I-30, la I-20 o la I-45? Los casos graves se presentan en el Condado de Dallas.",
+      localTitle: "I-35E, I-30, I-20, I-45 y los tribunales del Condado de Dallas",
+      localContent: "Dallas es donde se cruzan esas cuatro rutas de carga. La I-35E lleva camiones norte-sur por el corredor de Stemmons, la I-30 corre este-oeste hacia Fort Worth, la I-45 sube desde Houston y la I-20 une los almacenes del sur. Las demandas por lesiones de choques en la ciudad se presentan en los tribunales de distrito del Condado de Dallas, en el centro.",
+      localDetails: [
+        "El sur del Condado de Dallas es tráfico de distribución, no de paso. El Inland Port, el grupo de almacenes y patios de ferrocarril a camión alrededor de Wilmer, Hutchins y Lancaster, mete tráileres a la I-20, la I-45 y la I-35E todo el día. Esos camiones esperan, retroceden a los andenes y cruzan las rampas. Un choque ahí es un caso del Condado de Dallas aunque el tráiler vaya a otro estado.",
+      ],
       highways: [
-        { name: "I-35E (Stemmons Freeway)", desc: "Corredor principal de carga NAFTA que atraviesa el centro de Dallas con alto volumen de camiones." },
-        { name: "I-635 (LBJ Freeway)", desc: "Circuito de alta velocidad con tráfico comercial alrededor de Dallas, conocido por choques con camiones." },
-        { name: "I-30 (Tom Landry Highway)", desc: "Ruta de carga este-oeste conectando Dallas con Fort Worth y Arkansas." },
-        { name: "I-20", desc: "Corredor de carga sur que conecta Dallas con centros de distribución en Mesquite y Terrell." },
+        { name: "I-35E", desc: "Stemmons Freeway por el Design District y el centro, y luego al sur por Oak Cliff hacia DeSoto y el Inland Port. Es la ruta principal de tráileres norte-sur en Dallas." },
+        { name: "I-30", desc: "La autopista este-oeste del centro de Dallas hacia Fort Worth, y al este hacia Mesquite. El intercambio con la I-35E junta la carga y el tráfico local en los mismos carriles." },
+        { name: "I-20", desc: "El circuito sur junto a los almacenes. Los camiones entran y salen aquí hacia el Inland Port, Mesquite y Balch Springs, en lugar de cruzar el centro." },
+        { name: "I-45", desc: "La ruta a Houston, del centro hacia el sur de Dallas y los pueblos de almacenes en el límite del condado. La carga de contenedores y caja seca la usa entre el Inland Port y la I-30." },
       ],
       dangerZones: [
-        "Intercambio I-35E / I-635 (Mixmaster), uno de los intercambios más peligrosos del norte de Texas",
-        "Centro de Dallas / Deep Ellum, calles estrechas con camiones de entrega y construcción",
-        "Sur de Dallas / corredor I-45, área de almacenes y camiones industriales",
-        "Mesquite / I-30 Este, creciente tráfico de centros de distribución",
-        "Frisco / McKinney, vehículos de construcción y camiones de entrega en carreteras suburbanas",
+        "I-35E con la I-30 en el centro, donde se unen dos autopistas de carga",
+        "Corredor de Stemmons, tráileres y tráfico industrial al norte del centro",
+        "I-20 por el sur del Condado de Dallas, andenes del Inland Port y tráfico de rampas",
+        "I-45 al sur del centro, camiones entre Houston y los almacenes",
+        "I-30 al este por el este de Dallas y Mesquite, centros de distribución en las laterales",
+      ],
+      truckTypes: [
+        {
+          title: "Accidentes de tráiler en la I-35E en Dallas",
+          body: "La I-35E es la vía de la que habla la gente cuando dice un choque de tráiler en Dallas. Al norte del centro es Stemmons, una mezcla de carga, calles industriales y rampas cortas. Al sur del centro lleva los mismos tráileres hacia la I-20 y el Inland Port. Un caso de 18 ruedas no es un caso de auto. La compañía tiene reglas de horas de servicio, un registro electrónico y un expediente del conductor. Pedimos esos registros antes de que se borren, y la demanda se presenta en un tribunal de distrito del Condado de Dallas.",
+        },
+        {
+          title: "Accidentes de camión en la I-30 en Dallas",
+          body: "La I-30 es la vía de camiones entre Dallas y Fort Worth, y sigue al este hacia Mesquite. El intercambio del centro con la I-35E es una fusión de alta velocidad. Más al este, las laterales sirven almacenes y los camiones cruzan las rampas de salida. Esos choques al dar vuelta son tan comunes como los alcances en los carriles principales. Igual hay que identificar la compañía de la puerta, el número de la compañía y la póliza antes de tratar el choque como un golpe menor.",
+        },
+        {
+          title: "Accidentes de camión de distribución en la I-20 y el Inland Port",
+          body: "La I-20 por el sur de Dallas es una autopista de almacenes. Inland Port es el nombre de esa zona de logística: edificios de distribución y patios intermodales alrededor de Wilmer, Hutchins y Lancaster, con camiones entre los andenes y la I-20, la I-45 y la I-35E. El patrón del choque es distinto de un alcance en la autopista. Los camiones entran, salen y cruzan el tráfico de las rampas con el tráiler lleno. Puede haber más de una compañía, porque el transportista, el almacén y el intermediario a menudo son tres negocios distintos.",
+        },
+        {
+          title: "Accidentes de camión en la I-45 en el sur de Dallas",
+          body: "La I-45 es el camino a Houston. Dentro de Dallas va del centro por el sur de la ciudad y luego a la misma franja de almacenes que la I-20. La usan cajas secas y chasis de contenedor. Un choque en la I-45 dentro del Condado de Dallas se queda en el Condado de Dallas. La demanda no se presenta en Houston porque el camión iba para allá, ni en el estado de origen del conductor.",
+        },
+        {
+          title: "Tribunales del Condado de Dallas",
+          body: "Las demandas por lesiones de choques de camión en Dallas se presentan en los tribunales de distrito del Condado de Dallas, en el centro. Esos tribunales escuchan reclamos civiles, incluidas las demandas contra compañías interestatales. Un tribunal de paz o el tribunal municipal de la ciudad no es el lugar de un caso grave contra una compañía de camiones. Lo es el tribunal de distrito.",
+        },
       ],
       faq: [
-        { q: "¿Qué debo hacer después de un accidente de camión en Dallas?", a: "Llame al 911, obtenga ayuda médica, fotografíe la escena y evite dar declaraciones grabadas al asegurador de la compañía de camiones." },
-        { q: "¿Cuánta compensación puedo obtener?", a: "Cada caso es diferente, pero los accidentes de camión en Dallas a menudo involucran lesiones graves que resultan en facturas médicas significativas y necesidades de cuidado a largo plazo." },
-        { q: "¿Cuánto tiempo tengo para presentar un reclamo?", a: "El estatuto de limitaciones de Texas es generalmente de dos años desde la fecha del accidente." },
-        { q: "¿Puedo demandar a la compañía de camiones?", a: "Absolutamente. En la mayoría de los casos, la compañía de camiones comparte la responsabilidad por contratación negligente o presión sobre los conductores." },
+        { q: "¿Qué debo hacer después de un accidente de camión en Dallas?", a: "Llame al 911, busque atención médica, fotografíe el camión y el nombre de la compañía, y no dé una declaración grabada a la aseguradora. Llame a un abogado para que se conserven el registro electrónico y los registros del andén." },
+        { q: "¿Dónde se presentan los casos de accidentes de camión en Dallas?", a: "Se presentan en los tribunales de distrito del Condado de Dallas, en el centro. Esos tribunales escuchan casos civiles por lesiones, incluidos los reclamos contra compañías interestatales." },
+        { q: "¿Quién puede ser responsable de un choque en el Inland Port?", a: "El conductor, la compañía de transporte, un intermediario de carga y a veces el almacén que controlaba el andén pueden compartir la responsabilidad. Cuáles aplican depende de los contratos y de quién empleaba al conductor." },
+        { q: "¿Cuánto tiempo tengo para presentar un reclamo después de un accidente de camión en Texas?", a: "El plazo usual para demandar es de dos años. Los registros de la compañía pueden desaparecer en semanas. Esto es información general, no asesoría legal sobre su plazo." },
       ],
     },
     austin: {
@@ -1020,7 +1067,36 @@ const es: Dictionary = {
       heroHeadline: "Abogado de Accidentes de Tráiler en Corpus Christi, TX",
       heroSubhead: "¿Choque con un tráiler, un camión cisterna o de volteo cerca del puerto o las refinerías? Consulta gratis. No cobramos si no ganamos.",
       localTitle: "Tráileres, Cisternas y el Puerto de Corpus Christi",
-      localContent: "En Corpus Christi la búsqueda suele ser por un choque de tráiler o de 18 ruedas, no solo por un camión. La I-37, el Harbor Bridge y la SH-358 (South Padre Island Drive) mueven tráileres entre el Puerto de Corpus Christi, Refinery Row y el interior del estado. Un choque con uno de esos vehículos no se parece a un choque de auto.",
+      localContent: "En Corpus Christi la búsqueda suele ser por un choque de tráiler o de 18 ruedas, no solo por un camión. La I-37, el Harbor Bridge y la SH-358 (South Padre Island Drive) mueven tráileres entre el Puerto de Corpus Christi, Refinery Row y el interior del estado. Un choque con uno de esos vehículos no se parece a un choque de auto. Las demandas por lesiones se presentan en los tribunales del Condado de Nueces, en Corpus Christi.",
+      localDetails: [
+        "Las vías que importan son locales. La I-37 trae la carga desde San Antonio. El Harbor Bridge y la US-181 la cruzan sobre el canal. La SH-358, South Padre Island Drive, es la franja comercial donde los camiones del puerto se mezclan con el tráfico de todos los días. El viento del Golfo en el puente y en la calzada hacia Flour Bluff hace más difícil mantener en el carril una cisterna alta.",
+      ],
+      truckTypes: [
+        {
+          title: "Choques con Camiones Cisterna en Corpus Christi",
+          body: "El camión cisterna es el que más peso tiene en esta página, porque Corpus Christi vive del puerto y de las refinerías. El Puerto de Corpus Christi mueve petróleo y productos químicos, y Refinery Row, entre la ciudad y Portland, llena la I-37, el Harbor Bridge y la US-181 de cisternas. Una cisterna cargada pesa mucho más que un tráiler de caja, el líquido se mueve dentro del tanque en cada frenada, y una volcadura puede derramar combustible o un químico sobre la carretera. Esas cargas llevan placas de materiales peligrosos. Después de un choque conviene fotografiar la placa, el nombre de la compañía y el número del tanque, sin acercarse al derrame. La compañía, la planta que cargó el producto y a veces quien contrató el viaje pueden compartir la responsabilidad. El viento del Golfo en el Harbor Bridge empeora el control de un tanque alto. Un choque con cisterna en Corpus Christi se investiga como caso de vehículo comercial: horas de servicio, mantenimiento del tanque, si la carga iba bien sujeta y si el conductor tenía la licencia para ese material.",
+        },
+        {
+          title: "Choques con Tráileres y 18 Ruedas en Corpus Christi",
+          body: "La misma búsqueda también se hace por un choque de tráiler o de 18 ruedas. Son las cajas secas y los contenedores de la I-37 y del Harbor Bridge, que mueven carga entre el puerto y el resto de Texas. Un caso de 18 ruedas se decide con el registro de la compañía, el expediente del conductor y la póliza, no con un reclamo de auto. Las demandas por lesiones graves se presentan en el Condado de Nueces.",
+        },
+        {
+          title: "Choques con Camiones de Volteo en Corpus Christi",
+          body: "Los camiones de volteo trabajan las obras del puerto, la ampliación de vías y las construcciones a lo largo de la SH-358 y la I-37. Una caja cargada puede pasar de 50,000 libras. Los riesgos de siempre son la caja sobrecargada, los frenos gastados, la grava sin cubrir y el giro amplio a la derecha contra un auto. La compañía de camiones y el contratista de la obra pueden estar involucrados.",
+        },
+        {
+          title: "Choques con Camiones de Plataforma en Corpus Christi",
+          body: "Los camiones de plataforma llevan tubo, acero y equipo hacia las refinerías y el puerto. La carga va a la vista, amarrada a la cama, no dentro de una caja. Si una banda falla o una pieza se sale, golpea al vehículo de atrás o al carril de junto. En un choque de plataforma hay que ver cómo iba sujeta la carga, no solo cómo manejaba el conductor.",
+        },
+        {
+          title: "Choques con Camiones Cementeros en Corpus Christi",
+          body: "El camión cementero es una mezcladora de concreto, no un volteo. El tambor va alto, sigue girando en el tráfico y la carga tiene poco tiempo antes de fraguar, así que el conductor va contra el reloj entre la planta y la obra. Esas obras están en el sur de la ciudad, en la SPID y en los proyectos del puerto. Una mezcladora que no alcanza a frenar o que vuelca en una curva es un reclamo de vehículo comercial.",
+        },
+        {
+          title: "Choques con Camiones de Basura en Corpus Christi",
+          body: "Los camiones de basura recorren los vecindarios de Corpus Christi temprano: Flour Bluff, Calallen, el lado sur y las calles que salen de la SH-358. Se detienen en la banqueta, dan vuelta en calles angostas y salen contra el tráfico. No son tráileres del puerto, pero siguen siendo vehículos comerciales, a veces de la ciudad y a veces de una compañía privada. Si el camión es del gobierno, el plazo para dar aviso puede ser más corto que los dos años usuales para demandar.",
+        },
+      ],
       highways: [
         { name: "I-37 (San Antonio–Corpus Christi)", desc: "Corredor principal de carga conectando el Puerto de Corpus Christi con San Antonio y distribución interior." },
         { name: "US-77 (Corredor Sur de Texas)", desc: "Ruta principal de tráfico de camiones agrícolas e industriales por el Valle del Río Grande." },
@@ -1122,7 +1198,7 @@ const es: Dictionary = {
       },
       {
         q: "¿Cómo funcionan los honorarios de los abogados en casos de accidentes de camión?",
-        a: "La mayoría de los abogados de accidentes de camión, incluyendo Trucking Chicas, trabajan sobre una base de honorarios de contingencia. Esto significa que no pagas honorarios por adelantado ni honorarios de abogado a menos que obtengamos compensación para ti. El honorario es un porcentaje de la recuperación.",
+        a: "La mayoría de los bufetes de accidentes de camión, incluyendo Trucking Chicas, trabajan sobre una base de honorarios de contingencia. Esto significa que no pagas honorarios por adelantado ni honorarios de abogado a menos que obtengamos compensación para ti. El honorario es un porcentaje de la recuperación.",
       },
       {
         q: "¿Qué pasa si yo tuve parte de la culpa en el accidente?",
@@ -1176,7 +1252,7 @@ const es: Dictionary = {
     ],
     teamTitle: "Nuestro Equipo",
     teamPlaceholder:
-      "Biografías de los abogados próximamente. Contáctanos para hablar directamente con uno de nuestros abogados experimentados en accidentes de camión.",
+      "Biografías del equipo próximamente. Contáctanos para hablar directamente con nuestro bufete de accidentes de camión.",
   },
   contact: {
     title: "Contáctanos: Evaluación Gratis",
@@ -1200,10 +1276,10 @@ const es: Dictionary = {
     subhead:
       "Responde unas preguntas rápidas sobre tu accidente y nuestra herramienta de IA te dará una estimación preliminar. Solo toma un par de minutos.",
     disclaimer:
-      "Esta estimación generada por IA es solo para fines informativos y no constituye asesoría legal. Cada caso es único, y los resultados reales dependen de muchos factores que solo un abogado puede evaluar adecuadamente. No se crea una relación abogado-cliente al usar esta herramienta. Para una evaluación adecuada de tu caso, por favor habla con uno de nuestros abogados.",
+      "Esta estimación generada por IA es solo para fines informativos y no constituye asesoría legal. Cada caso es único, y los resultados reales dependen de muchos factores que solo un abogado puede evaluar adecuadamente. No se crea una relación abogado-cliente al usar esta herramienta. Para una evaluación adecuada de tu caso, por favor habla con nuestro bufete.",
     disclaimerShort: "Estimación de IA solamente, no es asesoría legal. Cada caso es único.",
     ctaHeading: "¿Quieres una Evaluación Real de tu Caso?",
-    ctaSubhead: "Nuestra estimación de IA es un punto de partida. Para una revisión completa y sin compromiso de un abogado experimentado en accidentes de camión, comunícate hoy.",
+    ctaSubhead: "Nuestra estimación de IA es un punto de partida. Para una revisión completa y sin compromiso de nuestro bufete de accidentes de camión, comunícate hoy.",
     ctaButton: "Habla con un Abogado: Gratis",
     estimating: "Analizando los detalles de tu caso...",
     result: "Tu Estimación Preliminar",

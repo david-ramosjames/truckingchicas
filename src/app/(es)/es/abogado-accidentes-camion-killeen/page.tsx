@@ -11,9 +11,13 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
+const KILLEEN_TITLE = "Abogado de Accidentes de 18 Ruedas y Camión en Killeen | Trucking Chicas";
+const KILLEEN_DESCRIPTION =
+  "¿Choque con un tráiler o camión comercial en la I-14, la US-190, la I-35 o cerca de Fort Cavazos? Casos del Condado de Bell. Consulta gratis. No cobramos si no ganamos.";
+
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Killeen, TX",
-  description: "¿Lesionado en un accidente de camión en Killeen? Trucking Chicas representa a las víctimas de choques de 18 ruedas y camiones comerciales cerca de Fort Cavazos. Consulta gratis.",
+  title: { absolute: KILLEEN_TITLE },
+  description: KILLEEN_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-killeen`,
     languages: {
@@ -23,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Killeen, TX",
-    description: "¿Lesionado en un accidente de camión en Killeen? Trucking Chicas representa a las víctimas de choques de 18 ruedas y camiones comerciales cerca de Fort Cavazos. Consulta gratis.",
+    title: KILLEEN_TITLE,
+    description: KILLEEN_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-killeen`,
   },
 };
@@ -61,6 +65,20 @@ export default function KilleenPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 

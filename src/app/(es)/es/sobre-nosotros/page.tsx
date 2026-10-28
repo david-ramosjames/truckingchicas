@@ -185,6 +185,17 @@ export default function AboutPageES() {
               <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-brand-red">
                 Asistente Ejecutiva
               </p>
+              <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  Nohemi Bespametnow aporta <strong className="font-semibold text-brand-navy">m&aacute;s de dos d&eacute;cadas de experiencia</strong> en gesti&oacute;n de proyectos, operaciones estrat&eacute;gicas y apoyo ejecutivo de alto nivel al equipo de Trucking Chicas.
+                </p>
+                <p>
+                  Con una formaci&oacute;n basada en el <strong className="font-semibold text-brand-navy">lenguaje, la literatura y la gesti&oacute;n de proyectos</strong>, se asegura de que cada detalle operativo detr&aacute;s de escena funcione con fluidez, eficiencia y precisi&oacute;n. Al trabajar de cerca con la fundadora <strong className="font-semibold text-brand-navy">Laura Ramos James</strong> y el equipo legal, Nohemi cumple un papel vital para que las operaciones del despacho sigan sin tropiezos, y el equipo pueda mantener su enfoque inquebrantable en la defensa de los clientes. <strong className="font-semibold text-brand-navy">Con fluidez en ingl&eacute;s y espa&ntilde;ol</strong>, comparte el compromiso de Trucking Chicas con una comunicaci&oacute;n accesible y culturalmente competente, para que tanto los clientes como los miembros del equipo se sientan acompa&ntilde;ados en cada paso del proceso.
+                </p>
+                <p>
+                  Fuera de su trabajo en el despacho, Nohemi es una defensora apasionada del <strong className="font-semibold text-brand-navy">arte, la cultura y el bienestar animal</strong>. Le encanta pasar tiempo de calidad con su familia, incluidos su hijo y su hija gemelos, y encontrar inspiraci&oacute;n creativa en la literatura y el cine.
+                </p>
+              </div>
             </div>
           </div>
         </div>

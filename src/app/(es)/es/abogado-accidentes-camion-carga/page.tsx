@@ -14,7 +14,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camiones de Carga en Texas",
   description:
-    "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestros abogados de accidentes de camión pueden ayudar. Evaluación gratis.",
+    "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestro bufete de accidentes de camión puede ayudar. Evaluación gratis.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-carga`,
     languages: {

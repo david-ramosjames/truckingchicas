@@ -50,6 +50,13 @@ export default function AustinPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            Crashes north of Austin, on the roads toward Fort Cavazos, are covered on our{" "}
+            <Link href={routes.killeen} className="font-semibold text-brand-navy underline hover:text-brand-red">
+              Killeen truck accident lawyer
+            </Link>{" "}
+            page.
+          </p>
         </div>
       </section>
 

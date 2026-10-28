@@ -194,6 +194,17 @@ export default function AboutPage() {
               <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-brand-red">
                 Executive Assistant
               </p>
+              <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  Nohemi Bespametnow brings <strong className="font-semibold text-brand-navy">over two decades of experience</strong> in project management, strategic operations, and high-level executive support to the Trucking Chicas team.
+                </p>
+                <p>
+                  With a background grounded in <strong className="font-semibold text-brand-navy">language, literature, and project management</strong>, she ensures that every operational detail behind the scenes runs smoothly, efficiently, and with precision. Working closely with founder <strong className="font-semibold text-brand-navy">Laura Ramos James</strong> and the legal team, Nohemi plays a vital role in keeping firm operations seamless, allowing the team to maintain its unyielding focus on client advocacy. <strong className="font-semibold text-brand-navy">Fluent in English and Spanish</strong>, she shares Trucking Chicas&rsquo; commitment to accessible, culturally competent communication, ensuring that clients and team members alike feel supported at every step of the process.
+                </p>
+                <p>
+                  Outside of her work with the firm, Nohemi is a passionate advocate for <strong className="font-semibold text-brand-navy">art, culture, and animal welfare</strong>. She loves spending quality time with her family, including her twin son and daughter, and finding creative inspiration in literature and film.
+                </p>
+              </div>
             </div>
           </div>
         </div>

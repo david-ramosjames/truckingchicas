@@ -14,7 +14,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camiones de Volteo en Texas",
   description:
-    "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestros abogados luchan por las víctimas. Evaluación gratis.",
+    "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestro bufete lucha por las víctimas. Evaluación gratis.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-volteo`,
     languages: {

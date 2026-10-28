@@ -113,8 +113,8 @@ export default function CaseEstimateModal({
         {/* Description */}
         <p className="mt-4 text-center text-gray-600">
           {isEn
-            ? "Speak with an experienced truck accident attorney today. One call can change everything \u2014 and it costs you nothing."
-            : "Hable con un abogado experimentado en accidentes de cami\u00f3n hoy. Una llamada puede cambiarlo todo \u2014 y no le cuesta nada."}
+            ? "Speak with our truck accident law firm today. One call can change everything \u2014 and it costs you nothing."
+            : "Hable con nuestro bufete de accidentes de cami\u00f3n hoy. Una llamada puede cambiarlo todo \u2014 y no le cuesta nada."}
         </p>
 
         {/* Primary CTA: Call */}

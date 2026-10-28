@@ -14,7 +14,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camiones FedEx y UPS en Texas",
   description:
-    "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestros abogados manejan casos de accidentes de camiones de reparto. Evaluación gratis.",
+    "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestro bufete maneja casos de accidentes de camiones de reparto. Evaluación gratis.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-reparto`,
     languages: {

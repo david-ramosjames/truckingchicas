@@ -12,16 +12,24 @@ import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
 
+const CORPUS_TITLE = "Corpus Christi 18-Wheeler & Tanker Accident Lawyer | Trucking Chicas";
+const CORPUS_DESCRIPTION =
+  "Hurt by an 18-wheeler or tanker truck near the Port of Corpus Christi or Refinery Row? Nueces County cases. Free consultation. No fee unless we win.";
+
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Corpus Christi, TX",
-  description: "Injured in a truck accident in Corpus Christi? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+  title: { absolute: CORPUS_TITLE },
+  description: CORPUS_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
-    languages: { en: `${SITE_URL}/truck-accident-lawyer-corpus-christi`, es: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi` },
+    languages: {
+      en: `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
+      es: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
+    },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Corpus Christi, TX",
-    description: "Injured in a truck accident in Corpus Christi? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+    title: CORPUS_TITLE,
+    description: CORPUS_DESCRIPTION,
     url: `${SITE_URL}/truck-accident-lawyer-corpus-christi`,
   },
 };
@@ -52,6 +60,20 @@ export default function CorpusChristiPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 

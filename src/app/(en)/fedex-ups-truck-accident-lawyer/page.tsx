@@ -14,7 +14,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "FedEx & UPS Truck Accident Lawyer in Texas",
   description:
-    "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our attorneys handle delivery truck accident cases. Free case review.",
+    "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our law firm handles delivery truck accident cases. Free case review.",
   alternates: {
     canonical: `${SITE_URL}/fedex-ups-truck-accident-lawyer`,
     languages: {

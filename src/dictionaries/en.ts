@@ -39,7 +39,7 @@ const en = {
     callNow: "Call 24/7",
     heading: "Ready to Fight for Your Rights?",
     subtext:
-      "Get a free, no-obligation case review from our experienced truck accident attorneys.",
+      "Get a free, no-obligation case review from our truck accident law firm.",
     formHeading: "Start Your Free Case Review",
     microcopy: "No obligation. No fees unless we win.",
   },
@@ -89,7 +89,7 @@ const en = {
       },
       {
         title: "Proven Track Record",
-        desc: "Our attorneys have recovered millions for truck accident victims across Texas. We know how to build winning cases.",
+        desc: "Our law firm has recovered millions for truck accident victims across Texas. We know how to build winning cases.",
       },
       {
         title: "Aggressive Representation",
@@ -156,7 +156,7 @@ const en = {
       },
     ],
     areasHomeTitle: "Serving All of Texas",
-    areasHomeSubtitle: "From Houston to El Paso, our truck accident lawyers represent victims in every major Texas city.",
+    areasHomeSubtitle: "From Houston to El Paso, our truck accident law firm represents victims in every major Texas city.",
     areasHomeCta: "View All Areas",
     consultFormTitle: "Get Your Free Case Review",
     consultFormSubtitle: "Talk to a truck accident lawyer today, no cost, no obligation, no pressure.",
@@ -175,7 +175,7 @@ const en = {
     title: "Texas Truck Accident Lawyer",
     metaTitle: "Texas Truck Accident Lawyer",
     metaDesc:
-      "Injured in a truck accident in Texas? Our highly experienced truck accident attorneys fight for maximum compensation. Free case review. No fees unless we win.",
+      "Injured in a truck accident in Texas? Our truck accident law firm fights for maximum compensation. Free case review. No fees unless we win.",
     heroHeadline: "Texas Truck Accident Lawyer",
     heroSubhead:
       "Truck crashes cause devastating injuries. Our team fights exclusively for truck accident victims across Texas.",
@@ -221,7 +221,7 @@ const en = {
     title: "18-Wheeler Accident Lawyer in Texas",
     metaTitle: "18-Wheeler Accident Lawyer in Texas",
     metaDesc:
-      "Hurt in an 18-wheeler crash in Texas? Our attorneys have a special focus on commercial truck accident cases. Call for a free consultation.",
+      "Hurt in an 18-wheeler crash in Texas? Our law firm has a special focus on commercial truck accident cases. Call for a free consultation.",
     heroHeadline: "18-Wheeler Accident Lawyer in Texas",
     heroSubhead:
       "18-wheeler crashes are among the most dangerous accidents on Texas roads. We fight for victims of catastrophic commercial vehicle collisions.",
@@ -246,7 +246,7 @@ const en = {
     title: "FedEx & UPS Truck Accident Lawyer",
     metaTitle: "FedEx & UPS Truck Accident Lawyer in Texas",
     metaDesc:
-      "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our attorneys handle delivery truck accident cases. Free case review.",
+      "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our law firm handles delivery truck accident cases. Free case review.",
     heroHeadline: "FedEx & UPS Truck Accident Lawyer",
     heroSubhead:
       "Delivery trucks from FedEx, UPS, Amazon, and other carriers are involved in thousands of crashes every year. We fight for victims of delivery vehicle accidents across Texas.",
@@ -316,7 +316,7 @@ const en = {
     title: "Dump Truck & Construction Vehicle Accident Lawyer",
     metaTitle: "Dump Truck & Construction Vehicle Accident Lawyer in Texas",
     metaDesc:
-      "Injured by a dump truck or construction vehicle in Texas? Our attorneys fight for victims of work zone and heavy equipment crashes. Free case review.",
+      "Injured by a dump truck or construction vehicle in Texas? Our law firm fights for victims of work zone and heavy equipment crashes. Free case review.",
     heroHeadline: "Dump Truck & Construction Accident Lawyer",
     heroSubhead:
       "Dump trucks, cement mixers, and construction vehicles cause devastating crashes in work zones and on Texas highways. We fight for victims of these preventable accidents.",
@@ -390,7 +390,7 @@ const en = {
   },
   accidentTypes: {
     title: "Types of Truck Accidents We Handle",
-    subtitle: "Our attorneys have a special focus on every type of commercial trucking accident across Texas.",
+    subtitle: "Our law firm has a special focus on every type of commercial trucking accident across Texas.",
     items: [
       {
         title: "18-Wheeler Accidents",
@@ -431,7 +431,7 @@ const en = {
       "Trucking Chicas serves truck and 18-wheeler accident victims across Texas, including Houston, Dallas, Austin, San Antonio, and more.",
     heading: "Serving Truck Accident Victims Across Texas",
     subhead:
-      "Our attorneys represent clients in every major Texas metro. If you were hurt in a trucking accident anywhere in Texas, we can help.",
+      "Our law firm represents clients in every major Texas metro. If you were hurt in a trucking accident anywhere in Texas, we can help.",
     statsTitle: "Texas Truck Accident Statistics",
     stats: [
       "Texas leads the nation in fatal truck accidents year after year.",
@@ -613,7 +613,7 @@ const en = {
       },
     },
     bottomCtaHeading: "Injured in a Truck Accident in Texas?",
-    bottomCtaSubhead: "Get a free case review from our experienced truck accident attorneys. No obligation. No fees unless we win.",
+    bottomCtaSubhead: "Get a free case review from our truck accident law firm. No obligation. No fees unless we win.",
     faqTitle: "Truck Accident Lawyer Texas: Common Questions",
     faqItems: [
       {
@@ -633,7 +633,7 @@ const en = {
   cityPages: {
     laredo: {
       heroHeadline: "Truck Accident Lawyer in Laredo, TX",
-      heroSubhead: "Hurt by a commercial truck in Laredo? Our attorneys take on the trucking companies that flood the border with 18-wheelers.",
+      heroSubhead: "Hurt by a commercial truck in Laredo? Our law firm takes on the trucking companies that flood the border with 18-wheelers.",
       localTitle: "Laredo: America's Busiest Inland Truck Crossing",
       localContent: "Laredo is the number one inland port in the United States. The World Trade International Bridge processes more commercial trucks than any other U.S.-Mexico crossing, tens of thousands of 18-wheelers every day. Interstate 35 begins in Laredo and carries that freight north, while Mines Road (FM-1472) funnels tractor-trailers to the bridges around the clock. Some cross-border carriers cut corners on maintenance and driver hours, putting Laredo families at serious risk. If you were hurt in a truck crash anywhere in Laredo or Webb County, Trucking Chicas is ready to fight for you.",
       highways: [
@@ -657,7 +657,7 @@ const en = {
     },
     waco: {
       heroHeadline: "Truck Accident Lawyer in Waco, TX",
-      heroSubhead: "Hurt in a truck crash on I-35 in Waco? Our attorneys hold trucking companies accountable across Central Texas.",
+      heroSubhead: "Hurt in a truck crash on I-35 in Waco? Our law firm holds trucking companies accountable across Central Texas.",
       localTitle: "Waco Sits on One of America's Busiest Freight Routes",
       localContent: "Waco is the midpoint of the I-35 corridor between Dallas-Fort Worth and Austin-San Antonio, one of the most heavily traveled freight routes in the country. The years-long I-35 reconstruction through downtown Waco has created a maze of shifting lanes, narrow shoulders, and sudden slowdowns where 18-wheelers and commuters collide. Add university traffic and regional trucking on US-84 and Loop 340, and Waco roads stay dangerous. If a truck wreck has upended your life in Waco or McLennan County, Trucking Chicas will fight for your full recovery.",
       highways: [
@@ -681,7 +681,7 @@ const en = {
     },
     mcallen: {
       heroHeadline: "Truck Accident Lawyer in McAllen, TX",
-      heroSubhead: "Hurt by a commercial truck in McAllen? Our attorneys fight for Rio Grande Valley families injured by trucking negligence.",
+      heroSubhead: "Hurt by a commercial truck in McAllen? Our law firm fights for Rio Grande Valley families injured by trucking negligence.",
       localTitle: "Rio Grande Valley Freight Makes McAllen Roads Dangerous",
       localContent: "McAllen anchors the Rio Grande Valley, one of the busiest agricultural and cross-border freight regions in Texas. The Pharr-Reynosa International Bridge is the number one land port for produce entering the United States, sending a constant stream of 18-wheelers and refrigerated produce trucks onto US-83 (Expressway 83) and I-2. Rapid population growth has packed these highways with commercial and commuter traffic alike. When trucking companies cut corners, Trucking Chicas holds them accountable for the families they hurt.",
       highways: [
@@ -705,7 +705,7 @@ const en = {
     },
     beaumont: {
       heroHeadline: "Truck Accident Lawyer in Beaumont, TX",
-      heroSubhead: "Hurt by a truck in Beaumont? Our attorneys take on the refinery and freight trucking companies of the Golden Triangle.",
+      heroSubhead: "Hurt by a truck in Beaumont? Our law firm takes on the refinery and freight trucking companies of the Golden Triangle.",
       localTitle: "Refineries, the Port, and I-10 Make Beaumont Roads Dangerous",
       localContent: "Beaumont sits in the heart of the Golden Triangle, a petrochemical hub packed with refineries and served by the Port of Beaumont, the nation's busiest military outload port. Tanker trucks hauling hazardous materials, flatbeds carrying heavy equipment, and endless Houston-to-Louisiana freight all pour onto I-10 and the Eastex Freeway (US-69/96/287). When one of these heavy trucks is involved in a crash, the injuries are often catastrophic. Trucking Chicas fights for Southeast Texas families harmed by trucking negligence.",
       highways: [
@@ -729,7 +729,7 @@ const en = {
     },
     odessa: {
       heroHeadline: "Truck Accident Lawyer in Odessa, TX",
-      heroSubhead: "Hurt by an oilfield or commercial truck in Odessa? Our attorneys take on the trucking companies driving the Permian Basin.",
+      heroSubhead: "Hurt by an oilfield or commercial truck in Odessa? Our law firm takes on the trucking companies driving the Permian Basin.",
       localTitle: "The Permian Basin Makes Odessa Roads Among the Deadliest in Texas",
       localContent: "Odessa sits in the heart of the Permian Basin, the busiest oilfield in the world. The region's roads are flooded with tanker trucks, sand and water haulers, equipment transports, and fatigued oilfield drivers working long shifts. I-20 and TX-191 between Odessa and Midland rank among the deadliest stretches of highway in Texas, and rural two-lane roads to the oil patch see head-on truck collisions far too often. Trucking Chicas fights for West Texas families hurt by oilfield trucking negligence.",
       highways: [
@@ -752,27 +752,49 @@ const en = {
       ],
     },
     killeen: {
-      heroHeadline: "Truck Accident Lawyer in Killeen, TX",
-      heroSubhead: "Hurt by a truck in Killeen? Our attorneys fight for Central Texas families and military communities injured in trucking accidents.",
-      localTitle: "Fort Cavazos and Growing Traffic Fuel Killeen Truck Accidents",
-      localContent: "Killeen is home to Fort Cavazos (formerly Fort Hood), one of the largest military installations in the world. Military logistics convoys and heavy equipment transports share US-190 and the new I-14 corridor with commercial 18-wheelers, and rapid growth across the Killeen-Temple area has added a surge of delivery and construction trucks. High-speed rural highways connecting to I-35 make serious truck crashes all too common. Trucking Chicas fights for the Central Texas families hurt in them.",
+      heroHeadline: "Killeen 18-Wheeler & Truck Accident Lawyer",
+      heroSubhead: "Hurt by an 18-wheeler or commercial truck on I-14, US-190, or the roads around Fort Cavazos? We handle Bell County cases.",
+      localTitle: "Fort Cavazos, I-14, I-35, and Bell County Courts",
+      localContent: "Killeen sits on the I-14/US-190 corridor beside Fort Cavazos. The freight that serves the post, and the trucks running between Austin and Waco, also use I-35. Injury lawsuits from crashes in Killeen are filed in the Bell County courts in Belton.",
+      localDetails: [
+        "Fort Cavazos, formerly Fort Hood, is one of the largest Army posts in the country. Military convoys, heavy-equipment transporters, and commercial 18-wheelers share US-190 and I-14 with local cars at the gates and through Killeen, Copperas Cove, and Harker Heights. A crash with a private carrier on those roads is a Bell County civil case. A crash with a military or other government vehicle can have a much shorter notice deadline than the usual two-year lawsuit deadline.",
+      ],
       highways: [
-        { name: "US-190 (Central Texas Expressway)", desc: "The main route through Killeen and Copperas Cove, carrying military, commercial, and commuter traffic through the heart of the city." },
-        { name: "I-14 Corridor", desc: "The growing east-west interstate through Killeen brings increasing 18-wheeler freight." },
-        { name: "TX-195", desc: "Connects Killeen to Georgetown and I-35, a high-speed route with heavy truck traffic." },
-        { name: "Fort Cavazos access roads", desc: "Military convoy and heavy equipment traffic moves in and out of the base daily." },
+        { name: "I-14 / US-190", desc: "The east-west freeway through Killeen. I-14 runs with US-190 from Copperas Cove through the city toward Belton, where it meets I-35. This is the main truck route past Fort Cavazos." },
+        { name: "I-35", desc: "The north-south freight route east of Killeen. Trucks leave I-35 at Belton for I-14/US-190, or come south from the Georgetown exit on TX-195. Temple and Belton are where local traffic merges with interstate freight." },
+        { name: "TX-195", desc: "The high-speed road from Killeen south toward Florence and the I-35 interchange at Georgetown. Commercial trucks use it as the back way between the post and Austin." },
+        { name: "Fort Cavazos gates", desc: "Convoy and heavy-equipment traffic stacks up where the post meets US-190. Shift changes mix military vehicles with commuters and delivery trucks." },
       ],
       dangerZones: [
-        "US-190 through Killeen and Copperas Cove, heavy mixed truck and commuter traffic",
-        "Fort Cavazos gates and access roads, military convoy and equipment transport",
-        "I-14 / US-190 corridor, growing freight volume",
-        "TX-195 to Georgetown, high-speed rural route to I-35",
-        "Central Texas Expressway interchanges, congested merges with commercial trucks",
+        "I-14/US-190 through Killeen and Copperas Cove, freight mixed with Fort Cavazos traffic",
+        "Fort Cavazos gates along US-190, convoys and equipment transporters turning across local lanes",
+        "I-14 at I-35 in Belton, where Killeen traffic joins the Austin–Waco freight route",
+        "TX-195 toward Georgetown, a fast rural road with trucks bound for I-35",
+        "Harker Heights and Nolanville, commuter merges on the way to the interstate",
+      ],
+      truckTypes: [
+        {
+          title: "Truck Accidents Around Fort Cavazos",
+          body: "The post generates its own truck traffic. Convoys, tank transporters, and contracted freight haulers move in and out of the gates on US-190, then continue on I-14 toward Belton or west through Copperas Cove. Those vehicles are wider and slower than the cars around them, and the merges at shift change are tight. If a commercial carrier caused the crash, the case belongs in Bell County. If a military vehicle caused it, the notice rules are different and the deadline can be short. That distinction has to be sorted out before anyone talks to an insurer.",
+        },
+        {
+          title: "I-14 and US-190 Truck Accidents in Killeen",
+          body: "I-14 and US-190 are the same road through Killeen. Eighteen-wheelers use it to cross Central Texas without going through downtown Austin or Waco, and local trucks use it to reach the post, the malls, and the warehouses along the Central Texas Expressway. Rear-end crashes and lane changes at the exits are the usual pattern. The carrier still has an electronic log, a driver file, and a commercial policy, and those records are what the claim is built on.",
+        },
+        {
+          title: "I-35 Truck Accidents Near Killeen",
+          body: "I-35 does not run through the middle of Killeen. It runs through Temple and Belton, a short drive east, and that is where Killeen traffic joins the freight between Austin and Waco. Trucks exit I-35 for I-14, or they stay on the interstate and the crash happens at the merge. People who live in Killeen and are hit on that stretch of I-35 still have a Bell County case when the crash is in Bell County. The interstate number does not move the courthouse.",
+        },
+        {
+          title: "Bell County Courts",
+          body: "Killeen is in Bell County. The county seat is Belton, and that is where truck injury lawsuits are filed. The district courts there hear civil claims against interstate carriers. A crash inside the Killeen city limits does not stay in a Killeen municipal court. Municipal court is for city offenses. A serious injury claim against a trucking company is a Bell County civil case.",
+        },
       ],
       faq: [
-        { q: "What should I do after a truck accident in Killeen?", a: "Call 911, get medical care, and photograph the scene and truck details. Do not give statements to the trucking company's insurer, and contact a Killeen truck accident lawyer right away to preserve the evidence." },
-        { q: "What if a military or government vehicle was involved?", a: "Cases involving government or military vehicles follow special rules and shorter deadlines. It is critical to speak with an attorney immediately so your claim is filed correctly and on time." },
-        { q: "How long do I have to file a truck accident claim in Texas?", a: "Generally two years for private trucking cases, but claims involving government entities can have much shorter deadlines. Do not wait to get legal advice." },
+        { q: "What should I do after a truck accident in Killeen?", a: "Call 911, get medical care, and photograph the truck, the company name, and the trailer number. Do not give a statement to the trucking company's insurer. Call a lawyer so the electronic log can be preserved." },
+        { q: "Where are Killeen truck accident cases filed?", a: "Killeen is in Bell County. Injury lawsuits from truck crashes there are filed in the Bell County courts in Belton, including the district courts that hear claims against commercial carriers." },
+        { q: "What if a military or government vehicle was involved?", a: "A crash with a private trucking company is a Bell County civil case. A crash with a military or other government vehicle can follow different rules and a much shorter notice deadline. Talk to a lawyer before that deadline passes. This is general information, not legal advice about your claim." },
+        { q: "How long do I have to file a truck accident claim in Texas?", a: "Generally two years for a case against a private carrier. Claims involving a government entity can be much shorter. Do not wait to find out which deadline applies." },
       ],
     },
     servicesTitle: "How We Help Truck Accident Victims",
@@ -793,7 +815,7 @@ const en = {
     finalCtaSubhead: "Trucking companies start building their defense the moment an accident happens. The sooner you call, the stronger your case.",
     houston: {
       heroHeadline: "Truck Accident Lawyer in Houston, TX",
-      heroSubhead: "Injured by a commercial truck in Houston? Our attorneys fight for maximum compensation while you focus on recovery.",
+      heroSubhead: "Injured by a commercial truck in Houston? Our law firm fights for maximum compensation while you focus on recovery.",
       localTitle: "Why Truck Accidents Are So Common in Houston",
       localContent: "Houston is the energy capital of the world and home to the largest port in the U.S. by foreign tonnage. That means thousands of 18-wheelers, tanker trucks, and commercial vehicles flood Houston highways every single day. Neighborhoods from Katy to Pasadena, the Galleria to the Ship Channel, are all impacted by relentless heavy truck traffic. If you were hurt in a crash anywhere in the greater Houston area, Trucking Chicas is ready to fight for you.",
       highways: [
@@ -813,33 +835,58 @@ const en = {
         { q: "What should I do after a truck accident in Houston?", a: "Move to safety if possible, call 911, seek immediate medical attention, and do not speak with the trucking company's insurance adjuster. Contact a truck accident attorney right away, evidence from Houston's busy highways can disappear fast." },
         { q: "How much is my truck accident case worth?", a: "Case value depends on the severity of your injuries, medical costs, lost wages, and pain and suffering. Houston truck accident cases often involve catastrophic injuries, which means higher potential compensation. We evaluate every case individually." },
         { q: "How long do I have to file a truck accident claim in Texas?", a: "Texas has a two-year statute of limitations for personal injury claims. However, critical evidence like trucking logs and black box data can be destroyed quickly, so acting fast is important." },
-        { q: "Who is liable in a Houston truck accident?", a: "Potentially multiple parties: the truck driver, the trucking company, the freight broker, maintenance providers, and even the shipper. Our attorneys investigate every angle to identify all responsible parties." },
+        { q: "Who is liable in a Houston truck accident?", a: "Potentially multiple parties: the truck driver, the trucking company, the freight broker, maintenance providers, and even the shipper. Our law firm investigates every angle to identify all responsible parties." },
         { q: "Do I need a lawyer for a truck accident in Houston?", a: "Yes. Trucking companies deploy legal teams immediately after a crash. Without your own attorney, you risk being pressured into a lowball settlement that does not cover your actual losses." },
       ],
     },
     dallas: {
-      heroHeadline: "Truck Accident Lawyer in Dallas, TX",
-      heroSubhead: "Hurt in a trucking accident in Dallas? We hold trucking companies accountable and fight for the full value of your case.",
-      localTitle: "Truck Accidents in the Dallas–Fort Worth Metroplex",
-      localContent: "Dallas sits at the crossroads of some of the busiest freight corridors in America, making it one of the nation's largest distribution and logistics hubs. Commercial trucks are everywhere, from the warehouse districts along I-35E to the constant freight movement through Downtown Dallas, Deep Ellum, and Oak Cliff. If a truck wreck has upended your life anywhere in Dallas, our lawyers know how to take on the trucking companies and their insurers.",
+      heroHeadline: "Dallas 18-Wheeler & Truck Accident Lawyer",
+      heroSubhead: "Hurt by an 18-wheeler or commercial truck on I-35E, I-30, I-20, or I-45? Serious injury cases are filed in Dallas County.",
+      localTitle: "I-35E, I-30, I-20, I-45, and Dallas County Courts",
+      localContent: "Dallas is where those four freight routes meet. I-35E carries north-south trucks through the Stemmons corridor, I-30 runs east-west toward Fort Worth, I-45 comes up from Houston, and I-20 ties the southern warehouses together. Injury lawsuits from crashes in the city are filed in the Dallas County district courts downtown.",
+      localDetails: [
+        "The south side of Dallas County is distribution traffic, not through traffic. The Inland Port, the cluster of warehouses and rail-to-truck yards around Wilmer, Hutchins, and Lancaster, feeds 18-wheelers onto I-20, I-45, and I-35E all day. Those trucks stage, back into docks, and turn across highway ramps. A crash there is a Dallas County case even when the trailer is bound for another state.",
+      ],
       highways: [
-        { name: "I-35E (Stemmons Freeway)", desc: "Major NAFTA freight corridor running through downtown Dallas with heavy 18-wheeler volume." },
-        { name: "I-635 (LBJ Freeway)", desc: "High-speed loop carrying commercial traffic around Dallas, notorious for truck-involved crashes." },
-        { name: "I-30 (Tom Landry Highway)", desc: "East-west freight route connecting Dallas to Fort Worth and Arkansas with constant truck traffic." },
-        { name: "I-20", desc: "Southern freight corridor linking Dallas to major distribution centers in Mesquite and Terrell." },
+        { name: "I-35E", desc: "Stemmons Freeway through the Design District and downtown, then south through Oak Cliff toward DeSoto and the Inland Port. This is the main north-south 18-wheeler route in Dallas." },
+        { name: "I-30", desc: "The east-west freeway from downtown Dallas toward Fort Worth, and east toward Mesquite. The canyon interchange with I-35E packs freight and local traffic into the same lanes." },
+        { name: "I-20", desc: "The southern loop past the warehouses. Trucks enter and exit here for the Inland Port, Mesquite, and Balch Springs instead of driving through downtown." },
+        { name: "I-45", desc: "The Houston route, from downtown south through South Dallas and into the warehouse towns along the county line. Container and dry-van freight uses it between the Inland Port and I-30." },
       ],
       dangerZones: [
-        "I-35E / I-635 Interchange (Mixmaster), one of the most dangerous interchanges in North Texas",
-        "Downtown Dallas / Deep Ellum, narrow streets with frequent delivery and construction trucks",
-        "South Dallas / I-45 corridor, warehouse and industrial truck staging area",
-        "Mesquite / I-30 East, growing distribution center traffic",
-        "Frisco / McKinney, construction vehicles and delivery trucks on suburban roads",
+        "I-35E at I-30 downtown, where two freight freeways merge",
+        "Stemmons corridor, 18-wheelers and industrial traffic north of downtown",
+        "I-20 through southern Dallas County, Inland Port docks and ramp traffic",
+        "I-45 south of downtown, trucks between Houston and the warehouses",
+        "I-30 east through East Dallas and Mesquite, distribution centers on the freeway frontage",
+      ],
+      truckTypes: [
+        {
+          title: "Dallas 18-Wheeler Accidents on I-35E",
+          body: "I-35E is the truck route people mean when they talk about a Dallas 18-wheeler crash. North of downtown it is Stemmons, a mix of freight, industrial streets, and short ramps. South of downtown it carries the same trailers toward I-20 and the Inland Port. An 18-wheeler case is not a car case. The carrier has hours-of-service rules, an electronic log, and a driver qualification file. We ask for those records before they are overwritten, and the lawsuit is filed in a Dallas County district court.",
+        },
+        {
+          title: "I-30 Truck Accidents in Dallas",
+          body: "I-30 is the Dallas–Fort Worth truck road and the continuation east toward Mesquite. The downtown interchange with I-35E is a high-speed merge. Farther east, frontage roads serve warehouses and the trucks turn across the exit ramps. Those turning crashes are as common as rear-end crashes on the main lanes. The company on the door, the motor carrier number, and the policy still have to be identified before the claim is treated as a fender bender.",
+        },
+        {
+          title: "I-20 and Inland Port Distribution Truck Accidents",
+          body: "I-20 along southern Dallas is a warehouse freeway. The Inland Port is the name for that logistics zone: distribution buildings and intermodal yards around Wilmer, Hutchins, and Lancaster, with trucks moving between the docks and I-20, I-45, and I-35E. The crash pattern is different from a highway rear-end. Trucks are entering, exiting, and crossing ramp traffic with a full trailer. More than one company can be involved, because the carrier, the warehouse, and the broker are often three different businesses.",
+        },
+        {
+          title: "I-45 Truck Accidents in Southern Dallas",
+          body: "I-45 is the road to Houston. Inside Dallas it runs from downtown through South Dallas and then into the same warehouse belt as I-20. Dry vans and container chassis use it. A crash on I-45 in Dallas County stays in Dallas County. The petition is not filed in Houston because the truck was going there, and it is not filed in the driver's home state.",
+        },
+        {
+          title: "Dallas County Courts",
+          body: "Truck injury lawsuits from crashes in Dallas are filed in the Dallas County district courts downtown. Those courts hear civil claims, including suits against interstate carriers. A justice court or a city municipal court is not where a serious injury case against a trucking company belongs. The district court is.",
+        },
       ],
       faq: [
-        { q: "What should I do after a truck accident in Dallas?", a: "Call 911, get medical help even if you feel fine, photograph the scene, and avoid giving recorded statements to the trucking company's insurer. Reach out to a truck accident lawyer as soon as possible to protect your claim." },
-        { q: "How much compensation can I get for a Dallas truck accident?", a: "Every case is different, but truck accidents in Dallas often involve serious injuries that result in significant medical bills, lost wages, and long-term care needs. We fight to recover the full value, not a quick lowball offer." },
-        { q: "How long do I have to file a claim after a truck accident in Texas?", a: "The Texas statute of limitations is generally two years from the accident date. But trucking evidence like driver logs and GPS data can be destroyed in weeks, so early action matters." },
-        { q: "Can I sue the trucking company, not just the driver?", a: "Absolutely. In most Dallas truck accident cases, the trucking company shares liability through negligent hiring, inadequate training, or pressure on drivers to violate federal hours-of-service rules." },
+        { q: "What should I do after a truck accident in Dallas?", a: "Call 911, get medical help, photograph the truck and the company name, and do not give a recorded statement to the trucking company's insurer. Call a lawyer so the electronic log and dock records can be preserved." },
+        { q: "Where are Dallas truck accident cases filed?", a: "They are filed in the Dallas County district courts in downtown Dallas. Those courts hear civil injury cases, including claims against interstate carriers." },
+        { q: "Who can be responsible for an Inland Port crash?", a: "The driver, the motor carrier, a freight broker, and sometimes the warehouse that controlled the dock can share responsibility. Which ones apply depends on the contracts and who employed the driver." },
+        { q: "How long do I have to file a claim after a truck accident in Texas?", a: "The usual lawsuit deadline is two years. Carrier records can be gone in weeks. This is general information, not legal advice about your deadline." },
       ],
     },
     austin: {
@@ -930,7 +977,7 @@ const en = {
       heroHeadline: "Truck Accident Lawyer in Fort Worth, TX",
       heroSubhead: "Injured by a truck in Fort Worth? We take on the trucking industry so you can focus on getting better.",
       localTitle: "Heavy Freight and Dangerous Roads in Fort Worth",
-      localContent: "Fort Worth is a major freight hub where rail and trucking intersect. Fort Worth's role as a rail-to-truck interchange point means warehouses and distribution centers line the highways, generating round-the-clock 18-wheeler activity. Add winter ice storms that hit North Texas, and you have conditions ripe for devastating truck crashes. If you or a family member has been hurt in a Fort Worth truck accident, our attorneys will hold the responsible parties accountable.",
+      localContent: "Fort Worth is a major freight hub where rail and trucking intersect. Fort Worth's role as a rail-to-truck interchange point means warehouses and distribution centers line the highways, generating round-the-clock 18-wheeler activity. Add winter ice storms that hit North Texas, and you have conditions ripe for devastating truck crashes. If you or a family member has been hurt in a Fort Worth truck accident, our law firm will hold the responsible parties accountable.",
       highways: [
         { name: "I-30 (East-West Freight)", desc: "Massive east-west freight corridor carrying commercial traffic between Fort Worth and Dallas." },
         { name: "I-35W (NAFTA Route)", desc: "Connects to the NAFTA trade route running from the Mexican border through the DFW metroplex." },
@@ -946,7 +993,7 @@ const en = {
       ],
       faq: [
         { q: "What should I do after a truck accident in Fort Worth?", a: "Call 911, seek immediate medical care, document the scene with photos, and do not discuss the accident with the trucking company's representatives. Contact a truck accident lawyer right away." },
-        { q: "How are Fort Worth truck accidents different from car accidents?", a: "Truck accidents involve federal regulations, multiple potentially liable parties, and typically much more severe injuries. They require attorneys who understand the trucking industry." },
+        { q: "How are Fort Worth truck accidents different from car accidents?", a: "Truck accidents involve federal regulations, multiple potentially liable parties, and typically much more severe injuries. They require a law firm that understands the trucking industry." },
         { q: "Can I get compensation if I was partially at fault?", a: "Texas follows a modified comparative fault rule. You can still recover damages as long as you are less than 51% at fault, though your compensation may be reduced proportionally." },
         { q: "How long does a truck accident case take?", a: "Timelines vary based on the complexity of the case and the severity of injuries. Some cases settle in months; others require litigation. We keep you informed every step of the way." },
       ],
@@ -1016,33 +1063,62 @@ const en = {
       ],
     },
     corpusChristi: {
-      heroHeadline: "Truck Accident Lawyer in Corpus Christi, TX",
-      heroSubhead: "Injured in a truck accident near the port or refineries? We fight for Corpus Christi families harmed by trucking negligence.",
-      localTitle: "Port Traffic and Petrochemical Trucks Make Corpus Christi Roads Dangerous",
-      localContent: "Corpus Christi is a major port city and petrochemical hub where industrial truck traffic is a constant presence. Tanker trucks carrying hazardous materials, flatbeds hauling heavy equipment, and container trucks from the Port of Corpus Christi, the third-largest port in the U.S. by tonnage, fill local roads daily. Coastal wind conditions and sudden Gulf weather can make these already-heavy trucks even more dangerous. If you were injured in a truck wreck in the Coastal Bend area, our attorneys will fight to hold the negligent parties accountable.",
+      heroHeadline: "Corpus Christi 18-Wheeler & Tanker Accident Lawyer",
+      heroSubhead: "Hurt by an 18-wheeler, tanker, or other commercial truck near the port or Refinery Row? We handle Nueces County cases.",
+      localTitle: "Port Tankers, 18-Wheelers, and Nueces County Courts",
+      localContent: "Corpus Christi is a port and refinery city. Tanker trucks and 18-wheelers move fuel and chemicals between the Port of Corpus Christi, Refinery Row, and I-37. Injury lawsuits from those crashes are filed in the Nueces County courts in Corpus Christi.",
+      localDetails: [
+        "The roads that matter are local, not a statewide average. I-37 brings freight in from San Antonio. The Harbor Bridge and US-181 carry it across the ship channel. SH-358, South Padre Island Drive, is the commercial strip where port trucks meet everyday traffic. Gulf winds on the bridge and the causeway toward Flour Bluff make a tall tanker harder to hold in a lane.",
+      ],
       highways: [
-        { name: "I-37 (San Antonio–Corpus Christi)", desc: "Primary freight corridor connecting the Port of Corpus Christi to San Antonio and inland distribution." },
-        { name: "US-77 (South Texas Corridor)", desc: "Major route carrying agricultural and industrial truck traffic through the Rio Grande Valley." },
-        { name: "SH-358 (South Padre Island Drive / SPID)", desc: "Corpus Christi's main commercial artery with heavy delivery and freight traffic." },
-        { name: "Harbor Bridge / US-181", desc: "Key crossing over the ship channel with constant port-related truck traffic." },
+        { name: "I-37", desc: "The freight road between the port and San Antonio. Tankers and 18-wheelers use it through Calallen and into the city." },
+        { name: "Harbor Bridge / US-181", desc: "The ship-channel crossing. Port trucks, hazmat loads, and a narrow approach with crosswinds." },
+        { name: "SH-358 (South Padre Island Drive)", desc: "Corpus Christi's main commercial artery. Delivery trucks, cement mixers, and port traffic share it with local cars." },
+        { name: "Refinery Row", desc: "The plants between Corpus Christi and Portland. Tanker trucks stage here before they get on I-37 or US-181." },
       ],
       dangerZones: [
-        "Port of Corpus Christi / Inner Harbor, tanker and container truck traffic around the clock",
-        "Harbor Bridge corridor, narrow crossing with heavy commercial vehicles and hazmat loads",
-        "Refinery Row / Portland, petrochemical truck staging and hazardous materials transport",
-        "JFK Causeway / Flour Bluff, coastal route with strong crosswinds affecting trucks",
-        "Calallen / I-37 North, truck stop corridor and freight staging area",
+        "Port of Corpus Christi and the Inner Harbor, tankers and container trucks around the clock",
+        "Harbor Bridge, hazmat loads on a narrow crossing",
+        "Refinery Row and Portland, petrochemical truck staging",
+        "SH-358, commercial traffic mixed with city driving",
+        "Calallen and I-37 north, truck stops and freight staging",
+      ],
+      truckTypes: [
+        {
+          title: "Corpus Christi Tanker Truck Accidents",
+          body: "Tanker crashes deserve the most attention here because the port and the refineries run on them. The Port of Corpus Christi moves oil and chemicals, and Refinery Row, between the city and Portland, puts loaded tankers on I-37, the Harbor Bridge, and US-181. A loaded tanker weighs far more than a dry van, the liquid shifts in the tank when the driver brakes, and a rollover can spill fuel or a chemical across the road. Those loads carry hazmat placards. Photograph the placard, the company name, and the tank number without walking into a spill. The carrier, the plant that loaded the product, and sometimes the company that hired the trip can all share responsibility. Gulf wind on the Harbor Bridge makes a tall tank harder to control. A tanker crash in Corpus Christi is investigated as a commercial vehicle case: hours of service, tank maintenance, whether the load was secured, and whether the driver was licensed for that cargo.",
+        },
+        {
+          title: "Corpus Christi 18-Wheeler Accident Lawyer",
+          body: "People also search this crash as an 18-wheeler or trailer wreck. Those are the dry vans and container trucks on I-37 and the Harbor Bridge, moving freight between the port and the rest of Texas. An 18-wheeler case turns on the carrier's log, the driver file, and the insurance policy, not on a standard auto claim. Serious injury lawsuits are filed in Nueces County.",
+        },
+        {
+          title: "Corpus Christi Dump Truck Accidents",
+          body: "Dump trucks work port construction, road projects, and job sites along SH-358 and I-37. A loaded bed can exceed 50,000 pounds. Overloaded beds, worn brakes, uncovered gravel, and a wide right turn into a car are the usual facts. The trucking company and the contractor on the job can both be involved.",
+        },
+        {
+          title: "Corpus Christi Flatbed Truck Accidents",
+          body: "Flatbeds haul pipe, steel, and equipment to the refineries and the port. The load sits in the open, strapped to the deck. If a strap fails, the cargo hits the vehicle behind it or the next lane. A flatbed case looks at how the load was secured, not only at how the driver steered.",
+        },
+        {
+          title: "Corpus Christi Cement Truck Accidents",
+          body: "A cement truck is a concrete mixer, not a dump truck. The drum rides high, keeps turning in traffic, and the load has a short time before it sets, so the driver is on a clock between the plant and the pour. Those pours are on SPID, the south side, and port projects. A mixer that cannot stop, or that rolls in a curve, is a commercial vehicle claim.",
+        },
+        {
+          title: "Corpus Christi Garbage Truck Accidents",
+          body: "Garbage trucks run neighborhood streets early: Flour Bluff, Calallen, the south side, and the blocks off SH-358. They stop at the curb, turn on narrow streets, and pull out into traffic. They are not port 18-wheelers, but they are still commercial vehicles, sometimes the city's and sometimes a private hauler's. When the truck belongs to a government, the notice deadline can be much shorter than the usual two years to file suit.",
+        },
       ],
       faq: [
-        { q: "What should I do after a truck accident in Corpus Christi?", a: "Get to safety, call 911, seek medical attention, and try to photograph any hazmat placards or company markings on the truck. Do not give statements to insurance companies. Call a lawyer immediately." },
-        { q: "Are petrochemical trucking companies liable for accidents?", a: "Yes. Petrochemical and tanker trucking companies must follow strict federal and state regulations. When they cut corners, they can be held fully accountable for the harm they cause." },
-        { q: "How long do I have to file a truck accident claim?", a: "The Texas statute of limitations is generally two years. For cases involving hazardous materials or government entities, different deadlines may apply. Consult an attorney promptly." },
-        { q: "What if the truck driver was from out of state?", a: "You can still file your claim in Texas. Our attorneys handle cases involving out-of-state trucking companies and drivers operating on Texas roads." },
+        { q: "What should I do after a tanker or 18-wheeler crash in Corpus Christi?", a: "Get to safety, call 911, and photograph any hazmat placard, company name, and trailer number without approaching a spill. Do not give a statement to the trucking company's insurer." },
+        { q: "Where are Corpus Christi truck accident cases filed?", a: "Corpus Christi is in Nueces County. Injury lawsuits from truck crashes there are filed in the Nueces County courts in Corpus Christi, including the district courts that hear claims against commercial carriers." },
+        { q: "Who can be responsible for a refinery tanker crash?", a: "The driver, the carrier, the plant that loaded the tank, and sometimes the company that hired the shipment can share responsibility. Which ones apply depends on who employed the driver and who maintained the tank." },
+        { q: "How long do I have to file a truck accident claim?", a: "The usual Texas deadline is two years. A government truck can require notice much sooner. This is general information, not legal advice about your deadline." },
       ],
     },
     plano: {
       heroHeadline: "Truck Accident Lawyer in Plano, TX",
-      heroSubhead: "Crashed into by a commercial truck in Plano? Our attorneys help suburban families recover from devastating truck accidents.",
+      heroSubhead: "Crashed into by a commercial truck in Plano? Our law firm helps suburban families recover from devastating truck accidents.",
       localTitle: "Growing Traffic and Commercial Development Drive Plano Truck Accidents",
       localContent: "Plano and the northern Dallas–Fort Worth suburbs have experienced explosive commercial growth, bringing a surge of truck traffic to roads not originally designed for it. Corporate campuses from Toyota to Liberty Mutual generate constant delivery activity. Construction trucks serve the endless stream of new developments. Truck accidents in this area are increasing alongside the population. If a truck has disrupted your life, Trucking Chicas will fight for your full recovery.",
       highways: [
@@ -1121,7 +1197,7 @@ const en = {
       },
       {
         q: "How do attorney fees work in truck accident cases?",
-        a: "Most truck accident attorneys, including Trucking Chicas, work on a contingency fee basis. This means you pay no upfront fees and no attorney fees unless we recover compensation for you. The fee is a percentage of the recovery.",
+        a: "Most truck accident law firms, including Trucking Chicas, work on a contingency fee basis. This means you pay no upfront fees and no attorney fees unless we recover compensation for you. The fee is a percentage of the recovery.",
       },
       {
         q: "What if I was partially at fault for the accident?",
@@ -1176,7 +1252,7 @@ const en = {
     // TODO: Add attorney bios here when available
     teamTitle: "Our Team",
     teamPlaceholder:
-      "Attorney bios coming soon. Contact us to speak directly with one of our experienced truck accident attorneys.",
+      "Team bios coming soon. Contact us to speak directly with our truck accident law firm.",
   },
   contact: {
     title: "Contact Us: Free Case Review",
@@ -1200,10 +1276,10 @@ const en = {
     subhead:
       "Answer a few quick questions about your accident and our AI tool will provide a preliminary estimate. It only takes a couple of minutes.",
     disclaimer:
-      "This AI-generated estimate is for informational purposes only and does not constitute legal advice. Every case is unique, and actual outcomes depend on many factors that only an attorney can properly evaluate. No attorney-client relationship is created by using this tool. For a proper case evaluation, please speak with one of our attorneys.",
+      "This AI-generated estimate is for informational purposes only and does not constitute legal advice. Every case is unique, and actual outcomes depend on many factors that only an attorney can properly evaluate. No attorney-client relationship is created by using this tool. For a proper case evaluation, please speak with our law firm.",
     disclaimerShort: "AI estimate only, not legal advice. Every case is unique.",
     ctaHeading: "Want a Real Case Evaluation?",
-    ctaSubhead: "Our AI estimate is a starting point. For a thorough, no-obligation case review from an experienced truck accident attorney, reach out today.",
+    ctaSubhead: "Our AI estimate is a starting point. For a thorough, no-obligation case review from our truck accident law firm, reach out today.",
     ctaButton: "Talk to a Lawyer: Free",
     estimating: "Analyzing your case details...",
     result: "Your Preliminary Estimate",
