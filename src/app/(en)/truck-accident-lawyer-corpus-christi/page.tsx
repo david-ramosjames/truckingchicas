@@ -12,7 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
 
-const CORPUS_TITLE = "Corpus Christi 18-Wheeler & Tanker Accident Lawyer | Trucking Chicas";
+const CORPUS_TITLE = "Corpus Christi 18-Wheeler & Tanker Accident Lawyer";
 const CORPUS_DESCRIPTION =
   "Hurt by an 18-wheeler or tanker truck near the Port of Corpus Christi or Refinery Row? Nueces County cases. Free consultation. No fee unless we win.";
 
