@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -11,9 +12,13 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
+const BEAUMONT_TITLE = "Abogado de Accidentes de 18 Ruedas en Beaumont | Trucking Chicas";
+const BEAUMONT_DESCRIPTION =
+  "¿Choque con un tráiler o una cisterna en la I-10 o cerca del Puerto de Beaumont? Casos del Condado de Jefferson. Consulta gratis. No cobramos si no ganamos.";
+
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Beaumont, TX",
-  description: "¿Lesionado en un accidente de camión en Beaumont? Trucking Chicas representa a las víctimas de choques de 18 ruedas, cisternas y camiones de refinería en la I-10. Consulta gratis.",
+  title: { absolute: BEAUMONT_TITLE },
+  description: BEAUMONT_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-beaumont`,
     languages: {
@@ -23,8 +28,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Beaumont, TX",
-    description: "¿Lesionado en un accidente de camión en Beaumont? Trucking Chicas representa a las víctimas de choques de 18 ruedas, cisternas y camiones de refinería en la I-10. Consulta gratis.",
+    title: BEAUMONT_TITLE,
+    description: BEAUMONT_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-beaumont`,
   },
 };
@@ -61,8 +66,23 @@ export default function BeaumontPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       {/* City map */}
       <section className="bg-gray-50 py-12">
@@ -79,6 +99,8 @@ export default function BeaumontPageES() {
       </section>
 
       {/* Carreteras y Zonas de Peligro */}
+      <CityLawsuitSection cityKey="beaumont" locale="es" />
+
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">

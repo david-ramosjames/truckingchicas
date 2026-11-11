@@ -10,6 +10,7 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 const DALLAS_TITLE = "Abogado de Accidentes de 18 Ruedas y Camión en Dallas | Trucking Chicas";
 const DALLAS_DESCRIPTION =
@@ -78,6 +79,8 @@ export default function DallasPageES() {
           <Image src={IMAGES.maps.dallas} alt="Mapa del área de Dallas" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
+
+      <CityLawsuitSection cityKey="dallas" locale="es" />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">

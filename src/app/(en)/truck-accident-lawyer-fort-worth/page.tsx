@@ -11,17 +11,26 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
+
+const FORT_WORTH_TITLE = "Fort Worth 18-Wheeler & Truck Accident Lawyer | Trucking Chicas";
+const FORT_WORTH_DESCRIPTION =
+  "Hurt by an 18-wheeler on I-35W, I-30, or I-20, or near Alliance? Tarrant County cases. Free consultation. No fee unless we win.";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Fort Worth, TX",
-  description: "Injured in a truck accident in Fort Worth? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+  title: { absolute: FORT_WORTH_TITLE },
+  description: FORT_WORTH_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-fort-worth`,
-    languages: { en: `${SITE_URL}/truck-accident-lawyer-fort-worth`, es: `${SITE_URL}/es/abogado-accidentes-camion-fort-worth` },
+    languages: {
+      en: `${SITE_URL}/truck-accident-lawyer-fort-worth`,
+      es: `${SITE_URL}/es/abogado-accidentes-camion-fort-worth`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-fort-worth`,
+    },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Fort Worth, TX",
-    description: "Injured in a truck accident in Fort Worth? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+    title: FORT_WORTH_TITLE,
+    description: FORT_WORTH_DESCRIPTION,
     url: `${SITE_URL}/truck-accident-lawyer-fort-worth`,
   },
 };
@@ -52,8 +61,23 @@ export default function FortWorthPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       {/* Truck Accident Map */}
       <section className="bg-gray-50 py-12">
@@ -63,6 +87,8 @@ export default function FortWorthPage() {
       </section>
 
       {/* Highways & Danger Zones */}
+      <CityLawsuitSection cityKey="fortWorth" locale="en" />
+
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">

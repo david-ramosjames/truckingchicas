@@ -11,17 +11,26 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
+
+const AUSTIN_TITLE = "Austin 18-Wheeler & Truck Accident Lawyer | Trucking Chicas";
+const AUSTIN_DESCRIPTION =
+  "Hurt by an 18-wheeler on I-35, SH-130, or US-183 in Austin? Travis County cases. Free consultation. No fee unless we win.";
 
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Austin, TX",
-  description: "Injured in a truck accident in Austin? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+  title: { absolute: AUSTIN_TITLE },
+  description: AUSTIN_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-austin`,
-    languages: { en: `${SITE_URL}/truck-accident-lawyer-austin`, es: `${SITE_URL}/es/abogado-accidentes-camion-austin` },
+    languages: {
+      en: `${SITE_URL}/truck-accident-lawyer-austin`,
+      es: `${SITE_URL}/es/abogado-accidentes-camion-austin`,
+      "x-default": `${SITE_URL}/truck-accident-lawyer-austin`,
+    },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Austin, TX",
-    description: "Injured in a truck accident in Austin? Trucking Chicas helps victims recover compensation. Call now for a free consultation.",
+    title: AUSTIN_TITLE,
+    description: AUSTIN_DESCRIPTION,
     url: `${SITE_URL}/truck-accident-lawyer-austin`,
   },
 };
@@ -50,6 +59,9 @@ export default function AustinPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
           <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Crashes north of Austin, on the roads toward Fort Cavazos, are covered on our{" "}
             <Link href={routes.killeen} className="font-semibold text-brand-navy underline hover:text-brand-red">
@@ -60,6 +72,18 @@ export default function AustinPage() {
         </div>
       </section>
 
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
       {/* Map Placeholder */}
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
@@ -68,6 +92,8 @@ export default function AustinPage() {
       </section>
 
       {/* Highways & Danger Zones */}
+      <CityLawsuitSection cityKey="austin" locale="en" />
+
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">

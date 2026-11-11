@@ -11,6 +11,7 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 export const metadata: Metadata = {
   title: { absolute: "Abogado de Accidentes de Camión y 18 Ruedas en Arlington | TX" },
@@ -86,6 +87,8 @@ export default function ArlingtonPageES() {
           <Image src={IMAGES.maps.arlington} alt="Mapa del área de Arlington" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
+
+      <CityLawsuitSection cityKey="arlington" locale="es" />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">

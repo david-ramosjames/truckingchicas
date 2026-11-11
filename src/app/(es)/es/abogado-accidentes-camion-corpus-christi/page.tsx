@@ -10,12 +10,14 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
+const CORPUS_TITLE = "Abogado de Tráiler en Corpus Christi | Consulta Gratis";
 const CORPUS_DESCRIPTION =
-  "¿Choque con un tráiler, camión cisterna o de volteo en Corpus Christi? Consulta gratis y hablamos español. No cobramos si no ganamos.";
+  "Hablamos español. ¿Choque con un tráiler, camión cisterna o de volteo en Corpus Christi? Consulta gratis. No cobramos si no ganamos.";
 
 export const metadata: Metadata = {
-  title: { absolute: "Abogado de Accidentes de Tráiler en Corpus Christi, TX" },
+  title: { absolute: CORPUS_TITLE },
   description: CORPUS_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Tráiler en Corpus Christi, TX",
+    title: CORPUS_TITLE,
     description: CORPUS_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-corpus-christi`,
   },
@@ -77,6 +79,8 @@ export default function CorpusChristiPageES() {
           <Image src={IMAGES.maps.corpusChristi} alt="Mapa del área de Corpus Christi" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
+
+      <CityLawsuitSection cityKey="corpusChristi" locale="es" />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">

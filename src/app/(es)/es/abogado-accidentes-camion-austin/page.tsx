@@ -11,10 +11,15 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
+
+const AUSTIN_TITLE = "Abogado de Accidentes de 18 Ruedas en Austin | Trucking Chicas";
+const AUSTIN_DESCRIPTION =
+  "¿Choque con un tráiler en la I-35, la SH-130 o la US-183 en Austin? Casos del Condado de Travis. Consulta gratis. No cobramos si no ganamos.";
 
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Austin, TX",
-  description: "¿Lesionado en un accidente de camión en Austin? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+  title: { absolute: AUSTIN_TITLE },
+  description: AUSTIN_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-austin`,
     languages: {
@@ -24,8 +29,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Austin, TX",
-    description: "¿Lesionado en un accidente de camión en Austin? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+    title: AUSTIN_TITLE,
+    description: AUSTIN_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-austin`,
   },
 };
@@ -53,6 +58,9 @@ export default function AustinPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
           <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Los choques al norte de Austin, en las vías hacia Fort Cavazos, están en nuestra página de{" "}
             <Link href={routes.killeen} className="font-semibold text-brand-navy underline hover:text-brand-red">
@@ -63,11 +71,25 @@ export default function AustinPageES() {
         </div>
       </section>
 
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">
           <Image src={IMAGES.maps.austin} alt="Mapa del área de Austin" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
+
+      <CityLawsuitSection cityKey="austin" locale="es" />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">

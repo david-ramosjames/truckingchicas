@@ -11,6 +11,7 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 const CORPUS_TITLE = "Corpus Christi 18-Wheeler & Tanker Accident Lawyer";
 const CORPUS_DESCRIPTION =
@@ -85,6 +86,8 @@ export default function CorpusChristiPage() {
       </section>
 
       {/* Highways & Danger Zones */}
+      <CityLawsuitSection cityKey="corpusChristi" locale="en" />
+
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">

@@ -1,4 +1,13 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://truckingchicas.com";
+function normalizeSiteUrl(value: string): string {
+  const url = new URL(value);
+  url.protocol = "https:";
+  url.hostname = url.hostname.replace(/^www\./, "");
+  return url.origin;
+}
+
+export const SITE_URL = normalizeSiteUrl(
+  process.env.NEXT_PUBLIC_SITE_URL || "https://truckingchicas.com",
+);
 export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-NPDX5545";
 
 // CallRail Dynamic Number Insertion (swap.js). This is a public CDN script —

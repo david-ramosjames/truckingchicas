@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 import { getDictionary } from "@/dictionaries";
 import { SITE_URL, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
@@ -11,9 +12,13 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
+const MCALLEN_TITLE = "Abogado de Accidentes de 18 Ruedas en McAllen | Trucking Chicas";
+const MCALLEN_DESCRIPTION =
+  "¿Choque con un tráiler en la US-83 o la I-2 en McAllen? Casos del Condado de Hidalgo. Consulta gratis. No cobramos si no ganamos.";
+
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en McAllen, TX",
-  description: "¿Lesionado en un accidente de camión en McAllen o el Valle del Río Grande? Trucking Chicas lucha por las víctimas de choques de 18 ruedas y camiones de carga. Consulta gratis.",
+  title: { absolute: MCALLEN_TITLE },
+  description: MCALLEN_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-mcallen`,
     languages: {
@@ -23,8 +28,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en McAllen, TX",
-    description: "¿Lesionado en un accidente de camión en McAllen o el Valle del Río Grande? Trucking Chicas lucha por las víctimas de choques de 18 ruedas y camiones de carga. Consulta gratis.",
+    title: MCALLEN_TITLE,
+    description: MCALLEN_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-mcallen`,
   },
 };
@@ -61,8 +66,23 @@ export default function McAllenPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       {/* City map */}
       <section className="bg-gray-50 py-12">
@@ -79,6 +99,8 @@ export default function McAllenPageES() {
       </section>
 
       {/* Carreteras y Zonas de Peligro */}
+      <CityLawsuitSection cityKey="mcallen" locale="es" />
+
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">

@@ -10,6 +10,7 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camión en El Paso, TX",
@@ -60,6 +61,8 @@ export default function ElPasoPageES() {
           <Image src={IMAGES.maps.elPaso} alt="Mapa del área de El Paso" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
+
+      <CityLawsuitSection cityKey="elPaso" locale="es" />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">

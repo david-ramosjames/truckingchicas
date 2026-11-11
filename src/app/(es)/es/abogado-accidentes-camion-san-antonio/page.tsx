@@ -10,6 +10,7 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 export const metadata: Metadata = {
   title: { absolute: "Abogado de Accidentes de 18 Ruedas en San Antonio | Trucking Chicas" },
@@ -80,6 +81,8 @@ export default function SanAntonioPageES() {
           <Image src={IMAGES.maps.sanAntonio} alt="Mapa del área de San Antonio" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
+
+      <CityLawsuitSection cityKey="sanAntonio" locale="es" />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">

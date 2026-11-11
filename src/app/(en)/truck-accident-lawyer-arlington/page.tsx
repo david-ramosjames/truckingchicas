@@ -11,6 +11,7 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 export const metadata: Metadata = {
   title: { absolute: "Arlington 18-Wheeler & Truck Accident Lawyer | TX" },
@@ -92,6 +93,8 @@ export default function ArlingtonPage() {
       </section>
 
       {/* Highways & Danger Zones */}
+      <CityLawsuitSection cityKey="arlington" locale="en" />
+
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-center text-3xl font-bold text-brand-navy">

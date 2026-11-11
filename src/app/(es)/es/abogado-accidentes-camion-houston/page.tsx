@@ -10,6 +10,7 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camión en Houston, TX",
@@ -60,6 +61,8 @@ export default function HoustonPageES() {
           <Image src={IMAGES.maps.houston} alt="Mapa del área de Houston" width={800} height={450} className="rounded-xl" />
         </div>
       </section>
+
+      <CityLawsuitSection cityKey="houston" locale="es" />
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4">
