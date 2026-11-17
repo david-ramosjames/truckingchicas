@@ -14,7 +14,7 @@ import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 const DALLAS_TITLE = "Abogado de Accidentes de 18 Ruedas y Camión en Dallas | Trucking Chicas";
 const DALLAS_DESCRIPTION =
-  "¿Choque con un tráiler en la I-35E, la I-30, la I-20 o la I-45, o con el tráfico de distribución del Inland Port? Casos del Condado de Dallas. Consulta gratis. No cobramos si no ganamos.";
+  "¿Choque con un tráiler en la I-35E, I-30 o I-45 en Dallas? Casos del Condado de Dallas. Consulta gratis. No cobramos si no ganamos.";
 
 export const metadata: Metadata = {
   title: { absolute: DALLAS_TITLE },

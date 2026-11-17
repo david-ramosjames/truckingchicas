@@ -13,9 +13,12 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
+const WACO_TITLE = "Waco 18-Wheeler & Truck Accident Lawyer | Trucking Chicas";
+const WACO_DESCRIPTION = "Hurt by an 18-wheeler on I-35 through downtown Waco? McLennan County cases. Free consultation. No fee unless we win.";
+
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Waco, TX",
-  description: "Injured in a truck accident in Waco? Trucking Chicas represents victims hurt by 18-wheelers on the I-35 corridor. Free, no-obligation consultation.",
+  title: { absolute: WACO_TITLE },
+  description: WACO_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-waco`,
     languages: {
@@ -25,8 +28,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Waco, TX",
-    description: "Injured in a truck accident in Waco? Trucking Chicas represents victims hurt by 18-wheelers on the I-35 corridor. Free, no-obligation consultation.",
+    title: WACO_TITLE,
+    description: WACO_DESCRIPTION,
     url: `${SITE_URL}/truck-accident-lawyer-waco`,
   },
 };
@@ -64,6 +67,9 @@ export default function WacoPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
           <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Truck crashes west of I-35, around Fort Cavazos, are covered on our{" "}
             <Link href={routes.killeen} className="font-semibold text-brand-navy underline hover:text-brand-red">
@@ -73,6 +79,18 @@ export default function WacoPage() {
           </p>
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       {/* City map */}
       <section className="bg-gray-50 py-12">

@@ -151,6 +151,9 @@ export default function TruckAccidentPage() {
             <Link href={routes.areas} className="text-brand-rose underline hover:text-brand-rose-dark">
               Areas We Serve
             </Link>
+            <Link href={routes.dallas} className="text-brand-rose underline hover:text-brand-rose-dark">
+              Dallas truck crash lawsuit
+            </Link>
           </div>
         </div>
       </section>

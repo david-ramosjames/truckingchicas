@@ -12,9 +12,12 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 import { IMAGES } from "@/lib/images";
 import CityLawsuitSection from "@/components/CityLawsuitSection";
 
+const EL_PASO_TITLE = "Abogado de Accidentes de 18 Ruedas en El Paso | Trucking Chicas";
+const EL_PASO_DESCRIPTION = "¿Choque con un tráiler en la I-10 o cerca de BOTA o Zaragoza? Casos del Condado de El Paso. Consulta gratis. No cobramos si no ganamos.";
+
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en El Paso, TX",
-  description: "¿Lesionado en un accidente de camión en El Paso? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+  title: { absolute: EL_PASO_TITLE },
+  description: EL_PASO_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-el-paso`,
     languages: {
@@ -24,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en El Paso, TX",
-    description: "¿Lesionado en un accidente de camión en El Paso? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+    title: EL_PASO_TITLE,
+    description: EL_PASO_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-el-paso`,
   },
 };
@@ -53,8 +56,23 @@ export default function ElPasoPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">

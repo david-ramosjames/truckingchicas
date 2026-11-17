@@ -12,9 +12,12 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
+const LAREDO_TITLE = "Laredo 18-Wheeler & Truck Accident Lawyer | Trucking Chicas";
+const LAREDO_DESCRIPTION = "Hurt by an 18-wheeler on I-35 or near the World Trade Bridge? Webb County cases. Free consultation. No fee unless we win.";
+
 export const metadata: Metadata = {
-  title: "Truck Accident Lawyer in Laredo, TX",
-  description: "Injured in a truck accident in Laredo? Trucking Chicas fights for victims hurt by 18-wheelers on I-35 and near the World Trade Bridge. Free consultation.",
+  title: { absolute: LAREDO_TITLE },
+  description: LAREDO_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/truck-accident-lawyer-laredo`,
     languages: {
@@ -24,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Truck Accident Lawyer in Laredo, TX",
-    description: "Injured in a truck accident in Laredo? Trucking Chicas fights for victims hurt by 18-wheelers on I-35 and near the World Trade Bridge. Free consultation.",
+    title: LAREDO_TITLE,
+    description: LAREDO_DESCRIPTION,
     url: `${SITE_URL}/truck-accident-lawyer-laredo`,
   },
 };
@@ -62,8 +65,23 @@ export default function LaredoPage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       {/* City map */}
       <section className="bg-gray-50 py-12">

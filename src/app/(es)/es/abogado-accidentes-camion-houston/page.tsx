@@ -12,9 +12,12 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 import { IMAGES } from "@/lib/images";
 import CityLawsuitSection from "@/components/CityLawsuitSection";
 
+const HOUSTON_TITLE = "Abogado de Accidentes de 18 Ruedas en Houston | Trucking Chicas";
+const HOUSTON_DESCRIPTION = "¿Choque con un tráiler o una cisterna en la I-10 o la I-45 en Houston? Casos del Condado de Harris. Consulta gratis. No cobramos si no ganamos.";
+
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Houston, TX",
-  description: "¿Lesionado en un accidente de camión en Houston? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+  title: { absolute: HOUSTON_TITLE },
+  description: HOUSTON_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-houston`,
     languages: {
@@ -24,8 +27,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Houston, TX",
-    description: "¿Lesionado en un accidente de camión en Houston? Trucking Chicas ayuda a las víctimas a recuperar compensación. Llame ahora para una consulta gratuita.",
+    title: HOUSTON_TITLE,
+    description: HOUSTON_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-houston`,
   },
 };
@@ -53,8 +56,23 @@ export default function HoustonPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       <section className="bg-gray-50 py-12">
         <div className="mx-auto max-w-3xl px-4 flex justify-center">

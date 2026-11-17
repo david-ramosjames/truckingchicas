@@ -116,6 +116,9 @@ export default function EighteenWheelerPage() {
             <Link href={routes.sanAntonio} className="text-brand-rose underline hover:text-brand-rose-dark">
               San Antonio 18-wheeler accident lawyer
             </Link>
+            <Link href={routes.dallas} className="text-brand-rose underline hover:text-brand-rose-dark">
+              Dallas truck crash lawsuit
+            </Link>
           </div>
         </div>
       </section>

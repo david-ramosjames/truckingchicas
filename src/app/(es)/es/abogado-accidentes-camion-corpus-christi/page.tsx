@@ -14,7 +14,7 @@ import CityLawsuitSection from "@/components/CityLawsuitSection";
 
 const CORPUS_TITLE = "Abogado de Tráiler en Corpus Christi | Consulta Gratis";
 const CORPUS_DESCRIPTION =
-  "Hablamos español. ¿Choque con un tráiler, camión cisterna o de volteo en Corpus Christi? Consulta gratis. No cobramos si no ganamos.";
+  "Hablamos español. Consulta gratis si un tráiler lo chocó en Corpus Christi. No cobramos si no ganamos.";
 
 export const metadata: Metadata = {
   title: { absolute: CORPUS_TITLE },

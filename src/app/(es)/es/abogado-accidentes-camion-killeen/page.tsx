@@ -14,7 +14,7 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 
 const KILLEEN_TITLE = "Abogado de Accidentes de 18 Ruedas y Camión en Killeen | Trucking Chicas";
 const KILLEEN_DESCRIPTION =
-  "¿Choque con un tráiler o camión comercial en la I-14, la US-190, la I-35 o cerca de Fort Cavazos? Casos del Condado de Bell. Consulta gratis. No cobramos si no ganamos.";
+  "¿Choque con un tráiler cerca de Fort Cavazos o en la I-14? Casos del Condado de Bell. Consulta gratis. No cobramos si no ganamos.";
 
 export const metadata: Metadata = {
   title: { absolute: KILLEEN_TITLE },

@@ -13,9 +13,12 @@ import NearbyAreas from "@/components/NearbyAreas";
 import JsonLd from "@/components/JsonLd";
 import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
+const WACO_TITLE = "Abogado de Accidentes de 18 Ruedas en Waco | Trucking Chicas";
+const WACO_DESCRIPTION = "¿Choque con un 18 ruedas en la I-35 en Waco? Casos del Condado de McLennan. Consulta gratis. No cobramos si no ganamos.";
+
 export const metadata: Metadata = {
-  title: "Abogado de Accidentes de Camión en Waco, TX",
-  description: "¿Lesionado en un accidente de camión en Waco? Trucking Chicas representa a las víctimas de 18 ruedas en el corredor de la I-35. Consulta gratis y sin compromiso.",
+  title: { absolute: WACO_TITLE },
+  description: WACO_DESCRIPTION,
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-waco`,
     languages: {
@@ -25,8 +28,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Abogado de Accidentes de Camión en Waco, TX",
-    description: "¿Lesionado en un accidente de camión en Waco? Trucking Chicas representa a las víctimas de 18 ruedas en el corredor de la I-35. Consulta gratis y sin compromiso.",
+    title: WACO_TITLE,
+    description: WACO_DESCRIPTION,
     url: `${SITE_URL}/es/abogado-accidentes-camion-waco`,
   },
 };
@@ -64,6 +67,9 @@ export default function WacoPageES() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-brand-navy">{d.localTitle}</h2>
           <p className="mt-6 text-lg leading-relaxed text-gray-600">{d.localContent}</p>
+          {d.localDetails.map((para) => (
+            <p key={para} className="mt-4 text-lg leading-relaxed text-gray-600">{para}</p>
+          ))}
           <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Los choques al oeste de la I-35, alrededor de Fort Cavazos, están en nuestra página de{" "}
             <Link href={routes.killeen} className="font-semibold text-brand-navy underline hover:text-brand-red">
@@ -73,6 +79,18 @@ export default function WacoPageES() {
           </p>
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl space-y-12 px-4">
+          {d.truckTypes.map((item) => (
+            <div key={item.title}>
+              <h2 className="text-3xl font-bold text-brand-navy">{item.title}</h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">{item.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
       {/* City map */}
       <section className="bg-gray-50 py-12">
