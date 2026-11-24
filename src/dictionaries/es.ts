@@ -222,13 +222,40 @@ const es: Dictionary = {
     title: "Abogado de Accidentes de 18 Ruedas en Texas",
     metaTitle: "Abogado de Accidentes de 18 Ruedas en Texas",
     metaDesc:
-      "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Nuestro bufete tiene un enfoque especial en accidentes de vehículos comerciales. Llama para una consulta gratis.",
+      "¿Choque con un tráiler en la I-35, I-10, I-45 o I-20? Casos contra compañías interestatales. Consulta gratis. No cobramos si no ganamos.",
     heroHeadline: "Abogado de Accidentes de 18 Ruedas en Texas",
     heroSubhead:
-      "Los choques con tráileres de 18 ruedas están entre los accidentes más peligrosos en las carreteras de Texas. Luchamos por las víctimas de colisiones catastróficas con vehículos comerciales.",
-    commercialTitle: "El Peligro de los Tráileres Comerciales de 18 Ruedas",
+      "¿Lo golpeó un tractocamión en la I-35, la I-10, la I-45 o la I-20? Atendemos casos graves contra compañías interestatales en todo Texas.",
+    commercialTitle: "Por qué un choque con un tráiler no es un choque de auto",
     commercialDesc:
-      "Los tráileres comerciales de 18 ruedas, también llamados tractocamiones o semirremolques, pueden pesar de 20 a 30 veces más que un automóvil de pasajeros. Cuando chocan con vehículos más pequeños, los resultados son a menudo catastróficos: lesiones cerebrales traumáticas, daño a la médula espinal, amputaciones y muerte injusta.",
+      "Un camión de 18 ruedas, también llamado tractocamión o semirremolque, puede pesar de 20 a 30 veces más que un auto. La compañía guarda un registro electrónico, el expediente del conductor y una póliza comercial. Con esos registros se arma el reclamo, y pueden borrarse en semanas.",
+    details: [
+      "La carga en Texas corre por la I-35 entre Laredo y Dallas, la I-10 entre El Paso y Beaumont, la I-45 entre Houston y Dallas, y la I-20 por el sur del metroplex. Un choque en esas vías se presenta en el condado donde ocurrió, no en el estado de origen del conductor.",
+      "Quien busca ayuda habla de un choque de 18 ruedas, de un tráiler o de una demanda contra un tractocamión. El tipo de camión es el mismo: un vehículo combinado sujeto a las reglas de horas de servicio de la FMCSA, certificación médica y aseguramiento de la carga.",
+      "Pedimos el registro electrónico, el expediente del conductor y los registros de mantenimiento antes de que se borren. Esos documentos deciden si el caso es un simple choque trasero o una demanda comercial contra la compañía, un intermediario y quien cargó el remolque.",
+    ],
+    sections: [
+      {
+        title: "A quién se puede demandar después de un choque con un tráiler",
+        body: "El conductor no es el único demandado. La compañía que lo empleaba, un intermediario de carga, quien sobrecargó el remolque y un taller que omitió el mantenimiento de los frenos pueden compartir la responsabilidad. Cuáles aplican depende de quién empleaba al conductor y quién controlaba el camión. En un choque de Inland Port o de almacén suele haber más de una empresa.",
+      },
+      {
+        title: "Reglas de transporte en Texas que importan",
+        body: "Los tráileres interestatales siguen las reglas de la FMCSA: horas de servicio, registro electrónico, expediente del conductor e inspecciones anuales. Texas también aplica límites de tamaño y peso, e inspecciones en carretera por el DPS. Una violación del registro, una inspección fallida o un conductor fuera de horas es evidencia en el caso civil. Esto es información general sobre las reglas, no asesoría legal sobre su reclamo.",
+      },
+      {
+        title: "Cómo avanza un caso de 18 ruedas en Texas",
+        body: "Un caso grave empieza con una demanda en el tribunal de distrito del condado donde ocurrió el choque. Después la compañía debe entregar el expediente del conductor, el registro electrónico y los registros de mantenimiento. La mayoría de los casos se negocia cuando esos documentos ya están. Si no se resuelven, el caso se juzga en ese tribunal, no en uno de justicia ni municipal.",
+      },
+      {
+        title: "Dónde se presentan los choques de 18 ruedas en Texas",
+        body: "Un choque en Dallas es del Condado de Dallas. Houston es Harris. San Antonio es Bexar. Fort Worth y Arlington son Tarrant. Austin es Travis. Laredo es Webb. El número de la interestatal no elige el tribunal. La línea del condado sí.",
+      },
+      {
+        title: "Páginas de ciudades para choques de 18 ruedas",
+        body: "Si el choque fue en un metro específico, empiece por esa página de ciudad: Houston y Dallas para la carga de la I-45 y la I-35E, San Antonio y Laredo para el corredor fronterizo, Fort Worth y Arlington para la I-35W y la I-20, Austin para la I-35 y la SH-130, y El Paso para la I-10 al oeste. Cada página nombra las vías, los tipos de camión y el tribunal del condado.",
+      },
+    ],
     injuriesTitle: "Lesiones Catastróficas por Choques con Tráileres de 18 Ruedas",
     injuries: [
       "Lesiones cerebrales traumáticas (TBI)",
@@ -241,35 +268,68 @@ const es: Dictionary = {
     ],
     regulationsTitle: "Regulaciones Federales de Transporte de Carga",
     regulationsDesc:
-      "Los tráileres de 18 ruedas están sujetos a estrictas normas federales de seguridad establecidas por la FMCSA. Cuando las compañías de transporte o los conductores violan estas regulaciones, esto puede servir como evidencia poderosa de negligencia en tu caso.",
+      "Los tráileres de 18 ruedas están sujetos a las reglas de la FMCSA sobre horas de servicio, registros electrónicos y calificación del conductor. Cuando una compañía o un conductor las viola, esa violación puede ser evidencia de negligencia en el caso civil.",
+    faq: [
+      { q: "¿Qué debo hacer después de un choque con un tráiler en Texas?", a: "Llame al 911, busque atención médica y fotografíe el camión, el nombre de la empresa y el número del remolque. No dé una declaración a la aseguradora. Llame a un abogado para que se conserve el registro electrónico." },
+      { q: "¿A quién se puede demandar después de un choque con un tractocamión?", a: "Al conductor, a la compañía de camiones y a veces a un intermediario, a quien cargó el remolque o a un taller. Cuáles aplican depende de quién empleaba al conductor y quién controlaba el camión." },
+      { q: "¿Dónde se presenta una demanda por un 18 ruedas?", a: "En el tribunal de distrito del condado de Texas donde ocurrió el choque. Un choque en Dallas se presenta en el Condado de Dallas. Uno en Houston, en Harris." },
+      { q: "¿Cuánto tiempo tengo para presentar la demanda?", a: "Generalmente dos años contra una compañía privada. Un choque con un vehículo del gobierno puede exigir un aviso mucho antes. Esto es información general, no asesoría legal sobre su plazo." },
+    ],
   },
   deliveryTruck: {
     title: "Abogado de Accidentes de Camiones de Reparto",
     metaTitle: "Abogado de Accidentes de Camiones FedEx y UPS en Texas",
     metaDesc:
-      "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestro bufete maneja casos de accidentes de camiones de reparto. Evaluación gratis.",
-    heroHeadline: "Abogado de Accidentes de Camiones de Reparto",
+      "¿Lo golpeó un camión de FedEx, UPS o Amazon en Texas? Aclaramos quién empleaba al conductor. Consulta gratis. No cobramos si no ganamos.",
+    heroHeadline: "Abogado de Accidentes de Camiones FedEx, UPS y Amazon",
     heroSubhead:
-      "Camiones de reparto de FedEx, UPS, Amazon y otros servicios están involucrados en miles de accidentes cada año. Luchamos por las víctimas de accidentes con vehículos de entrega en todo Texas.",
-    introTitle: "El Peligro Creciente de los Camiones de Reparto",
+      "¿Lo golpeó un camión de paquetería o una van de reparto en una ruta de vecindario? Aclaramos qué compañía empleaba al conductor y qué póliza aplica.",
+    introTitle: "Los camiones de reparto son vehículos comerciales",
     introDesc:
-      "Las compras en línea han puesto más camiones de reparto en las carreteras de Texas que nunca. FedEx, UPS, Amazon y otros servicios imponen horarios de entrega agresivos que frecuentemente llevan al exceso de velocidad, conducción distraída y fatiga del conductor. Cuando un vehículo de reparto grande choca contra un auto particular, los resultados pueden ser devastadores.",
+      "Los camiones de FedEx, UPS y Amazon no son autos comunes. Se detienen en la banqueta, salen al tráfico y cruzan carriles todo el día. Las vans salen de centros de distribución y se dividen en rutas de vecindario. Cuando una choca con un auto, la primera pregunta es qué compañía empleaba al conductor.",
+    details: [
+      "Las rutas de FedEx Ground a menudo las operan contratistas. FedEx Express usa otro esquema de empleo y de seguro. Los camiones de UPS suelen ser rutas de la compañía, pero igual hay que identificar el centro y la póliza. Las entregas de Amazon en Texas suelen hacerlas socios contratados, no una sola flota de Amazon.",
+      "Estos choques ocurren en Arlington sobre la I-20 y la SH-360, en Plano fuera de la US-75 y las autopistas de cuota, en vecindarios de Dallas y en rutas de San Antonio fuera del Loop 410 y la US-281. El condado donde ocurrió el choque decide el tribunal.",
+      "El primer ajustador que llama puede no ser de la compañía que empleaba al conductor. Identificamos al contratista, la marca del paquete y la póliza antes de que el choque se trate como un roce de vecindario.",
+    ],
     causesTitle: "Por Qué Ocurren los Accidentes de Camiones de Reparto",
     causes: [
       "Horarios de entrega poco realistas y presión de tiempo",
       "Fatiga del conductor por turnos largos y horas extra",
-      "Conducción distraída, escaneando paquetes, usando GPS, revisando rutas",
-      "Paradas frecuentes que causan frenazos repentinos y cambios de carril",
-      "Camiones estacionados en doble fila forzando maniobras peligrosas",
-      "Vehículos mal mantenidos con fallas en frenos o llantas",
-      "Conductores temporales sin experiencia o con poca capacitación",
+      "Conducción distraída al escanear paquetes o revisar la ruta",
+      "Paradas frecuentes, frenazos y salidas desde la banqueta",
+      "Camiones en doble fila que fuerzan cambios de carril peligrosos",
+      "Frenos o llantas mal mantenidos",
+      "Conductores temporales o contratados con poca capacitación",
     ],
     liabilityTitle: "¿Quién Es Responsable?",
     liabilityItems: [
-      { title: "El Conductor del Reparto", desc: "Por conducción negligente o imprudente, distracción, o ignorar señales de tránsito." },
-      { title: "La Empresa (FedEx, UPS, Amazon)", desc: "Por imponer horarios inseguros, falta de capacitación a conductores, o usar vehículos mal mantenidos." },
-      { title: "Subcontratistas", desc: "Muchos servicios usan contratistas independientes. La responsabilidad puede extenderse a las empresas que los contratan y supervisan." },
-      { title: "Fabricante del Vehículo", desc: "Si un defecto del vehículo, como frenos o dirección defectuosos, contribuyó al choque." },
+      { title: "El Conductor del Reparto", desc: "Por conducción negligente, distracción o ignorar señales." },
+      { title: "La Compañía o el Contratista", desc: "Por horarios inseguros, mala capacitación o falta de mantenimiento. El nombre en la puerta no siempre es el empleador." },
+      { title: "La Marca del Paquete", desc: "Amazon, FedEx y UPS tienen arreglos distintos. Identificamos qué compañía y qué póliza aplican antes de negociar." },
+      { title: "Defectos del Vehículo", desc: "Si frenos o dirección defectuosos contribuyeron al choque." },
+    ],
+    sections: [
+      {
+        title: "Accidentes de camiones de FedEx en Texas",
+        body: "FedEx Ground y FedEx Express usan estructuras distintas de empleo y de seguro. Ground a menudo lo operan contratistas. Express puede usar conductores de la compañía. El camión puede ser una van, un camión de caja o un tractocamión que sale de una estación. Identificamos la compañía que opera y la póliza antes de que el choque se trate como un daño menor.",
+      },
+      {
+        title: "Accidentes de camiones de UPS en Texas",
+        body: "Los camiones de paquetería de UPS trabajan rutas tempranas y luego conectan con centros que alimentan la carga interestatal. Se detienen constantemente y cruzan el tráfico. Un choque con un camión de UPS sigue siendo un reclamo de vehículo comercial: la compañía guarda expedientes, inspecciones y datos de la ruta. Los casos graves se presentan en el tribunal de distrito del condado donde ocurrió el choque.",
+      },
+      {
+        title: "Accidentes de camiones de reparto de Amazon",
+        body: "Las entregas de Amazon en Texas suelen hacerlas compañías contratadas. Las vans cubren rutas con un número diario de paquetes. Eso se ve en reversas apresuradas, carga que tapa la vista y conductores sin la capacitación de un chofer de larga distancia. El reclamo no debe rebotar entre Amazon y el contratista mientras desaparecen los registros.",
+      },
+      {
+        title: "Reglas de Texas que igual aplican",
+        body: "Aunque el camión pese menos de 26,001 libras, la compañía que empleaba al conductor sigue teniendo deberes de contratación, capacitación y mantenimiento. Los camiones de reparto más grandes y los tractocamiones siguen bajo las reglas de la FMCSA. Un camión de la ciudad o del gobierno puede exigir un aviso por escrito mucho antes que el plazo usual de dos años. Esto es información general, no asesoría legal sobre su reclamo.",
+      },
+      {
+        title: "Páginas de ciudades para choques de reparto",
+        body: "Arlington, Plano, Dallas y San Antonio concentran el tráfico de paquetería de última milla en este sitio. Empiece por la página de la ciudad de la ruta donde lo golpearon. Esas páginas nombran las vías, el tribunal del condado y los reclamos de volteo y de carga que aparecen en las mismas calles.",
+      },
     ],
     injuriesTitle: "Lesiones Comunes en Accidentes de Camiones de Reparto",
     injuries: [
@@ -280,66 +340,132 @@ const es: Dictionary = {
       "Daño a órganos internos",
       "Lesiones a peatones y ciclistas por entregas de última milla",
     ],
+    faq: [
+      { q: "¿Quién paga si me golpea un camión de FedEx o UPS?", a: "Depende de quién empleaba al conductor y qué póliza cubre el camión. Los contratistas de FedEx Ground, FedEx Express, UPS y los socios de Amazon pueden apuntar a compañías distintas. Aclaramos eso antes de negociar." },
+      { q: "¿Un choque con una van de Amazon es un caso de vehículo comercial?", a: "Sí. Las vans contratadas siguen siendo vehículos comerciales. El primer paso es identificar al socio de entrega y la póliza que aplica." },
+      { q: "¿Dónde se presentan estos casos?", a: "En el condado de Texas donde ocurrió el choque. Una ruta en Arlington es del Condado de Tarrant. Un choque en Plano suele ser del Condado de Collin." },
+      { q: "¿Cuánto tiempo tengo para presentar la demanda?", a: "Generalmente dos años contra una compañía privada. Un camión del gobierno puede exigir un aviso mucho antes. Esto es información general, no asesoría legal sobre su plazo." },
+    ],
   },
   oilfieldTanker: {
     title: "Abogado de Accidentes de Camiones Cisterna y Petroleros",
     metaTitle: "Abogado de Accidentes de Camiones Cisterna en Texas",
     metaDesc:
-      "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestro bufete tiene un enfoque especial en choques del sector energético. Consulta gratis.",
+      "¿Choque con un camión cisterna o petrolero en Texas? Casos de la Pérmica, el Ship Channel y refinerías. Consulta gratis. No cobramos si no ganamos.",
     heroHeadline: "Abogado de Accidentes de Camiones Cisterna",
     heroSubhead:
-      "Las operaciones petroleras de Texas ponen miles de camiones cisterna, de agua y transportadores de equipo en las carreteras. Cuando chocan, las consecuencias son catastróficas.",
-    introTitle: "El Peligro de los Camiones Cisterna y Petroleros",
+      "¿Lo golpeó una cisterna, un camión de agua o un camión petrolero en la Cuenca Pérmica, el Ship Channel o cerca de una refinería? Atendemos esos casos comerciales.",
+    introTitle: "Las cisternas y los camiones petroleros son reclamos distintos",
     introDesc:
-      "La Cuenca Pérmica y Eagle Ford Shale generan un volumen masivo de transporte en todo Texas. Los camiones cisterna transportan petróleo crudo, agua producida, químicos de fracturación hidráulica y otros materiales peligrosos en carreteras rurales de dos carriles que frecuentemente no están diseñadas para tráfico comercial pesado. La combinación de cargas pesadas, largas horas y caminos remotos hace que los accidentes petroleros estén entre los más mortales del estado.",
+      "Una cisterna no es una caja seca. La carga se mueve, el camión tarda más en frenar y una placa de materiales peligrosos cambia lo que hay que conservar en la escena. Los camiones petroleros de la Cuenca Pérmica, las cisternas de la I-10 por Beaumont y Houston, y el tráfico de refinería en Corpus Christi crean el mismo patrón: vehículos comerciales pesados en vías compartidas con autos.",
+    details: [
+      "Odessa y Midland están sobre la I-20 y la US-385 con camiones de arena, agua y equipo. Beaumont y Houston mueven cargas petroquímicas en la I-10 y el Ship Channel. Corpus Christi lleva cisternas entre el puerto y Refinery Row. El Paso agrega carga transfronteriza y de la I-10. El condado del choque decide el tribunal.",
+      "Fotografíe cualquier placa de materiales peligrosos, el nombre de la empresa y el número del tanque sin acercarse a un derrame. Esos datos ayudan a identificar la compañía y al embarcador antes de que se borren los registros.",
+      "Un reclamo de cisterna se arma con el expediente del conductor, el registro electrónico, el historial de inspección del tanque y quién controlaba la carga en la terminal o en el arrendamiento. Esperar la primera llamada de la aseguradora es cómo desaparecen esos registros.",
+    ],
     causesTitle: "Por Qué Ocurren los Accidentes de Camiones Petroleros",
     causes: [
-      "Fatiga del conductor por turnos de más de 12 horas en áreas remotas",
-      "Camiones cisterna sobrecargados que exceden los límites de peso",
-      "Derrames de materiales peligrosos y explosiones",
-      "Carreteras mal mantenidas en regiones productoras de petróleo",
-      "Conductores sin experiencia contratados durante booms de producción",
-      "Centro de gravedad alto causando volcaduras en curvas",
-      "Polvo, baja visibilidad y condiciones de caminos sin pavimentar",
+      "Fatiga del conductor en turnos remotos largos",
+      "Cisternas sobrecargadas sobre el límite de peso",
+      "Derrames de materiales peligrosos después de una volcadura",
+      "Caminos de dos carriles no hechos para tráfico pesado",
+      "Conductores sin experiencia contratados en auge de producción",
+      "Centro de gravedad alto que causa volcaduras en curvas",
+      "Polvo, viento y poca visibilidad en el oeste de Texas",
     ],
     liabilityTitle: "¿Quién Puede Ser Responsable?",
     liabilityItems: [
-      { title: "Empresa de Servicios Petroleros", desc: "Por imponer horarios inseguros, saltarse mantenimiento o contratar conductores no calificados." },
-      { title: "Conductor del Camión", desc: "Por fatiga, deterioro, exceso de velocidad u otra conducción negligente." },
-      { title: "Operador de Petróleo y Gas", desc: "Por crear condiciones viales peligrosas, no mantener caminos de acceso o exigir horarios excesivos." },
-      { title: "Fabricante del Cisterna", desc: "Por defectos de diseño o manufactura en la construcción del tanque, válvulas o sistemas de seguridad." },
+      { title: "Compañía de Camiones", desc: "Por horarios inseguros, falta de mantenimiento o conductores no calificados." },
+      { title: "Conductor del Camión", desc: "Por fatiga, exceso de velocidad u otra conducción negligente." },
+      { title: "Operador o Planta", desc: "Por controlar la carga, el horario o los caminos de acceso." },
+      { title: "Embarcador o Cargador", desc: "Por sobrecargar el tanque o no asegurar la carga." },
     ],
     hazmatTitle: "Riesgos de Materiales Peligrosos",
     hazmatDesc:
-      "Los accidentes de camiones cisterna frecuentemente involucran materiales peligrosos, petróleo crudo, líquidos de gas natural, químicos de fracturación o agua producida. Estos derrames pueden causar explosiones, quemaduras químicas, exposición tóxica y daño ambiental a largo plazo. Las víctimas de accidentes con cisternas de materiales peligrosos pueden enfrentar riesgos de salud únicos que requieren atención médica y representación legal experimentada.",
+      "Los choques de cisternas pueden involucrar petróleo crudo, líquidos de gas natural, químicos de fracturación o agua producida. Las placas importan. La escena de un derrame se conserva con cuidado, y el caso civil igual se basa en los registros de la compañía, el expediente del conductor y quién controlaba la carga.",
+    sections: [
+      {
+        title: "Accidentes de camiones petroleros en la Cuenca Pérmica",
+        body: "Odessa, Midland y los caminos de arrendamiento fuera de la I-20 y la US-385 ven cisternas, camiones de arena y transportes de equipo en recorridos cortos y pesados. Un choque en Odessa es del Condado de Ector. Uno del lado de Midland en la TX-191 es del Condado de Midland. El número de la carretera no cambia el tribunal.",
+      },
+      {
+        title: "Accidentes de cisternas en el Ship Channel y las refinerías",
+        body: "El Ship Channel de Houston y el corredor de la I-10 en Beaumont mueven cisternas petroquímicas todos los días. Corpus Christi lleva cisternas entre el puerto y Refinery Row. Una carga con placa cambia la evidencia de la escena. El conductor, la compañía y a veces la terminal que cargó el tanque pueden compartir la responsabilidad.",
+      },
+      {
+        title: "Reglas de Texas y federales para cisternas",
+        body: "El transporte de materiales peligrosos tiene reglas propias sobre placas, endosos del conductor y mantenimiento del tanque. Las reglas de horas de servicio y registro electrónico igual aplican. Una violación puede ser evidencia en el caso civil. Esto es información general sobre deberes de la compañía, no asesoría legal sobre su reclamo.",
+      },
+      {
+        title: "Cómo avanza una demanda por cisterna",
+        body: "Un caso grave se presenta en el tribunal de distrito del condado donde ocurrió el choque. La demanda inicia el caso. Después la compañía debe entregar el expediente del conductor, el registro electrónico y los registros de mantenimiento. La mayoría de los casos se negocia cuando esos documentos ya están.",
+      },
+      {
+        title: "Páginas de ciudades para choques de cisterna y petroleros",
+        body: "Odessa, Beaumont, Houston, Corpus Christi y El Paso son las páginas de ciudad de cisternas y petroleros en este sitio. Cada una nombra los corredores, el tráfico de refinería o de la cuenca y el tribunal del condado. Use esas páginas cuando el choque fue local; use esta página para el panorama estatal de cisternas.",
+      },
+    ],
+    faq: [
+      { q: "¿Qué debo hacer después de un choque con una cisterna?", a: "Póngase a salvo, llame al 911 y fotografíe cualquier placa de materiales peligrosos, el nombre de la empresa y el número del tanque sin acercarse a un derrame. No dé una declaración a la aseguradora." },
+      { q: "¿A quién se puede demandar después de un choque con un camión petrolero?", a: "Al conductor, a la compañía de camiones y a veces al operador, al embarcador o a la planta que controlaba la carga o el horario." },
+      { q: "¿Dónde se presentan estos casos?", a: "En el condado de Texas donde ocurrió el choque. Los de Odessa son del Condado de Ector. Los del Ship Channel de Houston, del Condado de Harris. Los de Beaumont, del Condado de Jefferson." },
+      { q: "¿Cuánto tiempo tengo para presentar la demanda?", a: "Generalmente dos años contra una compañía privada. Un vehículo del gobierno puede exigir un aviso mucho antes. Esto es información general, no asesoría legal sobre su plazo." },
+    ],
   },
   dumpTruck: {
     title: "Abogado de Accidentes de Camiones de Volteo y Construcción",
     metaTitle: "Abogado de Accidentes de Camiones de Volteo en Texas",
     metaDesc:
-      "¿Lesionado por un camión de volteo o vehículo de construcción en Texas? Nuestro bufete lucha por las víctimas de accidentes en zonas de trabajo. Evaluación gratis.",
-    heroHeadline: "Abogado de Accidentes de Camiones de Volteo",
+      "¿Lesionado por un camión de volteo o de construcción en Texas? Casos de zonas de obra y equipo pesado. Consulta gratis. No cobramos si no ganamos.",
+    heroHeadline: "Abogado de Accidentes de Camiones de Volteo en Texas",
     heroSubhead:
-      "Camiones de volteo, mezcladoras de concreto y vehículos de construcción causan choques devastadores en zonas de trabajo y en las carreteras de Texas. Luchamos por las víctimas de estos accidentes prevenibles.",
-    introTitle: "Vehículos de Construcción en las Carreteras de Texas",
+      "¿Lo golpeó un camión de volteo, una mezcladora de cemento o un vehículo de construcción en una zona de obra o en una autopista de Texas? Atendemos esos casos comerciales.",
+    introTitle: "Camiones de volteo en las carreteras de Texas",
     introDesc:
-      "Texas lidera la nación en gastos de construcción vial, poniendo miles de camiones de volteo, mezcladoras de concreto, grúas y transportadores de equipo pesado en las carreteras cada día. Estos vehículos masivos son difíciles de maniobrar, tienen grandes puntos ciegos y frecuentemente operan en zonas de trabajo congestionadas donde las diferencias de velocidad y los cambios de carril crean condiciones peligrosas.",
-    causesTitle: "Causas Comunes de Accidentes de Vehículos de Construcción",
+      "Un camión de volteo cargado puede pesar más de 50,000 libras. La caja va tan alta que puede aplastar un auto en una vuelta a la derecha o en un alcance. Estos camiones van y vienen entre bancos de material, plantas y obras en el Loop 1604 de San Antonio, zonas de la I-35 en Austin y Waco, y corredores de construcción en Houston.",
+    details: [
+      "Las búsquedas de abogados de accidentes de camión de volteo llegan aquí porque el patrón es específico: grava sin cubrir, frenos gastados, vueltas amplias y conductores en un recorrido corto entre el banco y la obra. Las mezcladoras de cemento son distintas. El tambor sigue girando, la carga tiene poco tiempo antes de fraguar y el camión es inestable por el peso alto.",
+      "Un choque con un camión de la ciudad o del condado puede exigir un aviso por escrito mucho antes que el plazo usual de dos años. Esa pregunta de aviso necesita revisión de un abogado. Esto es información general, no asesoría legal sobre su reclamo.",
+      "Pedimos el archivo de mantenimiento de la compañía, los tickets de peso si existen y los contratos del contratista antes de la primera oferta. Esos documentos muestran si el camión iba sobrecargado, atrasado en frenos o operando bajo el número DOT de otro.",
+    ],
+    causesTitle: "Causas Comunes de Accidentes de Camiones de Volteo",
     causes: [
-      "Cargas no aseguradas, grava, tierra y escombros cayendo de camiones de volteo",
-      "Vehículos sobredimensionados o con sobrepeso que exceden los límites viales",
-      "Poca visibilidad por grandes puntos ciegos",
-      "Confusión en zonas de trabajo, carriles estrechos, fusiones repentinas, señalización confusa",
+      "Cargas no aseguradas y grava o escombros que caen",
+      "Camiones con sobrepeso sobre el límite vial",
+      "Puntos ciegos grandes en vueltas a la derecha",
+      "Cambios de carril y fusiones repentinas en zonas de obra",
       "Volcaduras por centro de gravedad alto",
-      "Fallas mecánicas, pérdida de frenos en pendientes",
-      "Operadores fatigados trabajando turnos largos de construcción",
+      "Fallas de frenos en pendientes",
+      "Operadores fatigados en turnos largos de construcción",
     ],
     liabilityTitle: "¿Quién Es Responsable?",
     liabilityItems: [
-      { title: "Empresa Constructora", desc: "Por configuración insegura de zona de trabajo, señalización inadecuada o presionar a los trabajadores para cumplir plazos." },
-      { title: "Operador del Vehículo", desc: "Por conducción negligente, cargas no aseguradas o no verificar puntos ciegos." },
-      { title: "Contratista General", desc: "Por fallas generales de seguridad en el sitio y supervisión de subcontratistas." },
-      { title: "Entidad Gubernamental", desc: "Por advertencias inadecuadas en zonas de trabajo, mal diseño vial o no mantener un flujo de tráfico seguro." },
+      { title: "Compañía de Camiones", desc: "Por fallas de mantenimiento, horarios inseguros o conductores no calificados." },
+      { title: "Operador del Vehículo", desc: "Por conducción negligente, cargas sin asegurar o puntos ciegos." },
+      { title: "Contratista o Planta", desc: "Por pedir cargas sobrecargadas o controlar la obra." },
+      { title: "Entidad Gubernamental", desc: "Cuando interviene un camión de la ciudad o del condado, los plazos de aviso pueden ser más cortos." },
+    ],
+    sections: [
+      {
+        title: "Abogados de accidentes de camión de volteo y choques en zonas de obra",
+        body: "Los casos de volteo giran en torno a la carga, los frenos y quién empleaba al conductor. Las zonas de obra en la I-35, el Loop 1604 y las autopistas de Houston mezclan camiones lentos con tráfico rápido. La compañía igual tiene registros. El contratista que pidió la grava o la tierra puede compartir la responsabilidad cuando los hechos lo permiten.",
+      },
+      {
+        title: "Accidentes de mezcladoras de cemento",
+        body: "Un camión de cemento no es un camión de volteo. Las mezcladoras son inestables por el peso alto, el tambor sigue girando y el conductor va contra el reloj entre la planta y el vaciado. Las plantas y las obras de los suburbios en crecimiento ponen estos camiones en las mismas vías que los autos. Una volcadura o una mezcladora que no alcanza a frenar es un reclamo de vehículo comercial.",
+      },
+      {
+        title: "Reglas de Texas para camiones de construcción",
+        body: "Muchos camiones de volteo y mezcladoras son vehículos comerciales sujetos a CDL, inspecciones y reglas de horas. Las violaciones de sobrepeso y de carga sin asegurar importan en el caso civil. Un camión del gobierno cambia el plazo de aviso. Esto es información general sobre las reglas, no asesoría legal sobre su plazo.",
+      },
+      {
+        title: "Dónde se presentan los casos de camión de volteo",
+        body: "Los choques de volteo en San Antonio son del Condado de Bexar. Los de Austin, del Condado de Travis. Houston es Harris. Arlington es Tarrant. Las zonas de obra de la I-35 en Waco son del Condado de McLennan. El condado del choque decide el tribunal.",
+      },
+      {
+        title: "Páginas de ciudades para choques de volteo y construcción",
+        body: "San Antonio, Austin, Houston, Arlington y Waco son las páginas de ciudad que ya aparecen en búsquedas locales de volteo y zonas de obra. Use esas páginas para el detalle de vías y condado. Use esta página para el panorama estatal de volteo y mezcladoras de cemento.",
+      },
     ],
     injuriesTitle: "Lesiones por Accidentes de Camiones de Volteo y Construcción",
     injuries: [
@@ -350,34 +476,67 @@ const es: Dictionary = {
       "Amputaciones por contacto con maquinaria pesada",
       "Muerte injusta",
     ],
+    faq: [
+      { q: "¿A quién se puede demandar después de un choque con un camión de volteo?", a: "Al conductor, a la compañía de camiones, al contratista y a veces a la planta o al banco que cargó el camión. Un camión de la ciudad puede tener plazos de aviso más cortos." },
+      { q: "¿Una mezcladora de cemento es el mismo caso que un volteo?", a: "Relacionado, pero no igual. Las mezcladoras son inestables y van contra el tiempo. Ambos son reclamos de vehículo comercial con preguntas de compañía y contratista." },
+      { q: "¿Dónde se presenta la demanda?", a: "En el tribunal de distrito del condado de Texas donde ocurrió el choque." },
+      { q: "¿Cuánto tiempo tengo para presentar la demanda?", a: "Generalmente dos años contra una compañía privada. Un vehículo del gobierno puede exigir un aviso mucho antes. Esto es información general, no asesoría legal sobre su plazo." },
+    ],
   },
   boxTruck: {
     title: "Abogado de Accidentes de Camiones de Carga y Vans Comerciales",
     metaTitle: "Abogado de Accidentes de Camiones de Carga en Texas",
     metaDesc:
-      "¿Golpeado por un camión de carga, van comercial o vehículo comercial en Texas? Nuestro bufete de accidentes de camión puede ayudar. Evaluación gratis.",
+      "¿Lo golpeó un camión de carga, una van o un camión de mudanza rentado en Texas? Consulta gratis. No cobramos si no ganamos.",
     heroHeadline: "Abogado de Accidentes de Camiones de Carga",
     heroSubhead:
-      "Camiones de carga, vans sprinter y vehículos comerciales medianos están en todas las carreteras de Texas, y causan accidentes graves cada día.",
-    introTitle: "El Peligro Subestimado de los Camiones de Carga",
+      "¿Lo golpeó un camión de caja, una van de carga o un camión de mudanza rentado? Identificamos la compañía, el contrato de renta y la póliza que aplica.",
+    introTitle: "Los camiones de carga siguen siendo vehículos comerciales",
     introDesc:
-      "Los camiones de carga, vans de carga y vans sprinter pueden ser más pequeños que los tráileres, pero aún pesan de 4,500 a 12,000 kilogramos, suficiente para causar lesiones catastróficas en una colisión. Muchos son operados por conductores con licencias estándar y capacitación mínima, empleados por compañías de mudanzas, flotas de renta y pequeñas empresas que recortan en seguridad y mantenimiento.",
+      "Los camiones de caja y las vans comerciales pueden verse más pequeños que un tráiler, pero igual pesan varias toneladas más que un auto. Muchos pesan menos de 26,001 libras, así que el conductor puede no tener CDL y los límites del seguro pueden ser más bajos que los de una compañía interestatal. El nombre pintado en la caja no siempre es la compañía que aseguró el camión.",
+    details: [
+      "Estos camiones mueven muebles, electrodomésticos, materiales de construcción y cargas rentadas en el Loop 410 de San Antonio, por almacenes de Dallas, avenidas de Houston y calles comerciales de Plano. Los camiones de mudanza rentados agregan otra capa: el arrendatario, la compañía de renta y cualquier empleador que envió al conductor pueden aparecer en el reclamo.",
+      "Revisamos el peso registrado, el número de la compañía si existe y cualquier contrato de renta antes de tratar el choque como un reclamo ordinario de auto.",
+      "Un camión de caja bajo el umbral de CDL igual pesa varias toneladas más que un auto. El empleador, el contrato de renta y quien cargó la mercancía pueden compartir la responsabilidad aunque el conductor solo tenga licencia ordinaria.",
+    ],
     causesTitle: "Por Qué Ocurren los Accidentes de Camiones de Carga",
     causes: [
-      "Conductores con capacitación mínima en vehículos comerciales",
-      "Operadores de camiones rentados sin familiaridad con el tamaño y manejo del vehículo",
-      "Carga sobrecargada que se desplaza durante giros y frenazos",
-      "Visibilidad trasera limitada, sin espejo retrovisor en la mayoría de camiones de carga",
-      "Exceso de velocidad para cumplir horarios de entrega o mudanza",
-      "Conductores fatigados trabajando largas horas sin descansos requeridos",
-      "Mal mantenimiento del vehículo por pequeños operadores y compañías de renta",
+      "Conductores con poca capacitación en vehículos comerciales",
+      "Operadores de renta sin familiaridad con el tamaño del camión",
+      "Carga sobrecargada que se mueve en las vueltas",
+      "Visibilidad trasera limitada",
+      "Exceso de velocidad para cumplir entregas o mudanzas",
+      "Fatiga en recorridos locales largos",
+      "Mal mantenimiento de operadores pequeños o flotas de renta",
     ],
     liabilityTitle: "¿Quién Puede Ser Responsable?",
     liabilityItems: [
-      { title: "El Conductor", desc: "Por conducción negligente, exceso de velocidad, distracción o conducir sin capacitación adecuada para el tamaño del vehículo." },
-      { title: "El Empleador", desc: "Por contratación negligente, falta de capacitación, imponer horarios inseguros o no mantener los vehículos." },
-      { title: "Compañía de Renta", desc: "Por rentar vehículos a conductores no calificados o no mantener la flota de vehículos de renta." },
-      { title: "Cargador", desc: "Por carga inadecuada o no asegurar la mercancía que se desplaza y causa que el conductor pierda el control." },
+      { title: "El Conductor", desc: "Por conducción negligente o por manejar un camión para el que no estaba capacitado." },
+      { title: "El Empleador", desc: "Por fallas de contratación, capacitación, horarios o mantenimiento." },
+      { title: "Compañía de Renta", desc: "Por rentar a un conductor no calificado o no mantener la flota." },
+      { title: "Cargador", desc: "Por cargar o asegurar la mercancía tan mal que el conductor perdió el control." },
+    ],
+    sections: [
+      {
+        title: "Accidentes de camiones de carga en ciudades de Texas",
+        body: "La carga local que no parece un tráiler igual causa choques graves. Las avenidas de San Antonio, los distritos de almacenes de Dallas, los corredores de entrega de Houston y las calles comerciales de Plano ven camiones de caja que cruzan el tráfico. Un choque dentro de esas ciudades se presenta en el tribunal de distrito de ese condado.",
+      },
+      {
+        title: "Accidentes de camiones de mudanza rentados",
+        body: "Los camiones rentados a menudo los manejan personas sin capacitación comercial. Importan el contrato de renta, el encargo del empleador si el viaje era por trabajo y el historial de mantenimiento. No suponga que la única póliza es el seguro personal del arrendatario.",
+      },
+      {
+        title: "Preguntas de CDL y de peso",
+        body: "Muchos camiones de caja quedan bajo el umbral de CDL. Eso no convierte el choque en un golpe menor. El empleador sigue teniendo deberes, y un camión sobre el umbral trae de nuevo las reglas de la FMCSA. El peso registrado y la identidad de la compañía hay que revisarlos pronto.",
+      },
+      {
+        title: "Cómo avanza una demanda por camión de carga",
+        body: "Un caso grave se presenta en el tribunal de distrito del condado donde ocurrió el choque. La demanda inicia el caso. Después la compañía debe entregar los registros del conductor y de mantenimiento que existan para esa operación. La mayoría de los casos se negocia cuando esos documentos ya están.",
+      },
+      {
+        title: "Páginas de ciudades para choques de carga y vans comerciales",
+        body: "San Antonio, Dallas, Houston y Plano son las páginas de ciudad que cubren carga local y camiones de mudanza rentados en este sitio. Empiece ahí cuando el choque fue en un corredor de ciudad con nombre. Use esta página para el panorama estatal de camiones de caja y vans comerciales.",
+      },
     ],
     injuriesTitle: "Lesiones Comunes por Accidentes de Camiones de Carga",
     injuries: [
@@ -387,6 +546,12 @@ const es: Dictionary = {
       "Sangrado interno y daño a órganos",
       "Lesiones por cinturón de seguridad y bolsa de aire en colisiones de alto impacto",
       "Lesiones a peatones en zonas de entrega urbanas",
+    ],
+    faq: [
+      { q: "¿Un choque con un camión de carga es un caso de vehículo comercial?", a: "Sí. Aunque el conductor no tenga CDL, el camión y el empleador pueden crear un reclamo comercial. Hay que revisar el peso y la identidad de la compañía." },
+      { q: "¿Quién paga si me golpea un camión de mudanza rentado?", a: "Puede ser el arrendatario, la compañía de renta, un empleador que envió al conductor, o más de uno. Los contratos deciden qué pólizas aplican." },
+      { q: "¿Dónde se presenta la demanda?", a: "En el tribunal de distrito del condado de Texas donde ocurrió el choque." },
+      { q: "¿Cuánto tiempo tengo para presentar la demanda?", a: "Generalmente dos años contra una compañía privada. Un vehículo del gobierno puede exigir un aviso mucho antes. Esto es información general, no asesoría legal sobre su plazo." },
     ],
   },
   accidentTypes: {

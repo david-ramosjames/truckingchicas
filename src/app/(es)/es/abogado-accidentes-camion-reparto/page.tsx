@@ -8,13 +8,14 @@ import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import PracticeExpandSections from "@/components/PracticeExpandSections";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camiones FedEx y UPS en Texas",
-  description:
-    "¿Lesionado por un camión de FedEx, UPS o Amazon en Texas? Nuestro bufete maneja casos de accidentes de camiones de reparto. Evaluación gratis.",
+  description: "¿Lo golpeó un camión de FedEx, UPS o Amazon en Texas? Aclaramos quién empleaba al conductor. Consulta gratis. No cobramos si no ganamos.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-reparto`,
     languages: {
@@ -34,6 +35,7 @@ export default function DeliveryTruckPageES() {
     <PageShell dict={dict} locale="es">
       <JsonLd data={localBusinessSchema("es")} />
       <JsonLd data={breadcrumbSchema([{ name: "Inicio", url: "/es" }, { name: d.title, url: "/es/abogado-accidentes-camion-reparto" }])} />
+      <JsonLd data={faqSchema(d.faq)} />
 
       <HeroSection dict={dict} locale="es" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
@@ -54,6 +56,11 @@ export default function DeliveryTruckPageES() {
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.introDesc}</p>
         </div>
       </section>
+      <PracticeExpandSections
+        details={d.details}
+        sections={d.sections}
+      />
+
 
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4">
@@ -130,7 +137,30 @@ export default function DeliveryTruckPageES() {
         </div>
       </section>
 
-      <CTASection dict={dict} locale="es" />
+      
+      
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-center text-3xl font-bold text-brand-navy">Preguntas frecuentes sobre esta práctica</h2>
+          <div className="mt-10">
+            <FAQAccordion items={[...d.faq]} />
+          </div>
+        </div>
+      </section>
+<section className="py-10">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-xl font-bold text-brand-navy">Páginas de ciudades relacionadas</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href={routes.arlington} className="text-brand-red underline hover:text-brand-red-dark">abogado de UPS y FedEx en Arlington</Link>
+            <Link href={routes.plano} className="text-brand-red underline hover:text-brand-red-dark">abogado de camiones de reparto en Plano</Link>
+            <Link href={routes.dallas} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de camión en Dallas</Link>
+            <Link href={routes.sanAntonio} className="text-brand-red underline hover:text-brand-red-dark">abogado de camiones de reparto en San Antonio</Link>
+            <Link href={routes.houston} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de camión en Houston</Link>
+          </div>
+        </div>
+      </section>
+
+<CTASection dict={dict} locale="es" />
     </PageShell>
   );
 }

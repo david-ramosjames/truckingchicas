@@ -5,7 +5,7 @@ import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Does It Matter If the Truck Driver Was Tired?",
@@ -30,6 +30,7 @@ export default function QAPage() {
     <PageShell dict={dict} locale="en">
       <JsonLd data={localBusinessSchema("en")} />
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Truck Accident Help", url: "/truck-accident-help" }, { name: q.fullTitle, url: `/truck-accident-help/truck-driver-fell-asleep` }])} />
+      <JsonLd data={faqSchema([{ q: q.fullTitle, a: q.summary }])} />
 
       <section className="bg-brand-navy py-16 text-white">
         <div className="mx-auto max-w-3xl px-4">

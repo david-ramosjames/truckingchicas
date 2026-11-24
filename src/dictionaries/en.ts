@@ -221,13 +221,40 @@ const en = {
     title: "18-Wheeler Accident Lawyer in Texas",
     metaTitle: "18-Wheeler Accident Lawyer in Texas",
     metaDesc:
-      "Hurt in an 18-wheeler crash in Texas? Our law firm has a special focus on commercial truck accident cases. Call for a free consultation.",
-    heroHeadline: "18-Wheeler Accident Lawyer in Texas",
+      "Hurt in an 18-wheeler crash in Texas? Our law firm handles commercial truck cases on I-35, I-10, I-45, and I-20. Free consultation. No fee unless we win.",
+    heroHeadline: "Texas 18-Wheeler Accident Lawyer",
     heroSubhead:
-      "18-wheeler crashes are among the most dangerous accidents on Texas roads. We fight for victims of catastrophic commercial vehicle collisions.",
-    commercialTitle: "The Danger of Commercial 18-Wheelers",
+      "Hurt by a tractor-trailer on I-35, I-10, I-45, or I-20? We handle serious injury cases against interstate carriers across Texas.",
+    commercialTitle: "Why an 18-Wheeler Crash Is Not a Car Crash",
     commercialDesc:
-      "Commercial 18-wheelers, also called tractor-trailers or semi-trucks, can weigh 20 to 30 times more than a passenger car. When they collide with smaller vehicles, the results are often catastrophic: traumatic brain injuries, spinal cord damage, amputations, and wrongful death.",
+      "An 18-wheeler, also called a tractor-trailer or semi-truck, can weigh 20 to 30 times more than a passenger car. The carrier keeps an electronic log, a driver qualification file, and a commercial insurance policy. Those records are what the claim is built on, and they can be overwritten in weeks.",
+    details: [
+      "Texas freight runs on I-35 between Laredo and Dallas, I-10 between El Paso and Beaumont, I-45 between Houston and Dallas, and I-20 across the southern metroplex. A crash on those roads is filed in the county where it happened, not in the driver's home state.",
+      "People search this crash as an 18-wheeler wreck, a semi-truck crash, or a tractor-trailer lawsuit. The truck type is the same: a combination vehicle subject to FMCSA hours-of-service rules, medical certification, and cargo securement standards.",
+      "We request the electronic log, the driver qualification file, and the maintenance records before they are overwritten. Those documents decide whether the case is a simple rear-end claim or a multi-defendant commercial case against the carrier, a broker, and a shipper.",
+    ],
+    sections: [
+      {
+        title: "Who Can Be Sued After an 18-Wheeler Crash",
+        body: "The driver is not the only defendant. The motor carrier that employed the driver, a freight broker that arranged the load, a shipper that overloaded the trailer, and a shop that skipped brake work can share responsibility. Which ones apply depends on who employed the driver and who controlled the truck. An Inland Port or warehouse crash often involves more than one company.",
+      },
+      {
+        title: "Texas Trucking Regulations That Matter",
+        body: "Interstate 18-wheelers follow FMCSA rules: hours of service, electronic logging, driver qualification files, and annual inspections. Texas also enforces commercial vehicle size and weight limits and roadside inspections through DPS. A log violation, a failed inspection, or a driver who was past the hours limit is evidence in the civil case. This is general information about the rules that apply to carriers, not legal advice about your claim.",
+      },
+      {
+        title: "How an 18-Wheeler Case Proceeds in Texas",
+        body: "A serious injury case starts with a petition in the district court of the county where the crash happened. The carrier then has to produce the driver file, the electronic log, and the maintenance records. Most cases are negotiated after those records are in. If they do not settle, the case is tried in that court, not in a justice court or a city municipal court.",
+      },
+      {
+        title: "Where Texas 18-Wheeler Crashes Are Filed",
+        body: "A crash in Dallas is a Dallas County case. Houston is Harris County. San Antonio is Bexar County. Fort Worth and Arlington are Tarrant County. Austin is Travis County. Laredo is Webb County. The interstate number does not pick the courthouse. The county line does.",
+      },
+      {
+        title: "City Pages for Texas 18-Wheeler Crashes",
+        body: "If the wreck was in a specific metro, start with that city page: Houston and Dallas for I-45 and I-35E freight, San Antonio and Laredo for the border corridor, Fort Worth and Arlington for I-35W and I-20, Austin for I-35 and SH-130, and El Paso for I-10 west. Each city page lists the highways, truck types, and the county court that hears the case.",
+      },
+    ],
     injuriesTitle: "Catastrophic Injuries from 18-Wheeler Crashes",
     injuries: [
       "Traumatic brain injuries (TBI)",
@@ -240,35 +267,68 @@ const en = {
     ],
     regulationsTitle: "Federal Trucking Regulations",
     regulationsDesc:
-      "18-wheelers are subject to strict federal safety rules set by the FMCSA. When trucking companies or drivers violate these regulations, it can serve as powerful evidence of negligence in your case.",
+      "18-wheelers are subject to FMCSA safety rules on hours of service, electronic logs, and driver qualification. When a carrier or driver breaks those rules, the violation can become evidence of negligence in the civil case.",
+    faq: [
+      { q: "What should I do after an 18-wheeler crash in Texas?", a: "Call 911, get medical care, and photograph the truck, the company name, and the trailer number. Do not give a statement to the trucking company's insurer. Call a lawyer so the electronic log can be preserved." },
+      { q: "Who can be sued after a tractor-trailer crash?", a: "The driver, the motor carrier, and sometimes a broker, shipper, or maintenance company. Which ones apply depends on who employed the driver and who controlled the truck." },
+      { q: "Where is an 18-wheeler lawsuit filed?", a: "In the district court of the Texas county where the crash happened. A Dallas wreck is filed in Dallas County. A Houston wreck is filed in Harris County." },
+      { q: "How long do I have to file?", a: "Generally two years against a private carrier. A crash with a government vehicle can require notice much sooner. This is general information, not legal advice about your deadline." },
+    ],
   },
   deliveryTruck: {
     title: "FedEx & UPS Truck Accident Lawyer",
     metaTitle: "FedEx & UPS Truck Accident Lawyer in Texas",
     metaDesc:
-      "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? Our law firm handles delivery truck accident cases. Free case review.",
-    heroHeadline: "FedEx & UPS Truck Accident Lawyer",
+      "Injured by a FedEx, UPS, or Amazon delivery truck in Texas? We handle contractor and carrier cases. Free consultation. No fee unless we win.",
+    heroHeadline: "FedEx, UPS & Amazon Delivery Truck Accident Lawyer",
     heroSubhead:
-      "Delivery trucks from FedEx, UPS, Amazon, and other carriers are involved in thousands of crashes every year. We fight for victims of delivery vehicle accidents across Texas.",
-    introTitle: "The Growing Danger of Delivery Trucks",
+      "Hurt by a package truck or step van on a neighborhood route? We sort out which company employed the driver and which policy applies.",
+    introTitle: "Delivery Trucks Are Commercial Vehicles",
     introDesc:
-      "Online shopping has put more delivery trucks on Texas roads than ever. FedEx, UPS, Amazon, and other carriers push aggressive delivery schedules that often lead to speeding, distracted driving, and driver fatigue. When a large delivery vehicle strikes a passenger car, the results can be devastating.",
+      "FedEx, UPS, and Amazon delivery trucks are not ordinary cars. They stop at the curb, pull out into traffic, and turn across lanes all day. Package cars and step vans leave warehouses and break into neighborhood routes. When one hits a passenger car, the first question is which company employed the driver.",
+    details: [
+      "FedEx Ground routes are often run by contractors. FedEx Express uses a different employment and insurance setup. UPS package cars are usually company routes, but the hub and the policy still have to be identified. Amazon deliveries in Texas are typically run by contracted delivery service partners, not one Amazon fleet.",
+      "These crashes happen in Arlington along I-20 and SH-360, in Plano off US-75 and the tollways, in Dallas neighborhoods, and on San Antonio routes off Loop 410 and US-281. The county where the crash happened decides the courthouse.",
+      "The first adjuster who calls may not be the company that employed the driver. We identify the contractor, the brand on the box, and the policy before the crash is treated as a neighborhood fender-bender.",
+    ],
     causesTitle: "Why Delivery Truck Accidents Happen",
     causes: [
       "Unrealistic delivery schedules and time pressure",
       "Driver fatigue from long shifts and overtime",
-      "Distracted driving, scanning packages, using GPS, checking routes",
-      "Frequent stops creating sudden braking and lane changes",
-      "Double-parked trucks forcing other drivers into unsafe maneuvers",
-      "Poorly maintained vehicles with brake or tire failures",
-      "Inexperienced or undertrained seasonal drivers",
+      "Distracted driving while scanning packages or checking routes",
+      "Frequent stops, sudden braking, and curb pull-outs",
+      "Double-parked trucks forcing unsafe lane changes",
+      "Poorly maintained brakes or tires",
+      "Undertrained seasonal or contractor drivers",
     ],
     liabilityTitle: "Who Is Responsible?",
     liabilityItems: [
-      { title: "The Delivery Driver", desc: "For negligent or reckless driving, distraction, or running red lights and stop signs." },
-      { title: "The Carrier (FedEx, UPS, Amazon)", desc: "For imposing unsafe schedules, failing to train drivers, or using poorly maintained vehicles." },
-      { title: "Subcontractors", desc: "Many carriers use independent contractors. Liability may extend to the companies that hire and supervise them." },
-      { title: "Vehicle Manufacturer", desc: "If a vehicle defect, such as faulty brakes or steering, contributed to the crash." },
+      { title: "The Delivery Driver", desc: "For negligent driving, distraction, or ignoring traffic signals." },
+      { title: "The Carrier or Contractor", desc: "For unsafe schedules, poor training, or failing to maintain the truck. The name on the door is not always the employer." },
+      { title: "The Brand on the Box", desc: "Amazon, FedEx, and UPS arrangements differ. We identify which company and which policy apply before negotiating." },
+      { title: "Vehicle Defects", desc: "If faulty brakes or steering contributed to the crash." },
+    ],
+    sections: [
+      {
+        title: "FedEx Truck Accidents in Texas",
+        body: "FedEx Ground and FedEx Express trucks use different employment and insurance structures. Ground routes are often contractor-operated. Express may use company drivers. The truck may be a step van, a straight truck, or a tractor-trailer leaving a station. We identify the operating company and the policy before the crash is treated as a minor property-damage claim.",
+      },
+      {
+        title: "UPS Truck Accidents in Texas",
+        body: "UPS package cars work early neighborhood routes and then connect to hubs that feed interstate freight. They stop constantly and turn across traffic. A crash with a UPS truck is still a commercial vehicle claim: the company keeps driver records, inspection reports, and route data. Serious injury cases are filed in the county district court where the crash happened.",
+      },
+      {
+        title: "Amazon Delivery Truck Accidents",
+        body: "Amazon deliveries in Texas usually run through contracted delivery companies. Vans cover timed routes with a daily package count. That shows up as rushed backing, blocked cargo views, and drivers who were not trained like long-haul CDL drivers. The claim should not bounce between Amazon and the contractor while the electronic records disappear.",
+      },
+      {
+        title: "Texas Rules That Still Apply",
+        body: "Even when the truck is under 26,001 pounds, the company that employed the driver still has hiring, training, and maintenance duties. Larger delivery trucks and tractor-trailers remain under FMCSA rules. A government or city delivery truck can require written notice much sooner than the usual two-year lawsuit deadline. This is general information, not legal advice about your claim.",
+      },
+      {
+        title: "City Pages for Delivery Truck Crashes",
+        body: "Arlington, Plano, Dallas, and San Antonio see the most last-mile package traffic on this site. Start with the city page for the route where you were hit. Those pages name the highways, the county court, and the related dump-truck and box-truck claims that show up on the same streets.",
+      },
     ],
     injuriesTitle: "Common Injuries in Delivery Truck Crashes",
     injuries: [
@@ -279,66 +339,132 @@ const en = {
       "Internal organ damage",
       "Pedestrian and cyclist injuries from last-mile delivery",
     ],
+    faq: [
+      { q: "Who pays if a FedEx or UPS truck hits me?", a: "It depends on who employed the driver and which policy covers the truck. FedEx Ground contractors, FedEx Express, UPS, and Amazon delivery partners can each point to a different company. We sort that out before negotiating." },
+      { q: "Is an Amazon van crash a commercial vehicle case?", a: "Yes. Contracted delivery vans are still commercial vehicles. The first step is identifying the delivery service partner and the policy that applies." },
+      { q: "Where are these cases filed?", a: "In the Texas county where the crash happened. An Arlington route crash is a Tarrant County case. A Plano crash is usually Collin County." },
+      { q: "How long do I have to file?", a: "Generally two years against a private carrier. A government truck can require notice much sooner. This is general information, not legal advice about your deadline." },
+    ],
   },
   oilfieldTanker: {
     title: "Oilfield & Tanker Truck Accident Lawyer",
     metaTitle: "Oilfield & Tanker Truck Accident Lawyer in Texas",
     metaDesc:
-      "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers have a special focus on energy-sector trucking crashes. Free consultation.",
+      "Hurt in an oilfield or tanker truck crash in Texas? We handle Permian, Ship Channel, and refinery cases. Free consultation. No fee unless we win.",
     heroHeadline: "Oilfield & Tanker Truck Accident Lawyer",
     heroSubhead:
-      "Texas oil and gas operations put thousands of tankers, water trucks, and equipment haulers on the road. When they crash, the consequences are catastrophic.",
-    introTitle: "The Danger of Oilfield & Tanker Trucks",
+      "Hurt by a tanker, water hauler, or oilfield truck in the Permian Basin, on the Ship Channel, or near a refinery? We handle those commercial cases.",
+    introTitle: "Tanker and Oilfield Trucks Are Different Claims",
     introDesc:
-      "The Permian Basin and Eagle Ford Shale generate massive trucking volume across Texas. Tanker trucks haul crude oil, produced water, fracking chemicals, and other hazardous materials on rural two-lane roads often not designed for heavy commercial traffic. The combination of heavy loads, long hours, and remote roads makes oilfield truck accidents among the most deadly in the state.",
-    causesTitle: "Why Oilfield Truck Accidents Happen",
+      "A tanker is not a dry van. The load shifts, the truck takes longer to stop, and a hazmat placard changes what has to be preserved at the scene. Oilfield trucks in the Permian Basin, tankers on I-10 through Beaumont and Houston, and refinery traffic in Corpus Christi all create the same pattern: heavy commercial vehicles on roads shared with passenger cars.",
+    details: [
+      "Odessa and Midland sit on I-20 and US-385 with sand, water, and equipment trucks. Beaumont and Houston move petrochemical loads on I-10 and the Ship Channel. Corpus Christi runs tankers between the port and Refinery Row. El Paso adds cross-border and I-10 freight. The county of the crash decides the courthouse.",
+      "Photograph any hazmat placard, the company name, and the tank number without walking into a spill. Those details help identify the motor carrier and the shipper before the records are overwritten.",
+      "A tanker claim is built on the driver file, the electronic log, the tank inspection history, and who controlled the load at the terminal or lease. Waiting for the first insurer call is how those records disappear.",
+    ],
+    causesTitle: "Why Oilfield and Tanker Accidents Happen",
     causes: [
-      "Driver fatigue from 12+ hour shifts in remote areas",
-      "Overloaded tankers exceeding weight limits",
-      "Hazardous material spills and explosions",
-      "Poorly maintained roads in oil-producing regions",
+      "Driver fatigue from long remote shifts",
+      "Overloaded tankers over weight limits",
+      "Hazardous material spills after a rollover",
+      "Two-lane oilfield roads not built for heavy traffic",
       "Undertrained drivers hired during production booms",
       "High center of gravity causing rollovers on curves",
-      "Dust, low visibility, and unpaved road conditions",
+      "Dust, wind, and low visibility on West Texas roads",
     ],
     liabilityTitle: "Who Can Be Held Liable?",
     liabilityItems: [
-      { title: "Oilfield Service Company", desc: "For pushing unsafe schedules, skipping maintenance, or hiring unqualified drivers." },
-      { title: "Truck Driver", desc: "For fatigue, impairment, speeding, or other negligent driving behavior." },
-      { title: "Oil & Gas Operator", desc: "For creating dangerous road conditions, failing to maintain site access roads, or requiring excessive hauling schedules." },
-      { title: "Tanker Manufacturer", desc: "For design or manufacturing defects in tanker construction, valves, or safety systems." },
+      { title: "Motor Carrier", desc: "For unsafe schedules, skipped maintenance, or hiring unqualified drivers." },
+      { title: "Truck Driver", desc: "For fatigue, speeding, or other negligent driving." },
+      { title: "Oil & Gas Operator or Plant", desc: "For controlling the load, the schedule, or the site access roads." },
+      { title: "Shipper or Loader", desc: "For overloading the tank or failing to secure the cargo." },
     ],
     hazmatTitle: "Hazardous Material Risks",
     hazmatDesc:
-      "Tanker truck accidents often involve hazardous materials, crude oil, natural gas liquids, fracking chemicals, or produced water. These spills can cause explosions, chemical burns, toxic exposure, and long-term environmental damage. Victims of hazmat tanker crashes may face unique health risks that require experienced medical attention and legal representation.",
+      "Tanker crashes can involve crude oil, natural gas liquids, fracking chemicals, or produced water. Placards matter. Spill scenes are preserved carefully, and the civil case still turns on the carrier records, the driver file, and who controlled the load.",
+    sections: [
+      {
+        title: "Permian Basin Oilfield Truck Accidents",
+        body: "Odessa, Midland, and the lease roads off I-20 and US-385 see tankers, sand trucks, and equipment transports on short, heavy runs. An Odessa crash is an Ector County case. A crash on the Midland side of TX-191 is a Midland County case. The highway number does not move the courthouse.",
+      },
+      {
+        title: "Ship Channel and Refinery Tanker Accidents",
+        body: "Houston's Ship Channel and Beaumont's I-10 corridor move petrochemical tankers every day. Corpus Christi runs tankers between the port and Refinery Row. A placarded load changes the scene evidence. The driver, the motor carrier, and sometimes the terminal that loaded the tank can share responsibility.",
+      },
+      {
+        title: "Texas and Federal Rules for Tankers",
+        body: "Hazardous materials hauling has its own federal rules on placards, driver endorsements, and tank maintenance. Hours-of-service and electronic log rules still apply. A violation of those rules can become evidence in the civil case. This is general information about carrier duties, not legal advice about your claim.",
+      },
+      {
+        title: "How a Tanker Lawsuit Proceeds",
+        body: "A serious injury case is filed in the district court of the county where the crash happened. The petition starts the case. The carrier then has to produce the driver file, the electronic log, and the maintenance records. Most cases are negotiated after those records are in.",
+      },
+      {
+        title: "City Pages for Oilfield and Tanker Crashes",
+        body: "Odessa, Beaumont, Houston, Corpus Christi, and El Paso are the tanker and oilfield city pages on this site. Each one names the corridors, the refinery or basin traffic, and the county court. Use those pages when the crash was local; use this page when you need the statewide tanker overview.",
+      },
+    ],
+    faq: [
+      { q: "What should I do after a tanker crash?", a: "Get to safety, call 911, and photograph any hazmat placard, company name, and tank number without approaching a spill. Do not give a statement to the trucking company's insurer." },
+      { q: "Who can be sued after an oilfield truck crash?", a: "The driver, the motor carrier, and sometimes the operator, shipper, or plant that controlled the load or schedule." },
+      { q: "Where are these cases filed?", a: "In the Texas county where the crash happened. Odessa crashes are Ector County. Houston Ship Channel crashes are Harris County. Beaumont crashes are Jefferson County." },
+      { q: "How long do I have to file?", a: "Generally two years against a private carrier. A government vehicle can require notice much sooner. This is general information, not legal advice about your deadline." },
+    ],
   },
   dumpTruck: {
     title: "Dump Truck & Construction Vehicle Accident Lawyer",
-    metaTitle: "Dump Truck & Construction Vehicle Accident Lawyer in Texas",
+    metaTitle: "Dump Truck Accident Lawyer in Texas",
     metaDesc:
-      "Injured by a dump truck or construction vehicle in Texas? Our law firm fights for victims of work zone and heavy equipment crashes. Free case review.",
-    heroHeadline: "Dump Truck & Construction Accident Lawyer",
+      "Injured by a dump truck or construction vehicle in Texas? We handle work-zone and heavy equipment crashes. Free consultation. No fee unless we win.",
+    heroHeadline: "Dump Truck Accident Lawyer in Texas",
     heroSubhead:
-      "Dump trucks, cement mixers, and construction vehicles cause devastating crashes in work zones and on Texas highways. We fight for victims of these preventable accidents.",
-    introTitle: "Construction Vehicles on Texas Roads",
+      "Hurt by a dump truck, cement mixer, or construction vehicle in a work zone or on a Texas highway? We handle those commercial cases.",
+    introTitle: "Dump Trucks on Texas Roads",
     introDesc:
-      "Texas leads the nation in road construction spending, putting thousands of dump trucks, cement mixers, cranes, and heavy equipment haulers on the roads every day. These massive vehicles are difficult to maneuver, have large blind spots, and often operate in congested work zones where speed differentials and lane shifts create dangerous conditions for other drivers.",
-    causesTitle: "Common Causes of Construction Vehicle Accidents",
+      "A loaded dump truck can weigh more than 50,000 pounds. The bed sits high enough to crush a passenger car in a right turn or a rear-end crash. These trucks shuttle between pits, plants, and job sites on Loop 1604 in San Antonio, I-35 work zones in Austin and Waco, and construction corridors across Houston.",
+    details: [
+      "Searches for dump truck accident attorneys often land here because the crash pattern is specific: uncovered gravel, worn brakes, wide turns, and drivers on a short loop between a pit and a pour. Cement mixers are related but different. The drum keeps turning, the load has a short window before it sets, and the truck is top-heavy.",
+      "A crash with a city or county construction truck can require written notice much sooner than the usual two-year lawsuit deadline. That notice question needs a lawyer's review. This is general information, not legal advice about your claim.",
+      "We ask for the carrier's maintenance file, the weigh tickets if they exist, and the contractor contracts before the first settlement offer. Those documents show whether the truck was overloaded, overdue for brake work, or running under someone else's DOT number.",
+    ],
+    causesTitle: "Common Causes of Dump Truck Accidents",
     causes: [
-      "Unsecured loads, gravel, dirt, and debris falling from dump trucks",
-      "Oversized or overweight vehicles exceeding road limits",
-      "Poor visibility from large blind spots",
-      "Work zone confusion, narrow lanes, sudden merges, unclear signage",
-      "Rollover accidents from high center of gravity",
-      "Mechanical failures, brake loss on steep grades",
-      "Fatigued operators working long construction shifts",
+      "Unsecured loads and falling gravel or debris",
+      "Overweight trucks over road limits",
+      "Large blind spots on right turns",
+      "Work-zone lane shifts and sudden merges",
+      "Rollovers from a high center of gravity",
+      "Brake failures on grades",
+      "Fatigued operators on long construction shifts",
     ],
     liabilityTitle: "Who Is Responsible?",
     liabilityItems: [
-      { title: "Construction Company", desc: "For unsafe work zone setup, inadequate signage, or pushing workers to meet deadlines." },
-      { title: "Vehicle Operator", desc: "For negligent driving, unsecured loads, or failing to check blind spots." },
-      { title: "General Contractor", desc: "For overall site safety failures and subcontractor oversight." },
-      { title: "Government Entity", desc: "For inadequate work zone warnings, poor road design, or failing to maintain safe traffic flow." },
+      { title: "Trucking Company", desc: "For maintenance failures, unsafe schedules, or unqualified drivers." },
+      { title: "Vehicle Operator", desc: "For negligent driving, unsecured loads, or missed blind spots." },
+      { title: "Contractor or Plant", desc: "For ordering overloaded loads or controlling the job site." },
+      { title: "Government Entity", desc: "When a city or county truck is involved, notice rules can be shorter." },
+    ],
+    sections: [
+      {
+        title: "Dump Truck Accident Attorneys and Work-Zone Crashes",
+        body: "Dump truck cases turn on the load, the brakes, and who employed the driver. Work zones on I-35, Loop 1604, and Houston freeways mix slow trucks with fast traffic. The carrier still has records. The contractor that ordered the gravel or dirt can share responsibility when the facts support it.",
+      },
+      {
+        title: "Cement Mixer Accidents",
+        body: "A cement truck is not a dump truck. Ready-mix mixers are top-heavy, the drum keeps turning, and the driver is on a clock between the plant and the pour. Plants and job sites around growing suburbs put these trucks on the same roads as commuters. A rollover or a mixer that cannot stop is a commercial vehicle claim.",
+      },
+      {
+        title: "Texas Rules for Construction Trucks",
+        body: "Many dump trucks and mixers are commercial motor vehicles subject to CDL, inspection, and hours rules. Overweight and unsecured-load violations matter in the civil case. A government truck changes the notice deadline. This is general information about the rules that apply to carriers, not legal advice about your deadline.",
+      },
+      {
+        title: "Where Dump Truck Cases Are Filed",
+        body: "San Antonio dump truck crashes are Bexar County cases. Austin crashes are Travis County. Houston is Harris County. Arlington is Tarrant County. Waco work-zone crashes on I-35 are McLennan County. The county of the crash decides the courthouse.",
+      },
+      {
+        title: "City Pages for Dump Truck and Construction Crashes",
+        body: "San Antonio, Austin, Houston, Arlington, and Waco are the city pages that already rank for local dump-truck and work-zone searches. Use those pages for highway and county detail. Use this page when you need the statewide dump-truck and cement-mixer overview.",
+      },
     ],
     injuriesTitle: "Injuries from Dump Truck & Construction Crashes",
     injuries: [
@@ -349,34 +475,67 @@ const en = {
       "Amputations from heavy machinery contact",
       "Wrongful death",
     ],
+    faq: [
+      { q: "Who can be sued after a dump truck crash?", a: "The driver, the trucking company, the contractor, and sometimes the plant or pit that loaded the truck. A city truck can involve shorter notice rules." },
+      { q: "Is a cement mixer the same as a dump truck case?", a: "Related, but not the same. Mixers are top-heavy and time-pressured. Both are commercial vehicle claims with carrier and contractor questions." },
+      { q: "Where is the lawsuit filed?", a: "In the district court of the Texas county where the crash happened." },
+      { q: "How long do I have to file?", a: "Generally two years against a private carrier. A government vehicle can require notice much sooner. This is general information, not legal advice about your deadline." },
+    ],
   },
   boxTruck: {
     title: "Box Truck & Commercial Van Accident Lawyer",
     metaTitle: "Box Truck & Commercial Van Accident Lawyer in Texas",
     metaDesc:
-      "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident lawyer can help. Free case review.",
+      "Hit by a box truck, sprinter van, or rental moving truck in Texas? We handle those commercial cases. Free consultation. No fee unless we win.",
     heroHeadline: "Box Truck & Commercial Van Accident Lawyer",
     heroSubhead:
-      "Box trucks, sprinter vans, and medium-duty commercial vehicles are everywhere on Texas roads, and they cause serious accidents every day.",
-    introTitle: "The Overlooked Danger of Box Trucks & Commercial Vans",
+      "Hurt by a box truck, cargo van, or rental moving truck? We identify the motor carrier, the rental contract, and the policy that applies.",
+    introTitle: "Box Trucks Are Still Commercial Vehicles",
     introDesc:
-      "Box trucks, cargo vans, and sprinter vans may be smaller than 18-wheelers, but they still weigh 10,000 to 26,000 pounds, enough to cause catastrophic injuries in a collision. Many are operated by drivers with standard licenses and minimal training, employed by moving companies, rental fleets, and small businesses that cut corners on safety and maintenance.",
+      "Box trucks and commercial vans may look smaller than 18-wheelers, but they still outweigh a passenger car by several tons. Many weigh under 26,001 pounds, so the driver may not hold a CDL and the insurance limits can be lower than an interstate carrier's. The company painted on the box is not always the company that insured the truck.",
+    details: [
+      "These trucks move furniture, appliances, building supplies, and rental loads on Loop 410 in San Antonio, through Dallas warehouses, across Houston arterials, and on Plano commercial streets. Rental moving trucks add another layer: the renter, the rental company, and any employer that sent the driver can all appear in the claim.",
+      "We check the registered weight, the motor carrier number if there is one, and any rental contract before the crash is treated as an ordinary auto claim.",
+      "A box truck under the CDL threshold still outweighs a passenger car by several tons. The employer, the rental contract, and the cargo loader can share responsibility even when the driver has only a regular license.",
+    ],
     causesTitle: "Why Box Truck Accidents Happen",
     causes: [
-      "Drivers with minimal commercial vehicle training",
-      "Rental truck operators unfamiliar with vehicle size and handling",
-      "Overloaded cargo shifting during turns and braking",
-      "Limited rear visibility, no rearview mirror in most box trucks",
-      "Speeding to meet tight delivery or moving schedules",
-      "Fatigued drivers working long hours without required breaks",
-      "Poor vehicle maintenance by small operators and rental companies",
+      "Drivers with little commercial-vehicle training",
+      "Rental operators unfamiliar with the truck's size",
+      "Overloaded cargo that shifts in turns",
+      "Limited rear visibility",
+      "Speeding to meet delivery or moving schedules",
+      "Fatigue on long local runs",
+      "Poor maintenance by small operators or rental fleets",
     ],
     liabilityTitle: "Who Can Be Held Liable?",
     liabilityItems: [
-      { title: "The Driver", desc: "For negligent driving, speeding, distraction, or driving without proper training for the vehicle size." },
-      { title: "The Employer", desc: "For negligent hiring, failure to train, pushing unsafe schedules, or failing to maintain vehicles." },
-      { title: "Rental Company", desc: "For renting vehicles to unqualified drivers or failing to maintain rental fleet vehicles." },
-      { title: "Cargo Loader", desc: "For improperly loading or securing cargo that shifts and causes the driver to lose control." },
+      { title: "The Driver", desc: "For negligent driving or driving a truck they were not trained to handle." },
+      { title: "The Employer", desc: "For hiring, training, schedules, or maintenance failures." },
+      { title: "Rental Company", desc: "For renting to an unqualified driver or failing to maintain the fleet." },
+      { title: "Cargo Loader", desc: "For loading or securing cargo so poorly that the driver lost control." },
+    ],
+    sections: [
+      {
+        title: "Box Truck Accidents in Texas Cities",
+        body: "Local freight that never looks like an 18-wheeler still causes serious crashes. San Antonio arterials, Dallas warehouse districts, Houston delivery corridors, and Plano commercial streets all see straight trucks turning across traffic. A crash inside those cities is filed in that county's district court.",
+      },
+      {
+        title: "Rental Moving Truck Accidents",
+        body: "Rental trucks are often driven by people with no commercial training. The rental contract, the employer's errand if the trip was for work, and the truck's maintenance history all matter. Do not assume the only policy is the renter's personal auto insurance.",
+      },
+      {
+        title: "CDL and Weight Questions",
+        body: "Many box trucks sit under the CDL weight threshold. That does not make the crash a simple fender bender. The employer still has duties, and a truck over the threshold brings FMCSA rules back into the case. Registered weight and the motor carrier identity have to be checked early.",
+      },
+      {
+        title: "How a Box Truck Lawsuit Proceeds",
+        body: "A serious injury case is filed in the district court of the county where the crash happened. The petition starts the case. The company then has to produce driver and maintenance records that exist for that operation. Most cases are negotiated after those records are in.",
+      },
+      {
+        title: "City Pages for Box Truck and Commercial Van Crashes",
+        body: "San Antonio, Dallas, Houston, and Plano are the city pages that cover local freight and rental moving trucks on this site. Start there when the crash was on a named city corridor. Use this page for the statewide box-truck and commercial-van overview.",
+      },
     ],
     injuriesTitle: "Common Injuries from Box Truck Crashes",
     injuries: [
@@ -386,6 +545,12 @@ const en = {
       "Internal bleeding and organ damage",
       "Seat belt and airbag injuries from high-impact collisions",
       "Pedestrian injuries in urban delivery zones",
+    ],
+    faq: [
+      { q: "Is a box truck crash a commercial vehicle case?", a: "Yes. Even when the driver does not hold a CDL, the truck and the employer can still create a commercial claim. Weight and the motor carrier identity have to be checked." },
+      { q: "Who pays if a rental moving truck hits me?", a: "It can be the renter, the rental company, an employer that sent the driver, or more than one of them. The contracts decide which policies apply." },
+      { q: "Where is the lawsuit filed?", a: "In the district court of the Texas county where the crash happened." },
+      { q: "How long do I have to file?", a: "Generally two years against a private company. A government vehicle can require notice much sooner. This is general information, not legal advice about your deadline." },
     ],
   },
   accidentTypes: {

@@ -4,7 +4,7 @@ import { getDictionary } from "@/dictionaries";
 import { SITE_URL, ROUTES, PHONE_NUMBER, PHONE_DISPLAY } from "@/lib/constants";
 import PageShell from "@/components/PageShell";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "¿Cuánto Vale Mi Caso de Accidente de Camión?",
@@ -29,6 +29,7 @@ export default function CuantoValeMiCasoES() {
     <PageShell dict={dict} locale="es">
       <JsonLd data={localBusinessSchema("es")} />
       <JsonLd data={breadcrumbSchema([{ name: "Inicio", url: "/es" }, { name: "Ayuda con Accidentes de Camión", url: "/es/ayuda-accidente-camion" }, { name: q.fullTitle, url: `/es/ayuda-accidente-camion/cuanto-vale-mi-caso` }])} />
+      <JsonLd data={faqSchema([{ q: q.fullTitle, a: q.summary }])} />
 
       <section className="bg-brand-navy py-16 text-white">
         <div className="mx-auto max-w-3xl px-4">

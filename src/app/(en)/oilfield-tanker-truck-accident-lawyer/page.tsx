@@ -8,13 +8,14 @@ import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import PracticeExpandSections from "@/components/PracticeExpandSections";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Oilfield & Tanker Truck Accident Lawyer in Texas",
-  description:
-    "Hurt in an oilfield or tanker truck accident in Texas? Our lawyers have a special focus on energy-sector trucking crashes. Free consultation.",
+  description: "Hurt in an oilfield or tanker truck crash in Texas? We handle Permian, Ship Channel, and refinery cases. Free consultation. No fee unless we win.",
   alternates: {
     canonical: `${SITE_URL}/oilfield-tanker-truck-accident-lawyer`,
     languages: {
@@ -34,6 +35,7 @@ export default function OilfieldTankerPage() {
     <PageShell dict={dict} locale="en">
       <JsonLd data={localBusinessSchema("en")} />
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: d.title, url: "/oilfield-tanker-truck-accident-lawyer" }])} />
+      <JsonLd data={faqSchema(d.faq)} />
 
       <HeroSection dict={dict} locale="en" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
@@ -54,6 +56,11 @@ export default function OilfieldTankerPage() {
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.introDesc}</p>
         </div>
       </section>
+      <PracticeExpandSections
+        details={d.details}
+        sections={d.sections}
+      />
+
 
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4">
@@ -107,7 +114,30 @@ export default function OilfieldTankerPage() {
         </div>
       </section>
 
-      <CTASection dict={dict} locale="en" />
+      
+      
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-center text-3xl font-bold text-brand-navy">Practice Area FAQ</h2>
+          <div className="mt-10">
+            <FAQAccordion items={[...d.faq]} />
+          </div>
+        </div>
+      </section>
+<section className="py-10">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-xl font-bold text-brand-navy">Related city pages</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href={routes.odessa} className="text-brand-red underline hover:text-brand-red-dark">Odessa oilfield truck accident lawyer</Link>
+            <Link href={routes.beaumont} className="text-brand-red underline hover:text-brand-red-dark">Beaumont tanker accident lawyer</Link>
+            <Link href={routes.corpusChristi} className="text-brand-red underline hover:text-brand-red-dark">Corpus Christi tanker accident lawyer</Link>
+            <Link href={routes.houston} className="text-brand-red underline hover:text-brand-red-dark">Houston Ship Channel truck accident lawyer</Link>
+            <Link href={routes.elPaso} className="text-brand-red underline hover:text-brand-red-dark">El Paso truck accident lawyer</Link>
+          </div>
+        </div>
+      </section>
+
+<CTASection dict={dict} locale="en" />
     </PageShell>
   );
 }

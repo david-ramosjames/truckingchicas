@@ -8,13 +8,14 @@ import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import PracticeExpandSections from "@/components/PracticeExpandSections";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de 18 Ruedas en Texas",
-  description:
-    "¿Herido en un choque con un tráiler de 18 ruedas en Texas? Tenemos un enfoque especial en accidentes de vehículos comerciales. Llama para una consulta gratis.",
+  description: "¿Choque con un tráiler en la I-35, I-10, I-45 o I-20? Casos contra compañías interestatales. Consulta gratis. No cobramos si no ganamos.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-18-ruedas`,
     languages: {
@@ -34,6 +35,7 @@ export default function EighteenWheelerPageES() {
     <PageShell dict={dict} locale="es">
       <JsonLd data={localBusinessSchema("es")} />
       <JsonLd data={breadcrumbSchema([{ name: "Inicio", url: "/es" }, { name: d.title, url: "/es/abogado-accidentes-18-ruedas" }])} />
+      <JsonLd data={faqSchema(d.faq)} />
 
       <HeroSection dict={dict} locale="es" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
@@ -54,6 +56,11 @@ export default function EighteenWheelerPageES() {
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.commercialDesc}</p>
         </div>
       </section>
+      <PracticeExpandSections
+        details={d.details}
+        sections={d.sections}
+      />
+
 
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4">
@@ -93,7 +100,31 @@ export default function EighteenWheelerPageES() {
         </div>
       </section>
 
-      <CTASection dict={dict} locale="es" />
+      
+      
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-center text-3xl font-bold text-brand-navy">Preguntas frecuentes sobre esta práctica</h2>
+          <div className="mt-10">
+            <FAQAccordion items={[...d.faq]} />
+          </div>
+        </div>
+      </section>
+<section className="py-10">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-xl font-bold text-brand-navy">Páginas de ciudades relacionadas</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href={routes.dallas} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de 18 ruedas en Dallas</Link>
+            <Link href={routes.houston} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de 18 ruedas en Houston</Link>
+            <Link href={routes.sanAntonio} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de 18 ruedas en San Antonio</Link>
+            <Link href={routes.fortWorth} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de 18 ruedas en Fort Worth</Link>
+            <Link href={routes.austin} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de 18 ruedas en Austin</Link>
+            <Link href={routes.laredo} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de 18 ruedas en Laredo</Link>
+          </div>
+        </div>
+      </section>
+
+<CTASection dict={dict} locale="es" />
     </PageShell>
   );
 }

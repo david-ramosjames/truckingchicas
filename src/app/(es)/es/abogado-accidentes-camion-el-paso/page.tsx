@@ -12,8 +12,9 @@ import { cityLegalServiceSchema, breadcrumbSchema, faqSchema } from "@/lib/schem
 import { IMAGES } from "@/lib/images";
 import CityLawsuitSection from "@/components/CityLawsuitSection";
 
-const EL_PASO_TITLE = "Abogado de Accidentes de 18 Ruedas en El Paso | Trucking Chicas";
-const EL_PASO_DESCRIPTION = "¿Choque con un tráiler en la I-10 o cerca de BOTA o Zaragoza? Casos del Condado de El Paso. Consulta gratis. No cobramos si no ganamos.";
+const EL_PASO_TITLE = "Abogado de Tráiler en El Paso | Consulta Gratis";
+const EL_PASO_DESCRIPTION =
+  "Hablamos español. Consulta gratis si un tráiler lo chocó en El Paso. No cobramos si no ganamos.";
 
 export const metadata: Metadata = {
   title: { absolute: EL_PASO_TITLE },

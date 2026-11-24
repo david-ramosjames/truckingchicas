@@ -8,13 +8,14 @@ import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import PracticeExpandSections from "@/components/PracticeExpandSections";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "18-Wheeler Accident Lawyer in Texas",
-  description:
-    "Hurt in an 18-wheeler crash in Texas? Our law firm has a special focus on commercial truck accident cases. Call for a free consultation.",
+  description: "Hurt in an 18-wheeler crash in Texas? Our law firm handles commercial truck cases on I-35, I-10, I-45, and I-20. Free consultation. No fee unless we win.",
   alternates: {
     canonical: `${SITE_URL}/18-wheeler-accident-lawyer`,
     languages: {
@@ -66,6 +67,11 @@ export default function EighteenWheelerPage() {
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.commercialDesc}</p>
         </div>
       </section>
+      <PracticeExpandSections
+        details={d.details}
+        sections={d.sections}
+      />
+
 
       {/* Catastrophic injuries */}
       <section className="bg-gray-50 py-16">
@@ -123,7 +129,31 @@ export default function EighteenWheelerPage() {
         </div>
       </section>
 
-      <CTASection dict={dict} locale="en" />
+      
+      
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-center text-3xl font-bold text-brand-navy">Practice Area FAQ</h2>
+          <div className="mt-10">
+            <FAQAccordion items={[...d.faq]} />
+          </div>
+        </div>
+      </section>
+<section className="py-10">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-xl font-bold text-brand-navy">Related city pages</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href={routes.dallas} className="text-brand-red underline hover:text-brand-red-dark">Dallas 18-wheeler accident lawyer</Link>
+            <Link href={routes.houston} className="text-brand-red underline hover:text-brand-red-dark">Houston 18-wheeler accident lawyer</Link>
+            <Link href={routes.sanAntonio} className="text-brand-red underline hover:text-brand-red-dark">San Antonio 18-wheeler accident lawyer</Link>
+            <Link href={routes.fortWorth} className="text-brand-red underline hover:text-brand-red-dark">Fort Worth 18-wheeler accident lawyer</Link>
+            <Link href={routes.austin} className="text-brand-red underline hover:text-brand-red-dark">Austin 18-wheeler accident lawyer</Link>
+            <Link href={routes.laredo} className="text-brand-red underline hover:text-brand-red-dark">Laredo 18-wheeler accident lawyer</Link>
+          </div>
+        </div>
+      </section>
+
+<CTASection dict={dict} locale="en" />
     </PageShell>
   );
 }

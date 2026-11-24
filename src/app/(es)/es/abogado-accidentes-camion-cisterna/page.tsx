@@ -8,13 +8,14 @@ import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import PracticeExpandSections from "@/components/PracticeExpandSections";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Abogado de Accidentes de Camiones Cisterna en Texas",
-  description:
-    "¿Herido en un accidente de camión cisterna o petrolero en Texas? Nuestro bufete tiene un enfoque especial en choques del sector energético. Consulta gratis.",
+  description: "¿Choque con un camión cisterna o petrolero en Texas? Casos de la Pérmica, el Ship Channel y refinerías. Consulta gratis. No cobramos si no ganamos.",
   alternates: {
     canonical: `${SITE_URL}/es/abogado-accidentes-camion-cisterna`,
     languages: {
@@ -34,6 +35,7 @@ export default function OilfieldTankerPageES() {
     <PageShell dict={dict} locale="es">
       <JsonLd data={localBusinessSchema("es")} />
       <JsonLd data={breadcrumbSchema([{ name: "Inicio", url: "/es" }, { name: d.title, url: "/es/abogado-accidentes-camion-cisterna" }])} />
+      <JsonLd data={faqSchema(d.faq)} />
 
       <HeroSection dict={dict} locale="es" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
@@ -54,6 +56,11 @@ export default function OilfieldTankerPageES() {
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.introDesc}</p>
         </div>
       </section>
+      <PracticeExpandSections
+        details={d.details}
+        sections={d.sections}
+      />
+
 
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4">
@@ -106,7 +113,30 @@ export default function OilfieldTankerPageES() {
         </div>
       </section>
 
-      <CTASection dict={dict} locale="es" />
+      
+      
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-center text-3xl font-bold text-brand-navy">Preguntas frecuentes sobre esta práctica</h2>
+          <div className="mt-10">
+            <FAQAccordion items={[...d.faq]} />
+          </div>
+        </div>
+      </section>
+<section className="py-10">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-xl font-bold text-brand-navy">Páginas de ciudades relacionadas</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href={routes.odessa} className="text-brand-red underline hover:text-brand-red-dark">abogado de camiones petroleros en Odessa</Link>
+            <Link href={routes.beaumont} className="text-brand-red underline hover:text-brand-red-dark">abogado de cisternas en Beaumont</Link>
+            <Link href={routes.corpusChristi} className="text-brand-red underline hover:text-brand-red-dark">abogado de cisternas en Corpus Christi</Link>
+            <Link href={routes.houston} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de camión en Houston</Link>
+            <Link href={routes.elPaso} className="text-brand-red underline hover:text-brand-red-dark">abogado de accidentes de camión en El Paso</Link>
+          </div>
+        </div>
+      </section>
+
+<CTASection dict={dict} locale="es" />
     </PageShell>
   );
 }

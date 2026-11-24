@@ -8,13 +8,14 @@ import PageShell from "@/components/PageShell";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 import JsonLd from "@/components/JsonLd";
-import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema";
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { IMAGES } from "@/lib/images";
+import PracticeExpandSections from "@/components/PracticeExpandSections";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Box Truck & Commercial Van Accident Lawyer in Texas",
-  description:
-    "Hit by a box truck, sprinter van, or commercial vehicle in Texas? Our truck accident lawyer can help. Free case review.",
+  description: "Hit by a box truck, sprinter van, or rental moving truck in Texas? We handle those commercial cases. Free consultation. No fee unless we win.",
   alternates: {
     canonical: `${SITE_URL}/box-truck-commercial-van-accident-lawyer`,
     languages: {
@@ -34,6 +35,7 @@ export default function BoxTruckPage() {
     <PageShell dict={dict} locale="en">
       <JsonLd data={localBusinessSchema("en")} />
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: d.title, url: "/box-truck-commercial-van-accident-lawyer" }])} />
+      <JsonLd data={faqSchema(d.faq)} />
 
       <HeroSection dict={dict} locale="en" headline={d.heroHeadline} subhead={d.heroSubhead} />
 
@@ -54,6 +56,11 @@ export default function BoxTruckPage() {
           <p className="mt-4 text-lg leading-relaxed text-gray-600">{d.introDesc}</p>
         </div>
       </section>
+      <PracticeExpandSections
+        details={d.details}
+        sections={d.sections}
+      />
+
 
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-3xl px-4">
@@ -115,7 +122,29 @@ export default function BoxTruckPage() {
         </div>
       </section>
 
-      <CTASection dict={dict} locale="en" />
+      
+      
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-center text-3xl font-bold text-brand-navy">Practice Area FAQ</h2>
+          <div className="mt-10">
+            <FAQAccordion items={[...d.faq]} />
+          </div>
+        </div>
+      </section>
+<section className="py-10">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-xl font-bold text-brand-navy">Related city pages</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href={routes.sanAntonio} className="text-brand-red underline hover:text-brand-red-dark">San Antonio box truck accident lawyer</Link>
+            <Link href={routes.dallas} className="text-brand-red underline hover:text-brand-red-dark">Dallas truck accident lawyer</Link>
+            <Link href={routes.houston} className="text-brand-red underline hover:text-brand-red-dark">Houston truck accident lawyer</Link>
+            <Link href={routes.plano} className="text-brand-red underline hover:text-brand-red-dark">Plano truck accident lawyer</Link>
+          </div>
+        </div>
+      </section>
+
+<CTASection dict={dict} locale="en" />
     </PageShell>
   );
 }
